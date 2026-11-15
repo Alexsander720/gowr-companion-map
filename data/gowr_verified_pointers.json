@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "build": [
+    46685144,
+    1750707527
+  ],
+  "binary_sha256": "4d242ab5577379418196c692d3dff989f7223d3d7d01e8e0d2736cbc512c0eff",
+  "units_per_metre": 2.0,
+  "config": {
+    "version": "owner-calibrated XYZ/Yaw only",
+    "header_sha256": "b192cfbdf42e805fde8ef47aa725ffb4cfb622bca92ae58c83dbabe7dc27c32c",
+    "loaded_header_key": "44e3d6df92dbd19e64d497a4e2a7530ec513c4cad0d0199e64106ee2dc2041ef",
+    "module_name": "GoWR.exe",
+    "kratos_anchor_offset": 96019504,
+    "kratos_chain": [
+      8,
+      0
+    ],
+    "offsets": {},
+    "position_source": {
+      "rva": 96019504,
+      "chain": [
+        8,
+        0
+      ],
+      "role": "player_world_via_frame",
+      "frame_chain": [
+        8,
+        8,
+        160
+      ],
+      "frame_matrix_offset": 80,
+      "frame_stamp_offset": 64,
+      "frame_kind_offset": 168,
+      "frame_parent_offset": 160,
+      "frame_other_parent_offset": 192,
+      "frame_other_flag_offset": 184,
+      "frame_lock_offset": 144,
+      "ancestor_stamp_offset": 224,
+      "ancestor_next_offset": 320,
+      "ancestor_flags_offset": 488,
+      "ancestor_byte_flags_offset": 480,
+      "ancestor_lock_offset": 304,
+      "offset": 80,
+      "kind": "player_position"
+    },
+    "yaw_source": {
+      "rva": 67262760,
+      "chain": [
+        3840
+      ],
+      "offset": 32,
+      "kind": "forward_neg",
+      "role": "camera_not_kratos"
+    },
+    "yaw_convention": "+Z=0,+X=90,Y-up",
+    "integration_ready": true,
+    "integration_note": "Apply the generated consumer patch after reviewing this live calibration; no consumer file was modified.",
+    "probe_sources": true,
+    "calibration_status": "owner_confirmed_behavioral_chain",
+    "integration_requires_patch": true
+  }
+}

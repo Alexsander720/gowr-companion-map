@@ -1,0 +1,4288 @@
+{
+  "version": 1,
+  "favors": [
+    {
+      "id": "XPL_Midgard_Cooking_Tribute_Parent",
+      "hash": "0x617cd941dea7abfe",
+      "offset": 104856,
+      "name_sid": 28509,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131136,
+      "steps": [
+        {
+          "id": "XPL_Midgard_Cooking_Tribute_Objective_1",
+          "hash": "0x69ab21cd0222ff64",
+          "offset": 105264,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 196672,
+          "steps": []
+        },
+        {
+          "id": "XPL_Midgard_Cooking_Tribute_01a",
+          "hash": "0xddb969cf11617440",
+          "offset": 105648,
+          "name_sid": 33114,
+          "description_sid": 33124,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Midgard_Cooking_Tribute_01b",
+          "hash": "0xddb969cf1161683f",
+          "offset": 105928,
+          "name_sid": 33115,
+          "description_sid": 33123,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Midgard_Cooking_Tribute_01c",
+          "hash": "0xddb969cf11616c2e",
+          "offset": 106152,
+          "name_sid": 33117,
+          "description_sid": 33121,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Midgard_Cooking_Tribute_01d",
+          "hash": "0xddb969cf1161601d",
+          "offset": 106376,
+          "name_sid": 33116,
+          "description_sid": 33122,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Midgard_Cooking_Tribute_Objective_2",
+          "hash": "0x69ab21cd0222e31b",
+          "offset": 106600,
+          "name_sid": 28770,
+          "description_sid": 28771,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        }
+      ],
+      "pin_ids": [
+        "216495",
+        "219952",
+        "219953",
+        "219954",
+        "219955"
+      ],
+      "pin_rules": {
+        "216495": {
+          "t2_hash": "0x617cd941dea7abfe",
+          "t2_min_stage": 4
+        },
+        "219952": {
+          "region_key": "Oarsmen",
+          "t2_hash": "0xddb969cf1161683f",
+          "t2_min_stage": 4
+        },
+        "219955": {
+          "region_key": "VanaheimCraterSinkholes",
+          "primary_wad": "Van_CratSink300_Mid",
+          "t2_hash": "0xddb969cf1161601d",
+          "t2_min_stage": 4
+        },
+        "219954": {
+          "region_key": "Forge",
+          "t2_hash": "0xddb969cf11616c2e",
+          "t2_min_stage": 4
+        },
+        "219953": {
+          "region_key": "DesertEast",
+          "t2_hash": "0xddb969cf11617440",
+          "t2_min_stage": 4
+        }
+      },
+      "step_locations_unknown": false,
+      "pin_realms": {
+        "216495": "midgard",
+        "219952": "midgard",
+        "219955": "vanaheim",
+        "219954": "svartalfheim",
+        "219953": "alfheim"
+      },
+      "realm": "midgard"
+    },
+    {
+      "id": "XPL_Midgard_SigrunsCurse_Parent",
+      "hash": "0xdb38da68260f09ac",
+      "offset": 107096,
+      "name_sid": 5358,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131136,
+      "steps": [
+        {
+          "id": "XPL_Midgard_SigrunsCurse_Objective_01",
+          "hash": "0xae55de9283ebb7e8",
+          "offset": 107432,
+          "name_sid": 24687,
+          "description_sid": 24688,
+          "counter": {
+            "hash": "0xa35b981e319c684f",
+            "total": 2,
+            "offset": 107808
+          },
+          "kind": 196672,
+          "steps": []
+        },
+        {
+          "id": "XPL_Midgard_SigrunsCurse_Objective_01a",
+          "hash": "0x05c76800ba076d59",
+          "offset": 107880,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Midgard_SigrunsCurse_Objective_01b",
+          "hash": "0x05c76800ba0751aa",
+          "offset": 108160,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Midgard_SigrunsCurse_Objective_02",
+          "hash": "0xae55de9283ebb3f7",
+          "offset": 108384,
+          "name_sid": 5369,
+          "description_sid": 5376,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Midgard_SigrunsCurse_Objective_03",
+          "hash": "0xae55de9283ebaf86",
+          "offset": 108728,
+          "name_sid": 24691,
+          "description_sid": 24692,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        }
+      ],
+      "pin_ids": [
+        "216445",
+        "216468",
+        "216936"
+      ],
+      "pin_rules": {
+        "216936": {
+          "t2_hash": "0xdb38da68260f09ac",
+          "t2_min_stage": 4
+        },
+        "216445": {
+          "region_key": "Oarsmen"
+        },
+        "216468": {
+          "region_key": "SkadiOut"
+        }
+      },
+      "step_locations_unknown": false,
+      "pin_realms": {
+        "216445": "midgard",
+        "216468": "midgard",
+        "216936": "midgard"
+      },
+      "realm": "midgard"
+    },
+    {
+      "id": "XPL_Midgard_BerserkerCamps_Parent",
+      "hash": "0x0764a3684976bd38",
+      "offset": 109592,
+      "name_sid": 6337,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131136,
+      "steps": [
+        {
+          "id": "XPL_Midgard_BerserkerCamps_Objective_01",
+          "hash": "0x994f564f35d5de78",
+          "offset": 109880,
+          "name_sid": 6339,
+          "description_sid": 6340,
+          "counter": {
+            "hash": "0x9d2736eb10506e44",
+            "total": 4,
+            "offset": 110248
+          },
+          "kind": 196672,
+          "steps": []
+        },
+        {
+          "id": "XPL_Midgard_BerserkerCamps_Objective_01a",
+          "hash": "0xd5f2316a176581b3",
+          "offset": 110320,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Midgard_BerserkerCamps_Objective_01b",
+          "hash": "0xd5f2316a176585a0",
+          "offset": 110632,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Midgard_BerserkerCamps_Objective_01c",
+          "hash": "0xd5f2316a17658991",
+          "offset": 110872,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Midgard_BerserkerCamps_Objective_01d",
+          "hash": "0xd5f2316a17658d86",
+          "offset": 111112,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Midgard_BerserkerCamps_Objective_02",
+          "hash": "0x994f564f35d5da69",
+          "offset": 111352,
+          "name_sid": 14455,
+          "description_sid": 14456,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        }
+      ],
+      "pin_ids": [
+        "216456",
+        "216457",
+        "216459",
+        "216461",
+        "219821"
+      ],
+      "pin_rules": {
+        "219821": {
+          "t2_hash": "0x0764a3684976bd38",
+          "t2_min_stage": 4
+        },
+        "216456": {},
+        "216457": {},
+        "216459": {},
+        "216461": {}
+      },
+      "step_locations_unknown": false,
+      "pin_realms": {
+        "216456": "midgard",
+        "216457": "midgard",
+        "216459": "midgard",
+        "216461": "midgard",
+        "219821": "midgard"
+      },
+      "realm": "midgard"
+    },
+    {
+      "id": "Labor_TyrStatue_Parent",
+      "hash": "0xfd82dc813d24b71b",
+      "offset": 111800,
+      "name_sid": 21809,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131136,
+      "steps": [
+        {
+          "id": "Labor_TyrStatue_Objective",
+          "hash": "0x0992a7a4fddd2d06",
+          "offset": 112200,
+          "name_sid": 21811,
+          "description_sid": 21810,
+          "counter": {
+            "hash": "0x79f50da8f445a91e",
+            "total": 4,
+            "offset": 112608
+          },
+          "kind": 196672,
+          "steps": []
+        },
+        {
+          "id": "Labor_TyrStatue_Objective_01_Arm1",
+          "hash": "0xb7a161fe435dc6eb",
+          "offset": 112672,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65536,
+          "steps": []
+        },
+        {
+          "id": "Labor_TyrStatue_Objective_02_Spear",
+          "hash": "0x42855a52d447d2cd",
+          "offset": 112920,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65536,
+          "steps": []
+        },
+        {
+          "id": "Labor_TyrStatue_Objective_03_Helm",
+          "hash": "0x930ee921cf5a2d75",
+          "offset": 113152,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65536,
+          "steps": []
+        },
+        {
+          "id": "Labor_TyrStatue_Objective_04_Arm2",
+          "hash": "0x9d2c940faead4468",
+          "offset": 113384,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65536,
+          "steps": []
+        }
+      ],
+      "pin_ids": [
+        "216427",
+        "216439",
+        "216476",
+        "216479",
+        "216489"
+      ],
+      "pin_rules": {
+        "216439": {
+          "t2_hash": "0xfd82dc813d24b71b",
+          "t2_min_stage": 4
+        },
+        "216476": {},
+        "216427": {},
+        "216479": {},
+        "216489": {}
+      },
+      "step_locations_unknown": false,
+      "pin_realms": {
+        "216427": "midgard",
+        "216476": "midgard",
+        "216479": "midgard",
+        "216489": "midgard",
+        "216439": "midgard"
+      },
+      "realm": null
+    },
+    {
+      "id": "XPL_Svartalfheim1_NorthBayRigs_Parent",
+      "hash": "0xc2175fa907b9a663",
+      "offset": 113680,
+      "name_sid": 5377,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131136,
+      "steps": [
+        {
+          "id": "XPL_Svartalfheim1_NorthBayRigs_Objective_01",
+          "hash": "0x652c8cbda6cf89fe",
+          "offset": 114040,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 196672,
+          "steps": []
+        },
+        {
+          "id": "XPL_Svartalfheim_NorthBayRigs_Objective_01a",
+          "hash": "0x02f8d768dfdfb5fe",
+          "offset": 114640,
+          "name_sid": 19679,
+          "description_sid": 19680,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Svartalfheim_NorthBayRigs_Objective_01b",
+          "hash": "0x02f8d768dfdfb9cd",
+          "offset": 115024,
+          "name_sid": 19681,
+          "description_sid": 19682,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Svartalfheim_NorthBayRigs_Objective_01c",
+          "hash": "0x02f8d768dfdfbddc",
+          "offset": 115272,
+          "name_sid": 19683,
+          "description_sid": 19684,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Svartalfheim_NorthBayRigs_CraneMarker",
+          "hash": "0x3c24eca5a0bf5327",
+          "offset": 115520,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Svartalfheim_NorthBayRigs_DwellerMarker",
+          "hash": "0x3ab66432558d25c4",
+          "offset": 115744,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Svartalfheim_NorthBayRigs_LiftMarker",
+          "hash": "0xa62acfd5669c22c5",
+          "offset": 115968,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        }
+      ],
+      "pin_ids": [
+        "217079"
+      ],
+      "pin_rules": {
+        "217079": {
+          "t2_hash": "0xc2175fa907b9a663",
+          "t2_min_stage": 4
+        }
+      },
+      "step_locations_unknown": true,
+      "pin_realms": {
+        "217079": "svartalfheim"
+      },
+      "realm": "svartalfheim"
+    },
+    {
+      "id": "XPL_Svartalfheim_WhaleIsland_Parent",
+      "hash": "0xe730c87ade48b084",
+      "offset": 116272,
+      "name_sid": 8258,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131136,
+      "steps": [
+        {
+          "id": "XPL_Svartalfheim_WhaleIsland_Objective01",
+          "hash": "0x9374fb6306e5dc8f",
+          "offset": 116640,
+          "name_sid": 8260,
+          "description_sid": 8261,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Svartalfheim_WhaleIsland_Objective02",
+          "hash": "0x9374fb6306e5d898",
+          "offset": 116928,
+          "name_sid": 8262,
+          "description_sid": 8263,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Svartalfheim_WhaleIsland_Objective025",
+          "hash": "0x66ff0d63643028fe",
+          "offset": 117240,
+          "name_sid": 36720,
+          "description_sid": 36721,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Svartalfheim_WhaleIsland_Objective03",
+          "hash": "0x9374fb6306e5c4e9",
+          "offset": 117552,
+          "name_sid": 8264,
+          "description_sid": 8265,
+          "counter": {
+            "hash": "0xfaf5e038237de50a",
+            "total": 3,
+            "offset": 117864
+          },
+          "kind": 196672,
+          "steps": []
+        },
+        {
+          "id": "XPL_Svartalfheim_WhaleIsland_BindingMarker1",
+          "hash": "0xf415cddac945d016",
+          "offset": 117944,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65536,
+          "steps": []
+        },
+        {
+          "id": "XPL_Svartalfheim_WhaleIsland_BindingMarker2",
+          "hash": "0xf415cddac945d407",
+          "offset": 118240,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65536,
+          "steps": []
+        },
+        {
+          "id": "XPL_Svartalfheim_WhaleIsland_BindingMarker3",
+          "hash": "0xf415cddac945d834",
+          "offset": 118496,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65536,
+          "steps": []
+        },
+        {
+          "id": "XPL_Svartalfheim_WhaleIsland_BindingMarker4",
+          "hash": "0xf415cddac945dc25",
+          "offset": 118744,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65536,
+          "steps": []
+        },
+        {
+          "id": "XPL_Svartalfheim_WhaleIsland_Objective04",
+          "hash": "0x9374fb6306e5c0fa",
+          "offset": 119000,
+          "name_sid": 19456,
+          "description_sid": 19457,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        }
+      ],
+      "pin_ids": [
+        "217141"
+      ],
+      "pin_rules": {
+        "217141": {
+          "t2_hash": "0xe730c87ade48b084",
+          "t2_min_stage": 4
+        }
+      },
+      "step_locations_unknown": true,
+      "pin_realms": {
+        "217141": "svartalfheim"
+      },
+      "realm": "svartalfheim"
+    },
+    {
+      "id": "XPL_Svartalfheim_PitMine_Parent",
+      "hash": "0x53ebaeb5a89590aa",
+      "offset": 119456,
+      "name_sid": 22226,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131136,
+      "steps": [
+        {
+          "id": "XPL_Svartalfheim_PitMine_Objective_01",
+          "hash": "0x524279a75a4a501f",
+          "offset": 119760,
+          "name_sid": 22227,
+          "description_sid": 22228,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Svartalfheim_PitMine_Objective_03",
+          "hash": "0x524279a75a4a487d",
+          "offset": 120128,
+          "name_sid": 22231,
+          "description_sid": 22232,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        }
+      ],
+      "pin_ids": [
+        "217112"
+      ],
+      "pin_rules": {
+        "217112": {
+          "t2_hash": "0x53ebaeb5a89590aa",
+          "t2_min_stage": 4
+        }
+      },
+      "step_locations_unknown": true,
+      "pin_realms": {
+        "217112": "svartalfheim"
+      },
+      "realm": "svartalfheim"
+    },
+    {
+      "id": "XPL_Svartalfheim_AlberichIsles_Parent",
+      "hash": "0x9f62e13d3631ee18",
+      "offset": 120664,
+      "name_sid": 22504,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131136,
+      "steps": [
+        {
+          "id": "XPL_Svartalfheim_AlberichIsles_Objective_01",
+          "hash": "0xa822f9e0046beedc",
+          "offset": 121016,
+          "name_sid": 22505,
+          "description_sid": 22506,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Svartalfheim_AlberichIsles_Objective_02",
+          "hash": "0xa822f9e0046bf2b3",
+          "offset": 121456,
+          "name_sid": 22507,
+          "description_sid": 22508,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Svartalfheim_AlberichIsles_Objective_03",
+          "hash": "0xa822f9e0046bf6a2",
+          "offset": 121848,
+          "name_sid": 22509,
+          "description_sid": 22510,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Svartalfheim_AlberichIsles_Objective_04",
+          "hash": "0xa822f9e0046bfa91",
+          "offset": 122104,
+          "name_sid": 22511,
+          "description_sid": 22512,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Svartalfheim_AlberichIsle_MapObjective01",
+          "hash": "0x208c6b0b013155b0",
+          "offset": 122512,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Svartalfheim_AlberichIsle_MapObjective02",
+          "hash": "0x208c6b0b013151a1",
+          "offset": 122824,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        }
+      ],
+      "pin_ids": [
+        "217115"
+      ],
+      "pin_rules": {
+        "217115": {
+          "t2_hash": "0x9f62e13d3631ee18",
+          "t2_min_stage": 4
+        }
+      },
+      "step_locations_unknown": true,
+      "pin_realms": {
+        "217115": "svartalfheim"
+      },
+      "realm": "svartalfheim"
+    },
+    {
+      "id": "XPL_Vanaheim_Crater_SuperParticleMonster_Parent",
+      "hash": "0xe38719266ce2dbd9",
+      "offset": 125360,
+      "name_sid": 19377,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131136,
+      "steps": [
+        {
+          "id": "XPL_Vanaheim_Crater_SuperParticleMonster_Objective_01",
+          "hash": "0xf11d2cc273745bac",
+          "offset": 125680,
+          "name_sid": 19381,
+          "description_sid": 19382,
+          "counter": {
+            "hash": "0x9d032d3f2d20fd29",
+            "total": 3,
+            "offset": 125968
+          },
+          "kind": 196672,
+          "steps": []
+        },
+        {
+          "id": "XPL_Vanaheim_Crater_SuperParticleMonster_Objective_02",
+          "hash": "0xf11d2cc27374579f",
+          "offset": 126056,
+          "name_sid": 19383,
+          "description_sid": 19384,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        }
+      ],
+      "pin_ids": [
+        "219968"
+      ],
+      "pin_rules": {
+        "219968": {
+          "t2_hash": "0xe38719266ce2dbd9",
+          "t2_min_stage": 4
+        }
+      },
+      "step_locations_unknown": true,
+      "pin_realms": {
+        "219968": "vanaheim"
+      },
+      "realm": "vanaheim"
+    },
+    {
+      "id": "XPL_Van_HelkaChase_Parent",
+      "hash": "0x2e03f1832a90c693",
+      "offset": 128224,
+      "name_sid": 41432,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131136,
+      "steps": [
+        {
+          "id": "XPL_Van_HelkaChase_Objective_01",
+          "hash": "0xf8e7e17a80c1d25b",
+          "offset": 128568,
+          "name_sid": 41507,
+          "description_sid": 41508,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Van_HelkaChase_Objective_02",
+          "hash": "0xf8e7e17a80c1d648",
+          "offset": 128840,
+          "name_sid": 42147,
+          "description_sid": 42148,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Van_HelkaChase_Marker1",
+          "hash": "0x2a0ed24f90b4fe2f",
+          "offset": 129184,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65536,
+          "steps": []
+        },
+        {
+          "id": "XPL_Van_HelkaChase_Marker2",
+          "hash": "0x2a0ed24f90b4fa20",
+          "offset": 129392,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65536,
+          "steps": []
+        },
+        {
+          "id": "XPL_Van_HelkaChase_Marker3",
+          "hash": "0x2a0ed24f90b4f611",
+          "offset": 129624,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65536,
+          "steps": []
+        },
+        {
+          "id": "XPL_Van_HelkaChase_Marker4",
+          "hash": "0x2a0ed24f90b4f202",
+          "offset": 129856,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65536,
+          "steps": []
+        }
+      ],
+      "pin_ids": [
+        "219951"
+      ],
+      "pin_rules": {
+        "219951": {
+          "t2_hash": "0x2e03f1832a90c693",
+          "t2_min_stage": 4
+        }
+      },
+      "step_locations_unknown": true,
+      "pin_realms": {
+        "219951": "vanaheim"
+      },
+      "realm": "vanaheim"
+    },
+    {
+      "id": "XPL_Vanaheim_Crater_Traveler_Parent",
+      "hash": "0x2bb876f5ea217cc8",
+      "offset": 130184,
+      "name_sid": 8742,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131136,
+      "steps": [
+        {
+          "id": "XPL_Vanaheim_Crater_Traveler_Objective_01",
+          "hash": "0x9218cd3cb61de237",
+          "offset": 130520,
+          "name_sid": 8744,
+          "description_sid": 8745,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Vanaheim_Crater_Traveler_Objective_02",
+          "hash": "0x9218cd3cb61de620",
+          "offset": 130872,
+          "name_sid": 8746,
+          "description_sid": 8747,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Vanaheim_Crater_Traveler_Objective_03",
+          "hash": "0x9218cd3cb61dfa51",
+          "offset": 131184,
+          "name_sid": 34363,
+          "description_sid": 34364,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        }
+      ],
+      "pin_ids": [
+        "219967"
+      ],
+      "pin_rules": {
+        "219967": {
+          "t2_hash": "0x2bb876f5ea217cc8",
+          "t2_min_stage": 4
+        }
+      },
+      "step_locations_unknown": true,
+      "pin_realms": {
+        "219967": "vanaheim"
+      },
+      "realm": "vanaheim"
+    },
+    {
+      "id": "XPL_Vanaheim_Crater_WaterDragon01_Parent",
+      "hash": "0xde8f8ec6ff7272f9",
+      "offset": 131728,
+      "name_sid": 13750,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131136,
+      "steps": [
+        {
+          "id": "XPL_Vanaheim_Crater_WaterDragon01_Objective_01",
+          "hash": "0x7d49256c26772ad1",
+          "offset": 131968,
+          "name_sid": 13751,
+          "description_sid": 13752,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Vanaheim_Crater_WaterDragon01_Objective_02",
+          "hash": "0x7d49256c2677162e",
+          "offset": 132320,
+          "name_sid": 13753,
+          "description_sid": 13754,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        }
+      ],
+      "pin_ids": [
+        "219957"
+      ],
+      "pin_rules": {
+        "219957": {
+          "t2_hash": "0xde8f8ec6ff7272f9",
+          "t2_min_stage": 4
+        }
+      },
+      "step_locations_unknown": true,
+      "pin_realms": {
+        "219957": "vanaheim"
+      },
+      "realm": "vanaheim"
+    },
+    {
+      "id": "XPL_Vanaheim_Crater_FloodedPlains_Parent",
+      "hash": "0xab5ee81b19598e85",
+      "offset": 132784,
+      "name_sid": 17545,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131136,
+      "steps": [
+        {
+          "id": "XPL_Vanaheim_Crater_FloodedPlains_Objective_01",
+          "hash": "0xa116a4b146d19152",
+          "offset": 133112,
+          "name_sid": 17546,
+          "description_sid": 17547,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Vanaheim_Crater_FloodedPlains_Objective_02",
+          "hash": "0xa116a4b146d19d65",
+          "offset": 133400,
+          "name_sid": 17548,
+          "description_sid": 17549,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Vanaheim_Crater_FloodedPlains_Objective_02a",
+          "hash": "0xf847cc6bbf7d1570",
+          "offset": 133760,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Vanaheim_Crater_FloodedPlains_Objective_02b",
+          "hash": "0xf847cc6bbf7d1941",
+          "offset": 133992,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        }
+      ],
+      "pin_ids": [
+        "219956"
+      ],
+      "pin_rules": {
+        "219956": {
+          "t2_hash": "0xab5ee81b19598e85",
+          "t2_min_stage": 4
+        }
+      },
+      "step_locations_unknown": true,
+      "pin_realms": {
+        "219956": "vanaheim"
+      },
+      "realm": "vanaheim"
+    },
+    {
+      "id": "XPL_Vanaheim_Crater_WaterDragon02_Parent",
+      "hash": "0x2579c2c8b31a7811",
+      "offset": 134328,
+      "name_sid": 17550,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131136,
+      "steps": [
+        {
+          "id": "XPL_Vanaheim_Crater_WaterDragon02_Objective_01",
+          "hash": "0x23c84334cebb9fe9",
+          "offset": 134616,
+          "name_sid": 17551,
+          "description_sid": 17552,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Vanaheim_Crater_WaterDragon02_Objective_01a",
+          "hash": "0x45c6423603c8b90a",
+          "offset": 135048,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Vanaheim_Crater_WaterDragon02_Objective_01b",
+          "hash": "0x45c6423603c8bd1b",
+          "offset": 135272,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Vanaheim_Crater_WaterDragon02_Objective_01c",
+          "hash": "0x45c6423603c8a16c",
+          "offset": 135520,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Vanaheim_Crater_WaterDragon02_Objective_01d",
+          "hash": "0x45c6423603c8a57d",
+          "offset": 135768,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Vanaheim_Crater_WaterDragon02_Objective_02",
+          "hash": "0x23c84334cebb93d8",
+          "offset": 135984,
+          "name_sid": 17553,
+          "description_sid": 17554,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        }
+      ],
+      "pin_ids": [
+        "219965"
+      ],
+      "pin_rules": {
+        "219965": {
+          "t2_hash": "0x2579c2c8b31a7811",
+          "t2_min_stage": 4
+        }
+      },
+      "step_locations_unknown": true,
+      "pin_realms": {
+        "219965": "vanaheim"
+      },
+      "realm": "vanaheim"
+    },
+    {
+      "id": "XPL_Vanaheim_Crater_LandDragon01_Parent",
+      "hash": "0x2acd3dec23075cee",
+      "offset": 136448,
+      "name_sid": 17599,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131136,
+      "steps": [
+        {
+          "id": "XPL_Vanaheim_Opened_Land_Dragon_Lift_Gate",
+          "hash": "0x380182f1a49db981",
+          "offset": 136784,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65537,
+          "steps": []
+        },
+        {
+          "id": "XPL_Vanaheim_Crater_LandDragon01_Objective_01",
+          "hash": "0x55f220fda6840b27",
+          "offset": 137008,
+          "name_sid": 17600,
+          "description_sid": 17601,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Vanaheim_Crater_LandDragon01_Objective_02",
+          "hash": "0x55f220fda6841754",
+          "offset": 137296,
+          "name_sid": 17602,
+          "description_sid": 17603,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Vanaheim_Crater_LandDragon01_Objective_03",
+          "hash": "0x55f220fda6841345",
+          "offset": 137608,
+          "name_sid": 17604,
+          "description_sid": 17605,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        }
+      ],
+      "pin_ids": [
+        "219959"
+      ],
+      "pin_rules": {
+        "219959": {
+          "t2_hash": "0x2acd3dec23075cee",
+          "t2_min_stage": 4
+        }
+      },
+      "step_locations_unknown": true,
+      "pin_realms": {
+        "219959": "vanaheim"
+      },
+      "realm": "vanaheim"
+    },
+    {
+      "id": "XPL_Vanaheim_Crater_LandDragon02_Parent",
+      "hash": "0xb684eef1fe68dbfe",
+      "offset": 138064,
+      "name_sid": 13757,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131136,
+      "steps": [
+        {
+          "id": "XPL_Vanaheim_Crater_LandDragon02_Objective_01",
+          "hash": "0x4c598d73e2c8cb7c",
+          "offset": 138296,
+          "name_sid": 13758,
+          "description_sid": 13759,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        }
+      ],
+      "pin_ids": [
+        "219962"
+      ],
+      "pin_rules": {
+        "219962": {
+          "t2_hash": "0xb684eef1fe68dbfe",
+          "t2_min_stage": 4
+        }
+      },
+      "step_locations_unknown": true,
+      "pin_realms": {
+        "219962": "vanaheim"
+      },
+      "realm": "vanaheim"
+    },
+    {
+      "id": "XPL_Vanaheim_Crater_AirDragon02_Parent",
+      "hash": "0x273c5fc4760fc90b",
+      "offset": 138800,
+      "name_sid": 13760,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131136,
+      "steps": [
+        {
+          "id": "XPL_Vanaheim_Crater_AirDragon02_Objective_01",
+          "hash": "0x2cda7bc41e3afbab",
+          "offset": 139048,
+          "name_sid": 13761,
+          "description_sid": 13762,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Vanaheim_Crater_AirDragon02_Objective_02",
+          "hash": "0x2cda7bc41e3affbc",
+          "offset": 139408,
+          "name_sid": 13763,
+          "description_sid": 13764,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        }
+      ],
+      "pin_ids": [
+        "219963"
+      ],
+      "pin_rules": {
+        "219963": {
+          "t2_hash": "0x273c5fc4760fc90b",
+          "t2_min_stage": 4
+        }
+      },
+      "step_locations_unknown": true,
+      "pin_realms": {
+        "219963": "vanaheim"
+      },
+      "realm": "vanaheim"
+    },
+    {
+      "id": "XPL_Vanaheim_Crater_SoulEater_Parent",
+      "hash": "0x456627a413c28c75",
+      "offset": 139872,
+      "name_sid": 17661,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131136,
+      "steps": [
+        {
+          "id": "XPL_Vanaheim_Crater_SoulEater_Objective_01",
+          "hash": "0x11d30dc2313d7c53",
+          "offset": 140176,
+          "name_sid": 17660,
+          "description_sid": 17659,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Vanaheim_Crater_SoulEater_Objective_02",
+          "hash": "0x11d30dc2313d7060",
+          "offset": 140536,
+          "name_sid": 17658,
+          "description_sid": 17657,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_SoulEaterSpawnPointMarkerLarge_01",
+          "hash": "0xc5ab317f996f7361",
+          "offset": 140872,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_SoulEaterSpawnPointMarkerSmall_01",
+          "hash": "0x3fade157da6b7160",
+          "offset": 141160,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_SoulEaterSpawnPointMarkerLarge_02",
+          "hash": "0xc5ab317f996f7772",
+          "offset": 141392,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_SoulEaterSpawnPointMarkerSmall_02",
+          "hash": "0x3fade157da6b7d51",
+          "offset": 141664,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_SoulEaterSpawnPointMarkerLarge_03",
+          "hash": "0xc5ab317f996f4b83",
+          "offset": 141880,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_SoulEaterSpawnPointMarkerSmall_03",
+          "hash": "0x3fade157da6b7942",
+          "offset": 142152,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        }
+      ],
+      "pin_ids": [
+        "219966"
+      ],
+      "pin_rules": {
+        "219966": {
+          "t2_hash": "0x456627a413c28c75",
+          "t2_min_stage": 4
+        }
+      },
+      "step_locations_unknown": true,
+      "pin_realms": {
+        "219966": "vanaheim"
+      },
+      "realm": "vanaheim"
+    },
+    {
+      "id": "XPL_Vanaheim_Crater_WarCasualty01_Parent",
+      "hash": "0x9e7040869bb14089",
+      "offset": 142448,
+      "name_sid": 19489,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131136,
+      "steps": [
+        {
+          "id": "XPL_Vanaheim_Crater_WarCasualty01_Objective_01",
+          "hash": "0x3a402e44049b466c",
+          "offset": 142760,
+          "name_sid": 19490,
+          "description_sid": 19491,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        }
+      ],
+      "pin_ids": [
+        "219969"
+      ],
+      "pin_rules": {
+        "219969": {
+          "t2_hash": "0x9e7040869bb14089",
+          "t2_min_stage": 4
+        }
+      },
+      "step_locations_unknown": true,
+      "pin_realms": {
+        "219969": "vanaheim"
+      },
+      "realm": "vanaheim"
+    },
+    {
+      "id": "XPL_Vanaheim_Crater_WarCasualty02_Parent",
+      "hash": "0x2345d08a40dbd0db",
+      "offset": 143352,
+      "name_sid": 19505,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131136,
+      "steps": [
+        {
+          "id": "XPL_Vanaheim_Crater_WarCasualty02_Objective_01",
+          "hash": "0x7f5f37f31d90dd52",
+          "offset": 143584,
+          "name_sid": 19506,
+          "description_sid": 19507,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        }
+      ],
+      "pin_ids": [
+        "219970"
+      ],
+      "pin_rules": {
+        "219970": {
+          "t2_hash": "0x2345d08a40dbd0db",
+          "t2_min_stage": 4
+        }
+      },
+      "step_locations_unknown": true,
+      "pin_realms": {
+        "219970": "vanaheim"
+      },
+      "realm": "vanaheim"
+    },
+    {
+      "id": "XPL_Vanaheim_Crater_WarCasualty03_Parent",
+      "hash": "0x7d34baf880d528de",
+      "offset": 144120,
+      "name_sid": 19508,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131136,
+      "steps": [
+        {
+          "id": "XPL_Vanaheim_Crater_WarCasualty03_Objective_01",
+          "hash": "0x32e945c02865e590",
+          "offset": 144352,
+          "name_sid": 19509,
+          "description_sid": 19510,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        }
+      ],
+      "pin_ids": [
+        "219960"
+      ],
+      "pin_rules": {
+        "219960": {
+          "t2_hash": "0x7d34baf880d528de",
+          "t2_min_stage": 4
+        }
+      },
+      "step_locations_unknown": true,
+      "pin_realms": {
+        "219960": "vanaheim"
+      },
+      "realm": "vanaheim"
+    },
+    {
+      "id": "XPL_Vanaheim_Crater_WarCasualty04_Parent",
+      "hash": "0x1e19f50fcd0f74db",
+      "offset": 144888,
+      "name_sid": 24493,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131136,
+      "steps": [
+        {
+          "id": "XPL_Vanaheim_Crater_WarCasualty04_Objective_01",
+          "hash": "0x2553bcabf60ce448",
+          "offset": 145120,
+          "name_sid": 24494,
+          "description_sid": 24495,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        }
+      ],
+      "pin_ids": [
+        "219964"
+      ],
+      "pin_rules": {
+        "219964": {
+          "t2_hash": "0x1e19f50fcd0f74db",
+          "t2_min_stage": 4
+        }
+      },
+      "step_locations_unknown": true,
+      "pin_realms": {
+        "219964": "vanaheim"
+      },
+      "realm": "vanaheim"
+    },
+    {
+      "id": "XPL_Vanaheim_Crater_WarCasualty05_Parent",
+      "hash": "0x72e72376e9e4bd8e",
+      "offset": 145656,
+      "name_sid": 24496,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131136,
+      "steps": [
+        {
+          "id": "XPL_Vanaheim_Crater_WarCasualty05_Objective_01",
+          "hash": "0x91f465560e32d219",
+          "offset": 145888,
+          "name_sid": 24497,
+          "description_sid": 24498,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        }
+      ],
+      "pin_ids": [
+        "219961"
+      ],
+      "pin_rules": {
+        "219961": {
+          "t2_hash": "0x72e72376e9e4bd8e",
+          "t2_min_stage": 4
+        }
+      },
+      "step_locations_unknown": true,
+      "pin_realms": {
+        "219961": "vanaheim"
+      },
+      "realm": "vanaheim"
+    },
+    {
+      "id": "XPL_Vanaheim_Crater_AirDragon03_Parent",
+      "hash": "0x902ecb0f47d06ec6",
+      "offset": 148416,
+      "name_sid": 23901,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131136,
+      "steps": [
+        {
+          "id": "XPL_Vanaheim_Crater_AirDragon03_Objective_01",
+          "hash": "0xb85225aee6272839",
+          "offset": 148648,
+          "name_sid": 23902,
+          "description_sid": 23903,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Vanaheim_Crater_AirDragon03_Objective_02",
+          "hash": "0xb85225aee6272c28",
+          "offset": 148936,
+          "name_sid": 23904,
+          "description_sid": 23905,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        }
+      ],
+      "pin_ids": [
+        "219958"
+      ],
+      "pin_rules": {
+        "219958": {
+          "t2_hash": "0x902ecb0f47d06ec6",
+          "t2_min_stage": 4
+        }
+      },
+      "step_locations_unknown": true,
+      "pin_realms": {
+        "219958": "vanaheim"
+      },
+      "realm": "vanaheim"
+    },
+    {
+      "id": "XPL_Vanaheim_River_SqueakySphere_Parent",
+      "hash": "0x57668aa3f88ecc74",
+      "offset": 149392,
+      "name_sid": 14059,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131136,
+      "steps": [
+        {
+          "id": "XPL_Vanaheim_River_SqueakySphere_Objective_01",
+          "hash": "0x012ea2835de7c942",
+          "offset": 149696,
+          "name_sid": 14062,
+          "description_sid": 14065,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Vanaheim_River_SqueakySphere_Objective_02",
+          "hash": "0x012ea2835de7c573",
+          "offset": 150160,
+          "name_sid": 14063,
+          "description_sid": 14064,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        }
+      ],
+      "pin_ids": [
+        "217264",
+        "219687",
+        "219688",
+        "219689",
+        "219690"
+      ],
+      "pin_rules": {
+        "217264": {
+          "t2_hash": "0x57668aa3f88ecc74",
+          "t2_min_stage": 4
+        },
+        "219687": {
+          "region_key": "WaterfallWorld"
+        },
+        "219688": {
+          "region_key": "VanaheimSouthJungle"
+        },
+        "219689": {
+          "region_key": "VanaheimSouthJungle"
+        },
+        "219690": {}
+      },
+      "step_locations_unknown": false,
+      "pin_realms": {
+        "219690": "vanaheim",
+        "219687": "vanaheim",
+        "219688": "vanaheim",
+        "219689": "vanaheim",
+        "217264": "vanaheim"
+      },
+      "realm": "vanaheim"
+    },
+    {
+      "id": "XPL_Vanaheim_River_Spirit01_Parent",
+      "hash": "0x7f002f4e83071296",
+      "offset": 150616,
+      "name_sid": 14066,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131136,
+      "steps": [
+        {
+          "id": "XPL_Vanaheim_River_Spirit01_Objective_01",
+          "hash": "0x9c3737b164f6b162",
+          "offset": 150960,
+          "name_sid": 14067,
+          "description_sid": 63203,
+          "counter": {
+            "hash": "0xad330a1b951a3789",
+            "total": 3,
+            "offset": 151248
+          },
+          "kind": 196672,
+          "steps": []
+        },
+        {
+          "id": "XPL_Vanaheim_River_Spirit01_Objective_01a",
+          "hash": "0x78f1aab02b43c955",
+          "offset": 151328,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Vanaheim_River_Spirit01_Objective_01b",
+          "hash": "0x78f1aab02b43b4a2",
+          "offset": 151616,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Vanaheim_River_Spirit01_Objective_01c",
+          "hash": "0x78f1aab02b43b0b3",
+          "offset": 151848,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Vanaheim_River_Spirit01_Objective_02",
+          "hash": "0x9c3737b164f6b573",
+          "offset": 152080,
+          "name_sid": 14069,
+          "description_sid": 14070,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        }
+      ],
+      "pin_ids": [
+        "217228"
+      ],
+      "pin_rules": {
+        "217228": {
+          "t2_hash": "0x7f002f4e83071296",
+          "t2_min_stage": 4
+        }
+      },
+      "step_locations_unknown": true,
+      "pin_realms": {
+        "217228": "vanaheim"
+      },
+      "realm": "vanaheim"
+    },
+    {
+      "id": "XPL_Vanaheim_River_Spirit02_Parent",
+      "hash": "0x8c9b100214c61853",
+      "offset": 152624,
+      "name_sid": 14071,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131136,
+      "steps": [
+        {
+          "id": "XPL_Vanaheim_River_Spirit02_Objective_01",
+          "hash": "0x2262761b3c5fef53",
+          "offset": 153032,
+          "name_sid": 14072,
+          "description_sid": 42488,
+          "counter": {
+            "hash": "0x5be639e77d5bdd53",
+            "total": 3,
+            "offset": 153480
+          },
+          "kind": 196672,
+          "steps": []
+        },
+        {
+          "id": "XPL_Vanaheim_River_Spirit02_Objective_01a",
+          "hash": "0xae8a08808eee476a",
+          "offset": 153568,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Vanaheim_River_Spirit02_Objective_01b",
+          "hash": "0xae8a08808eee3a9b",
+          "offset": 153856,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Vanaheim_River_Spirit02_Objective_01c",
+          "hash": "0xae8a08808eee3e88",
+          "offset": 154088,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Vanaheim_River_Spirit02_Objective_02",
+          "hash": "0x2262761b3c5fe362",
+          "offset": 154320,
+          "name_sid": 14074,
+          "description_sid": 14075,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        }
+      ],
+      "pin_ids": [
+        "217227"
+      ],
+      "pin_rules": {
+        "217227": {
+          "t2_hash": "0x8c9b100214c61853",
+          "t2_min_stage": 4
+        }
+      },
+      "step_locations_unknown": true,
+      "pin_realms": {
+        "217227": "vanaheim"
+      },
+      "realm": "vanaheim"
+    },
+    {
+      "id": "XPL_Vanaheim_River_Spirit03_Parent",
+      "hash": "0xa58884dd091ee4a6",
+      "offset": 154800,
+      "name_sid": 14076,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131136,
+      "steps": [
+        {
+          "id": "XPL_Vanaheim_River_Spirit03_Objective_01",
+          "hash": "0x90e8e4e9b5ce3a33",
+          "offset": 155120,
+          "name_sid": 14077,
+          "description_sid": 14078,
+          "counter": null,
+          "kind": 65600,
+          "steps": [
+            {
+              "id": "XPL_MistakeMarker01a",
+              "hash": "0xa8663731acef1f45",
+              "offset": 155456,
+              "name_sid": 0,
+              "description_sid": 0,
+              "counter": null,
+              "kind": 65536,
+              "steps": []
+            },
+            {
+              "id": "XPL_MistakeMarker01b",
+              "hash": "0xa8663731acef1b52",
+              "offset": 155720,
+              "name_sid": 0,
+              "description_sid": 0,
+              "counter": null,
+              "kind": 65536,
+              "steps": []
+            },
+            {
+              "id": "XPL_MistakeMarker01c",
+              "hash": "0xa8663731acef66a3",
+              "offset": 155952,
+              "name_sid": 0,
+              "description_sid": 0,
+              "counter": null,
+              "kind": 65536,
+              "steps": []
+            },
+            {
+              "id": "XPL_MistakeMarker01d",
+              "hash": "0xa8663731acef62b0",
+              "offset": 156184,
+              "name_sid": 0,
+              "description_sid": 0,
+              "counter": null,
+              "kind": 65536,
+              "steps": []
+            },
+            {
+              "id": "XPL_MistakeMarker01e",
+              "hash": "0xa8663731acef6e81",
+              "offset": 156416,
+              "name_sid": 0,
+              "description_sid": 0,
+              "counter": null,
+              "kind": 65536,
+              "steps": []
+            }
+          ]
+        },
+        {
+          "id": "XPL_Vanaheim_River_Spirit03_Objective_02",
+          "hash": "0x90e8e4e9b5ce2640",
+          "offset": 156736,
+          "name_sid": 14079,
+          "description_sid": 14080,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        }
+      ],
+      "pin_ids": [
+        "217234"
+      ],
+      "pin_rules": {
+        "217234": {
+          "t2_hash": "0xa58884dd091ee4a6",
+          "t2_min_stage": 4
+        }
+      },
+      "step_locations_unknown": true,
+      "pin_realms": {
+        "217234": "vanaheim"
+      },
+      "realm": "vanaheim"
+    },
+    {
+      "id": "XPL_Vanaheim_River_Dungeon_Parent",
+      "hash": "0x774b49ea50d4b596",
+      "offset": 157288,
+      "name_sid": 14081,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131136,
+      "steps": [
+        {
+          "id": "XPL_Vanaheim_River_Dungeon_Objective_00",
+          "hash": "0x652bf4f6c23729d0",
+          "offset": 157648,
+          "name_sid": 23666,
+          "description_sid": 23667,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Vanaheim_River_Dungeon_Objective_01",
+          "hash": "0x652bf4f6c2372dc1",
+          "offset": 157928,
+          "name_sid": 14082,
+          "description_sid": 63204,
+          "counter": {
+            "hash": "0x29e83b8b34955579",
+            "total": 3,
+            "offset": 158328
+          },
+          "kind": 196672,
+          "steps": []
+        },
+        {
+          "id": "XPL_Vanaheim_River_Dungeon_Objective_01a",
+          "hash": "0x14ac30c060948ada",
+          "offset": 158400,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Vanaheim_River_Dungeon_Objective_01b",
+          "hash": "0x14ac30c0609486eb",
+          "offset": 158696,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Vanaheim_River_Dungeon_Objective_01c",
+          "hash": "0x14ac30c0609482fc",
+          "offset": 158936,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Vanaheim_River_Dungeon_Objective_02",
+          "hash": "0x652bf4f6c23721f6",
+          "offset": 159176,
+          "name_sid": 46230,
+          "description_sid": 46231,
+          "counter": null,
+          "kind": 65600,
+          "steps": [
+            {
+              "id": "VanShrineBoatMarker01",
+              "hash": "0x304d8dc9c03a5798",
+              "offset": 159456,
+              "name_sid": 0,
+              "description_sid": 0,
+              "counter": null,
+              "kind": 65536,
+              "steps": []
+            },
+            {
+              "id": "VanShrineBoatMarker02",
+              "hash": "0x304d8dc9c03a5389",
+              "offset": 159656,
+              "name_sid": 0,
+              "description_sid": 0,
+              "counter": null,
+              "kind": 65536,
+              "steps": []
+            }
+          ]
+        }
+      ],
+      "pin_ids": [
+        "217256"
+      ],
+      "pin_rules": {
+        "217256": {
+          "t2_hash": "0x774b49ea50d4b596",
+          "t2_min_stage": 4
+        }
+      },
+      "step_locations_unknown": true,
+      "pin_realms": {
+        "217256": "vanaheim"
+      },
+      "realm": "vanaheim"
+    },
+    {
+      "id": "XPL_Alfheim_Desert_Hafgufa_Parent",
+      "hash": "0x5ce924e2dae7e58b",
+      "offset": 160048,
+      "name_sid": 9632,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131136,
+      "steps": [
+        {
+          "id": "XPL_Alfheim_Desert_Hafgufa_Objective_00",
+          "hash": "0x30ce2a019b48072f",
+          "offset": 160368,
+          "name_sid": 23766,
+          "description_sid": 23767,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Alfheim_Desert_Hafgufa_Objective_01",
+          "hash": "0x30ce2a019b487ade",
+          "offset": 160656,
+          "name_sid": 9635,
+          "description_sid": 9636,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Alfheim_Desert_Hafgufa_Objective_02",
+          "hash": "0x30ce2a019b487ecd",
+          "offset": 160968,
+          "name_sid": 9637,
+          "description_sid": 9638,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Alfheim_Desert_Hafgufa_Objective_03",
+          "hash": "0x30ce2a019b4872fc",
+          "offset": 161280,
+          "name_sid": 9639,
+          "description_sid": 9641,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        }
+      ],
+      "pin_ids": [
+        "216418"
+      ],
+      "pin_rules": {
+        "216418": {
+          "t2_hash": "0x5ce924e2dae7e58b",
+          "t2_min_stage": 4
+        }
+      },
+      "step_locations_unknown": true,
+      "pin_realms": {
+        "216418": "alfheim"
+      },
+      "realm": "alfheim"
+    },
+    {
+      "id": "XPL_Alfheim_Desert_Hafgufa2_Parent",
+      "hash": "0x40dc36b3803aced6",
+      "offset": 161736,
+      "name_sid": 13497,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131136,
+      "steps": [
+        {
+          "id": "XPL_Alfheim_Desert_Hafgufa2_Objective_00",
+          "hash": "0xdcbda4937ab64f55",
+          "offset": 162056,
+          "name_sid": 24501,
+          "description_sid": 24502,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Alfheim_Desert_Hafgufa2_Objective_01",
+          "hash": "0xdcbda4937ab64b44",
+          "offset": 162344,
+          "name_sid": 13498,
+          "description_sid": 13500,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Alfheim_Desert_Hafgufa2_Objective_02",
+          "hash": "0xdcbda4937ab65737",
+          "offset": 162656,
+          "name_sid": 24503,
+          "description_sid": 24504,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Alfheim_Desert_Hafgufa2_Objective_03",
+          "hash": "0xdcbda4937ab65326",
+          "offset": 162968,
+          "name_sid": 10379,
+          "description_sid": 10380,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        }
+      ],
+      "pin_ids": [
+        "219422"
+      ],
+      "pin_rules": {
+        "219422": {
+          "t2_hash": "0x40dc36b3803aced6",
+          "t2_min_stage": 4
+        }
+      },
+      "step_locations_unknown": true,
+      "pin_realms": {
+        "219422": "alfheim"
+      },
+      "realm": "alfheim"
+    },
+    {
+      "id": "XPL_Alfheim_Desert_ForbiddenLibrary_Parent",
+      "hash": "0x5c62dbe245561d1b",
+      "offset": 163424,
+      "name_sid": 19603,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131136,
+      "steps": [
+        {
+          "id": "XPL_Alfheim_Desert_ForbiddenLibrary_Talked_To_Elves",
+          "hash": "0xe8c45bdc2ca17dd3",
+          "offset": 163832,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65537,
+          "steps": []
+        },
+        {
+          "id": "XPL_Alfheim_Desert_ForbiddenLibrary_CompanionSeenLibrary",
+          "hash": "0x24d43934d198cf6e",
+          "offset": 164064,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65537,
+          "steps": []
+        },
+        {
+          "id": "XPL_Alfheim_Desert_ForbiddenLibrary_Objective_01",
+          "hash": "0x25711349772253db",
+          "offset": 164304,
+          "name_sid": 19604,
+          "description_sid": 42627,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Alfheim_Desert_ForbiddenLibrary_Objective_02",
+          "hash": "0x25711349772257c8",
+          "offset": 164600,
+          "name_sid": 19605,
+          "description_sid": 42628,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Alfheim_Desert_ForbiddenLibrary_Objective_02b",
+          "hash": "0xea18c1c298808a0a",
+          "offset": 164920,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Alfheim_Desert_ForbiddenLibrary_Objective_03",
+          "hash": "0x2571134977226b39",
+          "offset": 165176,
+          "name_sid": 19606,
+          "description_sid": 42629,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        }
+      ],
+      "pin_ids": [
+        "219423"
+      ],
+      "pin_rules": {
+        "219423": {
+          "t2_hash": "0x5c62dbe245561d1b",
+          "t2_min_stage": 4
+        }
+      },
+      "step_locations_unknown": true,
+      "pin_realms": {
+        "219423": "alfheim"
+      },
+      "realm": "alfheim"
+    },
+    {
+      "id": "XPL_Alfheim_Desert_Hafgufa2_FreyrsGaze_Parent",
+      "hash": "0x5776c088803f7bf8",
+      "offset": 165840,
+      "name_sid": 19630,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131136,
+      "steps": [
+        {
+          "id": "XPL_Alfheim_Desert_FreyrsGaze_InvestigateMonument",
+          "hash": "0x21d64de0fc7d2cb3",
+          "offset": 166168,
+          "name_sid": 36515,
+          "description_sid": 36519,
+          "counter": null,
+          "kind": 65537,
+          "steps": []
+        },
+        {
+          "id": "XPL_Alfheim_Desert_PuzzleProgress",
+          "hash": "0xc369ff71c84adcbf",
+          "offset": 166664,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 196609,
+          "steps": []
+        },
+        {
+          "id": "XPL_Alfheim_Desert_FreyrsGaze_RestoreGift",
+          "hash": "0xfdf3de2d48012313",
+          "offset": 166896,
+          "name_sid": 36516,
+          "description_sid": 36518,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Alfheim_Desert_FreyrsGaze_InvestigateGift",
+          "hash": "0xf2412d03917619c5",
+          "offset": 167208,
+          "name_sid": 36520,
+          "description_sid": 36521,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        }
+      ],
+      "pin_ids": [
+        "216601"
+      ],
+      "pin_rules": {
+        "216601": {
+          "t2_hash": "0x5776c088803f7bf8",
+          "t2_min_stage": 4
+        }
+      },
+      "step_locations_unknown": true,
+      "pin_realms": {
+        "216601": "alfheim"
+      },
+      "realm": "alfheim"
+    },
+    {
+      "id": "XPL_Alfheim_Desert_Land_Dragon",
+      "hash": "0x184c36f3ed0271ed",
+      "offset": 167960,
+      "name_sid": 63969,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131136,
+      "steps": [
+        {
+          "id": "XPL_Alfheim_Desert_Land_Dragon_Key_Counter",
+          "hash": "0x9c9350a371f15c5b",
+          "offset": 168288,
+          "name_sid": 63970,
+          "description_sid": 65114,
+          "counter": {
+            "hash": "0x9bdac9064120f7d7",
+            "total": 2,
+            "offset": 168504
+          },
+          "kind": 196672,
+          "steps": []
+        },
+        {
+          "id": "XPL_Alfheim_Desert_Land_Dragon_Open_Door",
+          "hash": "0x56a221715992d53b",
+          "offset": 168592,
+          "name_sid": 63980,
+          "description_sid": 63981,
+          "counter": null,
+          "kind": 65600,
+          "steps": [
+            {
+              "id": "XPL_Alfheim_Desert_Land_Dragon_Open_Door_DoorLocationUnknown",
+              "hash": "0xba07d77c37f759bd",
+              "offset": 168808,
+              "name_sid": 0,
+              "description_sid": 0,
+              "counter": null,
+              "kind": 65536,
+              "steps": []
+            },
+            {
+              "id": "XPL_Alfheim_Desert_Land_Dragon_Open_Door_DoorLocationKnown",
+              "hash": "0xd9d996b51e0394fa",
+              "offset": 169048,
+              "name_sid": 0,
+              "description_sid": 0,
+              "counter": null,
+              "kind": 65536,
+              "steps": []
+            }
+          ]
+        },
+        {
+          "id": "XPL_Alfheim_Desert_Land_Dragon_Kill_Dragon",
+          "hash": "0xa8a96ebcc5ec616f",
+          "offset": 169424,
+          "name_sid": 63982,
+          "description_sid": 63983,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        }
+      ],
+      "pin_ids": [
+        "216613"
+      ],
+      "pin_rules": {
+        "216613": {
+          "t2_hash": "0x184c36f3ed0271ed",
+          "t2_min_stage": 4
+        }
+      },
+      "step_locations_unknown": true,
+      "pin_realms": {
+        "216613": "alfheim"
+      },
+      "realm": "alfheim"
+    },
+    {
+      "id": "Labor_Ravens_Parent",
+      "hash": "0xb89e712092009e10",
+      "offset": 169808,
+      "name_sid": 5386,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131136,
+      "steps": [
+        {
+          "id": "Labor_Ravens_Gold_Objective",
+          "hash": "0x0b5d6cff16c1676b",
+          "offset": 170200,
+          "name_sid": 62200,
+          "description_sid": 62195,
+          "counter": {
+            "hash": "0x105a6147d2e88ae8",
+            "total": 48,
+            "offset": 170816
+          },
+          "kind": 196672,
+          "steps": []
+        },
+        {
+          "id": "Labor_World_RealmUnlock_Nif_Objective",
+          "hash": "0x603706b8adfce0db",
+          "offset": 170880,
+          "name_sid": 24363,
+          "description_sid": 24364,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "RavenKeeper_OpenChests_Objective",
+          "hash": "0x4950089c0bc2b90f",
+          "offset": 171200,
+          "name_sid": 51791,
+          "description_sid": 51792,
+          "counter": {
+            "hash": "0x5828350b43a63bc4",
+            "total": 6,
+            "offset": 171440
+          },
+          "kind": 196672,
+          "steps": []
+        },
+        {
+          "id": "RavenTree_Chest_0_Ravens",
+          "hash": "0x38763b0391d29260",
+          "offset": 171520,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "RavenTree_Chest_1_Ravens",
+          "hash": "0xd3753b813656be49",
+          "offset": 171728,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "RavenTree_Chest_2_Ravens",
+          "hash": "0x84308e81e5b14fac",
+          "offset": 171936,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "RavenTree_Chest_3_Ravens",
+          "hash": "0x90fb7eba94e9c729",
+          "offset": 172144,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "RavenTree_Chest_4_Ravens",
+          "hash": "0x583ac80a4ce81fbf",
+          "offset": 172352,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "RavenTree_Chest_5_Ravens",
+          "hash": "0x73fc7a18891d7957",
+          "offset": 172560,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "Defeat_RavenKeeper",
+          "hash": "0x2983e82c6bd373aa",
+          "offset": 172768,
+          "name_sid": 51793,
+          "description_sid": 51794,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "RavenTree_Visits",
+          "hash": "0x7d3392b9119d266a",
+          "offset": 173072,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 196609,
+          "steps": []
+        },
+        {
+          "id": "XPL_Nif_RavenKeeper_PlayedApproachBanterRecently",
+          "hash": "0xc2ff31d9b1990036",
+          "offset": 173312,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65537,
+          "steps": []
+        }
+      ],
+      "pin_ids": [
+        "216414",
+        "216421",
+        "216441",
+        "216462",
+        "216464",
+        "216484",
+        "216491",
+        "216499",
+        "216503",
+        "216518",
+        "216519",
+        "216554",
+        "216560",
+        "216564",
+        "216575",
+        "216579",
+        "216587",
+        "216600",
+        "216606",
+        "216610",
+        "217068",
+        "217108",
+        "217118",
+        "217125",
+        "217126",
+        "217129",
+        "217135",
+        "217138",
+        "217144",
+        "217152",
+        "217158",
+        "217162",
+        "217178",
+        "217198",
+        "217208",
+        "217211",
+        "217215",
+        "217240",
+        "217244",
+        "217259",
+        "217260",
+        "217281",
+        "217301",
+        "217307",
+        "217314",
+        "217317",
+        "217325",
+        "217327",
+        "219424"
+      ],
+      "pin_rules": {
+        "219424": {
+          "t2_hash": "0xb89e712092009e10",
+          "t2_min_stage": 4
+        },
+        "216421": {
+          "region_key": "Norns",
+          "rs_hash": "0x7015bbe253568ead"
+        },
+        "216441": {
+          "region_key": "Oarsmen",
+          "rs_hash": "0xf19abc69173435a6"
+        },
+        "216462": {
+          "region_key": "SkadiOut",
+          "rs_hash": "0xa53b188d89533511",
+          "wad_name": "Mid_SkadOut100_Main",
+          "wad_ent_hash": "0x334be838ed5c4c8f"
+        },
+        "216464": {
+          "region_key": "SkadiOut",
+          "rs_hash": "0xa53b188d89533511",
+          "t2_hash": "0xa53b188d89533511",
+          "t2_min_stage": 4
+        },
+        "216484": {
+          "region_key": "CalderaLakeFrozen",
+          "rs_hash": "0xddfad8fd95cea459"
+        },
+        "216491": {
+          "region_key": "CalderaLakeFrozen",
+          "rs_hash": "0xddfad8fd95cea459"
+        },
+        "217198": {
+          "region_key": "VanaheimSouthJungle",
+          "rs_hash": "0xa04a7f8bd9f42f64"
+        },
+        "217208": {
+          "region_key": "VanirVillage",
+          "rs_hash": "0xdc57240c2313c705"
+        },
+        "217211": {
+          "region_key": "VanaheimEastJungle",
+          "rs_hash": "0x847a82b0fe13abea"
+        },
+        "217215": {
+          "region_key": "VanaheimEastJungle",
+          "rs_hash": "0x847a82b0fe13abea"
+        },
+        "217240": {
+          "region_key": "VanFootpath",
+          "rs_hash": "0xb462fe3a73898800"
+        },
+        "217244": {
+          "region_key": "WaterfallWorld",
+          "rs_hash": "0xbb4136862fcebf09"
+        },
+        "217259": {
+          "region_key": "RiverDelta",
+          "rs_hash": "0x71d828f091e0e04d",
+          "wad_name": "Van_Delta400_RiverDelta",
+          "wad_ent_hash": "0x43e0e48511b0a115"
+        },
+        "217260": {
+          "region_key": "TheGrotto",
+          "rs_hash": "0xd92c436593b75584"
+        },
+        "217281": {
+          "region_key": "VanaheimCraterJungle",
+          "rs_hash": "0xb038725bbec901e6"
+        },
+        "217301": {
+          "region_key": "VanaheimCraterSinkholes",
+          "primary_wad": "Van_CratSink300_Mid",
+          "rs_hash": "0x21d2243cd022489b"
+        },
+        "217307": {
+          "region_key": "VanaheimCraterPlains",
+          "rs_hash": "0x2e81f78f8ef01d43",
+          "t2_hash": "0x2e81f78f8ef01d43",
+          "t2_min_stage": 2
+        },
+        "217314": {
+          "region_key": "VanaheimCraterPlains",
+          "rs_hash": "0x2e81f78f8ef01d43",
+          "t2_hash": "0x2e81f78f8ef01d43",
+          "t2_min_stage": 2
+        },
+        "217317": {
+          "region_key": "VanaheimCraterPlains",
+          "rs_hash": "0x2e81f78f8ef01d43",
+          "t2_hash": "0x2e81f78f8ef01d43",
+          "t2_min_stage": 2
+        },
+        "217325": {
+          "region_key": "VanaheimCraterPlains",
+          "rs_hash": "0x2e81f78f8ef01d43",
+          "wad_name": "Van_CratPlain400_West",
+          "wad_ent_hash": "0x1711e408ce8048f0"
+        },
+        "217327": {
+          "region_key": "VanaheimCraterPlains",
+          "rs_hash": "0x2e81f78f8ef01d43",
+          "wad_name": "Van_CratPlain200_East",
+          "wad_ent_hash": "0xa06dbb2615282026",
+          "wad_ent_prefix": "0110111"
+        },
+        "217068": {
+          "region_key": "SvartWetlands",
+          "rs_hash": "0x79ff539a6dcfd8a1"
+        },
+        "217108": {
+          "region_key": "Nidavellir",
+          "rs_hash": "0xc2b323b545633b38"
+        },
+        "217118": {
+          "region_key": "AlberichIsleOne",
+          "rs_hash": "0x8f3faabf30b789e6",
+          "wad_name": "Sva_Bay625_NorthRuins",
+          "wad_ent_hash": "0x4435d93cc4dc77c0"
+        },
+        "217125": {
+          "region_key": "LightHouse",
+          "rs_hash": "0x7d1eb3989126067a"
+        },
+        "217126": {
+          "region_key": "RigLift",
+          "rs_hash": "0x665e902b364fd2e3"
+        },
+        "217129": {
+          "region_key": "RigDweller",
+          "rs_hash": "0x945c2033d2eb5870"
+        },
+        "217135": {
+          "region_key": "AlberichIsleOne",
+          "rs_hash": "0x8f3faabf30b789e6",
+          "wad_name": "Sva_Bay600_Ruins",
+          "wad_ent_hash": "0xa25c12994139f954"
+        },
+        "217138": {
+          "region_key": "AlberichIsleTwo",
+          "rs_hash": "0xde9262731ac581c0"
+        },
+        "217144": {
+          "region_key": "WhaleIsland",
+          "primary_wad": "Sva_Bay700_WhaleIsland",
+          "rs_hash": "0x6be56f1e15b210ff"
+        },
+        "217152": {},
+        "217158": {
+          "region_key": "Forge",
+          "rs_hash": "0x63b5b590f5ff72cc",
+          "t2_hash": "0x63b5b590f5ff72cc",
+          "t2_min_stage": 4
+        },
+        "217162": {
+          "region_key": "AppleCore",
+          "rs_hash": "0x9935b61765821178"
+        },
+        "217178": {
+          "region_key": "PitMine_Jarns",
+          "rs_hash": "0xf6134fd29c8dc29d"
+        },
+        "216414": {
+          "region_key": "DesertBluff",
+          "rs_hash": "0x5d332468e4c4fdbd"
+        },
+        "216554": {
+          "region_key": "Lightwell",
+          "rs_hash": "0x11ebf452f17313dd",
+          "wad_name": "Alf_Well125_SideArea",
+          "wad_ent_hash": "0x4a54ceec441959c4"
+        },
+        "216560": {
+          "region_key": "Lightwell",
+          "rs_hash": "0x11ebf452f17313dd",
+          "t2_hash": "0x11ebf452f17313dd",
+          "t2_min_stage": 2
+        },
+        "216564": {
+          "region_key": "CanyonCave",
+          "rs_hash": "0x321b3f95dd71c92a"
+        },
+        "216575": {
+          "region_key": "DesertWest",
+          "rs_hash": "0xe5b26275e33f35ce"
+        },
+        "216579": {
+          "region_key": "DesertWest",
+          "rs_hash": "0xe5b26275e33f35ce"
+        },
+        "216587": {},
+        "216600": {},
+        "216606": {
+          "region_key": "DesertEast",
+          "rs_hash": "0x6285f64aee81392f",
+          "wad_name": "Alf_DEast200_Surface",
+          "wad_ent_hash": "0x38858fb7c2d40bd2"
+        },
+        "216610": {},
+        "216518": {
+          "region_key": "HelheimGarm",
+          "rs_hash": "0x9777a39a6bc0d927"
+        },
+        "216519": {
+          "region_key": "HelheimGarm",
+          "rs_hash": "0x9777a39a6bc0d927"
+        },
+        "216499": {
+          "region_key": "MuspelheimEntrance",
+          "rs_hash": "0x7ec0c343ea227d59"
+        },
+        "216503": {
+          "region_key": "MuspelheimForge",
+          "rs_hash": "0x19e7dd79be0bbda2"
+        }
+      },
+      "step_locations_unknown": false,
+      "pin_realms": {
+        "216421": "midgard",
+        "216441": "midgard",
+        "216462": "midgard",
+        "216464": "midgard",
+        "216484": "midgard",
+        "216491": "midgard",
+        "217198": "vanaheim",
+        "217208": "vanaheim",
+        "217211": "vanaheim",
+        "217215": "vanaheim",
+        "217240": "vanaheim",
+        "217244": "vanaheim",
+        "217259": "vanaheim",
+        "217260": "vanaheim",
+        "217281": "vanaheim",
+        "217301": "vanaheim",
+        "217307": "vanaheim",
+        "217314": "vanaheim",
+        "217317": "vanaheim",
+        "217325": "vanaheim",
+        "217327": "vanaheim",
+        "217068": "svartalfheim",
+        "217108": "svartalfheim",
+        "217118": "svartalfheim",
+        "217125": "svartalfheim",
+        "217126": "svartalfheim",
+        "217129": "svartalfheim",
+        "217135": "svartalfheim",
+        "217138": "svartalfheim",
+        "217144": "svartalfheim",
+        "217152": "svartalfheim",
+        "217158": "svartalfheim",
+        "217162": "svartalfheim",
+        "217178": "svartalfheim",
+        "216414": "alfheim",
+        "216554": "alfheim",
+        "216560": "alfheim",
+        "216564": "alfheim",
+        "216575": "alfheim",
+        "216579": "alfheim",
+        "216587": "alfheim",
+        "216600": "alfheim",
+        "216606": "alfheim",
+        "216610": "alfheim",
+        "216518": "helheim",
+        "216519": "helheim",
+        "219424": "niflheim",
+        "216499": "muspelheim",
+        "216503": "muspelheim"
+      },
+      "realm": null
+    },
+    {
+      "id": "XPL_Draugr_Holes_Parent",
+      "hash": "0xc4e0927e1298f426",
+      "offset": 173616,
+      "name_sid": 11856,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131136,
+      "steps": [
+        {
+          "id": "XPL_Draugr_Holes_Objective",
+          "hash": "0x097453754f942dc0",
+          "offset": 173920,
+          "name_sid": 11858,
+          "description_sid": 11857,
+          "counter": {
+            "hash": "0x3464c4e41540373b",
+            "total": 6,
+            "offset": 174320
+          },
+          "kind": 196672,
+          "steps": []
+        }
+      ],
+      "pin_ids": [
+        "216437",
+        "216582",
+        "217124",
+        "217167",
+        "217219",
+        "217326",
+        "219823"
+      ],
+      "pin_rules": {
+        "219823": {
+          "t2_hash": "0xc4e0927e1298f426",
+          "t2_min_stage": 4
+        },
+        "216437": {
+          "region_key": "CalderaLakeFrozen",
+          "rs_hash": "0x61c3d845109e076b",
+          "t2_hash": "0x61c3d845109e076b",
+          "t2_min_stage": 4
+        },
+        "217219": {
+          "region_key": "VanirVillage",
+          "rs_hash": "0x2537c22b43381255",
+          "t2_hash": "0x2537c22b43381255",
+          "t2_min_stage": 4
+        },
+        "217326": {
+          "region_key": "VanaheimCraterPlains",
+          "rs_hash": "0x5049e51b8a117c9a",
+          "t2_hash": "0x5049e51b8a117c9a",
+          "t2_min_stage": 4
+        },
+        "217124": {
+          "region_key": "LightHouse",
+          "rs_hash": "0x1fb8134112a212ba",
+          "t2_hash": "0x1fb8134112a212ba",
+          "t2_min_stage": 4
+        },
+        "217167": {
+          "region_key": "AppleCore",
+          "rs_hash": "0x0a681920eee5125d",
+          "t2_hash": "0x0a681920eee5125d",
+          "t2_min_stage": 4
+        },
+        "216582": {
+          "region_key": "DesertWest",
+          "rs_hash": "0x5239a2dbe7eaa0ce",
+          "t2_hash": "0x5239a2dbe7eaa0ce",
+          "t2_min_stage": 4
+        }
+      },
+      "step_locations_unknown": false,
+      "pin_realms": {
+        "216437": "midgard",
+        "217219": "vanaheim",
+        "217326": "vanaheim",
+        "217124": "svartalfheim",
+        "217167": "svartalfheim",
+        "219823": "svartalfheim",
+        "216582": "alfheim"
+      },
+      "realm": null
+    },
+    {
+      "id": "XPL_Hel_Tears_Parent",
+      "hash": "0x3cc937148dd81a39",
+      "offset": 174448,
+      "name_sid": 14476,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131136,
+      "steps": [
+        {
+          "id": "XPL_Hel_Tears_Objective",
+          "hash": "0x51685286c8796d6a",
+          "offset": 174816,
+          "name_sid": 14473,
+          "description_sid": 14475,
+          "counter": {
+            "hash": "0x76ebcccde0afc298",
+            "total": 6,
+            "offset": 175224
+          },
+          "kind": 196672,
+          "steps": []
+        }
+      ],
+      "pin_ids": [
+        "216417",
+        "216514",
+        "216515",
+        "216542",
+        "217100",
+        "217197",
+        "218791"
+      ],
+      "pin_rules": {
+        "216515": {
+          "t2_hash": "0x3cc937148dd81a39",
+          "t2_min_stage": 4
+        },
+        "216417": {
+          "region_key": "Norns",
+          "rs_hash": "0xfd85fd0049b788a4",
+          "t2_hash": "0xfd85fd0049b788a4",
+          "t2_min_stage": 4
+        },
+        "217197": {
+          "region_key": "VanaheimSouthJungle",
+          "rs_hash": "0x0707e3c26df8e422",
+          "t2_hash": "0x0707e3c26df8e422",
+          "t2_min_stage": 4
+        },
+        "217100": {
+          "region_key": "SvartWetlands",
+          "rs_hash": "0xdc41542d5ee6511a",
+          "t2_hash": "0xdc41542d5ee6511a",
+          "t2_min_stage": 4
+        },
+        "216542": {
+          "region_key": "DesertBluff",
+          "rs_hash": "0x853527105ee5938f",
+          "t2_hash": "0x853527105ee5938f",
+          "t2_min_stage": 4
+        },
+        "216514": {
+          "region_key": "HelheimGarm",
+          "t2_hash": "0x30af9efae75a4ae9",
+          "t2_min_stage": 4
+        },
+        "218791": {
+          "region_key": "SindrisHouse",
+          "t2_hash": "0x91cccc1199c05500",
+          "t2_min_stage": 4
+        }
+      },
+      "step_locations_unknown": false,
+      "pin_realms": {
+        "216417": "midgard",
+        "217197": "vanaheim",
+        "217100": "svartalfheim",
+        "216542": "alfheim",
+        "216515": "helheim",
+        "216514": "helheim",
+        "218791": "sindris-house"
+      },
+      "realm": null
+    },
+    {
+      "id": "XPL_Lindworm_Tears_Parent",
+      "hash": "0xdc95c1f344a7af7a",
+      "offset": 175584,
+      "name_sid": 8692,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131136,
+      "steps": [
+        {
+          "id": "XPL_Lindworm_Trap_Acquired",
+          "hash": "0x971b5ca5d5acc3e9",
+          "offset": 176016,
+          "name_sid": 28674,
+          "description_sid": 42869,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Lindworm_Tears_Objective_01",
+          "hash": "0x1a511f9b8cc61b91",
+          "offset": 176376,
+          "name_sid": 8695,
+          "description_sid": 8694,
+          "counter": {
+            "hash": "0x372c8ab1144b79b4",
+            "total": 6,
+            "offset": 176712
+          },
+          "kind": 196672,
+          "steps": []
+        },
+        {
+          "id": "XPL_CratPlain450_LindwormRift",
+          "hash": "0x29da7b8e96529505",
+          "offset": 176776,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_PitN100_LindwormRift",
+          "hash": "0xae986cf0d46a77d2",
+          "offset": 177048,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Bay625_LindwormRift",
+          "hash": "0x5fa66dbb5962a3d9",
+          "offset": 177264,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Garm100_LindwormRift",
+          "hash": "0xeb224004d11783e0",
+          "offset": 177472,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_CratPlain200_LindwormRift",
+          "hash": "0x772da0980446be19",
+          "offset": 177688,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Jngl800_LindwormRift",
+          "hash": "0x5e713325032c3b0b",
+          "offset": 177904,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Lindworm_Goin_Returned",
+          "hash": "0xa79e435da31788f8",
+          "offset": 178120,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Lindworm_Moin_Returned",
+          "hash": "0xdd574f2be29d5f6b",
+          "offset": 178336,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Lindworm_Ofnir_Returned",
+          "hash": "0x7f39c92617357298",
+          "offset": 178552,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Lindworm_Grabak_Returned",
+          "hash": "0xf04093fabf34d2ba",
+          "offset": 178768,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Lindworm_Svafnir_Returned",
+          "hash": "0x7ac746ff47c51824",
+          "offset": 178984,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Lindworm_Grafrollud_Returned",
+          "hash": "0x25760d459f61fb46",
+          "offset": 179200,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Lindworm_Tears_Objective_02",
+          "hash": "0x1a511f9b8cc617a0",
+          "offset": 179424,
+          "name_sid": 39220,
+          "description_sid": 39219,
+          "counter": {
+            "hash": "0x778379d9a83defde",
+            "total": 6,
+            "offset": 179688
+          },
+          "kind": 196672,
+          "steps": []
+        },
+        {
+          "id": "XPL_Lindworm_Tears_Objective_03",
+          "hash": "0x1a511f9b8cc613b7",
+          "offset": 179752,
+          "name_sid": 5385,
+          "description_sid": 46243,
+          "counter": null,
+          "kind": 196672,
+          "steps": []
+        },
+        {
+          "id": "CurrentlyHeldLindworms",
+          "hash": "0x5132c5ae4e7fc7d8",
+          "offset": 180112,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 196609,
+          "steps": []
+        }
+      ],
+      "pin_ids": [
+        "216615",
+        "217093",
+        "217324",
+        "217329",
+        "219210",
+        "219262",
+        "219263",
+        "219264",
+        "219265",
+        "219266"
+      ],
+      "pin_rules": {
+        "216615": {
+          "t2_hash": "0xdc95c1f344a7af7a",
+          "t2_min_stage": 4
+        },
+        "219265": {
+          "region_key": "VanaheimCraterPlains",
+          "t2_hash": "0x25760d459f61fb46",
+          "t2_min_stage": 4
+        },
+        "219266": {
+          "region_key": "VanaheimCraterPlains",
+          "t2_hash": "0x7ac746ff47c51824",
+          "t2_min_stage": 2
+        },
+        "217324": {
+          "region_key": "VanaheimCraterPlains",
+          "rs_hash": "0xcbf2d743c298428e",
+          "t2_hash": "0x7ac746ff47c51824",
+          "t2_min_stage": 2
+        },
+        "217329": {
+          "region_key": "VanaheimCraterPlains",
+          "rs_hash": "0xcbf2d743c298428e",
+          "t2_hash": "0x25760d459f61fb46",
+          "t2_min_stage": 4
+        },
+        "219210": {
+          "region_key": "Forge",
+          "t2_hash": "0xa79e435da31788f8",
+          "t2_min_stage": 4
+        },
+        "219262": {
+          "region_key": "DragonBeach",
+          "t2_hash": "0xdd574f2be29d5f6b",
+          "t2_min_stage": 4
+        },
+        "219263": {
+          "region_key": "DragonBeach",
+          "t2_hash": "0x7f39c92617357298",
+          "t2_min_stage": 4
+        },
+        "219264": {
+          "region_key": "AppleCore",
+          "t2_hash": "0xf04093fabf34d2ba",
+          "t2_min_stage": 4
+        },
+        "217093": {
+          "region_key": "Forge",
+          "rs_hash": "0x1fc0feb5e278a0fb",
+          "t2_hash": "0xa79e435da31788f8",
+          "t2_min_stage": 4
+        }
+      },
+      "step_locations_unknown": false,
+      "pin_realms": {
+        "219265": "vanaheim",
+        "219266": "vanaheim",
+        "217324": "vanaheim",
+        "217329": "vanaheim",
+        "219210": "svartalfheim",
+        "219262": "svartalfheim",
+        "219263": "svartalfheim",
+        "219264": "svartalfheim",
+        "217093": "svartalfheim",
+        "216615": "sindris-house"
+      },
+      "realm": null
+    },
+    {
+      "id": "XPL_Stags_Parent",
+      "hash": "0x42c05cda5a46eea3",
+      "offset": 180400,
+      "name_sid": 27516,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131136,
+      "steps": [
+        {
+          "id": "XPL_Stags_RatatoskrReturn",
+          "hash": "0xa17b95bb4e69cec3",
+          "offset": 180792,
+          "name_sid": 55268,
+          "description_sid": 55300,
+          "counter": null,
+          "kind": 65537,
+          "steps": []
+        },
+        {
+          "id": "XPL_Stags_FakeParent",
+          "hash": "0x4137a613f5da141b",
+          "offset": 181088,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65537,
+          "steps": []
+        },
+        {
+          "id": "XPL_Stags_PouchPickup",
+          "hash": "0x5f656969386143c7",
+          "offset": 181312,
+          "name_sid": 68294,
+          "description_sid": 68295,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Stags_Objective_01",
+          "hash": "0xbb6d65d73b68800b",
+          "offset": 181584,
+          "name_sid": 60038,
+          "description_sid": 27558,
+          "counter": {
+            "hash": "0xc2eaec29a54569f6",
+            "total": 4,
+            "offset": 181968
+          },
+          "kind": 196672,
+          "steps": []
+        },
+        {
+          "id": "Stag_First_Encountered",
+          "hash": "0x77a1eb77614ff57b",
+          "offset": 182024,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65537,
+          "steps": []
+        },
+        {
+          "id": "Stag_First_Approached",
+          "hash": "0x157455f42ae77f33",
+          "offset": 182224,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65537,
+          "steps": []
+        },
+        {
+          "id": "Stag_IntroAlt_Played",
+          "hash": "0x4bc6efa3244e1f0c",
+          "offset": 182424,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65537,
+          "steps": []
+        },
+        {
+          "id": "Stag_Summer_Returned",
+          "hash": "0x592b76a4412907fa",
+          "offset": 182624,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "Stag_Fall_Returned",
+          "hash": "0xf5a6e11b3ce1ae8e",
+          "offset": 182888,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "Stag_Winter_Returned",
+          "hash": "0xde759e17cebbc25f",
+          "offset": 183096,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "Stag_Spring_Returned",
+          "hash": "0x7557110fdb8e1287",
+          "offset": 183304,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Stags_Objective_02",
+          "hash": "0xbb6d65d73b689c78",
+          "offset": 183512,
+          "name_sid": 27559,
+          "description_sid": 27560,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        }
+      ],
+      "pin_ids": [
+        "217283",
+        "217284",
+        "217288",
+        "217294",
+        "218792",
+        "219824"
+      ],
+      "pin_rules": {
+        "219824": {
+          "t2_hash": "0x42c05cda5a46eea3",
+          "t2_min_stage": 4
+        },
+        "217283": {
+          "region_key": "VanaheimCraterPlains",
+          "rs_hash": "0x9abb2abc0a7a7272",
+          "t2_hash": "0xde759e17cebbc25f",
+          "t2_min_stage": 4
+        },
+        "217284": {
+          "region_key": "VanaheimCraterPlains",
+          "rs_hash": "0x9abb2abc0a7a7272",
+          "t2_hash": "0x7557110fdb8e1287",
+          "t2_min_stage": 4
+        },
+        "217288": {
+          "region_key": "VanaheimCraterJungle",
+          "rs_hash": "0x80aa493f5c78209e",
+          "t2_hash": "0x592b76a4412907fa",
+          "t2_min_stage": 4
+        },
+        "217294": {
+          "region_key": "VanaheimCraterSinkholes",
+          "primary_wad": "Van_CratSink300_Mid",
+          "rs_hash": "0x064917e9a06e8676",
+          "t2_hash": "0xf5a6e11b3ce1ae8e",
+          "t2_min_stage": 4
+        },
+        "218792": {
+          "region_key": "SindrisHouse"
+        }
+      },
+      "step_locations_unknown": false,
+      "pin_realms": {
+        "217283": "vanaheim",
+        "217284": "vanaheim",
+        "217288": "vanaheim",
+        "217294": "vanaheim",
+        "219824": "sindris-house",
+        "218792": "sindris-house"
+      },
+      "realm": null
+    },
+    {
+      "id": "XPL_Warrior_Souls_Parent",
+      "hash": "0x97208675de4f4420",
+      "offset": 187664,
+      "name_sid": 22320,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131136,
+      "steps": [
+        {
+          "id": "XPL_Warrior_Souls_Objective_01",
+          "hash": "0xd119cf97ea43d73d",
+          "offset": 187992,
+          "name_sid": 22387,
+          "description_sid": 22388,
+          "counter": {
+            "hash": "0xb2c7e8eebfb1cd22",
+            "total": 12,
+            "offset": 188360
+          },
+          "kind": 196672,
+          "steps": []
+        },
+        {
+          "id": "XPL_WarriorSouls_Encouters",
+          "hash": "0x016abf29b3a08fd1",
+          "offset": 188424,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 196672,
+          "steps": []
+        },
+        {
+          "id": "XPL_Warrior_Souls_Objective_02",
+          "hash": "0xd119cf97ea43db0a",
+          "offset": 188648,
+          "name_sid": 22389,
+          "description_sid": 22390,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Warrior_Souls_Objective_03",
+          "hash": "0xd119cf97ea43df1b",
+          "offset": 188944,
+          "name_sid": 50206,
+          "description_sid": 50265,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        }
+      ],
+      "pin_ids": [
+        "216419",
+        "216478",
+        "216481",
+        "216496",
+        "216524",
+        "216609",
+        "217113",
+        "217134",
+        "217165",
+        "217223",
+        "217287"
+      ],
+      "pin_rules": {
+        "216481": {
+          "t2_hash": "0x97208675de4f4420",
+          "t2_min_stage": 4
+        },
+        "216478": {
+          "region_key": "CalderaShoreNorth",
+          "t2_hash": "0x06f9807d616839b9",
+          "t2_min_stage": 4
+        },
+        "216496": {
+          "region_key": "KingsArena",
+          "rs_hash": "0xfe66a302ca5a55e8",
+          "t2_hash": "0xeadac0d4d16a028b",
+          "t2_min_stage": 4
+        },
+        "217223": {
+          "region_key": "DeltaRuins",
+          "rs_hash": "0xff302be2768861bf",
+          "t2_hash": "0x68280c0ac7b0a376",
+          "t2_min_stage": 4
+        },
+        "217287": {
+          "region_key": "VanaheimCraterSinkholes",
+          "primary_wad": "Van_CratSink300_Mid",
+          "rs_hash": "0x77ab51d7c814b6bc",
+          "t2_hash": "0x71e2f34a6f9bb2c8",
+          "t2_min_stage": 4
+        },
+        "217113": {
+          "region_key": "Nidavellir",
+          "rs_hash": "0x7f84bb9ebc74865c",
+          "t2_hash": "0x5bac2a47c230fc13",
+          "t2_min_stage": 4
+        },
+        "217134": {
+          "region_key": "AlberichIsleOne",
+          "rs_hash": "0xc45798303207f630",
+          "t2_hash": "0x83b9b30a6219e0c0",
+          "t2_min_stage": 4
+        },
+        "217165": {
+          "region_key": "PitMine_Jarns",
+          "rs_hash": "0x60f82764591e4332",
+          "t2_hash": "0x3a201dce475bd6ad",
+          "t2_min_stage": 4
+        },
+        "216419": {
+          "region_key": "DesertWest",
+          "rs_hash": "0x4ccecac0512196fc",
+          "t2_hash": "0xb5f656001aced5e3",
+          "t2_min_stage": 4
+        },
+        "216609": {
+          "region_key": "DesertEast",
+          "rs_hash": "0x88735342f8252e94",
+          "t2_hash": "0xb5f703b42642b3c8",
+          "t2_min_stage": 4
+        },
+        "216524": {
+          "region_key": "MistFields",
+          "primary_wad": "Nif_MistF100_Entrance",
+          "rs_hash": "0x5974481393910831",
+          "t2_hash": "0x8d4816e573c22f17",
+          "t2_min_stage": 4
+        }
+      },
+      "step_locations_unknown": false,
+      "pin_realms": {
+        "216478": "midgard",
+        "216496": "midgard",
+        "216481": "midgard",
+        "217223": "vanaheim",
+        "217287": "vanaheim",
+        "217113": "svartalfheim",
+        "217134": "svartalfheim",
+        "217165": "svartalfheim",
+        "216419": "alfheim",
+        "216609": "alfheim",
+        "216524": "niflheim"
+      },
+      "realm": null
+    },
+    {
+      "id": "Artifact_Freya_Flower_Parent",
+      "hash": "0x608617881b6b6f6c",
+      "offset": 191944,
+      "name_sid": 43062,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131136,
+      "steps": [
+        {
+          "id": "Artifact_Freya_Flower_Vanaheim",
+          "hash": "0xce32f05c48f1fc83",
+          "offset": 192456,
+          "name_sid": 43241,
+          "description_sid": 43305,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "Artifact_Freya_Flower_Svartalfheim",
+          "hash": "0x015a8a1a04cba765",
+          "offset": 192728,
+          "name_sid": 43240,
+          "description_sid": 43313,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "Artifact_Freya_Flower_Niflheim",
+          "hash": "0x5db1c36c6e48d038",
+          "offset": 192952,
+          "name_sid": 43239,
+          "description_sid": 43312,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "Artifact_Freya_Flower_Muspelheim",
+          "hash": "0x79c12e7d5422f052",
+          "offset": 193168,
+          "name_sid": 43238,
+          "description_sid": 43311,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "Artifact_Freya_Flower_Midgard",
+          "hash": "0xeee517767add7e09",
+          "offset": 193392,
+          "name_sid": 43237,
+          "description_sid": 43310,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "Artifact_Freya_Flower_Jotunheim",
+          "hash": "0x2bc0894828c2ae50",
+          "offset": 193608,
+          "name_sid": 43236,
+          "description_sid": 43309,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "Artifact_Freya_Flower_Helheim",
+          "hash": "0x65d7787ce7e705d0",
+          "offset": 193824,
+          "name_sid": 43235,
+          "description_sid": 43308,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "Artifact_Freya_Flower_Asgard",
+          "hash": "0x95ee969bc431d8b3",
+          "offset": 194040,
+          "name_sid": 43234,
+          "description_sid": 43307,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "Artifact_Freya_Flower_Alfheim",
+          "hash": "0x2c4249bf55c42169",
+          "offset": 194256,
+          "name_sid": 43066,
+          "description_sid": 43306,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "Artifact_Freya_Flower_Counter",
+          "hash": "0xedcb8becfc0ef3da",
+          "offset": 194472,
+          "name_sid": 43063,
+          "description_sid": 43064,
+          "counter": {
+            "hash": "0x7c7737d8ec5fc8d1",
+            "total": 9,
+            "offset": 194816
+          },
+          "kind": 196672,
+          "steps": []
+        }
+      ],
+      "pin_ids": [
+        "216505",
+        "216513",
+        "216521",
+        "216523",
+        "216537",
+        "216604",
+        "217111",
+        "217299",
+        "218793",
+        "219822"
+      ],
+      "pin_rules": {
+        "219822": {
+          "t2_hash": "0x608617881b6b6f6c",
+          "t2_min_stage": 4
+        },
+        "218793": {
+          "region_key": "Riverpass",
+          "rs_hash": "0xb4b0ea1dd5d2788c",
+          "t2_hash": "0xeee517767add7e09",
+          "t2_min_stage": 4
+        },
+        "217299": {
+          "region_key": "VanaheimCraterSinkholes",
+          "primary_wad": "Van_CratSink300_Mid",
+          "rs_hash": "0x3d0cee6e43bf1d74",
+          "t2_hash": "0xce32f05c48f1fc83",
+          "t2_min_stage": 4
+        },
+        "217111": {
+          "region_key": "Nidavellir",
+          "rs_hash": "0x24dbd123841e16bb",
+          "t2_hash": "0x015a8a1a04cba765",
+          "t2_min_stage": 4
+        },
+        "216604": {
+          "region_key": "DesertEast",
+          "rs_hash": "0xd11a3b6ba9fb65fe",
+          "t2_hash": "0x2c4249bf55c42169",
+          "t2_min_stage": 4
+        },
+        "216521": {
+          "region_key": "HelheimGarm",
+          "t2_hash": "0x65d7787ce7e705d0",
+          "t2_min_stage": 4
+        },
+        "216513": {
+          "region_key": "JotunheimTreehouse",
+          "rs_hash": "0x1008660623617025",
+          "t2_hash": "0x2bc0894828c2ae50",
+          "t2_min_stage": 4
+        },
+        "216523": {
+          "region_key": "MistFields",
+          "primary_wad": "Nif_MistF100_Entrance",
+          "rs_hash": "0x0d806d7666324bb9",
+          "t2_hash": "0x5db1c36c6e48d038",
+          "t2_min_stage": 4
+        },
+        "216537": {
+          "region_key": "NifPrison",
+          "primary_wad": "Nif_Prison100_Entrance",
+          "rs_hash": "0x45c4e1210d43cc2c",
+          "t2_hash": "0x95ee969bc431d8b3",
+          "t2_min_stage": 4
+        },
+        "216505": {
+          "region_key": "MuspelheimArena",
+          "rs_hash": "0xc71f37f23bda9926",
+          "t2_hash": "0x79c12e7d5422f052",
+          "t2_min_stage": 4
+        }
+      },
+      "step_locations_unknown": false,
+      "pin_realms": {
+        "218793": "midgard",
+        "217299": "vanaheim",
+        "217111": "svartalfheim",
+        "216604": "alfheim",
+        "219822": "alfheim",
+        "216521": "helheim",
+        "216513": "jotunheim",
+        "216523": "niflheim",
+        "216537": "niflheim",
+        "216505": "muspelheim"
+      },
+      "realm": null
+    },
+    {
+      "id": "XPL_Asgard_Camps_Parent",
+      "hash": "0x30ebae7c0256f4f8",
+      "offset": 194952,
+      "name_sid": 38897,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131136,
+      "steps": [
+        {
+          "id": "LastCompletedCamp",
+          "hash": "0xd9efa1c6988e97e4",
+          "offset": 195424,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65537,
+          "steps": []
+        },
+        {
+          "id": "AsgardChunkProgressionLogicQueued_Objective",
+          "hash": "0x08ee3bc22c726312",
+          "offset": 195624,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65537,
+          "steps": []
+        },
+        {
+          "id": "XPL_Asgard_Camps_Chunk_1_Desert_West",
+          "hash": "0x8d785b50706b199c",
+          "offset": 195848,
+          "name_sid": 38903,
+          "description_sid": 39022,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Asgard_Camps_Chunk_3_Alfheim_Bluff",
+          "hash": "0xc2e83ccf950d0673",
+          "offset": 196144,
+          "name_sid": 39057,
+          "description_sid": 39024,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Asgard_Camps_Chunk_6_Caldera_Lake",
+          "hash": "0x7a7e16f8b313a197",
+          "offset": 196384,
+          "name_sid": 39055,
+          "description_sid": 39029,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Asgard_Camps_Chunk_7_NornWaterfall",
+          "hash": "0x712daccac8f17c9c",
+          "offset": 196624,
+          "name_sid": 39054,
+          "description_sid": 39030,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Asgard_Camps_Chunk_8_Muspelheim_Mount100",
+          "hash": "0x77051790c659012a",
+          "offset": 196864,
+          "name_sid": 39053,
+          "description_sid": 39036,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Asgard_Camps_Chunk_11_Svartalfheim_PitJ100",
+          "hash": "0xd4a4ec74b17af776",
+          "offset": 197112,
+          "name_sid": 39052,
+          "description_sid": 39039,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Asgard_Camps_Chunk_12_Sva300_Wetlands",
+          "hash": "0xd0785fe3e8f2cad1",
+          "offset": 197360,
+          "name_sid": 39049,
+          "description_sid": 39040,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Asgard_Camps_Chunk_13",
+          "hash": "0x4709db8960cd6eb9",
+          "offset": 197608,
+          "name_sid": 39048,
+          "description_sid": 39041,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Asgard_Camps_Chunk_15",
+          "hash": "0x4709db8960cd669b",
+          "offset": 197840,
+          "name_sid": 39046,
+          "description_sid": 39043,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Asgard_Camps_Chunk_16",
+          "hash": "0x4709db8960cd628a",
+          "offset": 198072,
+          "name_sid": 39045,
+          "description_sid": 39044,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Asgard_Camps_Counter",
+          "hash": "0x416e7e249d5a6789",
+          "offset": 198304,
+          "name_sid": 13432,
+          "description_sid": 13433,
+          "counter": {
+            "hash": "0xe4cc4662982200aa",
+            "total": 10,
+            "offset": 198608
+          },
+          "kind": 196672,
+          "steps": []
+        },
+        {
+          "id": "Seen_Any_Asgard_Camp",
+          "hash": "0x7f63b959355bbeef",
+          "offset": 198672,
+          "name_sid": 0,
+          "description_sid": 0,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        }
+      ],
+      "pin_ids": [
+        "216415",
+        "216486",
+        "216501",
+        "216547",
+        "216569",
+        "217101",
+        "217116",
+        "217164",
+        "217205",
+        "217206",
+        "217210"
+      ],
+      "pin_rules": {
+        "217210": {
+          "t2_hash": "0x30ebae7c0256f4f8",
+          "t2_min_stage": 4
+        },
+        "216415": {
+          "region_key": "Norns",
+          "rs_hash": "0xd35f642cf313319b",
+          "t2_hash": "0x712daccac8f17c9c",
+          "t2_min_stage": 4
+        },
+        "216486": {
+          "region_key": "CalderaLakeFrozen",
+          "rs_hash": "0xe0607b2562b660d4",
+          "t2_hash": "0x7a7e16f8b313a197",
+          "t2_min_stage": 4
+        },
+        "217205": {
+          "region_key": "TheGrotto",
+          "rs_hash": "0x87f73b67a39b55bf",
+          "t2_hash": "0x4709db8960cd669b",
+          "t2_min_stage": 4
+        },
+        "217206": {
+          "region_key": "VanaheimEastJungle",
+          "rs_hash": "0x3068cdcba3414766",
+          "t2_hash": "0x4709db8960cd628a",
+          "t2_min_stage": 4
+        },
+        "217101": {
+          "region_key": "SvartWetlands",
+          "rs_hash": "0x39c19c0965a88a7d",
+          "t2_hash": "0xd0785fe3e8f2cad1",
+          "t2_min_stage": 4
+        },
+        "217116": {
+          "region_key": "AlberichIsleTwo",
+          "rs_hash": "0x41e5df844b262f07",
+          "t2_hash": "0x4709db8960cd6eb9",
+          "t2_min_stage": 4
+        },
+        "217164": {
+          "region_key": "PitMine_Jarns",
+          "rs_hash": "0xb7d1bacfebfc11a2",
+          "t2_hash": "0xd4a4ec74b17af776",
+          "t2_min_stage": 4
+        },
+        "216547": {
+          "region_key": "DesertBluff",
+          "rs_hash": "0xb1137e9039c79b1c",
+          "t2_hash": "0xc2e83ccf950d0673",
+          "t2_min_stage": 4
+        },
+        "216569": {
+          "region_key": "DesertWest",
+          "rs_hash": "0x86bb504338631aa1",
+          "t2_hash": "0x8d785b50706b199c",
+          "t2_min_stage": 4
+        },
+        "216501": {
+          "region_key": "MuspelheimEntrance",
+          "rs_hash": "0xef313e09131d6a15",
+          "t2_hash": "0x77051790c659012a",
+          "t2_min_stage": 4
+        }
+      },
+      "step_locations_unknown": false,
+      "pin_realms": {
+        "217210": "midgard",
+        "216415": "midgard",
+        "216486": "midgard",
+        "217205": "vanaheim",
+        "217206": "vanaheim",
+        "217101": "svartalfheim",
+        "217116": "svartalfheim",
+        "217164": "svartalfheim",
+        "216547": "alfheim",
+        "216569": "alfheim",
+        "216501": "muspelheim"
+      },
+      "realm": null
+    },
+    {
+      "id": "XPL_Epilogue_Gna_Fight_Parent",
+      "hash": "0xc18d36d8f7394087",
+      "offset": 198936,
+      "name_sid": 41368,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131136,
+      "steps": [
+        {
+          "id": "XPL_Epilogue_Gna_Fight_Defeat_Gna",
+          "hash": "0xf801aab7e5e302fb",
+          "offset": 199184,
+          "name_sid": 41370,
+          "description_sid": 41369,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        }
+      ],
+      "pin_ids": [
+        "219425"
+      ],
+      "pin_rules": {
+        "219425": {
+          "t2_hash": "0xc18d36d8f7394087",
+          "t2_min_stage": 4
+        }
+      },
+      "step_locations_unknown": true,
+      "pin_realms": {
+        "219425": "muspelheim"
+      },
+      "realm": null
+    },
+    {
+      "id": "XPL_Epilogue_Tyr_Prison_Parent",
+      "hash": "0x6efbff8d51283b88",
+      "offset": 200776,
+      "name_sid": 36704,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131136,
+      "steps": [
+        {
+          "id": "XPL_Epilogue_Tyr_Prison_Objective01",
+          "hash": "0xb6974297de5d48f7",
+          "offset": 201072,
+          "name_sid": 36705,
+          "description_sid": 36706,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        }
+      ],
+      "pin_ids": [
+        "216538"
+      ],
+      "pin_rules": {
+        "216538": {
+          "t2_hash": "0x6efbff8d51283b88",
+          "t2_min_stage": 4
+        }
+      },
+      "step_locations_unknown": true,
+      "pin_realms": {
+        "216538": "niflheim"
+      },
+      "realm": null
+    },
+    {
+      "id": "XPL_Epilogue_Brok_Funeral_Parent",
+      "hash": "0x7407aeae12456114",
+      "offset": 201896,
+      "name_sid": 36699,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131136,
+      "steps": [
+        {
+          "id": "XPL_Epilogue_Brok_Funeral_Objective01",
+          "hash": "0xa22b88cc0e2a5b69",
+          "offset": 202120,
+          "name_sid": 36700,
+          "description_sid": 36701,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "XPL_Epilogue_Brok_Funeral_Objective02",
+          "hash": "0xa22b88cc0e2a4718",
+          "offset": 202400,
+          "name_sid": 36702,
+          "description_sid": 36703,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        }
+      ],
+      "pin_ids": [
+        "219820"
+      ],
+      "pin_rules": {
+        "219820": {
+          "t2_hash": "0x7407aeae12456114",
+          "t2_min_stage": 4
+        }
+      },
+      "step_locations_unknown": true,
+      "pin_realms": {
+        "219820": "svartalfheim"
+      },
+      "realm": null
+    },
+    {
+      "id": "Labor_World_RealmUnlock_Musp_Parent",
+      "hash": "0xc438b7067fc6d97d",
+      "offset": 206752,
+      "name_sid": 50323,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131136,
+      "steps": [
+        {
+          "id": "Find_Second_Seed_Muspelheim_Unlock",
+          "hash": "0xa41edd899f71bd6e",
+          "offset": 207072,
+          "name_sid": 42491,
+          "description_sid": 42499,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "Labor_World_RealmUnlock_Musp_Objective",
+          "hash": "0x8a0db733a0359dfb",
+          "offset": 207352,
+          "name_sid": 24360,
+          "description_sid": 24361,
+          "counter": null,
+          "kind": 65600,
+          "steps": []
+        },
+        {
+          "id": "Labor_ClearMuspelheimChallenges_Phase01_Objective",
+          "hash": "0x4edb7a5fae22fdbf",
+          "offset": 207656,
+          "name_sid": 24383,
+          "description_sid": 24384,
+          "counter": {
+            "hash": "0xed9c1c2903e3c73e",
+            "total": 6,
+            "offset": 208032
+          },
+          "kind": 196672,
+          "steps": []
+        }
+      ],
+      "pin_ids": [
+        "218797"
+      ],
+      "pin_rules": {
+        "218797": {
+          "t2_hash": "0xc438b7067fc6d97d",
+          "t2_min_stage": 4
+        }
+      },
+      "step_locations_unknown": true,
+      "pin_realms": {
+        "218797": "muspelheim"
+      },
+      "realm": "muspelheim"
+    },
+    {
+      "id": "Muspelheim_Phase02_Parent",
+      "hash": "0x3f7a0afab2eed508",
+      "offset": 211048,
+      "name_sid": 48909,
+      "description_sid": 0,
+      "counter": null,
+      "kind": 131072,
+      "steps": [
+        {
+          "id": "Muspelheim_Phase02_ChallengeCounter",
+          "hash": "0x1195aac2004f6d5d",
+          "offset": 211848,
+          "name_sid": 48910,
+          "description_sid": 42495,
+          "counter": {
+            "hash": "0x05aaad99e40affc8",
+            "total": 6,
+            "offset": 212184
+          },
+          "kind": 196624,
+          "steps": []
+        }
+      ],
+      "pin_ids": [
+        "218796"
+      ],
+      "pin_rules": {
+        "218796": {
+          "t2_hash": "0x3f7a0afab2eed508",
+          "t2_min_stage": 4
+        }
+      },
+      "step_locations_unknown": true,
+      "pin_realms": {
+        "218796": "muspelheim"
+      },
+      "realm": "muspelheim"
+    }
+  ]
+}

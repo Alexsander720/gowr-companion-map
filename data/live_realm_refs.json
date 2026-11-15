@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "realms": {
+    "muspelheim": {
+      "refs": [
+        {
+          "world": [
+            563.752,
+            64.299,
+            -331.845
+          ],
+          "lat": 0.64727,
+          "lng": -0.67009,
+          "source": "measured"
+        },
+        {
+          "world": [
+            627.138,
+            36.329,
+            -410.114
+          ],
+          "lat": 0.60121,
+          "lng": -0.60256,
+          "source": "measured"
+        }
+      ],
+      "zones": [
+        {
+          "id": "crucible",
+          "anchor_world": [
+            36.0625,
+            9.75,
+            56.96875
+          ],
+          "anchor_lat": 0.78813064189694,
+          "anchor_lng": -0.86799514255316
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,5396 @@
+{
+  "216406": {
+    "region_key": "DesertEast"
+  },
+  "216408": {
+    "region_key": "AlfheimCave"
+  },
+  "216411": {
+    "region_key": "CanyonCave"
+  },
+  "216405": {
+    "region_key": "CanyonCave",
+    "ft_wad": "Alf_DWest150_SledPocket",
+    "ft_item_hash": "0xa91fdffbd12b5639"
+  },
+  "216407": {
+    "region_key": "DesertEast",
+    "ft_wad": "Alf_DCenter100_DesertLH",
+    "ft_item_hash": "0x583a38bc736e866d"
+  },
+  "216409": {
+    "region_key": "CanyonCave",
+    "ft_wad": "Alf_Bluff100_Entrance",
+    "ft_item_hash": "0x005e119f067120ac"
+  },
+  "216412": {
+    "region_key": "Lightwell",
+    "ft_wad": "Alf_Bluff300_OuterWell",
+    "ft_item_hash": "0x36e1458d42d2ea2b"
+  },
+  "216603": {
+    "region_key": "DesertEast",
+    "t2_hash": "0x184c36f3ed0271ed",
+    "t2_min_stage": 4
+  },
+  "216611": {
+    "region_key": "DesertEast",
+    "t2_hash": "0x184c36f3ed0271ed",
+    "t2_min_stage": 4
+  },
+  "216410": {
+    "region_key": "CanyonCave"
+  },
+  "216551": {
+    "region_key": "Lightwell"
+  },
+  "219582": {
+    "region_key": "Sinkhole",
+    "equip_any": [
+      "0x8fa329a2489f2763",
+      "0x8fa329a2489f236c",
+      "0x8fa329a2489f2f5d",
+      "0x8fa329a2489f2b4e",
+      "0x8fa329a2489f17bf",
+      "0x8fa329a2489f13a8",
+      "0x8fa329a2489f1f99",
+      "0x8fa329a2489f1b8a",
+      "0x8fa329a2489f07fb",
+      "0xae9ab89095cec3a8",
+      "0xae9ab89095cec7bf",
+      "0xae9ab89095cecb8e",
+      "0xae9ab89095cecf9d"
+    ]
+  },
+  "216420": {
+    "region_key": "Sinkhole",
+    "rs_hash": "0xd075d8c6b30f5dc8",
+    "t2_hash": "0xebea1db64c8f7578",
+    "t2_min_stage": 2
+  },
+  "216549": {
+    "region_key": "DesertBluff",
+    "rs_hash": "0x9e1dfe95286c9fb0",
+    "t2_hash": "0xebea1db64c8f716f",
+    "t2_min_stage": 2
+  },
+  "216578": {
+    "region_key": "DesertWest",
+    "rs_hash": "0xd16c1c0616f6521e",
+    "t2_hash": "0xebea1db64c8f7d5e",
+    "t2_min_stage": 2
+  },
+  "216585": {
+    "region_key": "DesertEast",
+    "rs_hash": "0xa94f7f075a079035",
+    "t2_hash": "0xebea1db64c8f794d",
+    "t2_min_stage": 2
+  },
+  "216589": {
+    "region_key": "DesertEast",
+    "rs_hash": "0xa94f7f075a079035",
+    "t2_hash": "0xebea1db64c8f653c",
+    "t2_min_stage": 2
+  },
+  "216598": {
+    "region_key": "DesertEast",
+    "rs_hash": "0xa94f7f075a079035",
+    "t2_hash": "0xebea1db64c8f60d4",
+    "t2_min_stage": 2
+  },
+  "216424": {
+    "region_key": "DesertWest",
+    "rs_hash": "0x5d12979e5383a19d",
+    "t2_hash": "0x2fbcbb16f7e683f2",
+    "t2_min_stage": 4
+  },
+  "216597": {
+    "region_key": "DesertEast",
+    "rs_hash": "0x8dad911c130810dd",
+    "t2_hash": "0x75c20730086d3cf2",
+    "t2_min_stage": 4
+  },
+  "216594": {
+    "region_key": "DesertEast",
+    "t2_hash": "0x5c62dbe245561d1b",
+    "t2_min_stage": 4
+  },
+  "216545": {
+    "region_key": "DesertBluff",
+    "rs_hash": "0x9e1dfe95286c9fb0",
+    "t2_hash": "0xa11cc29b85fa0a38",
+    "t2_min_stage": 2
+  },
+  "216555": {
+    "region_key": "Lightwell",
+    "rs_hash": "0xbcbec489f5f46c89",
+    "t2_hash": "0xa11cc29b85fa0e2b",
+    "t2_min_stage": 2
+  },
+  "216557": {
+    "region_key": "Lightwell",
+    "rs_hash": "0xbcbec489f5f46c89",
+    "t2_hash": "0xa11cc29b85fa0609",
+    "t2_min_stage": 2
+  },
+  "216573": {
+    "region_key": "DesertWest",
+    "rs_hash": "0xd16c1c0616f6521e",
+    "t2_hash": "0xa11cc29b85fa1e77",
+    "t2_min_stage": 2
+  },
+  "216612": {
+    "region_key": "DesertEast",
+    "rs_hash": "0xa94f7f075a079035",
+    "t2_hash": "0xa11cc29b85fa0206",
+    "t2_min_stage": 2
+  },
+  "216541": {
+    "region_key": "DesertBluff",
+    "rs_hash": "0x7f44720dbca2c64e",
+    "t2_hash": "0x12204c2886459725",
+    "t2_min_stage": 2
+  },
+  "216543": {
+    "region_key": "DesertBluff",
+    "rs_hash": "0x7f44720dbca2c64e",
+    "t2_hash": "0xcf2aea99ac902ff6",
+    "t2_min_stage": 2
+  },
+  "216552": {
+    "region_key": "Lightwell",
+    "rs_hash": "0xc75e22421796edfb",
+    "t2_hash": "0x3e7c08fa4f88791b",
+    "t2_min_stage": 2
+  },
+  "216561": {
+    "region_key": "Lightwell",
+    "rs_hash": "0xc75e22421796edfb",
+    "t2_hash": "0x1e97784a4db072e5",
+    "t2_min_stage": 2
+  },
+  "216565": {
+    "region_key": "CanyonCave",
+    "rs_hash": "0x18271cc8cdfc68a5",
+    "t2_hash": "0x7f7e87acc3dec9a1",
+    "t2_min_stage": 2
+  },
+  "216566": {
+    "region_key": "Sinkhole",
+    "rs_hash": "0x0a1fe783beb668d5"
+  },
+  "216571": {
+    "region_key": "DesertWest",
+    "rs_hash": "0xa9691e7112ee01e9"
+  },
+  "216572": {
+    "region_key": "DesertWest",
+    "rs_hash": "0xa9691e7112ee01e9"
+  },
+  "216577": {
+    "region_key": "DesertWest",
+    "rs_hash": "0xa9691e7112ee01e9"
+  },
+  "216581": {
+    "region_key": "DesertWest",
+    "rs_hash": "0xa9691e7112ee01e9",
+    "hero_hash": "0x8b14f6ee11b5e753"
+  },
+  "216583": {
+    "region_key": "AlfheimCave",
+    "rs_hash": "0x2e68425acc02ebe8"
+  },
+  "216590": {
+    "region_key": "DesertEast",
+    "rs_hash": "0xad3fc6a745c22e30",
+    "t2_hash": "0x3af6a85078458f4e",
+    "t2_min_stage": 2
+  },
+  "216591": {
+    "region_key": "DesertEast",
+    "rs_hash": "0xad3fc6a745c22e30",
+    "t2_hash": "0x3af6a8507845b3bf",
+    "t2_min_stage": 2
+  },
+  "216592": {
+    "region_key": "DesertEast",
+    "rs_hash": "0xad3fc6a745c22e30",
+    "hero_hash": "0x0ae4a8a58d2f550e"
+  },
+  "216596": {
+    "region_key": "DesertEast",
+    "rs_hash": "0xad3fc6a745c22e30",
+    "t2_hash": "0xe7b84b75370ff0de",
+    "t2_min_stage": 4
+  },
+  "216602": {
+    "region_key": "DesertEast",
+    "rs_hash": "0xad3fc6a745c22e30",
+    "t2_hash": "0x06584e46d0f0642e",
+    "t2_min_stage": 2
+  },
+  "216605": {
+    "region_key": "DesertEast",
+    "rs_hash": "0xad3fc6a745c22e30",
+    "t2_hash": "0xfcb6bc8cd696364b",
+    "t2_min_stage": 2
+  },
+  "216604": {
+    "region_key": "DesertEast",
+    "rs_hash": "0xd11a3b6ba9fb65fe",
+    "t2_hash": "0x2c4249bf55c42169",
+    "t2_min_stage": 4
+  },
+  "216414": {
+    "region_key": "DesertBluff",
+    "rs_hash": "0x5d332468e4c4fdbd"
+  },
+  "216554": {
+    "region_key": "Lightwell",
+    "rs_hash": "0x11ebf452f17313dd",
+    "wad_name": "Alf_Well125_SideArea",
+    "wad_ent_hash": "0x4a54ceec441959c4"
+  },
+  "216560": {
+    "region_key": "Lightwell",
+    "rs_hash": "0x11ebf452f17313dd",
+    "t2_hash": "0x11ebf452f17313dd",
+    "t2_min_stage": 2
+  },
+  "216564": {
+    "region_key": "CanyonCave",
+    "rs_hash": "0x321b3f95dd71c92a"
+  },
+  "216575": {
+    "region_key": "DesertWest",
+    "rs_hash": "0xe5b26275e33f35ce"
+  },
+  "216579": {
+    "region_key": "DesertWest",
+    "rs_hash": "0xe5b26275e33f35ce"
+  },
+  "216587": {
+    "region_key": "DesertEast",
+    "rs_hash": "0x6285f64aee81392f",
+    "t2_hash": "0x5c62dbe245561d1b",
+    "t2_min_stage": 4
+  },
+  "216600": {
+    "region_key": "DesertEast",
+    "rs_hash": "0x6285f64aee81392f",
+    "t2_hash": "0x5776c088803f7bf8",
+    "t2_min_stage": 4
+  },
+  "216606": {
+    "region_key": "DesertEast",
+    "rs_hash": "0x6285f64aee81392f",
+    "wad_name": "Alf_DEast200_Surface",
+    "wad_ent_hash": "0x38858fb7c2d40bd2"
+  },
+  "216610": {
+    "region_key": "DesertEast",
+    "rs_hash": "0x6285f64aee81392f",
+    "t2_hash": "0x40dc36b3803aced6",
+    "t2_min_stage": 4
+  },
+  "219055": {
+    "region_key": "Lightwell",
+    "t2_hash": "0x55baa81bb2fa9551",
+    "t2_min_stage": 4
+  },
+  "219268": {
+    "region_key": "DesertEast",
+    "t2_hash": "0x817b1477d6e0e8d3",
+    "t2_min_stage": 2
+  },
+  "219272": {
+    "region_key": "DesertEast",
+    "t2_hash": "0x817b1477d6e0e8d3",
+    "t2_min_stage": 2
+  },
+  "945742": {
+    "region_key": "Lightwell",
+    "t2_hash": "0x55baa81bb2fa9551",
+    "t2_min_stage": 4
+  },
+  "505649": {
+    "region_key": "DesertEast",
+    "t2_hash": "0x40dc36b3803aced6",
+    "t2_min_stage": 4
+  },
+  "945708": {
+    "region_key": "Lightwell"
+  },
+  "945744": {
+    "region_key": "Sinkhole"
+  },
+  "945746": {
+    "region_key": "DesertEast"
+  },
+  "945747": {
+    "region_key": "Sinkhole"
+  },
+  "945749": {
+    "region_key": "DesertWest"
+  },
+  "945752": {
+    "region_key": "Sinkhole"
+  },
+  "945754": {
+    "region_key": "Sinkhole"
+  },
+  "945755": {
+    "region_key": "Sinkhole"
+  },
+  "945756": {
+    "region_key": "Sinkhole"
+  },
+  "945758": {
+    "region_key": "Sinkhole"
+  },
+  "945761": {
+    "region_key": "CanyonCave"
+  },
+  "945762": {
+    "region_key": "DesertBluff"
+  },
+  "945764": {
+    "region_key": "Lightwell"
+  },
+  "945769": {
+    "region_key": "Lightwell"
+  },
+  "945770": {
+    "region_key": "DesertBluff"
+  },
+  "945772": {
+    "region_key": "CanyonCave"
+  },
+  "216546": {
+    "region_key": "DesertBluff",
+    "rs_hash": "0x0e77db7fc9ce316c"
+  },
+  "216548": {
+    "region_key": "DesertBluff",
+    "rs_hash": "0x0e77db7fc9ce316c"
+  },
+  "216553": {
+    "region_key": "Lightwell",
+    "rs_hash": "0x06e2d8f0f15ebb26",
+    "wad_name": "Alf_Well125_SideArea",
+    "wad_ent_hash": "0x3bbc63126bb1f2cd"
+  },
+  "216556": {
+    "region_key": "Lightwell",
+    "rs_hash": "0x06e2d8f0f15ebb26",
+    "wad_name": "Alf_Well200_Floor2",
+    "wad_ent_hash": "0x1c4c52c4c5e03891"
+  },
+  "216558": {
+    "region_key": "Lightwell",
+    "rs_hash": "0x06e2d8f0f15ebb26",
+    "wad_name": "Alf_Well220_BackArea",
+    "wad_ent_hash": "0x47040a10ef82c7ad"
+  },
+  "216562": {
+    "region_key": "DesertWest",
+    "rs_hash": "0xef4c405ad123fae3"
+  },
+  "216568": {
+    "region_key": "Sinkhole",
+    "rs_hash": "0xca0b9b57ba520987"
+  },
+  "216580": {
+    "region_key": "DesertWest",
+    "rs_hash": "0xef4c405ad123fae3"
+  },
+  "216584": {
+    "region_key": "AlfheimCave",
+    "rs_hash": "0xc14a82cfb0195202"
+  },
+  "216586": {
+    "region_key": "Sinkhole",
+    "rs_hash": "0xca0b9b57ba520987"
+  },
+  "216608": {
+    "region_key": "DesertEast",
+    "rs_hash": "0xa62cfb76b7e4a983"
+  },
+  "216413": {
+    "region_key": "DesertBluff",
+    "rs_hash": "0x638fe61d54cdc807"
+  },
+  "216550": {
+    "region_key": "DesertEast",
+    "rs_hash": "0x50c7aeaca1f9a5da",
+    "wad_name": "Alf_DEast200_Surface",
+    "wad_ent_hash": "0x6dba3a056c8f56f1"
+  },
+  "216559": {
+    "region_key": "Lightwell",
+    "rs_hash": "0x36a045015afe325a"
+  },
+  "216567": {
+    "region_key": "AlfheimCave",
+    "rs_hash": "0x4e12861a0b613718"
+  },
+  "216576": {
+    "region_key": "DesertWest",
+    "rs_hash": "0x6207e7d825220a4c"
+  },
+  "216588": {
+    "region_key": "DesertEast",
+    "rs_hash": "0x50c7aeaca1f9a5da",
+    "wad_name": "Alf_DEast720_PLadyUnder",
+    "wad_ent_hash": "0x61856615540435d3"
+  },
+  "216607": {
+    "region_key": "DesertEast",
+    "rs_hash": "0x50c7aeaca1f9a5da",
+    "wad_name": "Alf_DEast200_Surface",
+    "wad_ent_hash": "0x4a5e507d8e5d6e4f"
+  },
+  "504851": {
+    "region_key": "Sinkhole"
+  },
+  "504852": {
+    "region_key": "Sinkhole"
+  },
+  "505637": {
+    "region_key": "CanyonCave"
+  },
+  "505638": {
+    "region_key": "Lightwell"
+  },
+  "505639": {
+    "region_key": "Lightwell"
+  },
+  "505641": {
+    "region_key": "Lightwell"
+  },
+  "505642": {
+    "region_key": "CanyonCave"
+  },
+  "505643": {
+    "region_key": "Sinkhole"
+  },
+  "505644": {
+    "region_key": "Sinkhole"
+  },
+  "505645": {
+    "region_key": "Sinkhole"
+  },
+  "505646": {
+    "region_key": "DesertEast"
+  },
+  "891837": {
+    "region_key": "Lightwell"
+  },
+  "945773": {
+    "region_key": "DesertEast"
+  },
+  "216563": {
+    "region_key": "CanyonCave",
+    "t2_hash": "0x0b57b899beebd31e",
+    "t2_min_stage": 2
+  },
+  "216593": {
+    "region_key": "DesertEast",
+    "t2_hash": "0x4124e5a5989333f3",
+    "t2_min_stage": 2
+  },
+  "945709": {
+    "region_key": "Lightwell"
+  },
+  "945745": {
+    "region_key": "DesertEast"
+  },
+  "945748": {
+    "region_key": "DesertWest"
+  },
+  "945750": {
+    "region_key": "Sinkhole"
+  },
+  "945751": {
+    "region_key": "Sinkhole"
+  },
+  "945753": {
+    "region_key": "Sinkhole"
+  },
+  "945757": {
+    "region_key": "Sinkhole"
+  },
+  "945759": {
+    "region_key": "CanyonCave"
+  },
+  "945760": {
+    "region_key": "CanyonCave"
+  },
+  "945763": {
+    "region_key": "Lightwell"
+  },
+  "945765": {
+    "region_key": "Lightwell"
+  },
+  "945766": {
+    "region_key": "Lightwell"
+  },
+  "945767": {
+    "region_key": "Lightwell"
+  },
+  "945768": {
+    "region_key": "Lightwell"
+  },
+  "945771": {
+    "region_key": "DesertBluff"
+  },
+  "216419": {
+    "region_key": "DesertWest",
+    "rs_hash": "0x4ccecac0512196fc",
+    "t2_hash": "0xb5f656001aced5e3",
+    "t2_min_stage": 4
+  },
+  "216609": {
+    "region_key": "DesertEast",
+    "rs_hash": "0x88735342f8252e94",
+    "t2_hash": "0xb5f703b42642b3c8",
+    "t2_min_stage": 4
+  },
+  "216582": {
+    "region_key": "DesertWest",
+    "rs_hash": "0x5239a2dbe7eaa0ce",
+    "t2_hash": "0x5239a2dbe7eaa0ce",
+    "t2_min_stage": 4
+  },
+  "216418": {
+    "region_key": "Sinkhole",
+    "t2_hash": "0x5ce924e2dae7e58b",
+    "t2_min_stage": 4
+  },
+  "216601": {
+    "region_key": "DesertEast",
+    "t2_hash": "0x5776c088803f7bf8",
+    "t2_min_stage": 4
+  },
+  "216613": {
+    "region_key": "DesertEast",
+    "t2_hash": "0x184c36f3ed0271ed",
+    "t2_min_stage": 4
+  },
+  "219422": {
+    "region_key": "DesertEast",
+    "t2_hash": "0x40dc36b3803aced6",
+    "t2_min_stage": 4
+  },
+  "219423": {
+    "region_key": "DesertEast",
+    "t2_hash": "0x5c62dbe245561d1b",
+    "t2_min_stage": 4
+  },
+  "219822": {
+    "region_key": "DesertEast",
+    "t2_hash": "0x608617881b6b6f6c",
+    "t2_min_stage": 4
+  },
+  "216542": {
+    "region_key": "DesertBluff",
+    "rs_hash": "0x853527105ee5938f",
+    "t2_hash": "0x853527105ee5938f",
+    "t2_min_stage": 4
+  },
+  "216547": {
+    "region_key": "DesertBluff",
+    "rs_hash": "0xb1137e9039c79b1c",
+    "t2_hash": "0xc2e83ccf950d0673",
+    "t2_min_stage": 4
+  },
+  "216569": {
+    "region_key": "DesertWest",
+    "rs_hash": "0x86bb504338631aa1",
+    "t2_hash": "0x8d785b50706b199c",
+    "t2_min_stage": 4
+  },
+  "216599": {
+    "region_key": "DesertEast",
+    "rs_hash": "0x8de26b2b2bf50f2d"
+  },
+  "219953": {
+    "region_key": "DesertEast",
+    "t2_hash": "0xddb969cf11617440",
+    "t2_min_stage": 4
+  },
+  "219410": {
+    "region_key": "DesertEast",
+    "t2_hash": "0x184c36f3ed0271ed",
+    "t2_min_stage": 4
+  },
+  "505648": {
+    "region_key": "DesertEast",
+    "t2_hash": "0x40dc36b3803aced6",
+    "t2_min_stage": 4
+  },
+  "945743": {
+    "region_key": "Lightwell",
+    "t2_hash": "0x55baa81bb2fa9551",
+    "t2_min_stage": 4
+  },
+  "219572": {
+    "region_key": "DesertEast",
+    "t2_hash": "0x5286ee6915e6b469",
+    "t2_min_stage": 4
+  },
+  "948167": {
+    "region_key": "AsgardPlains"
+  },
+  "219803": {
+    "region_key": "AsgardPlains",
+    "equip_any": [
+      "0xb8db9bf5975417e1"
+    ]
+  },
+  "218790": {
+    "region_key": "AsgardPlains",
+    "t2_hash": "0xaf8bdb99da02ff77",
+    "t2_min_stage": 2
+  },
+  "217903": {
+    "region_key": "AsgardPlains"
+  },
+  "217906": {
+    "region_key": "AsgardPlains"
+  },
+  "217907": {
+    "region_key": "AsgardPlains"
+  },
+  "217908": {
+    "region_key": "AsgardPlains"
+  },
+  "217910": {
+    "region_key": "AsgardPlains"
+  },
+  "217911": {
+    "region_key": "AsgardPlains"
+  },
+  "217913": {
+    "region_key": "AsgardPlains"
+  },
+  "217916": {
+    "region_key": "AsgardPlains"
+  },
+  "217918": {
+    "region_key": "AsgardPlains"
+  },
+  "217920": {
+    "region_key": "AsgardPlains"
+  },
+  "217921": {
+    "region_key": "AsgardPlains"
+  },
+  "948171": {
+    "region_key": "AsgardPlains"
+  },
+  "217904": {
+    "region_key": "AsgardPlains",
+    "t2_hash": "0xe1c9b2cc208ea53a",
+    "t2_min_stage": 4
+  },
+  "217919": {
+    "region_key": "AsgardPlains",
+    "t2_hash": "0xeebe46464087b37b",
+    "t2_min_stage": 4
+  },
+  "948168": {
+    "region_key": "AsgardPlains"
+  },
+  "948169": {
+    "region_key": "AsgardPlains"
+  },
+  "948170": {
+    "region_key": "AsgardPlains"
+  },
+  "217912": {
+    "region_key": "AsgardPlains"
+  },
+  "217901": {
+    "region_key": "AsgardPlains"
+  },
+  "217902": {
+    "region_key": "AsgardPlains"
+  },
+  "217905": {
+    "region_key": "AsgardPlains"
+  },
+  "217909": {
+    "region_key": "AsgardPlains"
+  },
+  "217914": {
+    "region_key": "AsgardPlains"
+  },
+  "217917": {
+    "region_key": "AsgardPlains"
+  },
+  "217922": {
+    "region_key": "AsgardPlains"
+  },
+  "216516": {
+    "region_key": "HelheimGarm",
+    "ft_wad": "Hel_Garm050_Start",
+    "ft_item_hash": "0x1e9aca1af6fc2bc9"
+  },
+  "216517": {
+    "region_key": "HelheimGarm",
+    "rs_hash": "0xe98114b54d7912fc",
+    "t2_hash": "0x37beb4ae19083341",
+    "t2_min_stage": 2
+  },
+  "216520": {
+    "region_key": "HelheimGarm",
+    "rs_hash": "0xe98114b54d7912fc",
+    "t2_hash": "0xe4b85becc44754f7",
+    "t2_min_stage": 2
+  },
+  "216521": {
+    "region_key": "HelheimGarm",
+    "t2_hash": "0x65d7787ce7e705d0",
+    "t2_min_stage": 4
+  },
+  "216518": {
+    "region_key": "HelheimGarm",
+    "rs_hash": "0x9777a39a6bc0d927"
+  },
+  "216519": {
+    "region_key": "HelheimGarm",
+    "rs_hash": "0x9777a39a6bc0d927"
+  },
+  "219819": {
+    "region_key": "EagleArena",
+    "t2_hash": "0x3ef6642592b791a8",
+    "t2_min_stage": 4
+  },
+  "219056": {
+    "region_key": "EagleArena",
+    "t2_hash": "0x3ef6642592b791a8",
+    "t2_min_stage": 4
+  },
+  "220933": {
+    "region_key": "HelheimGarm",
+    "t2_hash": "0x3ef6642592b791a8",
+    "t2_min_stage": 4
+  },
+  "220934": {
+    "region_key": "EagleArena",
+    "t2_hash": "0x4a1305f6c832dd24",
+    "t2_min_stage": 4
+  },
+  "220935": {
+    "region_key": "HelheimGarm",
+    "t2_hash": "0x3ef6642592b791a8",
+    "t2_min_stage": 4
+  },
+  "220936": {
+    "region_key": "HelheimGarm",
+    "t2_hash": "0x4a1305f6c832dd24",
+    "t2_min_stage": 4
+  },
+  "948173": {
+    "region_key": "HelheimRavine"
+  },
+  "216515": {
+    "region_key": "HelheimGarm",
+    "t2_hash": "0x3cc937148dd81a39",
+    "t2_min_stage": 4
+  },
+  "216514": {
+    "region_key": "HelheimGarm",
+    "t2_hash": "0x30af9efae75a4ae9",
+    "t2_min_stage": 4
+  },
+  "216512": {
+    "region_key": "JotunheimTreehouse",
+    "t2_hash": "0xa00ec013c04a555a",
+    "t2_min_stage": 4
+  },
+  "948141": {
+    "region_key": "JotunheimTreehouse"
+  },
+  "219802": {
+    "region_key": "JotunheimTreehouse",
+    "equip_any": [
+      "0x17053bb8ff2bba51"
+    ]
+  },
+  "216616": {
+    "region_key": "JotunheimTreehouse",
+    "t2_hash": "0xa1e7aeb3368ee610",
+    "t2_min_stage": 2
+  },
+  "218789": {
+    "region_key": "JotunheimTreehouse",
+    "t2_hash": "0x906d7c527dc73776",
+    "t2_min_stage": 2
+  },
+  "216513": {
+    "region_key": "JotunheimTreehouse",
+    "rs_hash": "0x1008660623617025",
+    "t2_hash": "0x2bc0894828c2ae50",
+    "t2_min_stage": 4
+  },
+  "216620": {
+    "region_key": "JotunheimTreehouse"
+  },
+  "216621": {
+    "region_key": "JotunheimTreehouse"
+  },
+  "216622": {
+    "region_key": "JotunheimTreehouse"
+  },
+  "216623": {
+    "region_key": "JotunheimTreehouse"
+  },
+  "216628": {
+    "region_key": "JotunheimTreehouse"
+  },
+  "948147": {
+    "region_key": "JotunheimTreehouse"
+  },
+  "948149": {
+    "region_key": "JotunheimTreehouse"
+  },
+  "948152": {
+    "region_key": "JotunheimTreehouse"
+  },
+  "948153": {
+    "region_key": "JotunheimTreehouse"
+  },
+  "948154": {
+    "region_key": "JotunheimTreehouse"
+  },
+  "948155": {
+    "region_key": "JotunheimTreehouse"
+  },
+  "948156": {
+    "region_key": "JotunheimTreehouse"
+  },
+  "948157": {
+    "region_key": "JotunheimTreehouse"
+  },
+  "948158": {
+    "region_key": "JotunheimTreehouse"
+  },
+  "948161": {
+    "region_key": "JotunheimTreehouse"
+  },
+  "948162": {
+    "region_key": "JotunheimTreehouse"
+  },
+  "948163": {
+    "region_key": "JotunheimTreehouse"
+  },
+  "948165": {
+    "region_key": "JotunheimTreehouse"
+  },
+  "948166": {
+    "region_key": "JotunheimTreehouse"
+  },
+  "216617": {
+    "region_key": "JotunheimTreehouse",
+    "wad_name": "Jot_Mrsh450_Caves",
+    "wad_ent_hash": "0xa375db8651e08e51"
+  },
+  "221068": {
+    "region_key": "JotunheimTreehouse",
+    "t2_hash": "0x01edbe31d85be1d9",
+    "t2_min_stage": 4
+  },
+  "221069": {
+    "region_key": "JotunheimTreehouse",
+    "t2_hash": "0x01edbe31d85be1d9",
+    "t2_min_stage": 4
+  },
+  "948140": {
+    "region_key": "JotunheimTreehouse"
+  },
+  "948142": {
+    "region_key": "JotunheimTreehouse"
+  },
+  "216624": {
+    "region_key": "JotunheimTreehouse"
+  },
+  "216625": {
+    "region_key": "JotunheimTreehouse"
+  },
+  "216626": {
+    "region_key": "JotunheimTreehouse"
+  },
+  "518620": {
+    "region_key": "JotunheimTreehouse"
+  },
+  "518621": {
+    "region_key": "JotunheimTreehouse"
+  },
+  "216618": {
+    "region_key": "JotunheimTreehouse"
+  },
+  "216619": {
+    "region_key": "JotunheimTreehouse"
+  },
+  "216627": {
+    "region_key": "JotunheimTreehouse"
+  },
+  "945860": {
+    "region_key": "JotunheimTreehouse"
+  },
+  "948146": {
+    "region_key": "JotunheimTreehouse"
+  },
+  "948148": {
+    "region_key": "JotunheimTreehouse"
+  },
+  "948150": {
+    "region_key": "JotunheimTreehouse"
+  },
+  "948151": {
+    "region_key": "JotunheimTreehouse"
+  },
+  "948164": {
+    "region_key": "JotunheimTreehouse"
+  },
+  "948143": {
+    "region_key": "JotunheimTreehouse"
+  },
+  "948144": {
+    "region_key": "JotunheimTreehouse"
+  },
+  "948145": {
+    "region_key": "JotunheimTreehouse"
+  },
+  "948159": {
+    "region_key": "JotunheimTreehouse"
+  },
+  "216932": {
+    "region_key": "MidWildwoods"
+  },
+  "216935": {
+    "region_key": "SkadiOut"
+  },
+  "216431": {
+    "region_key": "KingsArena",
+    "ft_wad": "Mid_Cal700_KingsArena",
+    "ft_item_hash": "0x8e3bdcb1f6deb8f1"
+  },
+  "216432": {
+    "region_key": "Oarsmen",
+    "ft_wad": "Mid_Shld100_Main",
+    "ft_item_hash": "0x1b1a2ef257c6ff50"
+  },
+  "216435": {
+    "region_key": "CalderaShoreNorth",
+    "ft_wad": "Mid_Cal300_ShoreNorth",
+    "ft_item_hash": "0x76d79f7095acbaf5"
+  },
+  "216436": {
+    "region_key": "Oarsmen",
+    "ft_wad": "Mid_Oar100_Main",
+    "ft_item_hash": "0x11227726df1cd0ed"
+  },
+  "216840": {
+    "region_key": "SkadiOut",
+    "ft_wad": "Mid_Cal210_BoneyardBCamp",
+    "ft_item_hash": "0xde632db5fb41ef52"
+  },
+  "216841": {
+    "region_key": "SkadiOut",
+    "ft_wad": "Mid_Riv600_Sanctuary",
+    "ft_item_hash": "0x14558406858dce5a"
+  },
+  "216843": {
+    "region_key": "SkadiOut",
+    "ft_wad": "Mid_SkadOut100_Main",
+    "ft_item_hash": "0xf6ae7b8517f95018"
+  },
+  "216844": {
+    "region_key": "MidWildwoods",
+    "ft_wad": "Mid_For200_House",
+    "ft_item_hash": "0x9c28946490f0df37"
+  },
+  "216433": {
+    "region_key": "CalderaLakeFrozen"
+  },
+  "216434": {
+    "region_key": "CalderaShoreNorth"
+  },
+  "216842": {
+    "region_key": "SkadiOut"
+  },
+  "219574": {
+    "region_key": "MidWildwoods",
+    "equip_any": [
+      "0xdb786d5f83b7b8f8",
+      "0xdb786d5f83b7b4c9",
+      "0xdb786d5f83b7b0d6",
+      "0xdb786d5f83b78c27",
+      "0xdb786d5f83b78834",
+      "0xdb786d5f83b78405",
+      "0xdb786d5f83b78012",
+      "0xdb786d5f83b79c63",
+      "0xdb786d5f83b79870",
+      "0x5d2f9f4b9d0b9c1a",
+      "0x5d2f9f4b9d0ba0f5",
+      "0x5d2f9f4b9d0ba4e4",
+      "0x5d2f9f4b9d0ba8d7"
+    ]
+  },
+  "219585": {
+    "region_key": "CalderaShoreNorth",
+    "equip_any": [
+      "0xe1e2d0cd9ed9b8c3",
+      "0xe1e2d0cd9ed9a4b2",
+      "0xe1e2d0cd9ed9a0ad",
+      "0xe1e2d0cd9ed9ac9c",
+      "0xe1e2d0cd9ed9a88f",
+      "0xe1e2d0cd9ed9577e",
+      "0xe1e2d0cd9ed95369",
+      "0xe1e2d0cd9ed95f58",
+      "0xe1e2d0cd9ed95b4b",
+      "0x0b57d43c5c848747",
+      "0x0b57d43c5c848b76",
+      "0x0b57d43c5c848f61",
+      "0x0b57d43c5c849310"
+    ]
+  },
+  "219769": {
+    "region_key": "SkadiOut",
+    "equip_any": [
+      "0x0186b9b74c837f25",
+      "0x0186b9b74c837b34",
+      "0x0186b9b74c837703",
+      "0x0186b9b74c837312",
+      "0x0186b9b74c830ee1",
+      "0x0186b9b74c830af0",
+      "0x0186b9b74c8306df",
+      "0x0186b9b74c8302ce",
+      "0x0186b9b74c831ebd",
+      "0x94047b539bddaa39",
+      "0x94047b539bddae16",
+      "0x94047b539bddb267",
+      "0x94047b539bddb674"
+    ]
+  },
+  "219790": {
+    "region_key": "CalderaShoreNorth",
+    "equip_any": [
+      "0xed66878189e0e5ba",
+      "0xed66878189e0e1a9",
+      "0xed66878189e0dd58",
+      "0xed66878189e0d94f",
+      "0xed66878189e0d57e",
+      "0xed66878189e0d16d",
+      "0xed66878189e0cd1c",
+      "0xed66878189e0c903",
+      "0xed66878189e0c532",
+      "0x2a7bb73182df044f",
+      "0x2a7bb73182df0878",
+      "0x2a7bb73182df0c69",
+      "0x2a7bb73182df309a"
+    ]
+  },
+  "219801": {
+    "region_key": "CalderaLakeFrozen",
+    "equip_any": [
+      "0x56c337c5eab97e1e",
+      "0x56c337c5eab9722f",
+      "0x56c337c5eab97620",
+      "0x56c337c5eab96a51",
+      "0x56c337c5eab96e42",
+      "0x56c337c5eab96273",
+      "0x56c337c5eab96664",
+      "0x56c337c5eab95a95",
+      "0x56c337c5eab95e86",
+      "0xb1460c1f9484fd0d",
+      "0xb1460c1f9484e172",
+      "0xb1460c1f9484e563",
+      "0xb1460c1f9484e950"
+    ]
+  },
+  "219805": {
+    "region_key": "MidWildwoods",
+    "equip_any": [
+      "0x48e9769b2dfa18f8",
+      "0xa75751193e071368"
+    ]
+  },
+  "219807": {
+    "region_key": "CalderaLakeFrozen",
+    "equip_any": [
+      "0x2a7d467257e33d51"
+    ]
+  },
+  "219810": {
+    "region_key": "CalderaLakeFrozen",
+    "equip_any": [
+      "0xee559505109e5a57"
+    ]
+  },
+  "216423": {
+    "region_key": "CalderaShoreNorth",
+    "rs_hash": "0xa58916117506f3f7",
+    "t2_hash": "0x0ade52f8c88f5898",
+    "t2_min_stage": 2
+  },
+  "216443": {
+    "region_key": "Oarsmen",
+    "rs_hash": "0x4b6934f6f1ffef5c",
+    "t2_hash": "0x0ade52f8c88f295c",
+    "t2_min_stage": 2
+  },
+  "216465": {
+    "region_key": "SkadiOut",
+    "rs_hash": "0x2b962950e2d6c8c0",
+    "t2_hash": "0x0ade52f8c88f54ab",
+    "t2_min_stage": 2
+  },
+  "216482": {
+    "region_key": "CalderaLakeFrozen",
+    "rs_hash": "0x8c59bb2bded7899b",
+    "t2_hash": "0x0ade52f8c88f50ba",
+    "t2_min_stage": 2
+  },
+  "216483": {
+    "region_key": "CalderaLakeFrozen",
+    "rs_hash": "0x8c59bb2bded7899b",
+    "t2_hash": "0x0ade52f8c88f2d4d",
+    "t2_min_stage": 2
+  },
+  "216488": {
+    "region_key": "CalderaLakeFrozen",
+    "rs_hash": "0x8c59bb2bded7899b",
+    "t2_hash": "0x0ade52f8c88f256f",
+    "t2_min_stage": 2
+  },
+  "216475": {
+    "region_key": "CalderaLakeFrozen",
+    "rs_hash": "0x9008414aec975850",
+    "t2_hash": "0xb69fc654f7d93e1c",
+    "t2_min_stage": 4
+  },
+  "216485": {
+    "region_key": "CalderaLakeFrozen",
+    "rs_hash": "0x9008414aec975850",
+    "t2_hash": "0x80c609427b16a4f7",
+    "t2_min_stage": 4
+  },
+  "216442": {
+    "region_key": "Oarsmen",
+    "t2_hash": "0x658a81440178244c",
+    "t2_min_stage": 4
+  },
+  "219050": {
+    "region_key": "Norns",
+    "t2_hash": "0xd9dc13eb26272422",
+    "t2_min_stage": 4
+  },
+  "216456": {
+    "region_key": "ThorBCamp",
+    "rs_hash": "0x528efec9b81ef9f8",
+    "t2_hash": "0x528efec9b81ef9f8",
+    "t2_min_stage": 4
+  },
+  "216457": {
+    "region_key": "WheelBCamp",
+    "rs_hash": "0x061730164fc0940c",
+    "t2_hash": "0x061730164fc0940c",
+    "t2_min_stage": 4
+  },
+  "216459": {
+    "region_key": "TempleBCamp",
+    "rs_hash": "0x9a652ac309dcc16d",
+    "t2_hash": "0x9a652ac309dcc16d",
+    "t2_min_stage": 4
+  },
+  "216461": {
+    "region_key": "BoneyardBCamp",
+    "rs_hash": "0x874e275ca9374b5c",
+    "t2_hash": "0x874e275ca9374b5c",
+    "t2_min_stage": 4
+  },
+  "216452": {
+    "region_key": "Oarsmen",
+    "rs_hash": "0x4b6934f6f1ffef5c",
+    "t2_hash": "0xc312c00679a81591",
+    "t2_min_stage": 2
+  },
+  "216427": {
+    "region_key": "CalderaShoreNorth",
+    "t2_hash": "0xfd82dc813d24b71b",
+    "t2_min_stage": 4
+  },
+  "216444": {
+    "region_key": "Oarsmen",
+    "rs_hash": "0xfc03d451f4d83872"
+  },
+  "216463": {
+    "region_key": "SkadiOut",
+    "rs_hash": "0x4a4d813cbb971a70"
+  },
+  "216466": {
+    "region_key": "SkadiOut",
+    "rs_hash": "0x4a4d813cbb971a70"
+  },
+  "216473": {
+    "region_key": "MidShield",
+    "rs_hash": "0x7747fbe808cfc220"
+  },
+  "216474": {
+    "region_key": "MidShield",
+    "rs_hash": "0x7747fbe808cfc220",
+    "hero_hash": "0x40d187230d286769"
+  },
+  "216476": {
+    "region_key": "CalderaShoreNorth",
+    "t2_hash": "0xfd82dc813d24b71b",
+    "t2_min_stage": 4
+  },
+  "216479": {
+    "region_key": "CalderaLakeFrozen",
+    "rs_hash": "0x12e9b2e4829be6f4",
+    "t2_hash": "0xfd82dc813d24b71b",
+    "t2_min_stage": 4
+  },
+  "216489": {
+    "region_key": "CalderaLakeFrozen",
+    "rs_hash": "0x12e9b2e4829be6f4",
+    "t2_hash": "0xfd82dc813d24b71b",
+    "t2_min_stage": 4
+  },
+  "216492": {
+    "region_key": "SkadiOut",
+    "rs_hash": "0x4a4d813cbb971a70",
+    "t2_hash": "0xad25232fc52a3370",
+    "t2_min_stage": 2
+  },
+  "220873": {
+    "region_key": "MidWildwoods",
+    "t2_hash": "0xf5edc5247e875120",
+    "t2_min_stage": 2
+  },
+  "220874": {
+    "region_key": "MidWildwoods",
+    "t2_hash": "0xaf553c91ca10e321",
+    "t2_min_stage": 2
+  },
+  "218793": {
+    "region_key": "Riverpass",
+    "rs_hash": "0xb4b0ea1dd5d2788c",
+    "t2_hash": "0xeee517767add7e09",
+    "t2_min_stage": 4
+  },
+  "216421": {
+    "region_key": "Norns",
+    "rs_hash": "0x7015bbe253568ead"
+  },
+  "216441": {
+    "region_key": "Oarsmen",
+    "rs_hash": "0xf19abc69173435a6"
+  },
+  "216462": {
+    "region_key": "SkadiOut",
+    "rs_hash": "0xa53b188d89533511",
+    "wad_name": "Mid_SkadOut100_Main",
+    "wad_ent_hash": "0x334be838ed5c4c8f"
+  },
+  "216464": {
+    "region_key": "SkadiOut",
+    "rs_hash": "0xa53b188d89533511",
+    "t2_hash": "0xa53b188d89533511",
+    "t2_min_stage": 4
+  },
+  "216484": {
+    "region_key": "CalderaLakeFrozen",
+    "rs_hash": "0xddfad8fd95cea459"
+  },
+  "216491": {
+    "region_key": "CalderaLakeFrozen",
+    "rs_hash": "0xddfad8fd95cea459"
+  },
+  "216493": {
+    "region_key": "SkadiOut",
+    "t2_hash": "0xad25232fc52a3370",
+    "t2_min_stage": 2
+  },
+  "219271": {
+    "region_key": "SkadiOut",
+    "t2_hash": "0x0764a3684976bd38",
+    "t2_min_stage": 4
+  },
+  "219419": {
+    "region_key": "KingsArena",
+    "t2_hash": "0xeadac0d4d16a028b",
+    "t2_min_stage": 4
+  },
+  "947585": {
+    "region_key": "MidWildwoods",
+    "t2_hash": "0x9553bc824241b256",
+    "t2_min_stage": 4
+  },
+  "216934": {
+    "region_key": "SkadiOut"
+  },
+  "249416": {
+    "region_key": "MidWildwoods"
+  },
+  "249418": {
+    "region_key": "MidWildwoods"
+  },
+  "249421": {
+    "region_key": "MidWildwoods"
+  },
+  "273793": {
+    "region_key": "MidWildwoods"
+  },
+  "273796": {
+    "region_key": "MidWildwoods"
+  },
+  "273800": {
+    "region_key": "MidWildwoods"
+  },
+  "273805": {
+    "region_key": "MidShield"
+  },
+  "273806": {
+    "region_key": "MidShield"
+  },
+  "273807": {
+    "region_key": "MidShield"
+  },
+  "273808": {
+    "region_key": "MidShield"
+  },
+  "273810": {
+    "region_key": "MidShield"
+  },
+  "273812": {
+    "region_key": "MidShield"
+  },
+  "273814": {
+    "region_key": "MidShield"
+  },
+  "503272": {
+    "region_key": "MidWildwoods"
+  },
+  "947264": {
+    "region_key": "Oarsmen"
+  },
+  "947265": {
+    "region_key": "Oarsmen"
+  },
+  "947266": {
+    "region_key": "Oarsmen"
+  },
+  "947552": {
+    "region_key": "Oarsmen"
+  },
+  "947553": {
+    "region_key": "Oarsmen"
+  },
+  "947554": {
+    "region_key": "Oarsmen"
+  },
+  "947556": {
+    "region_key": "Oarsmen"
+  },
+  "947557": {
+    "region_key": "Oarsmen"
+  },
+  "947558": {
+    "region_key": "Oarsmen"
+  },
+  "947561": {
+    "region_key": "CalderaShoreNorth"
+  },
+  "947562": {
+    "region_key": "CalderaShoreNorth"
+  },
+  "947563": {
+    "region_key": "CalderaShoreNorth"
+  },
+  "947564": {
+    "region_key": "CalderaShoreNorth"
+  },
+  "947565": {
+    "region_key": "Oarsmen"
+  },
+  "947566": {
+    "region_key": "Oarsmen"
+  },
+  "947567": {
+    "region_key": "Oarsmen"
+  },
+  "947569": {
+    "region_key": "Oarsmen"
+  },
+  "947570": {
+    "region_key": "Oarsmen"
+  },
+  "947571": {
+    "region_key": "Oarsmen"
+  },
+  "947572": {
+    "region_key": "Oarsmen"
+  },
+  "947574": {
+    "region_key": "CalderaShoreNorth"
+  },
+  "947575": {
+    "region_key": "CalderaShoreNorth"
+  },
+  "947576": {
+    "region_key": "Oarsmen"
+  },
+  "947577": {
+    "region_key": "Oarsmen"
+  },
+  "947579": {
+    "region_key": "CalderaShoreNorth"
+  },
+  "947581": {
+    "region_key": "CalderaShoreNorth"
+  },
+  "947597": {
+    "region_key": "Oarsmen"
+  },
+  "947598": {
+    "region_key": "Oarsmen"
+  },
+  "947601": {
+    "region_key": "CalderaLakeFrozen"
+  },
+  "947606": {
+    "region_key": "CalderaLakeFrozen"
+  },
+  "947614": {
+    "region_key": "KingsArena"
+  },
+  "947618": {
+    "region_key": "Oarsmen"
+  },
+  "947621": {
+    "region_key": "MidWildwoods"
+  },
+  "947722": {
+    "region_key": "CalderaLakeFrozen"
+  },
+  "947733": {
+    "region_key": "SkadiOut"
+  },
+  "947735": {
+    "region_key": "CalderaLakeFrozen"
+  },
+  "947737": {
+    "region_key": "SkadiOut"
+  },
+  "947740": {
+    "region_key": "CalderaLakeFrozen"
+  },
+  "947795": {
+    "region_key": "CalderaLakeFrozen"
+  },
+  "947816": {
+    "region_key": "CalderaLakeFrozen"
+  },
+  "947817": {
+    "region_key": "CalderaLakeFrozen"
+  },
+  "947931": {
+    "region_key": "Norns"
+  },
+  "947934": {
+    "region_key": "Norns"
+  },
+  "947936": {
+    "region_key": "Norns"
+  },
+  "947938": {
+    "region_key": "MidWildwoods"
+  },
+  "947940": {
+    "region_key": "Norns"
+  },
+  "947941": {
+    "region_key": "Norns"
+  },
+  "947944": {
+    "region_key": "Norns"
+  },
+  "947945": {
+    "region_key": "Norns"
+  },
+  "947947": {
+    "region_key": "Norns"
+  },
+  "947949": {
+    "region_key": "Norns"
+  },
+  "947950": {
+    "region_key": "Norns"
+  },
+  "947953": {
+    "region_key": "Norns"
+  },
+  "947954": {
+    "region_key": "Norns"
+  },
+  "947955": {
+    "region_key": "Norns"
+  },
+  "947956": {
+    "region_key": "SkadiOut"
+  },
+  "947957": {
+    "region_key": "SkadiOut"
+  },
+  "947961": {
+    "region_key": "SkadiOut"
+  },
+  "947962": {
+    "region_key": "SkadiOut"
+  },
+  "947963": {
+    "region_key": "MidWildwoods"
+  },
+  "947964": {
+    "region_key": "MidWildwoods"
+  },
+  "947965": {
+    "region_key": "SkadiOut"
+  },
+  "947969": {
+    "region_key": "SkadiOut"
+  },
+  "947970": {
+    "region_key": "SkadiOut"
+  },
+  "947971": {
+    "region_key": "SkadiOut"
+  },
+  "947972": {
+    "region_key": "CalderaLakeFrozen"
+  },
+  "216422": {
+    "region_key": "Norns",
+    "rs_hash": "0x09ab1e19ee3d82ab"
+  },
+  "216454": {
+    "region_key": "CalderaLakeFrozen",
+    "rs_hash": "0xf42edcdcc1f02c21"
+  },
+  "216458": {
+    "region_key": "WheelBCamp",
+    "rs_hash": "0x36d5cffa6dca8e44"
+  },
+  "216467": {
+    "region_key": "SkadiOut",
+    "rs_hash": "0x3880071d52ca9535"
+  },
+  "216471": {
+    "region_key": "MidShield",
+    "rs_hash": "0x47c8c6006b84d37b"
+  },
+  "216494": {
+    "region_key": "CalderaLakeFrozen",
+    "rs_hash": "0xf42edcdcc1f02c21"
+  },
+  "220875": {
+    "region_key": "Oarsmen",
+    "rs_hash": "0x658a81440178244c"
+  },
+  "216416": {
+    "region_key": "Norns",
+    "rs_hash": "0xb87a1612b567caa0"
+  },
+  "216446": {
+    "region_key": "Oarsmen",
+    "rs_hash": "0x1dbc149f2308b983"
+  },
+  "216455": {
+    "region_key": "WheelBCamp",
+    "rs_hash": "0x94471fa1006f1903"
+  },
+  "216470": {
+    "region_key": "MidShield",
+    "rs_hash": "0xa48ca56618b82006"
+  },
+  "216428": {
+    "region_key": "Oarsmen"
+  },
+  "216445": {
+    "region_key": "Oarsmen"
+  },
+  "216468": {
+    "region_key": "SkadiOut"
+  },
+  "216477": {
+    "region_key": "CalderaShoreNorth"
+  },
+  "216480": {
+    "region_key": "CalderaLakeFrozen"
+  },
+  "216490": {
+    "region_key": "CalderaLakeFrozen"
+  },
+  "947582": {
+    "region_key": "MidWildwoods"
+  },
+  "947583": {
+    "region_key": "MidWildwoods"
+  },
+  "947584": {
+    "region_key": "MidWildwoods"
+  },
+  "947607": {
+    "region_key": "Oarsmen"
+  },
+  "947612": {
+    "region_key": "KingsArena"
+  },
+  "947615": {
+    "region_key": "MidWildwoods"
+  },
+  "947742": {
+    "region_key": "CalderaLakeFrozen"
+  },
+  "947933": {
+    "region_key": "CalderaLakeFrozen"
+  },
+  "947973": {
+    "region_key": "CalderaLakeFrozen"
+  },
+  "216425": {
+    "region_key": "CalderaShoreNorth"
+  },
+  "216453": {
+    "region_key": "Oarsmen"
+  },
+  "219412": {
+    "region_key": "CalderaLakeFrozen"
+  },
+  "249413": {
+    "region_key": "CalderaLakeFrozen"
+  },
+  "249415": {
+    "region_key": "MidWildwoods"
+  },
+  "273792": {
+    "region_key": "MidWildwoods"
+  },
+  "273802": {
+    "region_key": "MidShield"
+  },
+  "273803": {
+    "region_key": "MidShield"
+  },
+  "273811": {
+    "region_key": "MidShield"
+  },
+  "398305": {
+    "region_key": "SkadiOut"
+  },
+  "503271": {
+    "region_key": "SkadiOut"
+  },
+  "503273": {
+    "region_key": "Oarsmen"
+  },
+  "503274": {
+    "region_key": "MidWildwoods"
+  },
+  "503275": {
+    "region_key": "MidWildwoods"
+  },
+  "503276": {
+    "region_key": "MidWildwoods"
+  },
+  "505062": {
+    "region_key": "CalderaShoreNorth"
+  },
+  "505063": {
+    "region_key": "CalderaShoreNorth"
+  },
+  "505064": {
+    "region_key": "CalderaShoreNorth"
+  },
+  "947559": {
+    "region_key": "Oarsmen"
+  },
+  "947560": {
+    "region_key": "CalderaShoreNorth"
+  },
+  "947568": {
+    "region_key": "Oarsmen"
+  },
+  "947605": {
+    "region_key": "Oarsmen"
+  },
+  "947609": {
+    "region_key": "CalderaLakeFrozen"
+  },
+  "947754": {
+    "region_key": "SkadiOut"
+  },
+  "947937": {
+    "region_key": "Norns"
+  },
+  "947939": {
+    "region_key": "Norns"
+  },
+  "947943": {
+    "region_key": "Norns"
+  },
+  "947946": {
+    "region_key": "Norns"
+  },
+  "947952": {
+    "region_key": "Norns"
+  },
+  "947960": {
+    "region_key": "SkadiOut"
+  },
+  "216460": {
+    "region_key": "TempleBCamp",
+    "t2_hash": "0x6d56fcc245c72919",
+    "t2_min_stage": 2
+  },
+  "216447": {
+    "region_key": "Oarsmen"
+  },
+  "216448": {
+    "region_key": "Oarsmen"
+  },
+  "216933": {
+    "region_key": "SkadiOut"
+  },
+  "249419": {
+    "region_key": "MidWildwoods"
+  },
+  "273791": {
+    "region_key": "MidWildwoods"
+  },
+  "273794": {
+    "region_key": "MidWildwoods"
+  },
+  "273795": {
+    "region_key": "MidWildwoods"
+  },
+  "273797": {
+    "region_key": "MidWildwoods"
+  },
+  "273798": {
+    "region_key": "MidWildwoods"
+  },
+  "273799": {
+    "region_key": "MidWildwoods"
+  },
+  "273801": {
+    "region_key": "MidWildwoods"
+  },
+  "273804": {
+    "region_key": "MidShield"
+  },
+  "273809": {
+    "region_key": "MidShield"
+  },
+  "273813": {
+    "region_key": "MidShield"
+  },
+  "273815": {
+    "region_key": "MidShield"
+  },
+  "947263": {
+    "region_key": "Oarsmen"
+  },
+  "947551": {
+    "region_key": "Oarsmen"
+  },
+  "947555": {
+    "region_key": "Oarsmen"
+  },
+  "947573": {
+    "region_key": "CalderaShoreNorth"
+  },
+  "947578": {
+    "region_key": "Oarsmen"
+  },
+  "947580": {
+    "region_key": "CalderaShoreNorth"
+  },
+  "947602": {
+    "region_key": "CalderaLakeFrozen"
+  },
+  "947619": {
+    "region_key": "CalderaLakeFrozen"
+  },
+  "947736": {
+    "region_key": "SkadiOut"
+  },
+  "947796": {
+    "region_key": "SkadiOut"
+  },
+  "947818": {
+    "region_key": "CalderaLakeFrozen"
+  },
+  "947819": {
+    "region_key": "CalderaLakeFrozen"
+  },
+  "947932": {
+    "region_key": "Norns"
+  },
+  "947935": {
+    "region_key": "Norns"
+  },
+  "947942": {
+    "region_key": "Norns"
+  },
+  "947948": {
+    "region_key": "Norns"
+  },
+  "947951": {
+    "region_key": "Norns"
+  },
+  "947958": {
+    "region_key": "SkadiOut"
+  },
+  "947959": {
+    "region_key": "SkadiOut"
+  },
+  "947966": {
+    "region_key": "SkadiOut"
+  },
+  "947967": {
+    "region_key": "SkadiOut"
+  },
+  "947968": {
+    "region_key": "SkadiOut"
+  },
+  "216478": {
+    "region_key": "CalderaShoreNorth",
+    "t2_hash": "0x06f9807d616839b9",
+    "t2_min_stage": 4
+  },
+  "216496": {
+    "region_key": "KingsArena",
+    "rs_hash": "0xfe66a302ca5a55e8",
+    "t2_hash": "0xeadac0d4d16a028b",
+    "t2_min_stage": 4
+  },
+  "216437": {
+    "region_key": "CalderaLakeFrozen",
+    "rs_hash": "0x61c3d845109e076b",
+    "t2_hash": "0x61c3d845109e076b",
+    "t2_min_stage": 4
+  },
+  "216439": {
+    "region_key": "CalderaShoreNorth",
+    "t2_hash": "0xfd82dc813d24b71b",
+    "t2_min_stage": 4
+  },
+  "216481": {
+    "region_key": "KingsArena",
+    "t2_hash": "0x97208675de4f4420",
+    "t2_min_stage": 4
+  },
+  "216495": {
+    "region_key": "Oarsmen",
+    "t2_hash": "0x617cd941dea7abfe",
+    "t2_min_stage": 4
+  },
+  "216936": {
+    "region_key": "SkadiOut",
+    "t2_hash": "0xdb38da68260f09ac",
+    "t2_min_stage": 4
+  },
+  "217210": {
+    "region_key": "CalderaLakeFrozen",
+    "t2_hash": "0x30ebae7c0256f4f8",
+    "t2_min_stage": 4
+  },
+  "219821": {
+    "region_key": "CalderaLakeFrozen",
+    "t2_hash": "0x0764a3684976bd38",
+    "t2_min_stage": 4
+  },
+  "216417": {
+    "region_key": "Norns",
+    "rs_hash": "0xfd85fd0049b788a4",
+    "t2_hash": "0xfd85fd0049b788a4",
+    "t2_min_stage": 4
+  },
+  "216415": {
+    "region_key": "Norns",
+    "rs_hash": "0xd35f642cf313319b",
+    "t2_hash": "0x712daccac8f17c9c",
+    "t2_min_stage": 4
+  },
+  "216486": {
+    "region_key": "CalderaLakeFrozen",
+    "rs_hash": "0xe0607b2562b660d4",
+    "t2_hash": "0x7a7e16f8b313a197",
+    "t2_min_stage": 4
+  },
+  "216429": {
+    "region_key": "CalderaShoreNorth",
+    "rs_hash": "0x938abba27453b101"
+  },
+  "216430": {
+    "region_key": "CalderaShoreNorth",
+    "rs_hash": "0x938abba27453b101"
+  },
+  "216487": {
+    "region_key": "CalderaLakeFrozen",
+    "rs_hash": "0xf06db75ad5456e24"
+  },
+  "219952": {
+    "region_key": "Oarsmen",
+    "t2_hash": "0xddb969cf1161683f",
+    "t2_min_stage": 4
+  },
+  "216845": {
+    "region_key": "CalderaLakeFrozen",
+    "t2_hash": "0xdb38da68260f09ac",
+    "t2_min_stage": 4
+  },
+  "219051": {
+    "region_key": "Norns",
+    "t2_hash": "0xd9dc13eb26272422",
+    "t2_min_stage": 4
+  },
+  "219411": {
+    "region_key": "CalderaLakeFrozen",
+    "t2_hash": "0x0764a3684976bd38",
+    "t2_min_stage": 4
+  },
+  "249420": {
+    "region_key": "MidWildwoods",
+    "t2_hash": "0x9553bc824241b256",
+    "t2_min_stage": 4
+  },
+  "249417": {
+    "region_key": "MidWildwoods"
+  },
+  "947600": {
+    "region_key": "CalderaLakeFrozen"
+  },
+  "947604": {
+    "region_key": "Oarsmen"
+  },
+  "219571": {
+    "region_key": "SkadiOut",
+    "t2_hash": "0x92b5717074a557ee",
+    "t2_min_stage": 4
+  },
+  "216497": {
+    "region_key": "MuspelheimEntrance",
+    "ft_wad": "Msp_Mount100_Entrance",
+    "ft_item_hash": "0xe8599b9976e50116"
+  },
+  "216504": {
+    "region_key": "MuspelheimArena",
+    "ft_wad": "Msp_Chal100_Hub",
+    "ft_item_hash": "0x0c93ac4567abd2db"
+  },
+  "219694": {
+    "region_key": "MuspelheimArena",
+    "equip_any": [
+      "0xbfb8d061ee506fb7",
+      "0xbfb8d061ee5073c4",
+      "0xbfb8d061ee5077d5",
+      "0xbfb8d061ee507bfa",
+      "0xbfb8d061ee507feb",
+      "0xbfb8d061ee504318",
+      "0xbfb8d061ee504709",
+      "0xbfb8d061ee504b3e",
+      "0xbfb8d061ee504f2f",
+      "0xabfa9eb55fa73358",
+      "0xabfa9eb55fa73749",
+      "0xabfa9eb55fa73b76",
+      "0xabfa9eb55fa73f67"
+    ]
+  },
+  "219773": {
+    "region_key": "MuspelheimArena",
+    "equip_any": [
+      "0x2969ec6c1ef40c63",
+      "0x2969ec6c1ef40052",
+      "0x2969ec6c1ef40445",
+      "0x2969ec6c1ef41834",
+      "0x2969ec6c1ef41c27",
+      "0x2969ec6c1ef41016",
+      "0x2969ec6c1ef41409",
+      "0x2969ec6c1ef428f8",
+      "0x2969ec6c1ef42ceb",
+      "0x259f75816a2ec733",
+      "0x259f75816a2ecb00",
+      "0x259f75816a2ecf11",
+      "0x259f75816a2ed366"
+    ]
+  },
+  "219813": {
+    "region_key": "MuspelheimArena",
+    "equip_any": [
+      "0xdc2ccbe4d6cad648"
+    ]
+  },
+  "216502": {
+    "region_key": "MuspelheimEntrance",
+    "rs_hash": "0x4e67be670d67cd32",
+    "t2_hash": "0x1361aa892ccf1426",
+    "t2_min_stage": 2
+  },
+  "220132": {
+    "region_key": "MuspelheimArena",
+    "t2_hash": "0xcdfa3cc886915ff3",
+    "t2_min_stage": 2
+  },
+  "216505": {
+    "region_key": "MuspelheimArena",
+    "rs_hash": "0xc71f37f23bda9926",
+    "t2_hash": "0x79c12e7d5422f052",
+    "t2_min_stage": 4
+  },
+  "216499": {
+    "region_key": "MuspelheimEntrance",
+    "rs_hash": "0x7ec0c343ea227d59"
+  },
+  "216503": {
+    "region_key": "MuspelheimForge",
+    "rs_hash": "0x19e7dd79be0bbda2"
+  },
+  "946392": {
+    "region_key": "MuspelheimEntrance"
+  },
+  "946394": {
+    "region_key": "MuspelheimEntrance"
+  },
+  "946395": {
+    "region_key": "MuspelheimEntrance"
+  },
+  "946396": {
+    "region_key": "MuspelheimEntrance"
+  },
+  "946397": {
+    "region_key": "MuspelheimEntrance"
+  },
+  "946398": {
+    "region_key": "MuspelheimEntrance"
+  },
+  "216498": {
+    "region_key": "MuspelheimEntrance",
+    "rs_hash": "0xe61171ce41373416"
+  },
+  "216500": {
+    "region_key": "MuspelheimEntrance",
+    "rs_hash": "0x60dea19ed8275ee6"
+  },
+  "216506": {
+    "region_key": "MuspelheimArena",
+    "rs_hash": "0x6442a768a3419b99"
+  },
+  "946393": {
+    "region_key": "MuspelheimEntrance"
+  },
+  "217915": {
+    "region_key": "MuspelheimEntrance"
+  },
+  "945774": {
+    "region_key": "MuspelheimForge"
+  },
+  "946391": {
+    "region_key": "MuspelheimEntrance"
+  },
+  "218796": {
+    "region_key": "MuspelheimArena",
+    "t2_hash": "0x3f7a0afab2eed508",
+    "t2_min_stage": 4
+  },
+  "218797": {
+    "region_key": "MuspelheimArena",
+    "t2_hash": "0x4edb7a5fae22fdbf",
+    "t2_min_stage": 4
+  },
+  "219425": {
+    "region_key": "MuspelheimArena",
+    "t2_hash": "0xc18d36d8f7394087",
+    "t2_min_stage": 4
+  },
+  "216507": {
+    "region_key": "MuspelheimArena",
+    "t2_hash": "0x7150e784ba7073e8",
+    "t2_min_stage": 4
+  },
+  "216508": {
+    "region_key": "MuspelheimArena",
+    "t2_hash": "0x6b333d7f04be417c",
+    "t2_min_stage": 4
+  },
+  "216509": {
+    "region_key": "MuspelheimArena",
+    "t2_hash": "0x39d03f8858de58b2",
+    "t2_min_stage": 4
+  },
+  "216510": {
+    "region_key": "MuspelheimArena",
+    "t2_hash": "0x50a5cbc3fbc7307e",
+    "t2_min_stage": 4
+  },
+  "218794": {
+    "region_key": "MuspelheimArena",
+    "t2_hash": "0x6b333d7f04be5d0b",
+    "t2_min_stage": 4
+  },
+  "218795": {
+    "region_key": "MuspelheimArena",
+    "t2_hash": "0x39d03f8858de5ca3",
+    "t2_min_stage": 4
+  },
+  "218798": {
+    "region_key": "MuspelheimArena",
+    "t2_hash": "0x50a5cbc3fbc73c4d",
+    "t2_min_stage": 4
+  },
+  "218799": {
+    "region_key": "MuspelheimArena",
+    "t2_hash": "0x6b333d7f04be591a",
+    "t2_min_stage": 4
+  },
+  "218803": {
+    "region_key": "MuspelheimArena",
+    "t2_hash": "0x39d03f8858de5090",
+    "t2_min_stage": 4
+  },
+  "218804": {
+    "region_key": "MuspelheimArena",
+    "t2_hash": "0x50a5cbc3fbc7385c",
+    "t2_min_stage": 4
+  },
+  "218805": {
+    "region_key": "MuspelheimArena",
+    "t2_hash": "0x7150e784ba7077f7",
+    "t2_min_stage": 4
+  },
+  "218806": {
+    "region_key": "MuspelheimArena",
+    "t2_hash": "0x7150e784ba706b86",
+    "t2_min_stage": 4
+  },
+  "218807": {
+    "region_key": "MuspelheimArena",
+    "t2_hash": "0x7150e784ba706f95",
+    "t2_min_stage": 4
+  },
+  "218808": {
+    "region_key": "MuspelheimArena",
+    "t2_hash": "0x7150e784ba7063a4",
+    "t2_min_stage": 4
+  },
+  "218809": {
+    "region_key": "MuspelheimArena",
+    "t2_hash": "0x7150e784ba7067b3",
+    "t2_min_stage": 4
+  },
+  "216501": {
+    "region_key": "MuspelheimEntrance",
+    "rs_hash": "0xef313e09131d6a15",
+    "t2_hash": "0x77051790c659012a",
+    "t2_min_stage": 4
+  },
+  "216511": {
+    "region_key": "MuspelheimArena",
+    "t2_hash": "0xdc4c2c026de9c45f",
+    "t2_min_stage": 4
+  },
+  "216522": {
+    "region_key": "MistFields",
+    "primary_wad": "Nif_MistF100_Entrance",
+    "ft_wad": "Nif_MistF100_Entrance",
+    "ft_item_hash": "0x596a6585f52f94a8"
+  },
+  "216525": {
+    "region_key": "NifPrison",
+    "primary_wad": "Nif_Prison100_Entrance",
+    "ft_wad": "Nif_RavenTree100_Main",
+    "ft_item_hash": "0xd705870ddfbf5adc"
+  },
+  "216534": {
+    "region_key": "NifRavenTree",
+    "t2_hash": "0xa067413b2b6a714b",
+    "t2_min_stage": 4
+  },
+  "216532": {
+    "region_key": "NifRavenTree"
+  },
+  "219581": {
+    "region_key": "NifRavenTree",
+    "equip_any": [
+      "0x95adbf498bb86c67",
+      "0x95adbf498bb86056",
+      "0x95adbf498bb86441",
+      "0x95adbf498bb87830",
+      "0x95adbf498bb87c23",
+      "0x95adbf498bb87012",
+      "0x95adbf498bb874fe",
+      "0x95adbf498bb8480f",
+      "0x95adbf498bb84c1c",
+      "0x79278e26e51862e7",
+      "0x79278e26e5181f18",
+      "0x79278e26e5181b09",
+      "0x79278e26e518173a"
+    ]
+  },
+  "216523": {
+    "region_key": "MistFields",
+    "primary_wad": "Nif_MistF100_Entrance",
+    "rs_hash": "0x0d806d7666324bb9",
+    "t2_hash": "0x5db1c36c6e48d038",
+    "t2_min_stage": 4
+  },
+  "216537": {
+    "region_key": "NifPrison",
+    "primary_wad": "Nif_Prison100_Entrance",
+    "rs_hash": "0x45c4e1210d43cc2c",
+    "t2_hash": "0x95ee969bc431d8b3",
+    "t2_min_stage": 4
+  },
+  "216540": {
+    "region_key": "NifPrison",
+    "primary_wad": "Nif_Prison100_Entrance",
+    "t2_hash": "0xe1f2de0091ca90ad",
+    "t2_min_stage": 4
+  },
+  "219418": {
+    "region_key": "NifRavenTree",
+    "t2_hash": "0xa067413b2b6a714b",
+    "t2_min_stage": 4
+  },
+  "216526": {
+    "region_key": "NifRavenTree",
+    "rs_hash": "0xf77dae93c1b71167",
+    "t1_bool": "0x39ffd09295ad55f4"
+  },
+  "216527": {
+    "region_key": "NifRavenTree",
+    "rs_hash": "0xf77dae93c1b71167",
+    "t1_bool": "0x6e57e7b7f6e30c37"
+  },
+  "216528": {
+    "region_key": "NifRavenTree",
+    "rs_hash": "0xf77dae93c1b71167",
+    "t1_bool": "0x718e6a9296e5d940"
+  },
+  "216529": {
+    "region_key": "NifRavenTree",
+    "rs_hash": "0xf77dae93c1b71167",
+    "t1_bool": "0xc49e78c5413ecddc"
+  },
+  "216530": {
+    "region_key": "NifRavenTree",
+    "rs_hash": "0xf77dae93c1b71167",
+    "t1_bool": "0x9263061c138305b1"
+  },
+  "216531": {
+    "region_key": "NifRavenTree",
+    "rs_hash": "0xf77dae93c1b71167",
+    "t1_bool": "0xa325a6898cef9349"
+  },
+  "216539": {
+    "region_key": "NifPrison",
+    "primary_wad": "Nif_Prison100_Entrance",
+    "rs_hash": "0xbe756d551e60260c"
+  },
+  "219054": {
+    "region_key": "MistFields",
+    "primary_wad": "Nif_MistF100_Entrance",
+    "t2_hash": "0xda815ba4c95c0086",
+    "t2_min_stage": 4
+  },
+  "216536": {
+    "region_key": "NifPrison",
+    "primary_wad": "Nif_Prison100_Entrance",
+    "rs_hash": "0xcb7f32dce0e37885"
+  },
+  "942624": {
+    "region_key": "MistFields",
+    "primary_wad": "Nif_MistF100_Entrance"
+  },
+  "216524": {
+    "region_key": "MistFields",
+    "primary_wad": "Nif_MistF100_Entrance",
+    "rs_hash": "0x5974481393910831",
+    "t2_hash": "0x8d4816e573c22f17",
+    "t2_min_stage": 4
+  },
+  "216538": {
+    "region_key": "NifPrison",
+    "primary_wad": "Nif_Prison100_Entrance",
+    "t2_hash": "0x6efbff8d51283b88",
+    "t2_min_stage": 4
+  },
+  "219424": {
+    "region_key": "NifRavenTree",
+    "t2_hash": "0x2983e82c6bd373aa",
+    "t2_min_stage": 4
+  },
+  "216533": {
+    "region_key": "NifRavenTree",
+    "t2_hash": "0xa067413b2b6a714b",
+    "t2_min_stage": 4
+  },
+  "216535": {
+    "region_key": "NifRavenTree",
+    "t2_hash": "0xa067413b2b6a714b",
+    "t2_min_stage": 4
+  },
+  "216614": {
+    "region_key": "SindrisHouse",
+    "ft_wad": "Rbr_HomeBase100_SindriHouseExt",
+    "ft_item_hash": "0x9eb4835eba85b56c"
+  },
+  "219575": {
+    "region_key": "SindrisHouse",
+    "equip_any": [
+      "0x089e97980a89fc4f",
+      "0x089e97980a89f85c",
+      "0x089e97980a89f46d",
+      "0x089e97980a89f07a",
+      "0x089e97980a890f8b",
+      "0x089e97980a890b98",
+      "0x089e97980a8907a9",
+      "0x089e97980a8903a6",
+      "0x089e97980a891fd7",
+      "0xad447c92b68cb46d",
+      "0xad447c92b68cb07e",
+      "0xad447c92b68c8c8f",
+      "0xad447c92b68c8890"
+    ]
+  },
+  "219578": {
+    "region_key": "SindrisHouse",
+    "equip_any": [
+      "0x4134ddcb989e97f2",
+      "0x4134ddcb989e6803",
+      "0x4134ddcb989e6c14",
+      "0x4134ddcb989e6025",
+      "0x4134ddcb989e6436",
+      "0x4134ddcb989e7847",
+      "0x4134ddcb989e7c48",
+      "0x4134ddcb989e7079",
+      "0x4134ddcb989e746a",
+      "0x9fe0803dd4a53eea",
+      "0x9fe0803dd4a532d9",
+      "0x9fe0803dd4a536c8",
+      "0x9fe0803dd4a52948"
+    ]
+  },
+  "219579": {
+    "region_key": "SindrisHouse",
+    "equip_any": [
+      "0xc6f60b914d4de12b",
+      "0xc6f60b914d4ded1a",
+      "0xc6f60b914d4de909",
+      "0xc6f60b914d4e1af8",
+      "0xc6f60b914d4e1eef",
+      "0xc6f60b914d4e12de",
+      "0xc6f60b914d4e16cd",
+      "0xc6f60b914d4e0abc",
+      "0xc6f60b914d4e0ea3",
+      "0x404f53bf7cf82923",
+      "0x404f53bf7cf8356c",
+      "0x404f53bf7cf8317d",
+      "0x404f53bf7cf83d4e"
+    ]
+  },
+  "219580": {
+    "region_key": "SindrisHouse",
+    "equip_any": [
+      "0x3161a8b65304c9dc",
+      "0x3161a8b65304cdcd",
+      "0x3161a8b65304f13a",
+      "0x3161a8b65304f52b",
+      "0x3161a8b65304f918",
+      "0x3161a8b65304fd09",
+      "0x3161a8b65304e107",
+      "0x3161a8b65304e516",
+      "0x3161a8b65304e925",
+      "0x5c03805d5bb16278",
+      "0x5c03805d5bb16669",
+      "0x5c03805d5bb16a56",
+      "0x5c03805d5bb16e47"
+    ]
+  },
+  "219583": {
+    "region_key": "SindrisHouse",
+    "equip_any": [
+      "0x3038b162fac953d8",
+      "0x3038b162fac95fe9",
+      "0x3038b162fac95bfa",
+      "0x3038b162fac9a40b",
+      "0x3038b162fac9a01c",
+      "0x3038b162fac9ac2d",
+      "0x3038b162fac9a83e",
+      "0x3038b162fac9b44f",
+      "0x3038b162fac9b050",
+      "0x03bc0493bef277d3",
+      "0x03bc0493bef273c0",
+      "0x03bc0493bef27ff1",
+      "0x03bc0493bef27bde"
+    ]
+  },
+  "219584": {
+    "region_key": "SindrisHouse",
+    "equip_any": [
+      "0x38babbeed130c5b6",
+      "0x38babbeed130f945",
+      "0x38babbeed130fd54",
+      "0x38babbeed130f163",
+      "0x38babbeed130f572",
+      "0x38babbeed130e901",
+      "0x38babbeed130ed10",
+      "0x38babbeed130e12f",
+      "0x38babbeed130e53e",
+      "0x98de7ab823242b44",
+      "0x98de7ab823242f55",
+      "0x98de7ab8232413a6",
+      "0x98de7ab8232417b7"
+    ]
+  },
+  "219692": {
+    "region_key": "SindrisHouse",
+    "equip_any": [
+      "0x68afe945e9e41a9a",
+      "0x68afe945e9e41e8d",
+      "0x68afe945e9e412bc",
+      "0x68afe945e9e416af",
+      "0x68afe945e9e46b5e",
+      "0x68afe945e9e46f41",
+      "0x68afe945e9e46370",
+      "0x68afe945e9e46763",
+      "0x68afe945e9e47b12",
+      "0x89376f4cc89b1df0",
+      "0x89376f4cc89b19df",
+      "0x89376f4cc89b05ae",
+      "0x89376f4cc89b01bd"
+    ]
+  },
+  "219770": {
+    "region_key": "SindrisHouse",
+    "equip_any": [
+      "0x6f3955c0a652208e",
+      "0x6f3955c0a6522cbf",
+      "0x6f3955c0a65228ac",
+      "0x6f3955c0a65234dd",
+      "0x6f3955c0a65230c2",
+      "0x6f3955c0a6523cf3",
+      "0x6f3955c0a65238e0",
+      "0x6f3955c0a6520411",
+      "0x6f3955c0a6520006",
+      "0x846cd00c3b75a871",
+      "0x846cd00c3b75ac62",
+      "0x846cd00c3b759093",
+      "0x846cd00c3b7594bc"
+    ]
+  },
+  "219808": {
+    "region_key": "SindrisHouse",
+    "equip_any": [
+      "0xaab4ffd98e53c496"
+    ]
+  },
+  "945579": {
+    "region_key": "SindrisHouse",
+    "equip_any": [
+      "0xef14dd6641f82f8d",
+      "0xef14dd6641f823bc",
+      "0xef14dd6641f827af",
+      "0xef14dd6641f85a5e",
+      "0xef14dd6641f85e49",
+      "0xef14dd6641f85278",
+      "0xef14dd6641f8566b",
+      "0xef14dd6641f84a1a",
+      "0xef14dd6641f84e05",
+      "0x06b4a28eec8f7440",
+      "0x06b4a28eec8f48b1",
+      "0x06b4a28eec8f4ca2",
+      "0x06b4a28eec8f4093"
+    ]
+  },
+  "945581": {
+    "region_key": "SindrisHouse",
+    "equip_any": [
+      "0x29a178e934f79cc0",
+      "0x9da65bd12638d6ee"
+    ]
+  },
+  "945582": {
+    "region_key": "SindrisHouse",
+    "equip_any": [
+      "0x6191a0c32a454de9"
+    ]
+  },
+  "947589": {
+    "region_key": "SindrisHouse",
+    "equip_any": [
+      "0xb2591326611a1741"
+    ]
+  },
+  "947594": {
+    "region_key": "SindrisHouse",
+    "equip_any": [
+      "0xb52e935e2f7ece25"
+    ]
+  },
+  "219420": {
+    "region_key": "SindrisHouse",
+    "t2_hash": "0x0c525c5ee6c6cb0b",
+    "t2_min_stage": 4
+  },
+  "219815": {
+    "region_key": "SindrisHouse",
+    "t2_hash": "0x9553bc824241b256",
+    "t2_min_stage": 4
+  },
+  "219816": {
+    "region_key": "SindrisHouse",
+    "t2_hash": "0x9553bc824241b256",
+    "t2_min_stage": 4
+  },
+  "219817": {
+    "region_key": "SindrisHouse",
+    "t2_hash": "0x6625bc07c4633aed",
+    "t2_min_stage": 4
+  },
+  "945584": {
+    "region_key": "SindrisHouse",
+    "t2_hash": "0x9553bc824241b256",
+    "t2_min_stage": 4
+  },
+  "947929": {
+    "region_key": "SindrisHouse",
+    "t2_hash": "0xd9dc13eb26272422",
+    "t2_min_stage": 4
+  },
+  "945580": {
+    "region_key": "SindrisHouse"
+  },
+  "945583": {
+    "region_key": "SindrisHouse"
+  },
+  "945585": {
+    "region_key": "SindrisHouse"
+  },
+  "945586": {
+    "region_key": "SindrisHouse"
+  },
+  "945698": {
+    "region_key": "SindrisHouse"
+  },
+  "945699": {
+    "region_key": "SindrisHouse"
+  },
+  "945700": {
+    "region_key": "SindrisHouse"
+  },
+  "945701": {
+    "region_key": "SindrisHouse"
+  },
+  "945702": {
+    "region_key": "SindrisHouse"
+  },
+  "945703": {
+    "region_key": "SindrisHouse"
+  },
+  "945704": {
+    "region_key": "SindrisHouse"
+  },
+  "945705": {
+    "region_key": "SindrisHouse"
+  },
+  "945706": {
+    "region_key": "SindrisHouse"
+  },
+  "945707": {
+    "region_key": "SindrisHouse"
+  },
+  "946825": {
+    "region_key": "SindrisHouse"
+  },
+  "946826": {
+    "region_key": "SindrisHouse"
+  },
+  "946827": {
+    "region_key": "SindrisHouse"
+  },
+  "946828": {
+    "region_key": "SindrisHouse"
+  },
+  "948850": {
+    "region_key": "SindrisHouse"
+  },
+  "216615": {
+    "region_key": "SindrisHouse",
+    "t2_hash": "0xdc95c1f344a7af7a",
+    "t2_min_stage": 4
+  },
+  "219824": {
+    "region_key": "SindrisHouse",
+    "t2_hash": "0x42c05cda5a46eea3",
+    "t2_min_stage": 4
+  },
+  "218791": {
+    "region_key": "SindrisHouse",
+    "t2_hash": "0x91cccc1199c05500",
+    "t2_min_stage": 4
+  },
+  "218792": {
+    "region_key": "SindrisHouse"
+  },
+  "217069": {
+    "region_key": "SvartWetlands"
+  },
+  "217070": {
+    "region_key": "SvartWetlands"
+  },
+  "217071": {
+    "region_key": "SvartWetlands"
+  },
+  "217073": {
+    "region_key": "Nidavellir"
+  },
+  "217074": {
+    "region_key": "LightHouse"
+  },
+  "217076": {
+    "region_key": "LightHouse"
+  },
+  "217078": {
+    "region_key": "WhaleIsland",
+    "primary_wad": "Sva_Bay700_WhaleIsland"
+  },
+  "217080": {
+    "region_key": "LightHouse"
+  },
+  "217081": {
+    "region_key": "LightHouse"
+  },
+  "217083": {
+    "region_key": "LightHouse"
+  },
+  "217084": {
+    "region_key": "LightHouse"
+  },
+  "217087": {
+    "region_key": "AlberichIsleOne"
+  },
+  "217088": {
+    "region_key": "DragonBeach"
+  },
+  "217089": {
+    "region_key": "DragonBeach"
+  },
+  "217090": {
+    "region_key": "DragonBeach"
+  },
+  "217140": {
+    "region_key": "LightHouse"
+  },
+  "217807": {
+    "region_key": "SvartWetlands"
+  },
+  "217808": {
+    "region_key": "SvartWetlands"
+  },
+  "217892": {
+    "region_key": "SvartWetlands"
+  },
+  "217899": {
+    "region_key": "SvartWetlands"
+  },
+  "217900": {
+    "region_key": "LightHouse"
+  },
+  "219053": {
+    "region_key": "AlberichIsleOne"
+  },
+  "217091": {
+    "region_key": "Forge"
+  },
+  "217094": {
+    "region_key": "Forge"
+  },
+  "217097": {
+    "region_key": "AppleCore"
+  },
+  "217067": {
+    "region_key": "AppleCore",
+    "ft_wad": "Sva_Wet100_Entrance",
+    "ft_item_hash": "0xa9df36a45669eb57"
+  },
+  "217075": {
+    "region_key": "LightHouse",
+    "ft_wad": "Sva_Nid450_West",
+    "ft_item_hash": "0x031b2b994df1b4ea"
+  },
+  "217077": {
+    "region_key": "LightHouse",
+    "ft_wad": "Sva_Nid550_Beach",
+    "ft_item_hash": "0xd82ea8b2e885986d"
+  },
+  "217085": {
+    "region_key": "LightHouse",
+    "ft_wad": "Sva_Bay650_Lighthouse",
+    "ft_item_hash": "0x6faeca6713f3f04c"
+  },
+  "217173": {
+    "region_key": "AppleCore",
+    "ft_wad": "Sva_AplC200_UpperMine",
+    "ft_item_hash": "0x8227c978f1674889"
+  },
+  "217181": {
+    "region_key": "PitMine_Jarns",
+    "ft_wad": "Sva_PitJ100_Entrance",
+    "ft_item_hash": "0x5a292a8b327a131a"
+  },
+  "247159": {
+    "region_key": "AppleCore",
+    "ft_wad": "Sva_AplC700_MineExit",
+    "ft_item_hash": "0x38e1ee46accee6ee"
+  },
+  "217072": {
+    "region_key": "Nidavellir"
+  },
+  "217086": {
+    "region_key": "LightHouse"
+  },
+  "217092": {
+    "region_key": "Forge"
+  },
+  "217096": {
+    "region_key": "AppleCore"
+  },
+  "219577": {
+    "region_key": "LightHouse",
+    "equip_any": [
+      "0xca2a57b491b72fea",
+      "0xca2a57b491b72bf9",
+      "0xca2a57b491b727c8",
+      "0xca2a57b491b723df",
+      "0xca2a57b491b73fae",
+      "0xca2a57b491b73bbd",
+      "0xca2a57b491b7378c",
+      "0xca2a57b491b73383",
+      "0xca2a57b491b70f72",
+      "0x622cd32b8d4ab2cb",
+      "0x622cd32b8d4aaeba",
+      "0x622cd32b8d4aaa56",
+      "0x622cd32b8d4aa667"
+    ]
+  },
+  "217098": {
+    "region_key": "SvartWetlands",
+    "rs_hash": "0x65a65f809c27bc91",
+    "t2_hash": "0xfcbf577bfb4b10d6",
+    "t2_min_stage": 2
+  },
+  "217153": {
+    "region_key": "Forge",
+    "rs_hash": "0x46afca15e381cdcc",
+    "t2_hash": "0xfcbf577bfb4b18f0",
+    "t2_min_stage": 2
+  },
+  "217166": {
+    "region_key": "AppleCore",
+    "rs_hash": "0x93831039772294d5",
+    "t2_hash": "0xfcbf577bfb4be701",
+    "t2_min_stage": 2
+  },
+  "217172": {
+    "region_key": "AppleCore",
+    "rs_hash": "0x93831039772294d5",
+    "t2_hash": "0xfcbf577bfb4be312",
+    "t2_min_stage": 2
+  },
+  "217182": {
+    "region_key": "PitMine_Jarns",
+    "rs_hash": "0xe91654ca8ccf1da4",
+    "t2_hash": "0xfcbf577bfb4bef23",
+    "t2_min_stage": 2
+  },
+  "217924": {
+    "region_key": "Nidavellir",
+    "rs_hash": "0x09099f5eb12baa07",
+    "t2_hash": "0xfcbf577bfb4b1ce7",
+    "t2_min_stage": 2
+  },
+  "217148": {
+    "region_key": "DragonBeach",
+    "rs_hash": "0x04cf93795a4a89bf",
+    "t2_hash": "0x0e117276e5ee475d",
+    "t2_min_stage": 4
+  },
+  "217169": {
+    "region_key": "AppleCore",
+    "rs_hash": "0xdc15773807f108a4",
+    "t2_hash": "0x996011c6ebbee7f8",
+    "t2_min_stage": 4
+  },
+  "218787": {
+    "region_key": "RigCrane",
+    "rs_hash": "0x37c86f40c7a2aea8",
+    "t2_hash": "0xdcab8e7a6493e910",
+    "t2_min_stage": 4
+  },
+  "217139": {
+    "region_key": "AlberichIsleTwo",
+    "t2_hash": "0xc83e664f79ea862f",
+    "t2_min_stage": 4
+  },
+  "219052": {
+    "region_key": "Forge",
+    "t2_hash": "0x7f80e547b6664c9f",
+    "t2_min_stage": 4
+  },
+  "217105": {
+    "region_key": "SvartWetlands",
+    "rs_hash": "0x65a65f809c27bc91",
+    "t2_hash": "0x56f624c61ba598a1",
+    "t2_min_stage": 2
+  },
+  "217106": {
+    "region_key": "Nidavellir",
+    "rs_hash": "0x09099f5eb12baa07",
+    "t2_hash": "0x56f624c61ba584d2",
+    "t2_min_stage": 2
+  },
+  "217143": {
+    "region_key": "WhaleIsland",
+    "primary_wad": "Sva_Bay700_WhaleIsland",
+    "rs_hash": "0x59eb4d1c1880e2e1",
+    "t2_hash": "0x56f624c61ba588dd",
+    "t2_min_stage": 2
+  },
+  "217161": {
+    "region_key": "AppleCore",
+    "rs_hash": "0x93831039772294d5",
+    "t2_hash": "0x56f624c61ba58ccc",
+    "t2_min_stage": 2
+  },
+  "217176": {
+    "region_key": "PitMine_Jarns",
+    "rs_hash": "0xe91654ca8ccf1da4",
+    "t2_hash": "0x56f624c61ba580c3",
+    "t2_min_stage": 2
+  },
+  "217104": {
+    "region_key": "SvartWetlands",
+    "rs_hash": "0xa3ac4b30464f1b3f"
+  },
+  "217107": {
+    "region_key": "Nidavellir",
+    "rs_hash": "0x019e4d4a5eeb567f",
+    "t2_hash": "0x39c9bae1932d37ee",
+    "t2_min_stage": 2
+  },
+  "217123": {
+    "region_key": "RigLift",
+    "rs_hash": "0xc1186c49b57dcedd",
+    "t2_hash": "0x5a52814a60812b02",
+    "t2_min_stage": 2
+  },
+  "217128": {
+    "region_key": "RigDweller",
+    "rs_hash": "0x8112217e36abc2ac"
+  },
+  "217130": {
+    "region_key": "RigCrane",
+    "rs_hash": "0xbcd4a7f30f4e5df5",
+    "t2_hash": "0xfc97eed39f07dee8",
+    "t2_min_stage": 2
+  },
+  "217131": {
+    "region_key": "RigCrane",
+    "rs_hash": "0xbcd4a7f30f4e5df5",
+    "t2_hash": "0x1c6e83da1918ddd9",
+    "t2_min_stage": 2
+  },
+  "217142": {
+    "region_key": "WhaleIsland",
+    "primary_wad": "Sva_Bay700_WhaleIsland",
+    "rs_hash": "0x886e782970c20b8a",
+    "t2_hash": "0x56624bfd9e397112",
+    "t2_min_stage": 2
+  },
+  "217146": {
+    "region_key": "DragonBeach",
+    "rs_hash": "0x2d41c4200b74e976"
+  },
+  "217155": {
+    "region_key": "Forge",
+    "rs_hash": "0x2db21927943f1555",
+    "t2_hash": "0x5cf191265b6ddcdb",
+    "t2_min_stage": 2
+  },
+  "217156": {
+    "region_key": "Forge",
+    "rs_hash": "0x2db21927943f1555",
+    "t2_hash": "0x9ad0061e3fb9783c",
+    "t2_min_stage": 2
+  },
+  "217170": {
+    "region_key": "AppleCore",
+    "rs_hash": "0x17ac875088a71117",
+    "t2_hash": "0x648d4a0816cb8d91",
+    "t2_min_stage": 2
+  },
+  "217171": {
+    "region_key": "AppleCore",
+    "rs_hash": "0x17ac875088a71117",
+    "t2_hash": "0xad9b3a3e04650c80",
+    "t2_min_stage": 2
+  },
+  "217180": {
+    "region_key": "PitMine_Jarns",
+    "rs_hash": "0x96b73d75b19e659a"
+  },
+  "217111": {
+    "region_key": "Nidavellir",
+    "rs_hash": "0x24dbd123841e16bb",
+    "t2_hash": "0x015a8a1a04cba765",
+    "t2_min_stage": 4
+  },
+  "217068": {
+    "region_key": "SvartWetlands",
+    "rs_hash": "0x79ff539a6dcfd8a1"
+  },
+  "217108": {
+    "region_key": "Nidavellir",
+    "rs_hash": "0xc2b323b545633b38"
+  },
+  "217118": {
+    "region_key": "AlberichIsleOne",
+    "rs_hash": "0x8f3faabf30b789e6",
+    "wad_name": "Sva_Bay625_NorthRuins",
+    "wad_ent_hash": "0x4435d93cc4dc77c0"
+  },
+  "217125": {
+    "region_key": "LightHouse",
+    "rs_hash": "0x7d1eb3989126067a"
+  },
+  "217126": {
+    "region_key": "RigLift",
+    "rs_hash": "0x665e902b364fd2e3"
+  },
+  "217129": {
+    "region_key": "RigDweller",
+    "rs_hash": "0x945c2033d2eb5870"
+  },
+  "217135": {
+    "region_key": "AlberichIsleOne",
+    "rs_hash": "0x8f3faabf30b789e6",
+    "wad_name": "Sva_Bay600_Ruins",
+    "wad_ent_hash": "0xa25c12994139f954"
+  },
+  "217138": {
+    "region_key": "AlberichIsleTwo",
+    "rs_hash": "0xde9262731ac581c0"
+  },
+  "217144": {
+    "region_key": "WhaleIsland",
+    "primary_wad": "Sva_Bay700_WhaleIsland",
+    "rs_hash": "0x6be56f1e15b210ff"
+  },
+  "217152": {
+    "region_key": "Forge",
+    "rs_hash": "0x63b5b590f5ff72cc",
+    "t2_hash": "0x38f5cc01ca3b153a",
+    "t2_min_stage": 4
+  },
+  "217158": {
+    "region_key": "Forge",
+    "rs_hash": "0x63b5b590f5ff72cc",
+    "t2_hash": "0x63b5b590f5ff72cc",
+    "t2_min_stage": 4
+  },
+  "217162": {
+    "region_key": "AppleCore",
+    "rs_hash": "0x9935b61765821178"
+  },
+  "217178": {
+    "region_key": "PitMine_Jarns",
+    "rs_hash": "0xf6134fd29c8dc29d"
+  },
+  "219267": {
+    "region_key": "AppleCore",
+    "t2_hash": "0x7737419be7f239da",
+    "t2_min_stage": 4
+  },
+  "945854": {
+    "region_key": "AppleCore"
+  },
+  "945857": {
+    "region_key": "AppleCore"
+  },
+  "945858": {
+    "region_key": "AppleCore"
+  },
+  "947624": {
+    "region_key": "AppleCore"
+  },
+  "947625": {
+    "region_key": "AppleCore"
+  },
+  "947626": {
+    "region_key": "AppleCore"
+  },
+  "947627": {
+    "region_key": "AppleCore"
+  },
+  "947628": {
+    "region_key": "AppleCore"
+  },
+  "947629": {
+    "region_key": "AppleCore"
+  },
+  "947631": {
+    "region_key": "AppleCore"
+  },
+  "947632": {
+    "region_key": "AppleCore"
+  },
+  "947634": {
+    "region_key": "AppleCore"
+  },
+  "947635": {
+    "region_key": "AppleCore"
+  },
+  "947636": {
+    "region_key": "AppleCore"
+  },
+  "947637": {
+    "region_key": "AppleCore"
+  },
+  "947638": {
+    "region_key": "AppleCore"
+  },
+  "947639": {
+    "region_key": "AppleCore"
+  },
+  "947641": {
+    "region_key": "AppleCore"
+  },
+  "947642": {
+    "region_key": "AppleCore"
+  },
+  "947644": {
+    "region_key": "AppleCore"
+  },
+  "947645": {
+    "region_key": "AppleCore"
+  },
+  "947646": {
+    "region_key": "AppleCore"
+  },
+  "947647": {
+    "region_key": "AppleCore"
+  },
+  "947648": {
+    "region_key": "AppleCore"
+  },
+  "947649": {
+    "region_key": "PitMine_Jarns"
+  },
+  "947650": {
+    "region_key": "AppleCore"
+  },
+  "947651": {
+    "region_key": "PitMine_Jarns"
+  },
+  "947652": {
+    "region_key": "AppleCore"
+  },
+  "947653": {
+    "region_key": "PitMine_Jarns"
+  },
+  "947654": {
+    "region_key": "PitMine_Jarns"
+  },
+  "947656": {
+    "region_key": "PitMine_Jarns"
+  },
+  "947658": {
+    "region_key": "PitMine_Jarns"
+  },
+  "947660": {
+    "region_key": "PitMine_Jarns"
+  },
+  "947661": {
+    "region_key": "PitMine_Jarns"
+  },
+  "947664": {
+    "region_key": "PitMine_Jarns"
+  },
+  "947665": {
+    "region_key": "PitMine_Jarns"
+  },
+  "947666": {
+    "region_key": "PitMine_Jarns"
+  },
+  "947667": {
+    "region_key": "PitMine_Jarns"
+  },
+  "947669": {
+    "region_key": "PitMine_Jarns"
+  },
+  "947670": {
+    "region_key": "Forge"
+  },
+  "947671": {
+    "region_key": "Forge"
+  },
+  "947672": {
+    "region_key": "Forge"
+  },
+  "947674": {
+    "region_key": "Forge"
+  },
+  "947676": {
+    "region_key": "Forge"
+  },
+  "947677": {
+    "region_key": "LightHouse"
+  },
+  "947681": {
+    "region_key": "AlberichIsleOne"
+  },
+  "947684": {
+    "region_key": "AlberichIsleOne"
+  },
+  "947685": {
+    "region_key": "AlberichIsleOne"
+  },
+  "947687": {
+    "region_key": "LightHouse"
+  },
+  "947688": {
+    "region_key": "LightHouse"
+  },
+  "947689": {
+    "region_key": "LightHouse"
+  },
+  "947690": {
+    "region_key": "LightHouse"
+  },
+  "947692": {
+    "region_key": "DragonBeach"
+  },
+  "947695": {
+    "region_key": "AlberichIsleOne"
+  },
+  "947696": {
+    "region_key": "AlberichIsleOne"
+  },
+  "947697": {
+    "region_key": "AlberichIsleOne"
+  },
+  "947700": {
+    "region_key": "LightHouse"
+  },
+  "947701": {
+    "region_key": "LightHouse"
+  },
+  "947702": {
+    "region_key": "WhaleIsland",
+    "primary_wad": "Sva_Bay700_WhaleIsland"
+  },
+  "947703": {
+    "region_key": "WhaleIsland",
+    "primary_wad": "Sva_Bay700_WhaleIsland"
+  },
+  "947704": {
+    "region_key": "WhaleIsland",
+    "primary_wad": "Sva_Bay700_WhaleIsland"
+  },
+  "947705": {
+    "region_key": "Nidavellir"
+  },
+  "947710": {
+    "region_key": "SvartWetlands"
+  },
+  "947711": {
+    "region_key": "SvartWetlands"
+  },
+  "947713": {
+    "region_key": "SvartWetlands"
+  },
+  "947714": {
+    "region_key": "SvartWetlands"
+  },
+  "947720": {
+    "region_key": "SvartWetlands"
+  },
+  "947721": {
+    "region_key": "SvartWetlands"
+  },
+  "948178": {
+    "region_key": "LightHouse"
+  },
+  "948179": {
+    "region_key": "LightHouse"
+  },
+  "948181": {
+    "region_key": "LightHouse"
+  },
+  "948183": {
+    "region_key": "Forge"
+  },
+  "948185": {
+    "region_key": "LightHouse"
+  },
+  "948187": {
+    "region_key": "Forge"
+  },
+  "948188": {
+    "region_key": "Forge"
+  },
+  "948189": {
+    "region_key": "Forge"
+  },
+  "948190": {
+    "region_key": "Forge"
+  },
+  "948191": {
+    "region_key": "Forge"
+  },
+  "948193": {
+    "region_key": "Forge"
+  },
+  "948194": {
+    "region_key": "Forge"
+  },
+  "948196": {
+    "region_key": "Forge"
+  },
+  "948199": {
+    "region_key": "Forge"
+  },
+  "948362": {
+    "region_key": "Forge"
+  },
+  "948363": {
+    "region_key": "Forge"
+  },
+  "948365": {
+    "region_key": "Forge"
+  },
+  "948367": {
+    "region_key": "Forge"
+  },
+  "948368": {
+    "region_key": "Forge"
+  },
+  "217103": {
+    "region_key": "SvartWetlands",
+    "rs_hash": "0xf2246ba895641be6"
+  },
+  "217109": {
+    "region_key": "Nidavellir",
+    "rs_hash": "0x8798f7adf3542fca"
+  },
+  "217117": {
+    "region_key": "AlberichIsleOne",
+    "rs_hash": "0xbd88bcd46a62d42e"
+  },
+  "217120": {
+    "region_key": "AlberichIsleOne",
+    "rs_hash": "0xbd88bcd46a62d42e"
+  },
+  "217122": {
+    "region_key": "RigLift",
+    "rs_hash": "0xe1ffbf1835434a8f"
+  },
+  "217132": {
+    "region_key": "RigCrane",
+    "rs_hash": "0x7ad24c5568b1bbb2"
+  },
+  "217145": {
+    "region_key": "AlberichIsleTwo",
+    "rs_hash": "0xc83e664f79ea862f"
+  },
+  "217150": {
+    "region_key": "sewers",
+    "rs_hash": "0x405d8f08fba6ea1d"
+  },
+  "217157": {
+    "region_key": "Forge",
+    "rs_hash": "0x79bad7125cf07914"
+  },
+  "217168": {
+    "region_key": "AppleCore",
+    "rs_hash": "0x359f33509715cabb",
+    "t2_hash": "0x359f33509715cabb",
+    "t2_min_stage": 4
+  },
+  "217175": {
+    "region_key": "AppleCore",
+    "rs_hash": "0x359f33509715cabb",
+    "wad_name": "Sva_AplC400_Vault4",
+    "wad_ent_hash": "0x77e47ff0a2bcede4"
+  },
+  "217177": {
+    "region_key": "PitMine_Jarns",
+    "rs_hash": "0xb13fe7bc300beccb"
+  },
+  "217099": {
+    "region_key": "SvartWetlands",
+    "rs_hash": "0x199d94da8463dc20",
+    "wad_name": "Sva_Wet300_ExitPuzzle",
+    "wad_ent_hash": "0x14e402d733aac1a9",
+    "wad_ent_prefix": "0000001001001001001000001111111111"
+  },
+  "217102": {
+    "region_key": "SvartWetlands",
+    "rs_hash": "0x199d94da8463dc20",
+    "wad_name": "Sva_Wet200_GeyserIntro",
+    "wad_ent_hash": "0x3506e76e8e33db26",
+    "wad_ent_prefix": "0000001001001001001000001111111111"
+  },
+  "217127": {
+    "region_key": "RigDweller",
+    "rs_hash": "0xb32d9e47d1668257"
+  },
+  "217133": {
+    "region_key": "AlberichIsleOne",
+    "rs_hash": "0x1355919fa5d8ebc3"
+  },
+  "217147": {
+    "region_key": "DragonBeach",
+    "rs_hash": "0xac79d013e06e89ae"
+  },
+  "217151": {
+    "region_key": "sewers",
+    "rs_hash": "0x51ff5f816f11bc60"
+  },
+  "217154": {
+    "region_key": "Forge",
+    "rs_hash": "0x3ade7c3c2a5ed4d1"
+  },
+  "217160": {
+    "region_key": "AppleCore",
+    "rs_hash": "0xa96723e13d98bff2"
+  },
+  "217174": {
+    "region_key": "AppleCore",
+    "rs_hash": "0xa96723e13d98bff2"
+  },
+  "217179": {
+    "region_key": "PitMine_Jarns",
+    "rs_hash": "0x150c4f1ef95664a4"
+  },
+  "948361": {
+    "region_key": "Forge"
+  },
+  "948366": {
+    "region_key": "Forge"
+  },
+  "948369": {
+    "region_key": "Forge"
+  },
+  "217923": {
+    "region_key": "SvartWetlands"
+  },
+  "217926": {
+    "region_key": "AlberichIsleOne"
+  },
+  "217927": {
+    "region_key": "SvartWetlands"
+  },
+  "217928": {
+    "region_key": "SvartWetlands"
+  },
+  "218786": {
+    "region_key": "Nidavellir"
+  },
+  "247366": {
+    "region_key": "LightHouse"
+  },
+  "247367": {
+    "region_key": "LightHouse"
+  },
+  "247368": {
+    "region_key": "LightHouse"
+  },
+  "504873": {
+    "region_key": "AppleCore"
+  },
+  "505615": {
+    "region_key": "AlberichIsleOne"
+  },
+  "505616": {
+    "region_key": "AppleCore"
+  },
+  "505617": {
+    "region_key": "AppleCore"
+  },
+  "505618": {
+    "region_key": "AppleCore"
+  },
+  "505619": {
+    "region_key": "AppleCore"
+  },
+  "505633": {
+    "region_key": "WhaleIsland",
+    "primary_wad": "Sva_Bay700_WhaleIsland"
+  },
+  "505634": {
+    "region_key": "DragonBeach"
+  },
+  "505635": {
+    "region_key": "AlberichIsleOne"
+  },
+  "505636": {
+    "region_key": "AlberichIsleOne"
+  },
+  "510891": {
+    "region_key": "Forge"
+  },
+  "947657": {
+    "region_key": "PitMine_Jarns"
+  },
+  "947659": {
+    "region_key": "PitMine_Jarns"
+  },
+  "947679": {
+    "region_key": "LightHouse"
+  },
+  "947683": {
+    "region_key": "AlberichIsleOne"
+  },
+  "947717": {
+    "region_key": "DragonBeach"
+  },
+  "948192": {
+    "region_key": "Forge"
+  },
+  "948197": {
+    "region_key": "Forge"
+  },
+  "948364": {
+    "region_key": "Forge"
+  },
+  "217110": {
+    "region_key": "Nidavellir",
+    "t2_hash": "0xe3d201cc80cdb1c4",
+    "t2_min_stage": 2
+  },
+  "217121": {
+    "region_key": "AlberichIsleOne",
+    "t2_hash": "0xba19283c61a6bfe6",
+    "t2_min_stage": 2
+  },
+  "217137": {
+    "region_key": "AlberichIsleTwo",
+    "t2_hash": "0x4bc5ddeb0fe95b0b",
+    "t2_min_stage": 2
+  },
+  "217159": {
+    "region_key": "AppleCore",
+    "t2_hash": "0x5c2ed45808e33166",
+    "t2_min_stage": 2
+  },
+  "945853": {
+    "region_key": "AppleCore"
+  },
+  "945855": {
+    "region_key": "AppleCore"
+  },
+  "947630": {
+    "region_key": "AppleCore"
+  },
+  "947633": {
+    "region_key": "AppleCore"
+  },
+  "947640": {
+    "region_key": "AppleCore"
+  },
+  "947643": {
+    "region_key": "AppleCore"
+  },
+  "947655": {
+    "region_key": "PitMine_Jarns"
+  },
+  "947662": {
+    "region_key": "PitMine_Jarns"
+  },
+  "947663": {
+    "region_key": "PitMine_Jarns"
+  },
+  "947668": {
+    "region_key": "PitMine_Jarns"
+  },
+  "947673": {
+    "region_key": "Forge"
+  },
+  "947678": {
+    "region_key": "LightHouse"
+  },
+  "947680": {
+    "region_key": "AlberichIsleOne"
+  },
+  "947682": {
+    "region_key": "AlberichIsleOne"
+  },
+  "947686": {
+    "region_key": "LightHouse"
+  },
+  "947691": {
+    "region_key": "LightHouse"
+  },
+  "947693": {
+    "region_key": "DragonBeach"
+  },
+  "947694": {
+    "region_key": "AlberichIsleOne"
+  },
+  "947698": {
+    "region_key": "AlberichIsleOne"
+  },
+  "947706": {
+    "region_key": "Nidavellir"
+  },
+  "947707": {
+    "region_key": "Nidavellir"
+  },
+  "947708": {
+    "region_key": "SvartWetlands"
+  },
+  "947709": {
+    "region_key": "SvartWetlands"
+  },
+  "947712": {
+    "region_key": "SvartWetlands"
+  },
+  "947715": {
+    "region_key": "Nidavellir"
+  },
+  "947716": {
+    "region_key": "Nidavellir"
+  },
+  "947718": {
+    "region_key": "SvartWetlands"
+  },
+  "948177": {
+    "region_key": "LightHouse"
+  },
+  "948180": {
+    "region_key": "LightHouse"
+  },
+  "948184": {
+    "region_key": "Forge"
+  },
+  "948198": {
+    "region_key": "Forge"
+  },
+  "948201": {
+    "region_key": "Forge"
+  },
+  "219971": {
+    "region_key": "SvartWetlands"
+  },
+  "219972": {
+    "region_key": "LightHouse"
+  },
+  "219973": {
+    "region_key": "DragonBeach"
+  },
+  "219974": {
+    "region_key": "DragonBeach"
+  },
+  "219975": {
+    "region_key": "LightHouse"
+  },
+  "217113": {
+    "region_key": "Nidavellir",
+    "rs_hash": "0x7f84bb9ebc74865c",
+    "t2_hash": "0x5bac2a47c230fc13",
+    "t2_min_stage": 4
+  },
+  "217134": {
+    "region_key": "AlberichIsleOne",
+    "rs_hash": "0xc45798303207f630",
+    "t2_hash": "0x83b9b30a6219e0c0",
+    "t2_min_stage": 4
+  },
+  "217165": {
+    "region_key": "PitMine_Jarns",
+    "rs_hash": "0x60f82764591e4332",
+    "t2_hash": "0x3a201dce475bd6ad",
+    "t2_min_stage": 4
+  },
+  "217124": {
+    "region_key": "LightHouse",
+    "rs_hash": "0x1fb8134112a212ba",
+    "t2_hash": "0x1fb8134112a212ba",
+    "t2_min_stage": 4
+  },
+  "217167": {
+    "region_key": "AppleCore",
+    "rs_hash": "0x0a681920eee5125d",
+    "t2_hash": "0x0a681920eee5125d",
+    "t2_min_stage": 4
+  },
+  "217079": {
+    "region_key": "LightHouse",
+    "t2_hash": "0xc2175fa907b9a663",
+    "t2_min_stage": 4
+  },
+  "217112": {
+    "region_key": "Nidavellir",
+    "t2_hash": "0x53ebaeb5a89590aa",
+    "t2_min_stage": 4
+  },
+  "217115": {
+    "region_key": "LightHouse",
+    "t2_hash": "0x9f62e13d3631ee18",
+    "t2_min_stage": 4
+  },
+  "217141": {
+    "region_key": "LightHouse",
+    "t2_hash": "0xe730c87ade48b084",
+    "t2_min_stage": 4
+  },
+  "219820": {
+    "region_key": "Nidavellir",
+    "t2_hash": "0x7407aeae12456114",
+    "t2_min_stage": 4
+  },
+  "219823": {
+    "region_key": "LightHouse",
+    "t2_hash": "0xc4e0927e1298f426",
+    "t2_min_stage": 4
+  },
+  "217100": {
+    "region_key": "SvartWetlands",
+    "rs_hash": "0xdc41542d5ee6511a",
+    "t2_hash": "0xdc41542d5ee6511a",
+    "t2_min_stage": 4
+  },
+  "219210": {
+    "region_key": "Forge",
+    "t2_hash": "0xa79e435da31788f8",
+    "t2_min_stage": 4
+  },
+  "219262": {
+    "region_key": "DragonBeach",
+    "t2_hash": "0xdd574f2be29d5f6b",
+    "t2_min_stage": 4
+  },
+  "219263": {
+    "region_key": "DragonBeach",
+    "t2_hash": "0x7f39c92617357298",
+    "t2_min_stage": 4
+  },
+  "219264": {
+    "region_key": "AppleCore",
+    "t2_hash": "0xf04093fabf34d2ba",
+    "t2_min_stage": 4
+  },
+  "217101": {
+    "region_key": "SvartWetlands",
+    "rs_hash": "0x39c19c0965a88a7d",
+    "t2_hash": "0xd0785fe3e8f2cad1",
+    "t2_min_stage": 4
+  },
+  "217116": {
+    "region_key": "AlberichIsleTwo",
+    "rs_hash": "0x41e5df844b262f07",
+    "t2_hash": "0x4709db8960cd6eb9",
+    "t2_min_stage": 4
+  },
+  "217164": {
+    "region_key": "PitMine_Jarns",
+    "rs_hash": "0xb7d1bacfebfc11a2",
+    "t2_hash": "0xd4a4ec74b17af776",
+    "t2_min_stage": 4
+  },
+  "217082": {
+    "region_key": "DragonBeach",
+    "rs_hash": "0xd972cef11401b5a4"
+  },
+  "217093": {
+    "region_key": "Forge",
+    "rs_hash": "0x1fc0feb5e278a0fb",
+    "t2_hash": "0xa79e435da31788f8",
+    "t2_min_stage": 4
+  },
+  "217095": {
+    "region_key": "sewers",
+    "rs_hash": "0x1ed1c8e94cf20d4e"
+  },
+  "217119": {
+    "region_key": "AlberichIsleOne",
+    "rs_hash": "0xaf2e9de188ee78cc"
+  },
+  "217136": {
+    "region_key": "AlberichIsleTwo",
+    "rs_hash": "0x021fd9fdc575b07b"
+  },
+  "217149": {
+    "region_key": "Forge",
+    "rs_hash": "0x1fc0feb5e278a0fb",
+    "wad_name": "Sva_Frg300_Main",
+    "wad_ent_hash": "0x1cf5bf64c6c8d1da"
+  },
+  "217163": {
+    "region_key": "AppleCore",
+    "rs_hash": "0x891da91d4bb1b332"
+  },
+  "219954": {
+    "region_key": "Forge",
+    "t2_hash": "0xddb969cf11616c2e",
+    "t2_min_stage": 4
+  },
+  "219409": {
+    "region_key": "LightHouse",
+    "t2_hash": "0x5334da1654449683",
+    "t2_min_stage": 4
+  },
+  "247363": {
+    "region_key": "AppleCore",
+    "t2_hash": "0x7f80e547b6664c9f",
+    "t2_min_stage": 4
+  },
+  "947675": {
+    "region_key": "Forge",
+    "t2_hash": "0x7737419be7f239da",
+    "t2_min_stage": 4
+  },
+  "247365": {
+    "region_key": "LightHouse"
+  },
+  "947699": {
+    "region_key": "WhaleIsland",
+    "primary_wad": "Sva_Bay700_WhaleIsland"
+  },
+  "947719": {
+    "region_key": "SvartWetlands"
+  },
+  "948186": {
+    "region_key": "LightHouse"
+  },
+  "948195": {
+    "region_key": "Forge"
+  },
+  "948200": {
+    "region_key": "Forge"
+  },
+  "217925": {
+    "region_key": "LightHouse",
+    "t2_hash": "0x421dd2b6e5d1ce41",
+    "t2_min_stage": 4
+  },
+  "217282": {
+    "region_key": "VanaheimCraterPlains",
+    "t2_hash": "0x2e77f80b7496a1e3",
+    "t2_min_stage": 4
+  },
+  "217286": {
+    "region_key": "VanaheimCraterJungle",
+    "t2_hash": "0x2e77f80b7496a1e3",
+    "t2_min_stage": 4
+  },
+  "217323": {
+    "region_key": "VanaheimCraterPlains",
+    "t2_hash": "0x2e77f80b7496a1e3",
+    "t2_min_stage": 4
+  },
+  "220537": {
+    "region_key": "VanaheimCraterSinkholes",
+    "primary_wad": "Van_CratSink300_Mid",
+    "wad_name": "Van_CratSink400_Entrance",
+    "wad_ent_hash": "0xf8474f1dce4dd6f4"
+  },
+  "314510": {
+    "region_key": "VanaheimWestJungle",
+    "t2_hash": "0x2e77f80b7496a1e3",
+    "t2_min_stage": 4
+  },
+  "314522": {
+    "region_key": "RiverDelta",
+    "t2_hash": "0x2e77f80b7496a1e3",
+    "t2_min_stage": 4
+  },
+  "314525": {
+    "region_key": "VanirVillage",
+    "t2_hash": "0x2e77f80b7496a1e3",
+    "t2_min_stage": 4
+  },
+  "217184": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "217185": {
+    "region_key": "RiverDelta"
+  },
+  "217188": {
+    "region_key": "VanirVillage"
+  },
+  "217189": {
+    "region_key": "RiverDelta"
+  },
+  "217190": {
+    "region_key": "RiverDelta"
+  },
+  "217192": {
+    "region_key": "RiverDelta"
+  },
+  "217193": {
+    "region_key": "RiverDelta"
+  },
+  "217239": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "217243": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "217270": {
+    "region_key": "VanaheimCraterPlains"
+  },
+  "217271": {
+    "region_key": "VanaheimCraterPlains"
+  },
+  "217272": {
+    "region_key": "VanaheimCraterJungle"
+  },
+  "217273": {
+    "region_key": "VanaheimCraterJungle"
+  },
+  "217274": {
+    "region_key": "VanaheimCraterJungle"
+  },
+  "217275": {
+    "region_key": "VanaheimCraterJungle"
+  },
+  "217293": {
+    "region_key": "VanaheimCraterSinkholes",
+    "primary_wad": "Van_CratSink300_Mid"
+  },
+  "217297": {
+    "region_key": "VanaheimCraterSinkholes",
+    "primary_wad": "Van_CratSink300_Mid"
+  },
+  "217300": {
+    "region_key": "VanaheimCraterSinkholes",
+    "primary_wad": "Van_CratSink300_Mid"
+  },
+  "217302": {
+    "region_key": "VanaheimCraterSinkholes",
+    "primary_wad": "Van_CratSink300_Mid"
+  },
+  "217306": {
+    "region_key": "VanaheimCraterPlains"
+  },
+  "217309": {
+    "region_key": "VanaheimCraterPlains"
+  },
+  "217310": {
+    "region_key": "VanaheimCraterPlains"
+  },
+  "217311": {
+    "region_key": "VanaheimCraterPlains"
+  },
+  "217312": {
+    "region_key": "VanaheimCraterPlains"
+  },
+  "217313": {
+    "region_key": "VanaheimCraterPlains"
+  },
+  "217321": {
+    "region_key": "VanaheimCraterPlains"
+  },
+  "220540": {
+    "region_key": "VanaheimCraterPlains"
+  },
+  "247275": {
+    "region_key": "RiverDelta"
+  },
+  "247276": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "247279": {
+    "region_key": "VanirVillage"
+  },
+  "505061": {
+    "region_key": "RiverDelta"
+  },
+  "510176": {
+    "region_key": "VanirVillage"
+  },
+  "217191": {
+    "region_key": "RiverDelta"
+  },
+  "217196": {
+    "region_key": "RiverDelta"
+  },
+  "247217": {
+    "region_key": "VanaheimCraterSinkholes",
+    "primary_wad": "Van_CratSink300_Mid"
+  },
+  "217183": {
+    "region_key": "VanaheimSouthJungle",
+    "ft_wad": "Van_Jngl100_Entrance",
+    "ft_item_hash": "0xb914bfbc51afb3bc"
+  },
+  "217186": {
+    "region_key": "RiverDelta",
+    "ft_wad": "Van_Delta800_CliffRuins",
+    "ft_item_hash": "0x5870dadf720cf5a7"
+  },
+  "217194": {
+    "region_key": "RiverDelta",
+    "ft_wad": "Van_Jngl770_RiverEastTributary",
+    "ft_item_hash": "0x0673724a11fa2067"
+  },
+  "217269": {
+    "region_key": "VanaheimCraterJungle",
+    "ft_wad": "Van_CratJngl300_Lower",
+    "ft_item_hash": "0x17fb0c20a1d3b5cc"
+  },
+  "217277": {
+    "region_key": "VanaheimCraterJungle",
+    "ft_wad": "Van_CratJngl300_Lower",
+    "ft_item_hash": "0x027747a538b2467b"
+  },
+  "217278": {
+    "region_key": "VanaheimCraterPlains",
+    "ft_wad": "Van_CratPlain200_East",
+    "ft_item_hash": "0x9b36a164ff82b293"
+  },
+  "217279": {
+    "region_key": "VanaheimCraterPlains",
+    "ft_wad": "Van_CratPlain450_Lair",
+    "ft_item_hash": "0xadb256972a615558"
+  },
+  "217295": {
+    "region_key": "VanaheimCraterSinkholes",
+    "primary_wad": "Van_CratSink300_Mid",
+    "wad_name": "Van_CratSink400_Entrance",
+    "wad_ent_hash": "0xf8474f1dce4dd6f4"
+  },
+  "217298": {
+    "region_key": "VanaheimCraterSinkholes",
+    "primary_wad": "Van_CratSink300_Mid",
+    "wad_name": "Van_CratSink600_Arena",
+    "wad_ent_hash": "0x94fbdc134bacaed7"
+  },
+  "217318": {
+    "region_key": "VanaheimCraterPlains",
+    "ft_wad": "Van_CratPlain400_West",
+    "ft_item_hash": "0x386ce910ea573c5b"
+  },
+  "217320": {
+    "region_key": "VanaheimCraterPlains",
+    "ft_wad": "Van_CratPlain200_East",
+    "ft_item_hash": "0x927063b612a71250"
+  },
+  "247216": {
+    "region_key": "VanirShrine",
+    "ft_wad": "Van_VanVil150_Center",
+    "ft_item_hash": "0x0948f6aae620357e"
+  },
+  "219690": {
+    "region_key": "VanaheimSouthJungle",
+    "t2_hash": "0x57668aa3f88ecc74",
+    "t2_min_stage": 4
+  },
+  "217187": {
+    "region_key": "RiverDelta"
+  },
+  "217195": {
+    "region_key": "RiverDelta"
+  },
+  "217322": {
+    "region_key": "VanaheimCraterPlains"
+  },
+  "220536": {
+    "region_key": "VanaheimCraterPlains"
+  },
+  "219691": {
+    "region_key": "RiverDelta",
+    "equip_any": [
+      "0xec3ed6860ad37015",
+      "0xec3ed6860ad37406",
+      "0xec3ed6860ad37837",
+      "0xec3ed6860ad37c20",
+      "0xec3ed6860ad36051",
+      "0xec3ed6860ad36442",
+      "0xec3ed6860ad36873",
+      "0xec3ed6860ad36c5c",
+      "0xec3ed6860ad350ad",
+      "0xb8468537a278d33c",
+      "0xb8468537a278efcf",
+      "0xb8468537a278ebde",
+      "0xb8468537a278e7e9"
+    ]
+  },
+  "219719": {
+    "region_key": "VanaheimCraterPlains",
+    "equip_any": [
+      "0x5239f1f4e0cb2243",
+      "0x5239f1f4e0cb2652",
+      "0x5239f1f4e0cb3a3d",
+      "0x5239f1f4e0cb3e2c",
+      "0x5239f1f4e0cb321f",
+      "0x5239f1f4e0cb360e",
+      "0x5239f1f4e0cb0af9",
+      "0x5239f1f4e0cb0ee8",
+      "0x5239f1f4e0cb02db",
+      "0x4998edb7098986b1",
+      "0x4998edb7098982a0",
+      "0x4998edb70989be6f",
+      "0x4998edb70989ba7e"
+    ]
+  },
+  "219720": {
+    "region_key": "VanaheimCraterPlains",
+    "equip_any": [
+      "0x8e4fbf5ee643249b",
+      "0x8e4fbf5ee643208a",
+      "0x8e4fbf5ee6432cbd",
+      "0x8e4fbf5ee64328ac",
+      "0x8e4fbf5ee643555f",
+      "0x8e4fbf5ee643514e",
+      "0x8e4fbf5ee6435d71",
+      "0x8e4fbf5ee6435960",
+      "0x8e4fbf5ee6434513",
+      "0x4487173f507b8144",
+      "0x4487173f507b8557",
+      "0x4487173f507b9926",
+      "0x4487173f507b9d29"
+    ]
+  },
+  "219768": {
+    "region_key": "VanaheimCraterPlains",
+    "equip_any": [
+      "0xbafeb844ac8b3319",
+      "0xbafeb844ac8b3f28",
+      "0xbafeb844ac8b3b27",
+      "0xbafeb844ac8b46d6",
+      "0xbafeb844ac8b42c5",
+      "0xbafeb844ac8b4ef4",
+      "0xbafeb844ac8b4ae3",
+      "0xbafeb844ac8b5692",
+      "0xbafeb844ac8b5281",
+      "0x859831bc32c2956c",
+      "0x859831bc32c2995b",
+      "0x859831bc32c29d4a",
+      "0x859831bc32c28139"
+    ]
+  },
+  "219809": {
+    "region_key": "RiverDelta",
+    "equip_any": [
+      "0x45547718e215e320"
+    ]
+  },
+  "219811": {
+    "region_key": "RiverDelta",
+    "equip_any": [
+      "0x4df468f9431cebbd"
+    ]
+  },
+  "219812": {
+    "region_key": "RiverDelta",
+    "equip_any": [
+      "0x746c91a16c668e79"
+    ]
+  },
+  "219814": {
+    "region_key": "RiverDelta",
+    "equip_any": [
+      "0x7e11112ad0bf12ee"
+    ]
+  },
+  "946840": {
+    "region_key": "RiverDelta",
+    "equip_any": [
+      "0x9f79dcb1065131d4"
+    ]
+  },
+  "217207": {
+    "region_key": "VanirVillage",
+    "t2_hash": "0x1a6d7c011adc0cd2",
+    "t2_min_stage": 2
+  },
+  "217229": {
+    "region_key": "RiverRuins",
+    "rs_hash": "0x1a52d7ce3f15ff1b",
+    "t2_hash": "0x1a6d7c011adc04f4",
+    "t2_min_stage": 2
+  },
+  "217241": {
+    "region_key": "VanaheimSouthJungle",
+    "rs_hash": "0x93543405f7dbd343",
+    "t2_hash": "0x1a6d7c011adc08c3",
+    "t2_min_stage": 2
+  },
+  "217250": {
+    "region_key": "VanirShrine",
+    "rs_hash": "0xe2248860a8b8e12c",
+    "t2_hash": "0x1a6d7c011adc00e5",
+    "t2_min_stage": 2
+  },
+  "217261": {
+    "region_key": "RiverDelta",
+    "rs_hash": "0x8abefd0a314cf89b",
+    "t2_hash": "0x1a6d7c011adc7d16",
+    "t2_min_stage": 2
+  },
+  "218788": {
+    "region_key": "RiverDelta",
+    "rs_hash": "0x8abefd0a314cf89b",
+    "t2_hash": "0x1a6d7c011adc7907",
+    "t2_min_stage": 2
+  },
+  "217245": {
+    "region_key": "WaterfallWorld",
+    "rs_hash": "0xc7776fa6cb08b488",
+    "t2_hash": "0x79e38e187d6c8b71",
+    "t2_min_stage": 4
+  },
+  "217257": {
+    "region_key": "RiverDelta",
+    "rs_hash": "0x60679a0eea0b853e",
+    "t2_hash": "0xd158b9de4b08a5d7",
+    "t2_min_stage": 4
+  },
+  "217330": {
+    "region_key": "VanaheimCraterPlains",
+    "rs_hash": "0x6d92cda0253ad922",
+    "t2_hash": "0xcec0ac46cd8d8879",
+    "t2_min_stage": 4
+  },
+  "217232": {
+    "region_key": "RiverRuins",
+    "t2_hash": "0x3e4fd914e429537a",
+    "t2_min_stage": 4
+  },
+  "217289": {
+    "region_key": "VanaheimCraterJungle",
+    "t2_hash": "0x7ff97c0f2aa6bcc4",
+    "t2_min_stage": 4
+  },
+  "217200": {
+    "region_key": "VanaheimSouthJungle",
+    "rs_hash": "0x93543405f7dbd343",
+    "t2_hash": "0x870f1b987c6e22ac",
+    "t2_min_stage": 2
+  },
+  "217266": {
+    "region_key": "VanaheimCraterJungle",
+    "rs_hash": "0xa4d1e962370ee0ec",
+    "t2_hash": "0x870f1b987c6e2a82",
+    "t2_min_stage": 2
+  },
+  "217296": {
+    "region_key": "VanaheimCraterSinkholes",
+    "primary_wad": "Van_CratSink300_Mid",
+    "rs_hash": "0x4d69ef73edc38f2f",
+    "t2_hash": "0x870f1b987c6e26bd",
+    "t2_min_stage": 2
+  },
+  "217202": {
+    "region_key": "VanirVillage",
+    "rs_hash": "0xc55a2fa3772056db",
+    "t2_hash": "0xb39c5c9ba18151d3",
+    "t2_min_stage": 2
+  },
+  "217203": {
+    "region_key": "VanirVillage",
+    "rs_hash": "0xc55a2fa3772056db",
+    "t2_hash": "0xab834000b20f0a2d",
+    "t2_min_stage": 2
+  },
+  "217212": {
+    "region_key": "VanaheimEastJungle",
+    "rs_hash": "0x9e7c93f80880fe15"
+  },
+  "217214": {
+    "region_key": "VanaheimEastJungle",
+    "rs_hash": "0x9e7c93f80880fe15",
+    "t2_hash": "0xab834002e02092de",
+    "t2_min_stage": 2
+  },
+  "217216": {
+    "region_key": "VanaheimEastJungle",
+    "rs_hash": "0x9e7c93f80880fe15"
+  },
+  "217218": {
+    "region_key": "VanaheimEastJungle",
+    "rs_hash": "0x9e7c93f80880fe15",
+    "t2_hash": "0x787645ad9f889df8",
+    "t2_min_stage": 2
+  },
+  "217224": {
+    "region_key": "TheGrotto",
+    "rs_hash": "0xaf05d8b3b5277cc8"
+  },
+  "217226": {
+    "region_key": "RiverRuins",
+    "rs_hash": "0xd8aa761a931f9fe2",
+    "t2_hash": "0x5d492717b4844103",
+    "t2_min_stage": 2
+  },
+  "217230": {
+    "region_key": "RiverRuins",
+    "rs_hash": "0xd8aa761a931f9fe2",
+    "t2_hash": "0xd90cc98bbb97ba71",
+    "t2_min_stage": 2
+  },
+  "217235": {
+    "region_key": "CliffsideRuins",
+    "rs_hash": "0x733e36e4a4cb17b9"
+  },
+  "217238": {
+    "region_key": "DeltaRuins",
+    "rs_hash": "0xfedf492a1a8b5481"
+  },
+  "217242": {
+    "region_key": "WaterfallWorld",
+    "rs_hash": "0x185d342e8121806f"
+  },
+  "217247": {
+    "region_key": "VanirShrine",
+    "rs_hash": "0xb4e557f6a2219b61",
+    "t2_hash": "0x4e449190d06d8b8d",
+    "t2_min_stage": 2
+  },
+  "217249": {
+    "region_key": "VanirShrine",
+    "rs_hash": "0xb4e557f6a2219b61",
+    "t2_hash": "0x4e449190d06d97f2",
+    "t2_min_stage": 2
+  },
+  "217252": {
+    "region_key": "VanirShrine",
+    "rs_hash": "0xb4e557f6a2219b61",
+    "t2_hash": "0x4e449190d06d93e3",
+    "t2_min_stage": 2
+  },
+  "217253": {
+    "region_key": "VanirShrine",
+    "rs_hash": "0xb4e557f6a2219b61",
+    "t2_hash": "0x4e449190d06d9fd0",
+    "t2_min_stage": 2
+  },
+  "217254": {
+    "region_key": "VanirShrine",
+    "rs_hash": "0xb4e557f6a2219b61",
+    "t2_hash": "0xe3b4426ab9660ae4",
+    "t2_min_stage": 2
+  },
+  "217255": {
+    "region_key": "VanirShrine",
+    "rs_hash": "0xb4e557f6a2219b61",
+    "t2_hash": "0x6b3a65e029ba8c9c",
+    "t2_min_stage": 2
+  },
+  "217258": {
+    "region_key": "RiverDelta",
+    "rs_hash": "0x7684f97f7e4bf60d",
+    "t2_hash": "0xa40f4eb75b20198b",
+    "t2_min_stage": 2
+  },
+  "217263": {
+    "region_key": "RiverDelta",
+    "rs_hash": "0x7684f97f7e4bf60d",
+    "t2_hash": "0xd87d1b9e3eafeaaf",
+    "t2_min_stage": 2
+  },
+  "217265": {
+    "region_key": "VanaheimWestJungle",
+    "rs_hash": "0xdb8456047790ca1c"
+  },
+  "217267": {
+    "region_key": "VanaheimCraterJungle",
+    "rs_hash": "0x6525e89bdaaa6b6b",
+    "t2_hash": "0xc978d65720893217",
+    "t2_min_stage": 2
+  },
+  "217290": {
+    "region_key": "VanaheimCraterJungle",
+    "rs_hash": "0x6525e89bdaaa6b6b",
+    "t2_hash": "0xc8afdedd277579e1",
+    "t2_min_stage": 2
+  },
+  "217292": {
+    "region_key": "VanaheimCraterSinkholes",
+    "primary_wad": "Van_CratSink300_Mid",
+    "rs_hash": "0xd5856820362095bf"
+  },
+  "217308": {
+    "region_key": "VanaheimCraterPlains",
+    "rs_hash": "0xda5ea238fc7abfb7",
+    "t2_hash": "0xc978d65720893600",
+    "t2_min_stage": 2
+  },
+  "217315": {
+    "region_key": "VanaheimCraterPlains",
+    "rs_hash": "0xda5ea238fc7abfb7",
+    "t2_hash": "0xc978d65720893a31",
+    "t2_min_stage": 2
+  },
+  "217328": {
+    "region_key": "VanaheimCraterPlains",
+    "rs_hash": "0xda5ea238fc7abfb7",
+    "t2_hash": "0xc978d65720893e22",
+    "t2_min_stage": 2
+  },
+  "217333": {
+    "region_key": "VanaheimCraterPlains",
+    "rs_hash": "0xda5ea238fc7abfb7",
+    "t2_hash": "0x579c7814f219802a",
+    "t2_min_stage": 2
+  },
+  "314518": {
+    "region_key": "VanirVillage",
+    "rs_hash": "0xc55a2fa3772056db",
+    "t2_hash": "0x12b099f17b35b41f",
+    "t2_min_stage": 2
+  },
+  "217299": {
+    "region_key": "VanaheimCraterSinkholes",
+    "primary_wad": "Van_CratSink300_Mid",
+    "rs_hash": "0x3d0cee6e43bf1d74",
+    "t2_hash": "0xce32f05c48f1fc83",
+    "t2_min_stage": 4
+  },
+  "217198": {
+    "region_key": "VanaheimSouthJungle",
+    "rs_hash": "0xa04a7f8bd9f42f64"
+  },
+  "217208": {
+    "region_key": "VanirVillage",
+    "rs_hash": "0xdc57240c2313c705"
+  },
+  "217211": {
+    "region_key": "VanaheimEastJungle",
+    "rs_hash": "0x847a82b0fe13abea"
+  },
+  "217215": {
+    "region_key": "VanaheimEastJungle",
+    "rs_hash": "0x847a82b0fe13abea"
+  },
+  "217240": {
+    "region_key": "VanFootpath",
+    "rs_hash": "0xb462fe3a73898800"
+  },
+  "217244": {
+    "region_key": "WaterfallWorld",
+    "rs_hash": "0xbb4136862fcebf09"
+  },
+  "217259": {
+    "region_key": "RiverDelta",
+    "rs_hash": "0x71d828f091e0e04d",
+    "wad_name": "Van_Delta400_RiverDelta",
+    "wad_ent_hash": "0x43e0e48511b0a115"
+  },
+  "217260": {
+    "region_key": "TheGrotto",
+    "rs_hash": "0xd92c436593b75584"
+  },
+  "217281": {
+    "region_key": "VanaheimCraterJungle",
+    "rs_hash": "0xb038725bbec901e6"
+  },
+  "217301": {
+    "region_key": "VanaheimCraterSinkholes",
+    "primary_wad": "Van_CratSink300_Mid",
+    "rs_hash": "0x21d2243cd022489b"
+  },
+  "217307": {
+    "region_key": "VanaheimCraterPlains",
+    "rs_hash": "0x2e81f78f8ef01d43",
+    "t2_hash": "0x2e81f78f8ef01d43",
+    "t2_min_stage": 2
+  },
+  "217314": {
+    "region_key": "VanaheimCraterPlains",
+    "rs_hash": "0x2e81f78f8ef01d43",
+    "t2_hash": "0x2e81f78f8ef01d43",
+    "t2_min_stage": 2
+  },
+  "217317": {
+    "region_key": "VanaheimCraterPlains",
+    "rs_hash": "0x2e81f78f8ef01d43",
+    "t2_hash": "0x2e81f78f8ef01d43",
+    "t2_min_stage": 2
+  },
+  "217325": {
+    "region_key": "VanaheimCraterPlains",
+    "rs_hash": "0x2e81f78f8ef01d43",
+    "wad_name": "Van_CratPlain400_West",
+    "wad_ent_hash": "0x1711e408ce8048f0"
+  },
+  "217327": {
+    "region_key": "VanaheimCraterPlains",
+    "rs_hash": "0x2e81f78f8ef01d43",
+    "wad_name": "Van_CratPlain200_East",
+    "wad_ent_hash": "0xa06dbb2615282026",
+    "wad_ent_prefix": "0110111"
+  },
+  "219270": {
+    "region_key": "RiverDelta",
+    "t2_hash": "0x77c7ef4bceaef292",
+    "t2_min_stage": 4
+  },
+  "219273": {
+    "region_key": "VanaheimWestJungle",
+    "t2_hash": "0xc0facd3188ea3eed",
+    "t2_min_stage": 4
+  },
+  "219414": {
+    "region_key": "VanaheimCraterPlains",
+    "t2_hash": "0x579c7814f219802a",
+    "t2_min_stage": 2
+  },
+  "219417": {
+    "region_key": "VanaheimCraterPlains",
+    "t2_hash": "0x50e05a7fa7073731",
+    "t2_min_stage": 2
+  },
+  "217283": {
+    "region_key": "VanaheimCraterPlains",
+    "rs_hash": "0x9abb2abc0a7a7272",
+    "t2_hash": "0xde759e17cebbc25f",
+    "t2_min_stage": 4
+  },
+  "217284": {
+    "region_key": "VanaheimCraterPlains",
+    "rs_hash": "0x9abb2abc0a7a7272",
+    "t2_hash": "0x7557110fdb8e1287",
+    "t2_min_stage": 4
+  },
+  "217288": {
+    "region_key": "VanaheimCraterJungle",
+    "rs_hash": "0x80aa493f5c78209e",
+    "t2_hash": "0x592b76a4412907fa",
+    "t2_min_stage": 4
+  },
+  "217294": {
+    "region_key": "VanaheimCraterSinkholes",
+    "primary_wad": "Van_CratSink300_Mid",
+    "rs_hash": "0x064917e9a06e8676",
+    "t2_hash": "0xf5a6e11b3ce1ae8e",
+    "t2_min_stage": 4
+  },
+  "219818": {
+    "region_key": "VanirShrine",
+    "wad_name": "Van_VanVil300_OldTown",
+    "wad_ent_hash": "0x68cb8f5c63522454"
+  },
+  "945715": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945720": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945724": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945726": {
+    "region_key": "VanirVillage"
+  },
+  "945727": {
+    "region_key": "RiverDelta"
+  },
+  "945728": {
+    "region_key": "RiverDelta"
+  },
+  "945729": {
+    "region_key": "RiverDelta"
+  },
+  "945732": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945735": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945738": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945739": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945740": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945741": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945777": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945782": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945785": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945791": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945798": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945800": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945802": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945804": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945805": {
+    "region_key": "RiverDelta"
+  },
+  "945809": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945812": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945818": {
+    "region_key": "VanirVillage"
+  },
+  "945820": {
+    "region_key": "RiverDelta"
+  },
+  "945821": {
+    "region_key": "RiverDelta"
+  },
+  "945828": {
+    "region_key": "VanirVillage"
+  },
+  "945829": {
+    "region_key": "VanirShrine"
+  },
+  "945832": {
+    "region_key": "VanirVillage"
+  },
+  "945835": {
+    "region_key": "VanirShrine"
+  },
+  "945838": {
+    "region_key": "VanirShrine"
+  },
+  "945839": {
+    "region_key": "VanirShrine"
+  },
+  "945840": {
+    "region_key": "VanirShrine"
+  },
+  "945841": {
+    "region_key": "VanirShrine"
+  },
+  "945843": {
+    "region_key": "VanirShrine"
+  },
+  "945867": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945872": {
+    "region_key": "WaterfallWorld"
+  },
+  "945873": {
+    "region_key": "RiverDelta"
+  },
+  "945874": {
+    "region_key": "RiverDelta"
+  },
+  "945877": {
+    "region_key": "WaterfallWorld"
+  },
+  "945878": {
+    "region_key": "WaterfallWorld"
+  },
+  "945880": {
+    "region_key": "RiverDelta"
+  },
+  "945882": {
+    "region_key": "RiverDelta"
+  },
+  "945883": {
+    "region_key": "RiverDelta"
+  },
+  "946248": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "946399": {
+    "region_key": "VanirVillage"
+  },
+  "946400": {
+    "region_key": "VanirVillage"
+  },
+  "946401": {
+    "region_key": "RiverDelta"
+  },
+  "946408": {
+    "region_key": "WaterfallWorld"
+  },
+  "946844": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "946845": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "946848": {
+    "region_key": "WaterfallWorld"
+  },
+  "946849": {
+    "region_key": "WaterfallWorld"
+  },
+  "946850": {
+    "region_key": "WaterfallWorld"
+  },
+  "946851": {
+    "region_key": "WaterfallWorld"
+  },
+  "946852": {
+    "region_key": "WaterfallWorld"
+  },
+  "946854": {
+    "region_key": "WaterfallWorld"
+  },
+  "946855": {
+    "region_key": "RiverDelta"
+  },
+  "217199": {
+    "region_key": "VanaheimSouthJungle",
+    "rs_hash": "0x23d7eb717f8860ce"
+  },
+  "217204": {
+    "region_key": "VanirVillage",
+    "rs_hash": "0x65eb869e641de865",
+    "wad_name": "Van_Jngl550_FreyrCamp",
+    "wad_ent_hash": "0x0cc9ac4d134d7eaf"
+  },
+  "217209": {
+    "region_key": "VanirVillage",
+    "rs_hash": "0x65eb869e641de865",
+    "wad_name": "Van_VanVil130_EastMiddleBank",
+    "wad_ent_hash": "0x9ca094855c08163b"
+  },
+  "217217": {
+    "region_key": "VanirVillage",
+    "rs_hash": "0x65eb869e641de865",
+    "wad_name": "Van_VanVil300_OldTown",
+    "wad_ent_hash": "0x68cb8f5c63522454"
+  },
+  "217220": {
+    "region_key": "VanirVillage",
+    "rs_hash": "0x65eb869e641de865",
+    "t2_hash": "0x2537c22b43381255",
+    "t2_min_stage": 4
+  },
+  "217222": {
+    "region_key": "VanirVillage",
+    "rs_hash": "0x65eb869e641de865",
+    "t2_hash": "0xc0facd3188ea3eed",
+    "t2_min_stage": 4
+  },
+  "217225": {
+    "region_key": "TheGrotto",
+    "rs_hash": "0x252d7ee48f2f06e6"
+  },
+  "217236": {
+    "region_key": "CliffsideRuins",
+    "rs_hash": "0xa106e406151aed59"
+  },
+  "217251": {
+    "region_key": "VanirShrine",
+    "rs_hash": "0x6a4ab392e1d8714a"
+  },
+  "217268": {
+    "region_key": "VanaheimCraterJungle",
+    "rs_hash": "0x7ff97c0f2aa6bcc4",
+    "t2_hash": "0xab5ee81b19598e85",
+    "t2_min_stage": 4
+  },
+  "217319": {
+    "region_key": "VanaheimCraterPlains",
+    "rs_hash": "0x318db57b7322a9c2"
+  },
+  "217201": {
+    "region_key": "VanaheimSouthJungle",
+    "rs_hash": "0x73a1b370a2f86237"
+  },
+  "217213": {
+    "region_key": "VanaheimEastJungle",
+    "rs_hash": "0xb425ddb0a7b55665"
+  },
+  "217221": {
+    "region_key": "VanirVillage",
+    "rs_hash": "0x333cfb2b36a39ceb"
+  },
+  "217233": {
+    "region_key": "CliffsideRuins",
+    "rs_hash": "0x4c7ce53af13a90d5"
+  },
+  "217237": {
+    "region_key": "VanFootpath",
+    "rs_hash": "0xbab2d03ac26e1914"
+  },
+  "217246": {
+    "region_key": "WaterfallWorld",
+    "rs_hash": "0x31519b1ab6cba146"
+  },
+  "217280": {
+    "region_key": "VanaheimCraterJungle",
+    "rs_hash": "0x6b5369125334fbaf"
+  },
+  "217291": {
+    "region_key": "VanaheimCraterSinkholes",
+    "primary_wad": "Van_CratSink300_Mid",
+    "rs_hash": "0xe46118577e28ae4c"
+  },
+  "217303": {
+    "region_key": "VanaheimCraterSinkholes",
+    "primary_wad": "Van_CratSink300_Mid",
+    "rs_hash": "0xe46118577e28ae4c"
+  },
+  "217316": {
+    "region_key": "VanaheimCraterPlains",
+    "rs_hash": "0xda7b2bc75d5452b6"
+  },
+  "217331": {
+    "region_key": "VanaheimCraterPlains",
+    "rs_hash": "0xda7b2bc75d5452b6"
+  },
+  "219704": {
+    "region_key": "VanaheimCraterPlains"
+  },
+  "219706": {
+    "region_key": "VanaheimCraterPlains"
+  },
+  "219708": {
+    "region_key": "VanaheimCraterPlains"
+  },
+  "219709": {
+    "region_key": "VanaheimCraterPlains"
+  },
+  "219711": {
+    "region_key": "VanaheimCraterPlains"
+  },
+  "219718": {
+    "region_key": "VanaheimCraterPlains"
+  },
+  "945814": {
+    "region_key": "VanirVillage"
+  },
+  "945815": {
+    "region_key": "VanirVillage"
+  },
+  "946405": {
+    "region_key": "VanaheimCraterPlains"
+  },
+  "946829": {
+    "region_key": "RiverDelta"
+  },
+  "946831": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "946832": {
+    "region_key": "RiverDelta"
+  },
+  "946833": {
+    "region_key": "RiverDelta"
+  },
+  "946834": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "946835": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "946836": {
+    "region_key": "WaterfallWorld"
+  },
+  "946837": {
+    "region_key": "VanirVillage"
+  },
+  "946838": {
+    "region_key": "RiverDelta"
+  },
+  "946839": {
+    "region_key": "RiverDelta"
+  },
+  "219687": {
+    "region_key": "WaterfallWorld"
+  },
+  "219688": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "219689": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "314507": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "314508": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "314526": {
+    "region_key": "VanirVillage"
+  },
+  "314527": {
+    "region_key": "VanirVillage"
+  },
+  "314528": {
+    "region_key": "VanirVillage"
+  },
+  "314529": {
+    "region_key": "VanirVillage"
+  },
+  "314530": {
+    "region_key": "RiverDelta"
+  },
+  "314532": {
+    "region_key": "VanirShrine"
+  },
+  "314533": {
+    "region_key": "RiverDelta"
+  },
+  "505053": {
+    "region_key": "RiverDelta"
+  },
+  "505054": {
+    "region_key": "WaterfallWorld"
+  },
+  "505055": {
+    "region_key": "WaterfallWorld"
+  },
+  "505056": {
+    "region_key": "WaterfallWorld"
+  },
+  "505057": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "505058": {
+    "region_key": "RiverDelta"
+  },
+  "505059": {
+    "region_key": "RiverDelta"
+  },
+  "505060": {
+    "region_key": "RiverDelta"
+  },
+  "512271": {
+    "region_key": "RiverDelta"
+  },
+  "512272": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945713": {
+    "region_key": "VanirVillage"
+  },
+  "945714": {
+    "region_key": "VanirShrine"
+  },
+  "945845": {
+    "region_key": "VanaheimCraterSinkholes",
+    "primary_wad": "Van_CratSink300_Mid"
+  },
+  "945876": {
+    "region_key": "RiverDelta"
+  },
+  "946403": {
+    "region_key": "RiverDelta"
+  },
+  "946404": {
+    "region_key": "VanaheimCraterPlains"
+  },
+  "946406": {
+    "region_key": "VanaheimCraterPlains"
+  },
+  "946407": {
+    "region_key": "VanaheimCraterPlains"
+  },
+  "946842": {
+    "region_key": "VanaheimCraterJungle"
+  },
+  "946843": {
+    "region_key": "RiverDelta"
+  },
+  "946856": {
+    "region_key": "VanaheimCraterPlains"
+  },
+  "946857": {
+    "region_key": "VanaheimCraterSinkholes",
+    "primary_wad": "Van_CratSink300_Mid"
+  },
+  "946858": {
+    "region_key": "VanaheimCraterSinkholes",
+    "primary_wad": "Van_CratSink300_Mid"
+  },
+  "946859": {
+    "region_key": "VanaheimCraterPlains"
+  },
+  "946860": {
+    "region_key": "VanaheimCraterPlains"
+  },
+  "946861": {
+    "region_key": "VanaheimCraterPlains"
+  },
+  "946862": {
+    "region_key": "VanaheimCraterPlains"
+  },
+  "946863": {
+    "region_key": "VanaheimCraterJungle"
+  },
+  "946864": {
+    "region_key": "VanaheimCraterJungle"
+  },
+  "946865": {
+    "region_key": "VanaheimCraterJungle"
+  },
+  "946866": {
+    "region_key": "VanaheimCraterPlains"
+  },
+  "946867": {
+    "region_key": "VanaheimCraterPlains"
+  },
+  "217231": {
+    "region_key": "RiverRuins",
+    "t2_hash": "0x96ded6d3bd995612",
+    "t2_min_stage": 2
+  },
+  "217248": {
+    "region_key": "VanFootpath",
+    "t2_hash": "0x47fb6fab12e323bf",
+    "t2_min_stage": 2
+  },
+  "217305": {
+    "region_key": "VanaheimCraterPlains",
+    "t2_hash": "0x308200fbbeb80be0",
+    "t2_min_stage": 2
+  },
+  "945717": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945725": {
+    "region_key": "VanirVillage"
+  },
+  "945730": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945733": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945795": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945797": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945824": {
+    "region_key": "VanirShrine"
+  },
+  "945830": {
+    "region_key": "VanirShrine"
+  },
+  "945833": {
+    "region_key": "VanirShrine"
+  },
+  "945837": {
+    "region_key": "VanirShrine"
+  },
+  "945879": {
+    "region_key": "RiverDelta"
+  },
+  "946841": {
+    "region_key": "RiverDelta"
+  },
+  "946846": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "946847": {
+    "region_key": "WaterfallWorld"
+  },
+  "946853": {
+    "region_key": "WaterfallWorld"
+  },
+  "219976": {
+    "region_key": "RiverDelta"
+  },
+  "219977": {
+    "region_key": "RiverDelta"
+  },
+  "219978": {
+    "region_key": "VanirVillage"
+  },
+  "219979": {
+    "region_key": "VanaheimCraterPlains"
+  },
+  "219980": {
+    "region_key": "VanaheimCraterPlains"
+  },
+  "219981": {
+    "region_key": "VanaheimCraterSinkholes",
+    "primary_wad": "Van_CratSink300_Mid"
+  },
+  "217223": {
+    "region_key": "DeltaRuins",
+    "rs_hash": "0xff302be2768861bf",
+    "t2_hash": "0x68280c0ac7b0a376",
+    "t2_min_stage": 4
+  },
+  "217287": {
+    "region_key": "VanaheimCraterSinkholes",
+    "primary_wad": "Van_CratSink300_Mid",
+    "rs_hash": "0x77ab51d7c814b6bc",
+    "t2_hash": "0x71e2f34a6f9bb2c8",
+    "t2_min_stage": 4
+  },
+  "217219": {
+    "region_key": "VanirVillage",
+    "rs_hash": "0x2537c22b43381255",
+    "t2_hash": "0x2537c22b43381255",
+    "t2_min_stage": 4
+  },
+  "217326": {
+    "region_key": "VanaheimCraterPlains",
+    "rs_hash": "0x5049e51b8a117c9a",
+    "t2_hash": "0x5049e51b8a117c9a",
+    "t2_min_stage": 4
+  },
+  "217227": {
+    "region_key": "RiverDelta",
+    "t2_hash": "0x7f002f4e83071296",
+    "t2_min_stage": 4
+  },
+  "217228": {
+    "region_key": "VanirVillage",
+    "t2_hash": "0x8c9b100214c61853",
+    "t2_min_stage": 4
+  },
+  "217234": {
+    "region_key": "VanaheimSouthJungle",
+    "t2_hash": "0xa58884dd091ee4a6",
+    "t2_min_stage": 4
+  },
+  "217256": {
+    "region_key": "RiverDelta",
+    "t2_hash": "0x774b49ea50d4b596",
+    "t2_min_stage": 4
+  },
+  "217264": {
+    "region_key": "RiverDelta",
+    "t2_hash": "0x57668aa3f88ecc74",
+    "t2_min_stage": 4
+  },
+  "219951": {
+    "region_key": "RiverDelta",
+    "t2_hash": "0x2e03f1832a90c693",
+    "t2_min_stage": 4
+  },
+  "219956": {
+    "region_key": "VanaheimCraterJungle",
+    "t2_hash": "0xab5ee81b19598e85",
+    "t2_min_stage": 4
+  },
+  "219957": {
+    "region_key": "VanaheimCraterJungle",
+    "t2_hash": "0x2bb876f5ea217cc8",
+    "t2_min_stage": 4
+  },
+  "219958": {
+    "region_key": "VanaheimCraterJungle",
+    "t2_hash": "0xde8f8ec6ff7272f9",
+    "t2_min_stage": 4
+  },
+  "219959": {
+    "region_key": "VanaheimCraterJungle",
+    "t2_hash": "0x75c00a416c9ee95b",
+    "t2_min_stage": 4
+  },
+  "219960": {
+    "region_key": "VanaheimCraterJungle",
+    "t2_hash": "0x72e72376e9e4bd8e",
+    "t2_min_stage": 4
+  },
+  "219961": {
+    "region_key": "VanaheimCraterJungle",
+    "t2_hash": "0x1e19f50fcd0f74db",
+    "t2_min_stage": 4
+  },
+  "219962": {
+    "region_key": "VanaheimCraterPlains",
+    "t2_hash": "0x2acd3dec23075cee",
+    "t2_min_stage": 4
+  },
+  "219963": {
+    "region_key": "VanaheimCraterSinkholes",
+    "primary_wad": "Van_CratSink300_Mid",
+    "t2_hash": "0x273c5fc4760fc90b",
+    "t2_min_stage": 4
+  },
+  "219964": {
+    "region_key": "VanaheimCraterSinkholes",
+    "primary_wad": "Van_CratSink300_Mid",
+    "t2_hash": "0x7d34baf880d528de",
+    "t2_min_stage": 4
+  },
+  "219965": {
+    "region_key": "VanaheimCraterPlains",
+    "t2_hash": "0x2579c2c8b31a7811",
+    "t2_min_stage": 4
+  },
+  "219966": {
+    "region_key": "VanaheimCraterPlains",
+    "t2_hash": "0x456627a413c28c75",
+    "t2_min_stage": 4
+  },
+  "219967": {
+    "region_key": "VanaheimCraterPlains",
+    "t2_hash": "0x902ecb0f47d06ec6",
+    "t2_min_stage": 4
+  },
+  "219968": {
+    "region_key": "VanaheimCraterPlains",
+    "t2_hash": "0xe38719266ce2dbd9",
+    "t2_min_stage": 4
+  },
+  "219969": {
+    "region_key": "VanaheimCraterPlains",
+    "t2_hash": "0x2345d08a40dbd0db",
+    "t2_min_stage": 4
+  },
+  "219970": {
+    "region_key": "VanaheimCraterPlains",
+    "t2_hash": "0x9e7040869bb14089",
+    "t2_min_stage": 4
+  },
+  "217197": {
+    "region_key": "VanaheimSouthJungle",
+    "rs_hash": "0x0707e3c26df8e422",
+    "t2_hash": "0x0707e3c26df8e422",
+    "t2_min_stage": 4
+  },
+  "219265": {
+    "region_key": "VanaheimCraterPlains",
+    "t2_hash": "0x25760d459f61fb46",
+    "t2_min_stage": 4
+  },
+  "219266": {
+    "region_key": "VanaheimCraterPlains",
+    "t2_hash": "0x7ac746ff47c51824",
+    "t2_min_stage": 2
+  },
+  "217205": {
+    "region_key": "TheGrotto",
+    "rs_hash": "0x87f73b67a39b55bf",
+    "t2_hash": "0x4709db8960cd669b",
+    "t2_min_stage": 4
+  },
+  "217206": {
+    "region_key": "VanaheimEastJungle",
+    "rs_hash": "0x3068cdcba3414766",
+    "t2_hash": "0x4709db8960cd628a",
+    "t2_min_stage": 4
+  },
+  "217262": {
+    "region_key": "RiverDelta",
+    "rs_hash": "0x6957a35b45dee8a6"
+  },
+  "217304": {
+    "region_key": "VanaheimCraterPlains",
+    "rs_hash": "0xcbf2d743c298428e",
+    "wad_name": "Van_CratPlain200_East",
+    "wad_ent_hash": "0x94ffb1023db731da"
+  },
+  "217324": {
+    "region_key": "VanaheimCraterPlains",
+    "rs_hash": "0xcbf2d743c298428e",
+    "t2_hash": "0x7ac746ff47c51824",
+    "t2_min_stage": 2
+  },
+  "217329": {
+    "region_key": "VanaheimCraterPlains",
+    "rs_hash": "0xcbf2d743c298428e",
+    "t2_hash": "0x25760d459f61fb46",
+    "t2_min_stage": 4
+  },
+  "219955": {
+    "region_key": "VanaheimCraterSinkholes",
+    "primary_wad": "Van_CratSink300_Mid",
+    "t2_hash": "0xddb969cf1161601d",
+    "t2_min_stage": 4
+  },
+  "219269": {
+    "region_key": "RiverDelta",
+    "t2_hash": "0x77c7ef4bceaef292",
+    "t2_min_stage": 4
+  },
+  "219413": {
+    "region_key": "VanirVillage",
+    "t2_hash": "0xc0facd3188ea3eed",
+    "t2_min_stage": 4
+  },
+  "219415": {
+    "region_key": "VanaheimCraterPlains",
+    "t2_hash": "0xae5a3a87fa5c5ecd",
+    "t2_min_stage": 4
+  },
+  "219416": {
+    "region_key": "VanaheimCraterPlains",
+    "t2_hash": "0xae5a3a87fa5c5adc",
+    "t2_min_stage": 4
+  },
+  "314513": {
+    "region_key": "VanaheimCraterPlains",
+    "t2_hash": "0x2acd3dec23075cee",
+    "t2_min_stage": 4
+  },
+  "314515": {
+    "region_key": "VanaheimCraterPlains",
+    "t2_hash": "0x902ecb0f47d06ec6",
+    "t2_min_stage": 4
+  },
+  "314516": {
+    "region_key": "VanaheimCraterPlains",
+    "t2_hash": "0x456627a413c28c75",
+    "t2_min_stage": 4
+  },
+  "314519": {
+    "region_key": "VanaheimCraterPlains",
+    "t2_hash": "0xae5a3a87fa5c56f3",
+    "t2_min_stage": 4
+  },
+  "314535": {
+    "region_key": "VanaheimWestJungle",
+    "t2_hash": "0xc0facd3188ea3eed",
+    "t2_min_stage": 4
+  },
+  "945775": {
+    "region_key": "VanaheimSouthJungle",
+    "t2_hash": "0x774b49ea50d4b596",
+    "t2_min_stage": 4
+  },
+  "946402": {
+    "region_key": "RiverDelta",
+    "t2_hash": "0x77c7ef4bceaef292",
+    "t2_min_stage": 4
+  },
+  "946830": {
+    "region_key": "VanaheimSouthJungle",
+    "t2_hash": "0x774b49ea50d4b596",
+    "t2_min_stage": 4
+  },
+  "948174": {
+    "region_key": "VanaheimCraterSinkholes",
+    "primary_wad": "Van_CratSink300_Mid",
+    "t2_hash": "0x273c5fc4760fc90b",
+    "t2_min_stage": 4
+  },
+  "945716": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945719": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945721": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945722": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945723": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945731": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945734": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945736": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945737": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945776": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945779": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945780": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945783": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945786": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945789": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945793": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945794": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945796": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945799": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945803": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945811": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945866": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945870": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "945871": {
+    "region_key": "RiverDelta"
+  },
+  "945875": {
+    "region_key": "WaterfallWorld"
+  },
+  "945881": {
+    "region_key": "VanirVillage"
+  },
+  "946249": {
+    "region_key": "VanaheimSouthJungle"
+  },
+  "947930": {
+    "region_key": "RiverDelta"
+  },
+  "948175": {
+    "region_key": "VanaheimCraterPlains"
+  },
+  "219573": {
+    "region_key": "WaterfallWorld",
+    "t2_hash": "0xa27da236d392236e",
+    "t2_min_stage": 4
+  },
+  "219695": {
+    "region_key": "VanaheimCraterPlains",
+    "t2_hash": "0x2e03f1832a90c693",
+    "t2_min_stage": 4
+  }
+}

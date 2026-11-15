@@ -1,0 +1,406 @@
+{
+  "midgard": {
+    "realm": "midgard",
+    "texture": "TX_mid_h_E08F852340F1D56A",
+    "texture_px": 2048,
+    "mapgenie_zoom": 11,
+    "world_axis_check": [
+      {
+        "world_to_texture": [
+          [
+            -2e-05,
+            1.0603,
+            1062.9235
+          ],
+          [
+            -1.20359,
+            0.0,
+            910.67656
+          ]
+        ],
+        "cross_term_ratio": 0.0,
+        "metres_per_px": [
+          0.8309,
+          0.9431
+        ]
+      }
+    ],
+    "init": "fixed_scale_world_prior:proven_wad",
+    "coarse_ncc": 0.6040771007537842,
+    "ecc": null,
+    "orientation": null,
+    "merc0_to_texture": [
+      [
+        3586.0888671875,
+        -401.05352783203125,
+        -405228.95906066895
+      ],
+      [
+        3.8657572269439697,
+        4112.7529296875,
+        -523802.2446902096
+      ]
+    ],
+    "accepted": true
+  },
+  "vanaheim_crater": {
+    "realm": "vanaheim",
+    "texture": "TX_van_crat_h_A51409AB43CE0836",
+    "texture_px": 2048,
+    "mapgenie_zoom": 13,
+    "world_axis_check": [
+      {
+        "world_to_texture": [
+          [
+            -0.05294,
+            0.93544,
+            2358.61291
+          ],
+          [
+            -1.0721,
+            0.01028,
+            943.73422
+          ]
+        ],
+        "cross_term_ratio": 0.0566,
+        "metres_per_px": [
+          0.9265,
+          1.0768
+        ]
+      },
+      {
+        "world_to_texture": [
+          [
+            -0.0,
+            1.06028,
+            1894.84519
+          ],
+          [
+            -1.20376,
+            -0.0,
+            1046.46082
+          ]
+        ],
+        "cross_term_ratio": 0.0,
+        "metres_per_px": [
+          0.8307,
+          0.9431
+        ]
+      }
+    ],
+    "init": "fixed_scale_world_prior:proven_wad",
+    "coarse_ncc": 0.5629584789276123,
+    "ecc": null,
+    "orientation": null,
+    "merc0_to_texture": [
+      [
+        -45.112003326416016,
+        4841.32421875,
+        -610326.4971613884
+      ],
+      [
+        -5326.43505859375,
+        374.8467102050781,
+        632442.5794296265
+      ]
+    ],
+    "accepted": false
+  },
+  "vanaheim_jungle": {
+    "realm": "vanaheim",
+    "texture": "TX_van_jg_h_BF81E1B5C4C9E45B",
+    "texture_px": 2048,
+    "mapgenie_zoom": 13,
+    "world_axis_check": [
+      {
+        "world_to_texture": [
+          [
+            0.0,
+            1.06029,
+            1719.50612
+          ],
+          [
+            -1.20376,
+            -0.0,
+            1205.3522
+          ]
+        ],
+        "cross_term_ratio": 0.0,
+        "metres_per_px": [
+          0.8307,
+          0.9431
+        ]
+      },
+      {
+        "world_to_texture": [
+          [
+            0.06741,
+            1.20244,
+            1187.80512
+          ],
+          [
+            -1.35232,
+            -0.0131,
+            1326.48523
+          ]
+        ],
+        "cross_term_ratio": 0.0561,
+        "metres_per_px": [
+          0.7338,
+          0.8385
+        ]
+      }
+    ],
+    "init": "fixed_scale_world_prior:proven_wad",
+    "coarse_ncc": 0.4850066006183624,
+    "ecc": null,
+    "orientation": null,
+    "merc0_to_texture": [
+      [
+        247.10093688964844,
+        5469.4482421875,
+        -728474.7706546783
+      ],
+      [
+        -5983.23828125,
+        361.3082275390625,
+        718208.3373718262
+      ]
+    ],
+    "accepted": false
+  },
+  "svartalfheim": {
+    "realm": "svartalfheim",
+    "texture": "TX_sva_h_8D5F4A0A9449F6D8",
+    "texture_px": 2048,
+    "mapgenie_zoom": 12,
+    "world_axis_check": [
+      {
+        "world_to_texture": [
+          [
+            -0.0,
+            1.06024,
+            863.404
+          ],
+          [
+            -1.20376,
+            -0.0,
+            915.24299
+          ]
+        ],
+        "cross_term_ratio": 0.0,
+        "metres_per_px": [
+          0.8307,
+          0.9432
+        ]
+      }
+    ],
+    "init": "fixed_scale_world_prior:proven_wad",
+    "coarse_ncc": 0.5352036356925964,
+    "ecc": null,
+    "orientation": null,
+    "merc0_to_texture": [
+      [
+        -6.2843146324157715,
+        5203.62109375,
+        -661642.3557446301
+      ],
+      [
+        -5617.4208984375,
+        296.85980224609375,
+        679103.0211334229
+      ]
+    ],
+    "accepted": false
+  },
+  "alfheim": {
+    "realm": "alfheim",
+    "texture": "TX_alf_h_B8688866E0AB1908",
+    "texture_px": 2048,
+    "mapgenie_zoom": 12,
+    "world_axis_check": [
+      {
+        "world_to_texture": [
+          [
+            -0.0,
+            1.0603,
+            1673.61547
+          ],
+          [
+            -1.20375,
+            0.0,
+            632.66876
+          ]
+        ],
+        "cross_term_ratio": 0.0,
+        "metres_per_px": [
+          0.8307,
+          0.9431
+        ]
+      }
+    ],
+    "init": "fixed_scale_world_prior:proven_wad",
+    "coarse_ncc": 0.625491201877594,
+    "ecc": null,
+    "orientation": null,
+    "merc0_to_texture": [
+      [
+        -1948.8837890625,
+        2339.66064453125,
+        -48842.91296386719
+      ],
+      [
+        -2514.797119140625,
+        -2331.833740234375,
+        618705.8319091797
+      ]
+    ],
+    "accepted": false
+  },
+  "niflheim": {
+    "realm": "niflheim",
+    "texture": "TX_nif_h_61380295CCDCFF42",
+    "texture_px": 2048,
+    "mapgenie_zoom": 12,
+    "world_axis_check": [
+      {
+        "world_to_texture": [
+          [
+            -0.0,
+            1.0603,
+            1606.95411
+          ],
+          [
+            -1.20371,
+            -0.0,
+            1191.24809
+          ]
+        ],
+        "cross_term_ratio": 0.0,
+        "metres_per_px": [
+          0.8308,
+          0.9431
+        ]
+      }
+    ],
+    "init": "fixed_scale_world_prior:proven_wad",
+    "coarse_ncc": 0.5147497057914734,
+    "ecc": null,
+    "orientation": null,
+    "merc0_to_texture": [
+      [
+        -2338.960693359375,
+        173.7382049560547,
+        277336.9546031952
+      ],
+      [
+        17.82248306274414,
+        -2868.503662109375,
+        364551.86896800995
+      ]
+    ],
+    "accepted": false
+  },
+  "helheim": {
+    "realm": "helheim",
+    "texture": "TX_hel_h_4E1AF665773E3B49",
+    "texture_px": 2048,
+    "mapgenie_zoom": 12,
+    "world_axis_check": [],
+    "init": "fixed_scale_world_prior:similarity_2pt",
+    "coarse_ncc": 0.6003979444503784,
+    "ecc": null,
+    "orientation": null,
+    "merc0_to_texture": [
+      [
+        1721.33642578125,
+        -2.6847915649414062,
+        -218602.82937717438
+      ],
+      [
+        3.0485754013061523,
+        1953.931640625,
+        -248252.16448038816
+      ]
+    ],
+    "accepted": false
+  },
+  "muspelheim": {
+    "realm": "muspelheim",
+    "texture": "TX_msp_h_496ACA3040A5560F",
+    "texture_px": 2048,
+    "mapgenie_zoom": 12,
+    "world_axis_check": [],
+    "init": "fixed_scale_world_prior:similarity_2pt",
+    "coarse_ncc": 0.601384162902832,
+    "ecc": null,
+    "orientation": null,
+    "merc0_to_texture": [
+      [
+        -3811.1171875,
+        1276.68798828125,
+        324446.6863708496
+      ],
+      [
+        -1449.5032958984375,
+        -4326.5361328125,
+        737410.0344161987
+      ]
+    ],
+    "accepted": false
+  },
+  "jotunheim": {
+    "realm": "jotunheim",
+    "texture": "TX_jot_h_9A6B0FC50D8A9B68",
+    "texture_px": 2048,
+    "mapgenie_zoom": 12,
+    "world_axis_check": [],
+    "init": "blind_8_orientations",
+    "coarse_ncc": 0.2116309106349945,
+    "ecc": 0.3289401830703123,
+    "orientation": {
+      "rot90": 0,
+      "flip": false
+    },
+    "merc0_to_texture": [
+      [
+        3427.52099609375,
+        -193.7924041748047,
+        -411115.499546051
+      ],
+      [
+        95.69548034667969,
+        3736.798095703125,
+        -487664.8743715286
+      ]
+    ],
+    "accepted": false
+  },
+  "asgard": {
+    "realm": "asgard",
+    "texture": "TX_asg_h_0D8CD2428D093E4B",
+    "texture_px": 2048,
+    "mapgenie_zoom": 12,
+    "world_axis_check": [],
+    "init": "blind_8_orientations",
+    "coarse_ncc": 0.3315601944923401,
+    "ecc": 0.19589693493573532,
+    "orientation": {
+      "rot90": 0,
+      "flip": false
+    },
+    "merc0_to_texture": [
+      [
+        3453.114501953125,
+        -83.78518676757812,
+        -428478.2366390228
+      ],
+      [
+        -45.631771087646484,
+        3632.51123046875,
+        -456507.7280590534
+      ]
+    ],
+    "accepted": false
+  }
+}

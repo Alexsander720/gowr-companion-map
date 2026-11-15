@@ -1,0 +1,4 @@
+-r requirements.txt
+opencv-python>=4.8,<5
+mss>=9,<11
+imagecodecs>=2024.1

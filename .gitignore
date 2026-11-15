@@ -1,0 +1,15 @@
+cache/
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+*.log
+*.sav
+*.save
+*.wad
+*.texpack
+*.dcb
+.env
+user-data/
+dist/
