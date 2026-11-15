@@ -59,6 +59,7 @@ def test_optional_russian_descriptions_and_pending_names(monkeypatch, tmp_path, 
     (data/'ru_descriptions.json').write_text(json.dumps(
         {'1': {'ru': 'См. [Synthetic cache [2]](https://mapgenie.io/test?locationIds=2)'}}), encoding='utf-8')
     (data/'ru_names_pending.json').write_text(json.dumps({'2': {'ru': 'Синтетический тайник'}}), encoding='utf-8')
+    (data/'ru_titles.json').write_text(json.dumps({'Synthetic bird': 'Птица по названию'}), encoding='utf-8')
     monkeypatch.setattr(pins, 'DATA', data)
     (pins.PINS/'midgard.json').write_text(json.dumps(synthetic_map))
     monkeypatch.setattr(pins, '_load_pin_mapping', lambda: {})
@@ -68,6 +69,7 @@ def test_optional_russian_descriptions_and_pending_names(monkeypatch, tmp_path, 
     assert ru[0]['description'] == ru[0]['description_ru'] == 'См. [Синтетический тайник](pin:midgard:2)'
     assert ru[0]['description_en'].startswith('See [Синтетический тайник]')
     assert ru[1]['name'] == 'Синтетический тайник'
+    assert ru[0]['name'] == 'Птица по названию'  # no game string, no per-pin translation -> title table
     # EN interface keeps the original by default but still offers the translation to the toggle.
     assert en[0]['description_lang'] == 'en' and en[0]['description'].startswith('See [Synthetic cache]')
     assert en[0]['description_ru'].startswith('См. [Synthetic cache]')

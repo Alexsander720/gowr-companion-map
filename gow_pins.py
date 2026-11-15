@@ -343,12 +343,14 @@ def location_names(lang='en'):
     ru = _cached(PINS / 'ru_names.json') if lang == 'ru' else {}
     # Our own translations for pins whose names are not game strings (shipped in data/).
     pending = _cached(DATA / 'ru_names_pending.json') if lang == 'ru' else {}
+    # Generic titles shared by many pins (Wood Chest, Odin's Raven...) translated once by title.
+    titles = _cached(DATA / 'ru_titles.json') if lang == 'ru' else {}
     names = {}
     for realm in ALL_REALM_KEYS:
         for loc in _load_realm_locations(realm):
             pid = str(loc['id'])
             names[pid] = {'name': (ru.get(pid) or {}).get('ru') or (pending.get(pid) or {}).get('ru')
-                          or loc.get('title') or '', 'realm': realm}
+                          or titles.get(loc.get('title') or '') or loc.get('title') or '', 'realm': realm}
     return names
 
 

@@ -31,7 +31,7 @@ start.bat --game-dir "<your game installation folder>"
 
 Saves are discovered in the current Windows user's Saved Games location, including redirected folders, across account subfolders. They are opened only for reading. You can select a save folder explicitly with `--save-dir "<your save folder>"`.
 
-The browser's language chooses RU or EN initially. **RU / EN** switches the interface and persists in `localStorage`. Russian pin and region names are extracted from your installed `r_lang_en.wad` and `r_lang_ru.wad` using shared string IDs. Without those files, pin names fall back to English. Pin descriptions come in the original English plus an optional community Russian translation (`data/ru_descriptions.json`, about 900 pins); the pin card has an **Original / Translation** switch, Russian by default in the RU interface. Pins added to MapGenie after the translation show the original. Links to other locations open pins inside this map.
+The browser's language chooses RU or EN initially. **RU / EN** switches the interface and persists in `localStorage`. Russian pin and region names are extracted from your installed `r_lang_en.wad` and `r_lang_ru.wad` using shared string IDs. Without those files, pin names fall back to English. Pin descriptions come in the original English plus an optional community Russian translation (`data/ru_descriptions.json`, all 1171 pins with a description as of November 2026); the pin card has an **Original / Translation** switch, Russian by default in the RU interface. Pins added to MapGenie after the translation show the original. Links to other locations open pins inside this map.
 
 ## Phone or second screen
 

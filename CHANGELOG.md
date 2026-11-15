@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.1 — 2026-11-15
+
+- Russian translation now covers every pin with a description on MapGenie as of November 2026 (1171 pins).
+- Russian names for generic pins (Wood Chest, Red Coffin, Odin's Raven, Beyond Ragnarök encounters…) via `data/ru_titles.json`.
+
 ## 0.1.0 — 2026-11-15
 
 - Standalone fullscreen map for the Steam PC version of God of War Ragnarök.
