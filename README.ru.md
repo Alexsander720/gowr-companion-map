@@ -1,6 +1,6 @@
 # God of War Ragnarök — Карта-компаньон
 
-[English](README.md) · Версия 0.1.0
+[English](README.md) · Версия 0.1.1 · Руководство в Steam: [русское](https://steamcommunity.com/sharedfiles/filedetails/?id=3840415927) · [английское](https://steamcommunity.com/sharedfiles/filedetails/?id=3840431796)
 
 Полноэкранная карта для второго экрана в **God of War Ragnarök, Steam, PC**. Девять миров и Дом Синдри, метки и описания, просьбы из журнала, прогресс по сохранению и живой Кратос там, где подтверждены версия игры и проекция координат.
 

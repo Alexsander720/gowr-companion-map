@@ -1,6 +1,6 @@
 # God of War Ragnarök — Companion Map
 
-[Русский](README.ru.md) · Version 0.1.0
+[Русский](README.ru.md) · Version 0.1.1 · Steam guide: [English](https://steamcommunity.com/sharedfiles/filedetails/?id=3840431796) · [Русский](https://steamcommunity.com/sharedfiles/filedetails/?id=3840415927)
 
 A fullscreen second-screen map for the Steam PC version of **God of War Ragnarök**. Browse the nine realms and Sindri's House, inspect locations, follow favor objectives, and see Kratos move when a supported game build and a calibrated projection are available.
 
