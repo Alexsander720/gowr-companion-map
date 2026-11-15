@@ -221,6 +221,30 @@
     });
   }
   function pct(a, b) { return b > 0 ? Math.round(100 * a / b) : 0; }
+  // Pin description: MapGenie original (EN) or our optional Russian translation (data/ru_descriptions.json).
+  function descPref() {
+    var v = localStorage.getItem('gowDescLang');
+    return v === 'en' || v === 'ru' ? v : (window.GowI18n.lang === 'ru' ? 'ru' : 'en');
+  }
+  function descText(p) {
+    if (p.description_ru && p.description_en) return descPref() === 'ru' ? p.description_ru : p.description_en;
+    return p.description || '';
+  }
+  function descHtml(p) {
+    var text = descText(p);
+    if (!text) return tr('s071');
+    var sw = '';
+    if (p.description_ru && p.description_en) {
+      var cur = descPref();
+      sw = '<div class="gow-fs-desc-lang" id="gowFsDescLang" role="group" aria-label="' + esc(tr('desc_toggle')) + '">' +
+        [['en', tr('desc_original')], ['ru', tr('desc_translation')]].map(function (o) {
+          return '<button type="button" class="gow-fs-desc-lang-btn' + (cur === o[0] ? ' is-active' : '') +
+            '" data-desc-lang="' + o[0] + '" aria-pressed="' + (cur === o[0]) + '">' + esc(o[1]) + '</button>';
+        }).join('') + '</div>';
+    }
+    return sw + '<div class="gow-fs-drawer-desc" id="gowFsDrawerDesc">' + mdLite(text) + '</div>';
+  }
+
   function mdLite(text) {
     var s = esc(text || '');
     
@@ -726,11 +750,21 @@
       '<div class="gow-fs-drawer-status is-' + st + '">' + (st === 'collected' ? GOW_SVG.check : GOW_SVG.dot) +
         '<span>' + statusText + '</span></div>' +
       img +
-      (p.description ? '<div class="gow-fs-drawer-desc">' + mdLite(p.description) + '</div>'
-        : tr('s071')) +
+      descHtml(p) +
       (canToggle ? '<button type="button" class="gow-fs-btn gow-fs-check-btn" id="gowFsCheckBtn" data-next="' +
         (st === 'collected' ? '0' : '1') + '">' + (st === 'collected' ? tr('s072') : tr('s073')) + '</button>' : '');
     replaceHudHTML($('gowFsDrawerBody'), drawerHtml);
+    var descSwitch = $('gowFsDescLang');
+    if (descSwitch) descSwitch.onclick = function (ev) {
+      var b = ev.target.closest('[data-desc-lang]');
+      if (!b) return;
+      localStorage.setItem('gowDescLang', b.getAttribute('data-desc-lang'));
+      var box = $('gowFsDrawerDesc');
+      if (box) box.innerHTML = mdLite(descText(p));
+      Array.prototype.forEach.call(descSwitch.querySelectorAll('[data-desc-lang]'), function (x) {
+        x.classList.toggle('is-active', x === b); x.setAttribute('aria-pressed', x === b ? 'true' : 'false');
+      });
+    };
     var dr = $('gowFsRightDrawer');
     dr.classList.add('open');
     dr.setAttribute('aria-hidden', 'false');

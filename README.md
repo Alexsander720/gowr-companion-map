@@ -31,7 +31,7 @@ start.bat --game-dir "<your game installation folder>"
 
 Saves are discovered in the current Windows user's Saved Games location, including redirected folders, across account subfolders. They are opened only for reading. You can select a save folder explicitly with `--save-dir "<your save folder>"`.
 
-The browser's language chooses RU or EN initially. **RU / EN** switches the interface and persists in `localStorage`. Russian pin and region names are extracted from your installed `r_lang_en.wad` and `r_lang_ru.wad` using shared string IDs. Without those files, pin names fall back to English. Descriptions remain in their original English, and links to other locations open pins inside this map.
+The browser's language chooses RU or EN initially. **RU / EN** switches the interface and persists in `localStorage`. Russian pin and region names are extracted from your installed `r_lang_en.wad` and `r_lang_ru.wad` using shared string IDs. Without those files, pin names fall back to English. Pin descriptions come in the original English plus an optional community Russian translation (`data/ru_descriptions.json`, about 900 pins); the pin card has an **Original / Translation** switch, Russian by default in the RU interface. Pins added to MapGenie after the translation show the original. Links to other locations open pins inside this map.
 
 ## Phone or second screen
 
@@ -65,7 +65,7 @@ start.bat --lang ru
 
 All downloaded pins, tiles, extracted localization, optional relief and calibration output stay under **`%LOCALAPPDATA%\gowr-companion-map\`**. Set `GOWR_DATA_DIR` before starting to choose another writable folder, such as `./cache/user`. Runtime files are excluded by `.gitignore`; avoid putting a custom data directory inside tracked source folders.
 
-The repository contains application code, our numeric pin/save joins, measured calibration references and matrices. It does **not** contain MapGenie JSON dumps or translated descriptions, game language dumps, extracted game textures, saves, personal account identifiers or a tile cache. The UI's raster map renderer is local application code, so it needs no third party browser CDN. Python dependencies are installed normally and keep their own licenses.
+The repository contains application code, our numeric pin/save joins, measured calibration references and matrices. It does **not** contain MapGenie JSON dumps, game language dumps, extracted game textures, saves, personal account identifiers or a tile cache. The UI's raster map renderer is local application code, so it needs no third party browser CDN. Python dependencies are installed normally and keep their own licenses.
 
 The MapGenie loader performs one public data request per uncached realm, uses a neutral User-Agent and caches the result. The current website loads pins through `/api/v1/maps/<id>/data`; its HTML no longer embeds the full location list. The loader also includes a parser for older embedded `window.mapData` JSON. Upstream data can change independently of this release. New locations without a known save join remain unknown.
 
@@ -75,7 +75,7 @@ If downloads fail or the service returns a challenge, the map starts without tho
 .venv\Scripts\python.exe tools\fetch_mapgenie.py --retry
 ```
 
-Cached successful maps stay cached. Map tiles are fetched as viewed and cached; unavailable tile responses are cached too. Original pin descriptions are not translated. The application does not fetch pin photographs or copy screenshots from the game.
+Cached successful maps stay cached. Map tiles are fetched as viewed and cached; unavailable tile responses are cached too. Descriptions missing from the shipped translation stay in English. The application does not fetch pin photographs or copy screenshots from the game.
 
 ## Live position and game patches
 

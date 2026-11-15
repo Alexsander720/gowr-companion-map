@@ -329,13 +329,26 @@ def _localize_links(text, names):
     return re.sub(r'\[((?:[^\[\]]|\[[^\[\]]*\])+)\]\(([^)\s]+)\)', repl, text)
 
 
+def _descriptions(pid, original, names, lang, ru_desc):
+    """Original (EN) description plus our optional Russian translation (data/ru_descriptions.json)."""
+    en = _localize_links(original, names)
+    ru = (ru_desc.get(pid) or {}).get('ru') if original else None
+    ru = _localize_links(ru, names) if ru else None
+    use_ru = lang == 'ru' and bool(ru)
+    return {'description': ru if use_ru else en, 'description_lang': 'ru' if use_ru else 'en',
+            'description_en': en, 'description_ru': ru}
+
+
 def location_names(lang='en'):
     ru = _cached(PINS / 'ru_names.json') if lang == 'ru' else {}
+    # Our own translations for pins whose names are not game strings (shipped in data/).
+    pending = _cached(DATA / 'ru_names_pending.json') if lang == 'ru' else {}
     names = {}
     for realm in ALL_REALM_KEYS:
         for loc in _load_realm_locations(realm):
             pid = str(loc['id'])
-            names[pid] = {'name': (ru.get(pid) or {}).get('ru') or loc.get('title') or '', 'realm': realm}
+            names[pid] = {'name': (ru.get(pid) or {}).get('ru') or (pending.get(pid) or {}).get('ru')
+                          or loc.get('title') or '', 'realm': realm}
     return names
 
 
@@ -368,6 +381,7 @@ def get_realm_pois(realm_key, limit=1000, save_data=None, manual_ids=None, lang=
             for pid in favor['pin_ids']:
                 if pid in reward_ids and favor['state'] != 'unknown':
                     reward_state[pid] = favor['state'] == 'completed'
+    ru_desc = _cached(DATA / 'ru_descriptions.json')
     result = []
     for loc in locations[:limit]:
         pid, cid = str(loc['id']), str(loc.get('category_id', ''))
@@ -390,7 +404,6 @@ def get_realm_pois(realm_key, limit=1000, save_data=None, manual_ids=None, lang=
                        'status': 'collected' if state is True else 'not_collected' if state is False else 'unknown',
                        'pct_x': round(6 + (lng-min_lng)/(max_lng-min_lng or 1)*88, 2),
                        'pct_y': round(6 + (1-(lat-min_lat)/(max_lat-min_lat or 1))*88, 2), 'lat': lat, 'lng': lng,
-                       'description': _localize_links(loc.get('description'), names),
-                       'description_lang': 'en', 'media': [], 'favor_ids': favor_ids.get(pid, []),
+                       **_descriptions(pid, loc.get('description'), names, lang, ru_desc), 'media': [], 'favor_ids': favor_ids.get(pid, []),
                        'artifact': names.get(pid, {}).get('name') if pid in reward_ids else None})
     return result

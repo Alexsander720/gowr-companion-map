@@ -4,6 +4,7 @@
 
 - Standalone fullscreen map for the Steam PC version of God of War Ragnarök.
 - Nine realms and Sindri's House, completion filters, search and pin descriptions.
+- Optional Russian translation of pin descriptions with an Original / Translation switch in the pin card.
 - Read-only save progress and favor journal with explicit unknown states.
 - Read-only live position with executable fingerprint checks and calibrated projections.
 - English and Russian UI with browser language detection and persistent selection.

@@ -111,6 +111,9 @@
     "s106": "no map data",
     "s107": "Server connection failed: ",
     "language": "Switch language",
+    "desc_original": "Original",
+    "desc_translation": "Russian translation",
+    "desc_toggle": "Description language",
     "title": "God of War Ragnarök — Companion Map",
     "map_credit": "Map data:",
     "no_save": "No saves found · browse the map"
@@ -225,6 +228,9 @@
     "s106": "нет данных карты",
     "s107": "Нет связи с витриной: ",
     "language": "Сменить язык",
+    "desc_original": "Оригинал",
+    "desc_translation": "Перевод",
+    "desc_toggle": "Язык описания",
     "title": "God of War Ragnarök — Карта-компаньон",
     "map_credit": "Данные карты:",
     "no_save": "Сейв не найден · карта доступна"

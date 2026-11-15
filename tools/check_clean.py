@@ -22,8 +22,7 @@ PATTERNS = {
     'credential': re.compile(r'\b(?:gh' + r'o_|s' + r'k-)[A-Za-z0-9_-]{8,}'),
 }
 PROHIBITED_NAMES = {
-    'categories.json', 'ru_names.json', 'ru_glossary.json', 'ru_descriptions.json',
-    'ru_names_pending.json', '_translate_input.json', 'gowr_pointer_candidates.json',
+    'categories.json', 'ru_names.json', 'ru_glossary.json', '_translate_input.json', 'gowr_pointer_candidates.json',
     'GOWRSAVE',
 }
 REALMS = {'midgard','vanaheim','alfheim','svartalfheim','jotunheim','asgard','helheim',

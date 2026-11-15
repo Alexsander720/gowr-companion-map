@@ -50,3 +50,34 @@ def test_nested_brackets_and_external_links_are_safe():
     text='[Thing [1]](https://mapgenie.io/test?locationIds=2) [outside](https://example.invalid/)'
     result=pins._localize_links(text,{'2':{'name':'Local','realm':'alfheim'}})
     assert result == '[Local](pin:alfheim:2) outside'
+
+
+def test_optional_russian_descriptions_and_pending_names(monkeypatch, tmp_path, synthetic_map):
+    import shutil
+    data = tmp_path / 'data'
+    shutil.copytree(pins.DATA, data, ignore=shutil.ignore_patterns('ru_*.json'))
+    (data/'ru_descriptions.json').write_text(json.dumps(
+        {'1': {'ru': 'См. [Synthetic cache [2]](https://mapgenie.io/test?locationIds=2)'}}), encoding='utf-8')
+    (data/'ru_names_pending.json').write_text(json.dumps({'2': {'ru': 'Синтетический тайник'}}), encoding='utf-8')
+    monkeypatch.setattr(pins, 'DATA', data)
+    (pins.PINS/'midgard.json').write_text(json.dumps(synthetic_map))
+    monkeypatch.setattr(pins, '_load_pin_mapping', lambda: {})
+    ru = pins.get_realm_pois('midgard', lang='ru')
+    en = pins.get_realm_pois('midgard', lang='en')
+    assert ru[0]['description_lang'] == 'ru'
+    assert ru[0]['description'] == ru[0]['description_ru'] == 'См. [Синтетический тайник](pin:midgard:2)'
+    assert ru[0]['description_en'].startswith('See [Синтетический тайник]')
+    assert ru[1]['name'] == 'Синтетический тайник'
+    # EN interface keeps the original by default but still offers the translation to the toggle.
+    assert en[0]['description_lang'] == 'en' and en[0]['description'].startswith('See [Synthetic cache]')
+    assert en[0]['description_ru'].startswith('См. [Synthetic cache]')
+    assert en[1]['name'] == 'Synthetic cache' and en[1]['description_ru'] is None
+
+
+def test_shipped_translations_cover_only_pin_ids():
+    import re
+    desc = json.loads((pins.DATA/'ru_descriptions.json').read_text(encoding='utf-8'))
+    names = json.loads((pins.DATA/'ru_names_pending.json').read_text(encoding='utf-8'))
+    assert len(desc) >= 899 and len(names) >= 85
+    for table in (desc, names):
+        assert all(re.fullmatch(r'\d+', k) and isinstance(v.get('ru'), str) and v['ru'].strip() for k, v in table.items())
