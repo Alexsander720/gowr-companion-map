@@ -1,6 +1,6 @@
 # God of War Ragnarök — Companion Map
 
-[Русский](README.ru.md) · Version 0.1.1 · Steam guide: [English](https://steamcommunity.com/sharedfiles/filedetails/?id=3840431796) · [Русский](https://steamcommunity.com/sharedfiles/filedetails/?id=3840415927)
+[Русский](README.ru.md) · Version 0.2.0 · Steam guide: [English](https://steamcommunity.com/sharedfiles/filedetails/?id=3840431796) · [Русский](https://steamcommunity.com/sharedfiles/filedetails/?id=3840415927)
 
 A fullscreen second-screen map for the Steam PC version of **God of War Ragnarök**. Browse the nine realms and Sindri's House, inspect locations, follow favor objectives, and see Kratos move when a supported game build and a calibrated projection are available.
 
@@ -32,6 +32,8 @@ start.bat --game-dir "<your game installation folder>"
 Saves are discovered in the current Windows user's Saved Games location, including redirected folders, across account subfolders. They are opened only for reading. You can select a save folder explicitly with `--save-dir "<your save folder>"`.
 
 The browser's language chooses RU or EN initially. **RU / EN** switches the interface and persists in `localStorage`. Russian pin and region names are extracted from your installed `r_lang_en.wad` and `r_lang_ru.wad` using shared string IDs. Without those files, pin names fall back to English. Pin descriptions come in the original English plus an optional community Russian translation (`data/ru_descriptions.json`, all 1171 pins with a description as of November 2026); the pin card has an **Original / Translation** switch, Russian by default in the RU interface. Pins added to MapGenie after the translation show the original. Links to other locations open pins inside this map.
+
+Optional community guides live in `data/guides.json` (version 1). A pin card shows **How to solve**, with collapsible **Sources**; **Guide** in the Favors panel opens the walkthrough, and target icons and clickable point rows show where to go, including across realms. Guides follow the interface language (RU/EN, falling back to the other language) independently of the description switch. With a live Kratos marker and a metre scale, a dismissible hint appears within about 30 m of a confirmed uncollected pin with a guide or an active favor point, at most once per site in this tab session. A missing or invalid guide file leaves the map usable.
 
 ## Phone or second screen
 

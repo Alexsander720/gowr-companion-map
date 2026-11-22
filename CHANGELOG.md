@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.2.0 — 2026-11-22
+
+- Bundled RU/EN guides: all 35 Nornir chests, 52 hard-to-reach collectibles (Odin's Ravens, seasonal stags, Hel-Tears, Remnants of Asgard, artifacts, rifts, Yggdrasil's Dew and Jewels, Kvasir's Poems, Draugr Holes) and 47 favors with 77 "where to go" points; each checked against at least two public walkthroughs.
+- Optional RU/EN guides from `data/guides.json`, with language fallback and mtime refresh.
+- How to solve blocks in pin cards, collapsible sources, and favor walkthroughs in the panel.
+- Distinct favor targets using pin anchors, current objective links, and cross-realm point navigation.
+- Dismissible hints near live Kratos for confirmed uncollected guided pins and active favor points, once per site per tab session.
+- Offline synthetic guide/API and Chromium regression coverage; authored guides allowed by the publication scanner.
+
 ## 0.1.1 — 2026-11-15
 
 - Russian translation now covers every pin with a description on MapGenie as of November 2026 (1171 pins).

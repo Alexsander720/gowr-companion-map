@@ -1,6 +1,10 @@
 """UI labels written for this companion. Game localization is loaded separately."""
 STRINGS = {
     'en': {
+        'guide_solve': 'How to solve', 'guide_sources': 'Sources', 'guide_button': 'Guide',
+        'guide_point': 'Guide point', 'guide_points': 'Guide points: ', 'guide_dismiss': 'Dismiss hint',
+        'guide_near_nornir': 'Nornir chest nearby — how to solve',
+        'guide_near_pin': 'Nearby: {name} — how to solve', 'guide_near_favor': 'Favor point nearby: “{name}”',
         'title': 'God of War Ragnarök — Companion Map', 'unknown': 'Unknown',
         'save_missing': 'No saves found; the map is still available',
         'pins_missing': 'Some pins could not be downloaded. See the terminal; the map remains available.',
@@ -21,6 +25,10 @@ STRINGS = {
         'difficulty_3': 'No Mercy', 'difficulty_4': 'God of War',
     },
     'ru': {
+        'guide_solve': 'Как открыть', 'guide_sources': 'Источники', 'guide_button': 'Гайд',
+        'guide_point': 'Точка по гайду', 'guide_points': 'Точки по гайду: ', 'guide_dismiss': 'Закрыть подсказку',
+        'guide_near_nornir': 'Рядом сундук Норн — как открыть',
+        'guide_near_pin': 'Рядом: {name} — как открыть', 'guide_near_favor': 'Рядом точка просьбы «{name}»',
         'title': 'God of War Ragnarök — Карта-компаньон', 'unknown': 'Неизвестно',
         'save_missing': 'Сохранения не найдены; карта доступна',
         'pins_missing': 'Часть меток не загрузилась. Подробности в терминале; карта доступна.',

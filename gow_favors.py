@@ -81,6 +81,10 @@ def read_favors(save_data: dict | None, lang='en') -> list[dict]:
     counters = {str(k).lower(): v for k, v in (pt.get('table1_int') or {}).items()}
     import gow_pins
     fast = gow_pins._prepare_fast_pt(save_data)
+    guides = gow_pins._load_guides().get('favors', {})
+    names = gow_pins.location_names(lang) if guides else {}
+    anchors = {(realm, str(loc['id'])): loc for realm in gow_pins.ALL_REALM_KEYS
+               for loc in gow_pins._load_realm_locations(realm)} if guides else {}
     result = []
     for q in load_catalog(lang)['favors']:
         stage = stages.get(q['hash'])
@@ -98,7 +102,7 @@ def read_favors(save_data: dict | None, lang='en') -> list[dict]:
             done = counters.get(c['hash']) if c else None
             if c and isinstance(done, int) and 0 <= done <= c['total']:
                 counter = {'done': done, 'total': c['total']}
-            objectives.append({'name': s['name'], 'counter': counter,
+            objectives.append({'id': s.get('id'), 'name': s['name'], 'counter': counter,
                                'counter_unknown': bool(c and counter is None)})
         counter = next((o['counter'] for o in objectives if o['counter'] is not None), None)
         pin_states = {}
@@ -119,7 +123,38 @@ def read_favors(save_data: dict | None, lang='en') -> list[dict]:
                        'state': state, 'step': step, 'counter': counter, 'pin_ids': q['pin_ids'],
                        'pin_realms': q['pin_realms'], 'pin_states': pin_states,
                        'step_locations_unknown': q.get('step_locations_unknown', False),
-                       'stage': stage, 'objectives': objectives})
+                       'stage': stage, 'objectives': objectives,
+                       'step_ids': [s['id'] for s in visible if state == 'active' and s.get('id')]})
+        entry = guides.get(q['id'])
+        if isinstance(entry, dict):
+            guide = gow_pins._guide(entry, lang, names)
+            if guide:
+                result[-1]['guide'] = guide
+            points = []
+            raw_points = entry.get('points')
+            for point in raw_points if isinstance(raw_points, list) else []:
+                if not isinstance(point, dict):
+                    continue
+                pid, realm = str(point.get('anchor_pin', '')), point.get('realm')
+                if not isinstance(realm, str):
+                    continue
+                anchor = anchors.get((realm, pid))
+                if not anchor:
+                    continue
+                try:
+                    lat, lng = float(anchor['latitude']), float(anchor['longitude'])
+                except (KeyError, TypeError, ValueError):
+                    continue
+                if not (math.isfinite(lat) and math.isfinite(lng)):
+                    continue
+                preferred = 'label_ru' if lang == 'ru' else 'label_en'
+                fallback = 'label_en' if preferred == 'label_ru' else 'label_ru'
+                label = next((point[k] for k in (preferred, fallback)
+                              if isinstance(point.get(k), str) and point[k].strip()), '')
+                name = names.get(pid, {}).get('name') or anchor.get('title') or ''
+                points.append({'step': point.get('step'), 'realm': realm, 'lat': lat, 'lng': lng,
+                               'label': label or name, 'anchor_pin': pid, 'anchor_name': name})
+            result[-1]['points'] = points
     return result
 
 

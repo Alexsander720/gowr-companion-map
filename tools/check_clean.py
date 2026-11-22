@@ -95,7 +95,10 @@ def inspect_file(name, data):
                 elif isinstance(value, list):
                     for item in value:
                         visit(item)
-            visit(obj)
+            # Only our authored guide resource may contain prose fields. All
+            # private-signature and prohibited-asset checks above still apply.
+            if name != 'data/guides.json':
+                visit(obj)
         except (ValueError, UnicodeError):
             issues.append('invalid JSON resource')
     return sorted(set(issues))

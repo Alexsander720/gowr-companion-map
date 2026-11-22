@@ -177,9 +177,13 @@
     fetching: false,
     lastLiveRealm: null,
     mapSource: 'mapgenie',    
-    gameRealms: []            
+    gameRealms: [],
+    openFavorGuides: {},
+    guideSeen: {},
+    guideToast: null
   };
   var map = null, tiles = null, poiLayer = null, kratosMarker = null, markerById = {};
+  try { S.guideSeen = JSON.parse(sessionStorage.getItem('gowGuideSeen') || '{}') || {}; } catch (e) {}
 
   try {
     var saved = JSON.parse(localStorage.getItem('gowFsPrefs') || '{}');
@@ -209,7 +213,7 @@
     if (el._gowHtml === html) return;
     var active = document.activeElement, key = null, value = null;
     if (active && el.contains(active)) {
-      ['data-realm', 'data-favor', 'data-favor-realm', 'data-cat', 'data-mode', 'data-src', 'data-pin', 'id'].some(function (attr) {
+      ['data-realm', 'data-guide-point', 'data-favor-guide', 'data-current-point', 'data-favor', 'data-favor-realm', 'data-cat', 'data-mode', 'data-src', 'data-pin', 'id'].some(function (attr) {
         if (active.hasAttribute(attr)) { key = attr; value = active.getAttribute(attr); return true; }
         return false;
       });
@@ -232,7 +236,7 @@
   }
   function descHtml(p) {
     var text = descText(p);
-    if (!text) return tr('s071');
+    if (!text) return p.guide ? '' : tr('s071');
     var sw = '';
     if (p.description_ru && p.description_en) {
       var cur = descPref();
@@ -253,8 +257,30 @@
     s = s.replace(/\[((?:[^\[\]]|\[[^\[\]]*\])+)\]\((?:[^)\s]+)\)/g, '$1');
     s = s.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
     s = s.replace(/(^|[\s(])_([^_]+)_(?=[\s).,;:!?]|$)/g, '$1<em>$2</em>');
-    s = s.replace(/\n{2,}/g, '</p><p>').replace(/\n/g, '<br>');
-    return '<p>' + s + '</p>';
+    var html = '', block = null;
+    function close() { if (block) html += '</' + block + '>'; block = null; }
+    s.split(/\r?\n/).forEach(function (line) {
+      var item = line.match(/^\s*(?:(\d+)\.\s+|-\s+)(.*)$/);
+      if (!line.trim()) { close(); return; }
+      var kind = item ? (item[1] ? 'ol' : 'ul') : 'p';
+      if (block !== kind) {
+        close(); html += '<' + kind + (kind === 'ol' ? ' start="' + Number(item[1]) + '"' : '') + '>'; block = kind;
+      }
+      else if (!item) html += '<br>';
+      html += item ? '<li>' + item[2] + '</li>' : line;
+    });
+    close();
+    return html;
+  }
+  function guideHtml(guide, title) {
+    if (!guide || !guide.text) return '';
+    var sources = (guide.sources || []).filter(function (url) { return /^https?:\/\/\S+$/i.test(url); });
+    return '<section class="gow-fs-guide" lang="' + (guide.lang === 'ru' ? 'ru' : 'en') + '">' +
+      (title ? '<h3>' + esc(title) + '</h3>' : '') +
+      '<div class="gow-fs-drawer-desc">' + mdLite(guide.text) + '</div>' +
+      (sources.length ? '<details><summary>' + esc(tr('guide_sources')) + '</summary><ul>' + sources.map(function (url) {
+        return '<li><a href="' + esc(url) + '" target="_blank" rel="noopener">' + esc(url) + '</a></li>';
+      }).join('') + '</ul></details>' : '') + '</section>';
   }
   function poiState(p) {
     if (p.status === 'unknown') return 'unknown';
@@ -484,6 +510,30 @@
       shown++;
     });
     S.shownCount = shown;
+    renderFavorTargets();
+  }
+
+  var TARGET_SVG = '<svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="10"/>' +
+    '<circle cx="16" cy="16" r="3"/><path d="M16 1v8m0 14v8M1 16h8m14 0h8"/></svg>';
+  function renderFavorTargets() {
+    if (S.mode !== 'favors') return;
+    var groups = {};
+    activeFavors().forEach(function (f) { (f.points || []).forEach(function (p, i) {
+      if (p.realm !== S.realmLoaded) return;
+      var key = p.lat + ':' + p.lng;
+      (groups[key] || (groups[key] = [])).push({ favor: f, point: p, index: i });
+    }); });
+    Object.keys(groups).forEach(function (key) { var group = groups[key]; group.forEach(function (entry, i) {
+      // Screen-space offsets leave the anchor coordinates and metre distances intact.
+      var angle = i * Math.PI * 2 / group.length, radius = group.length > 1 ? Math.max(20, group.length * 7) : 0;
+      var p = entry.point, f = entry.favor;
+      var marker = L.marker([p.lat, p.lng], { zIndexOffset: 1200, keyboard: false,
+        icon: L.divIcon({ className: 'gow-favor-target', iconSize: [36, 36],
+          iconAnchor: [18 - Math.cos(angle) * radius, 18 - Math.sin(angle) * radius], html: TARGET_SVG }) });
+      marker.bindTooltip(esc(p.label), { direction: 'top', offset: [0, -18], className: 'gow-fs-tip' });
+      marker.on('click', function (ev) { L.DomEvent.stopPropagation(ev); openFavorGuide(f.id, true); });
+      marker.addTo(poiLayer);
+    }); });
   }
 
   
@@ -682,6 +732,51 @@
     return { name: best.name, metres: (typeof k === 'number' && k > 0) ? Math.round(bd / k) : null };
   }
 
+  function updateGuideToast() {
+    var el = $('gowGuideToast');
+    if (!el) {
+      el = document.createElement('div'); el.id = 'gowGuideToast';
+      el.className = 'gow-fs-guide-toast gow-fs-plate'; el.hidden = true;
+      el.innerHTML = '<button type="button" data-guide-open></button><button type="button" data-guide-dismiss aria-label="' +
+        esc(tr('guide_dismiss')) + '">×</button>';
+      el.querySelector('[data-guide-open]').onclick = function () {
+        var item = S.guideToast;
+        if (!item) return;
+        if (item.favor) { focusGuidePoint(item.favor.id, item.index); }
+        else { if (S.mode === 'favors') setMode('remaining'); focusPin(item.pin.id); }
+      };
+      el.querySelector('[data-guide-dismiss]').onclick = function () { el.hidden = true; S.guideToast = null; };
+      $('gowFs').appendChild(el);
+    }
+    var r = liveRadar(S.data && S.data.live_telemetry), k = r && r.map_scale_per_metre;
+    if (!r || r.realm_key !== S.realmLoaded || typeof k !== 'number' || !isFinite(k) || k <= 0) {
+      el.hidden = true; S.guideToast = null; return;
+    }
+    var candidates = [];
+    (S.data.realms_map.realm_pois || []).forEach(function (p) {
+      if (p.guide && !p.is_manual && (p.status === 'not_collected' || p.is_collected === false)) {
+        candidates.push({ key: 'pin:' + p.id, pin: p, lat: p.lat, lng: p.lng });
+      }
+    });
+    activeFavors().forEach(function (f) { (f.points || []).forEach(function (p, i) {
+      if (p.realm === r.realm_key) candidates.push({ key: 'favor:' + f.id + ':' + p.realm + ':' + p.anchor_pin,
+        favor: f, index: i, lat: p.lat, lng: p.lng });
+    }); });
+    candidates.forEach(function (p) { p.distance = Math.hypot(p.lat - r.map_lat, p.lng - r.map_lng) / k; });
+    // Keep the current toast through 30–45 m jitter; completed/removed sites disappear immediately.
+    var current = S.guideToast && candidates.filter(function (p) { return p.key === S.guideToast.key && p.distance <= 45; })[0];
+    if (current) { S.guideToast = current; return; }
+    var next = candidates.filter(function (p) { return p.distance <= 30 && !S.guideSeen[p.key]; })
+      .sort(function (a, b) { return a.distance - b.distance; })[0];
+    S.guideToast = next || null; el.hidden = !next;
+    if (!next) return;
+    S.guideSeen[next.key] = true;
+    try { sessionStorage.setItem('gowGuideSeen', JSON.stringify(S.guideSeen)); } catch (e) {}
+    el.querySelector('[data-guide-open]').textContent = next.favor ?
+      tr('guide_near_favor').replace('{name}', next.favor.name) :
+      tr(next.pin.category_key === 'nornir_chest' ? 'guide_near_nornir' : 'guide_near_pin').replace('{name}', next.pin.name);
+  }
+
   function renderStatus() {
     var d = S.data, lt = d.live_telemetry || {}, r = liveRadar(lt);
     if (r) {
@@ -751,6 +846,7 @@
         '<span>' + statusText + '</span></div>' +
       img +
       descHtml(p) +
+      guideHtml(p.guide, tr('guide_solve')) +
       (canToggle ? '<button type="button" class="gow-fs-btn gow-fs-check-btn" id="gowFsCheckBtn" data-next="' +
         (st === 'collected' ? '0' : '1') + '">' + (st === 'collected' ? tr('s072') : tr('s073')) + '</button>' : '');
     replaceHudHTML($('gowFsDrawerBody'), drawerHtml);
@@ -924,13 +1020,57 @@
       return (f.pin_states || {})[id] !== 'collected';
     }).map(function (id) { return f.pin_realms[id]; });
     if (!Object.keys(f.pin_realms || {}).length && f.realm) result.push(f.realm);
+    (f.points || []).forEach(function (p) { result.push(p.realm); });
     return result.filter(function (k, i) { return result.indexOf(k) === i; });
+  }
+  function currentGuidePoint(f) {
+    var ids = f.step_ids || (f.objectives || []).map(function (o) { return o.id; });
+    return (f.points || []).findIndex(function (p) { return p.step != null && ids.indexOf(p.step) >= 0; });
+  }
+  function favorGuidePanel(f) {
+    var points = f.points || [], current = currentGuidePoint(f);
+    var note = current >= 0 ? '<button type="button" class="gow-fs-link" data-current-point="' + esc(f.id) + '">' +
+      esc(tr('guide_point')) + '</button>' : points.length ? '<span class="gow-fs-favor-note">' +
+      esc(tr('guide_points')) + points.length + '</span>' : f.step_locations_unknown ? tr('s093') : '';
+    return '<div class="gow-fs-favor-help">' + note +
+      (f.guide ? '<button type="button" class="gow-fs-link" data-favor-guide="' + esc(f.id) +
+        '" aria-expanded="' + !!S.openFavorGuides[f.id] + '">' + esc(tr('guide_button')) + '</button>' : '') +
+      points.map(function (p, i) { return '<button type="button" class="gow-fs-guide-point" data-point-favor="' + esc(f.id) +
+        '" data-guide-point="' + i + '">' + TARGET_SVG + '<span>' + esc(p.label) +
+        (p.realm !== S.realm ? ' · ' + esc(REALM_SHORT[p.realm] || p.realm) : '') + '</span></button>'; }).join('') +
+      (S.openFavorGuides[f.id] && f.guide ? '<div class="gow-fs-favor-guide">' + guideHtml(f.guide) + '</div>' : '') + '</div>';
+  }
+  function openFavorGuide(id, force) {
+    var f = activeFavors().filter(function (q) { return q.id === id; })[0];
+    if (!f) return;
+    if (force) {
+      closeDrawer();
+      setMode('favors');
+      S.leftCollapsed = false; $('gowFsLeftPanel').classList.remove('collapsed');
+    }
+    S.openFavorGuides[id] = force || !S.openFavorGuides[id];
+    renderFavors();
+    var button = Array.from($('gowFsChecklist').querySelectorAll('[data-favor-guide]')).filter(function (b) {
+      return b.getAttribute('data-favor-guide') === id;
+    })[0];
+    if (button && force) { button.scrollIntoView({ block: 'nearest' }); button.focus({ preventScroll: true }); }
+  }
+  function focusGuidePoint(id, index) {
+    var f = activeFavors().filter(function (q) { return q.id === id; })[0], p = f && (f.points || [])[index];
+    if (!p) return;
+    S.follow = false; $('gowFsFollow').classList.remove('on'); savePrefs();
+    if (p.realm !== S.realmLoaded) {
+      S.pendingGuidePoint = { id: id, index: index }; switchGowRealm(p.realm); return;
+    }
+    setMode('favors');
+    if (map) map.setView([p.lat, p.lng], Math.max(map.getZoom(), 13));
+    openFavorGuide(id, true);
   }
   function renderFavors() {
     var active = activeFavors(), groups = {}, others = {};
     active.forEach(function (f) {
       var realms = favorRealms(f);
-      if (realms.indexOf(S.realm) >= 0) (groups[f.region || tr('s090')] || (groups[f.region || tr('s090')] = [])).push(f);
+      if (!realms.length || realms.indexOf(S.realm) >= 0) (groups[f.region || tr('s090')] || (groups[f.region || tr('s090')] = [])).push(f);
       realms.forEach(function (r) { if (r !== S.realm && REALM_SHORT[r]) (others[r] || (others[r] = [])).push(f.id); });
     });
     var html = Object.keys(groups).map(function (group) {
@@ -942,9 +1082,9 @@
             return '<span class="gow-fs-favor-step">' + esc(o.name) + '</span>' +
               (o.counter ? '<span class="gow-fs-favor-count">' + o.counter.done + tr('s040') + o.counter.total + '</span>' :
                o.counter_unknown ? tr('s092') : '');
-          }).join('') + (f.step_locations_unknown ? tr('s093') : '') + (Object.keys(f.pin_states || {}).some(function (id) {
+          }).join('') + (Object.keys(f.pin_states || {}).some(function (id) {
             return (f.pin_realms || {})[id] === S.realm && f.pin_states[id] === 'unknown';
-          }) ? tr('s094') : '') + '</button>';
+          }) ? tr('s094') : '') + '</button>' + favorGuidePanel(f);
       }).join('');
     }).join('');
     if (!html) html = tr('s095');
@@ -954,14 +1094,14 @@
         Object.keys(others).map(function (r) { return '<button type="button" class="gow-fs-favor-world" data-favor-realm="' + r + '">' +
           esc(REALM_SHORT[r]) + '<span>' + others[r].length + '</span></button>'; }).join('');
     }
-    var unmapped = active.filter(function (f) { return !favorRealms(f).length; });
-    if (unmapped.length) html += tr('s098') + unmapped.map(function (f) { return esc(f.name); }).join(', ') + '</div>';
     replaceHudHTML($('gowFsChecklist'), html);
     $('gowFsCatReset').hidden = true;
   }
   function focusFavor(id) {
     var f = activeFavors().filter(function (q) { return q.id === id; })[0];
     if (!f) return;
+    var point = currentGuidePoint(f);
+    if ((f.points || []).length) { focusGuidePoint(id, point >= 0 ? point : 0); return; }
     S.region = ''; S.query = ''; $('gowFsSearch').value = '';
     rerender();
     var pins = (S.data.realms_map.realm_pois || []).filter(function (p) {
@@ -1053,6 +1193,16 @@
       S.region = e.target.value; rerender(); fitRegion();
     });
     $('gowFsChecklist').addEventListener('click', function (e) {
+      var point = e.target.closest('[data-guide-point]');
+      if (point) { focusGuidePoint(point.getAttribute('data-point-favor'), Number(point.getAttribute('data-guide-point'))); return; }
+      var current = e.target.closest('[data-current-point]');
+      if (current) {
+        var f = activeFavors().filter(function (q) { return q.id === current.getAttribute('data-current-point'); })[0];
+        if (f) focusGuidePoint(f.id, currentGuidePoint(f));
+        return;
+      }
+      var guide = e.target.closest('[data-favor-guide]');
+      if (guide) { openFavorGuide(guide.getAttribute('data-favor-guide')); return; }
       var favor = e.target.closest('[data-favor]');
       if (favor) { focusFavor(favor.getAttribute('data-favor')); return; }
       var world = e.target.closest('[data-favor-realm]');
@@ -1079,6 +1229,8 @@
       if (shot) { openLightbox(shot.getAttribute('data-src')); return; }
       var chk = e.target.closest('#gowFsCheckBtn');
       if (chk) toggleCollected(chk.getAttribute('data-next'));
+    });
+    $('gowFs').addEventListener('click', function (e) {
       var link = e.target.closest('.gow-pin-link');
       if (link) {
         e.preventDefault();
@@ -1125,7 +1277,7 @@
   function dataSig(d) {
     var rm = d.realms_map;
     return rm.selected_realm_key + ':' + (rm.realm_pois || []).map(function (p) {
-      return p.id + (p.status || '') + (p.is_manual ? 'm' : '');
+      return p.id + (p.status || '') + (p.is_manual ? 'm' : '') + JSON.stringify(p.guide || null);
     }).join(',') + ':' + JSON.stringify(rm.favors || []);
   }
 
@@ -1159,7 +1311,11 @@
         if (changed) rerender();
         renderStatus();
         updateKratos(d.live_telemetry);
+        updateGuideToast();
         autoSwitchRealm(d.live_telemetry);
+        if (S.pendingGuidePoint && S.realm === S.realmLoaded) {
+          var gp = S.pendingGuidePoint; S.pendingGuidePoint = null; focusGuidePoint(gp.id, gp.index);
+        }
         if (S.pendingOpen && findPoi(S.pendingOpen)) { var po = S.pendingOpen; S.pendingOpen = null; focusPin(po); }
         else if (S.selectedId && changed && $('gowFsRightDrawer').classList.contains('open')) openDrawer(S.selectedId);
         var lt = d.live_telemetry || {};

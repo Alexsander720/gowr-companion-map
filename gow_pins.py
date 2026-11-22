@@ -313,6 +313,28 @@ def _cached(path):
         return {}
 
 
+def _load_guides():
+    """Optional author-owned text, refreshed by the shared nanosecond-mtime cache."""
+    data = _cached(DATA / 'guides.json')
+    if not isinstance(data, dict) or data.get('version') != 1:
+        return {}
+    return {key: data[key] for key in ('pins', 'favors') if isinstance(data.get(key), dict)}
+
+
+def _guide(entry, lang, names):
+    if not isinstance(entry, dict):
+        return None
+    preferred = 'ru' if lang == 'ru' else 'en'
+    for key in (preferred, 'en' if preferred == 'ru' else 'ru'):
+        text = entry.get(key)
+        if isinstance(text, str) and text.strip():
+            sources = entry.get('sources')
+            return {'text': _localize_links(text, names), 'lang': key,
+                    'sources': [s for s in sources if isinstance(s, str) and re.match(r'^https?://\S+$', s)]
+                    if isinstance(sources, list) else []}
+    return None
+
+
 def _load_realm_locations(clean_key):
     return _cached(PINS / (clean_key + '.json')).get('locations', [])
 
@@ -384,6 +406,7 @@ def get_realm_pois(realm_key, limit=1000, save_data=None, manual_ids=None, lang=
                 if pid in reward_ids and favor['state'] != 'unknown':
                     reward_state[pid] = favor['state'] == 'completed'
     ru_desc = _cached(DATA / 'ru_descriptions.json')
+    guides = _load_guides().get('pins', {})
     result = []
     for loc in locations[:limit]:
         pid, cid = str(loc['id']), str(loc.get('category_id', ''))
@@ -408,4 +431,7 @@ def get_realm_pois(realm_key, limit=1000, save_data=None, manual_ids=None, lang=
                        'pct_y': round(6 + (1-(lat-min_lat)/(max_lat-min_lat or 1))*88, 2), 'lat': lat, 'lng': lng,
                        **_descriptions(pid, loc.get('description'), names, lang, ru_desc), 'media': [], 'favor_ids': favor_ids.get(pid, []),
                        'artifact': names.get(pid, {}).get('name') if pid in reward_ids else None})
+        guide = _guide(guides.get(pid), lang, names)
+        if guide:
+            result[-1]['guide'] = guide
     return result

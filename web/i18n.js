@@ -2,6 +2,15 @@
 (function () {
   var strings = {
   "en": {
+    "guide_solve": "How to solve",
+    "guide_sources": "Sources",
+    "guide_button": "Guide",
+    "guide_point": "Guide point",
+    "guide_points": "Guide points: ",
+    "guide_dismiss": "Dismiss hint",
+    "guide_near_nornir": "Nornir chest nearby — how to solve",
+    "guide_near_pin": "Nearby: {name} — how to solve",
+    "guide_near_favor": "Favor point nearby: “{name}”",
     "s000": "Midgard",
     "s001": "Vanaheim",
     "s002": "Svartalfheim",
@@ -119,6 +128,15 @@
     "no_save": "No saves found · browse the map"
   },
   "ru": {
+    "guide_solve": "Как открыть",
+    "guide_sources": "Источники",
+    "guide_button": "Гайд",
+    "guide_point": "Точка по гайду",
+    "guide_points": "Точки по гайду: ",
+    "guide_dismiss": "Закрыть подсказку",
+    "guide_near_nornir": "Рядом сундук Норн — как открыть",
+    "guide_near_pin": "Рядом: {name} — как открыть",
+    "guide_near_favor": "Рядом точка просьбы «{name}»",
     "s000": "Мидгард",
     "s001": "Ванахейм",
     "s002": "Свартальвхейм",
