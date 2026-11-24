@@ -138,6 +138,15 @@ Tests use synthetic map records, generated save bytes and our calibration matric
 
 `check_clean.py` scans **every tracked git file**, including documentation, for private signatures, absolute Windows paths, account identifiers, credential patterns and prohibited data. Stage intended release files before running it. A clean scanner is a publishing check, not a replacement for review of data provenance.
 
+## Support
+
+This companion map is free and open-source. If it helped you 100% the Nine Realms without alt-tabbing and you'd like to say thanks, every donation goes directly into building more free game tools and covering the AI subscriptions used to develop them:
+
+- **monobank jar** (cards from any country, Apple Pay, Google Pay) — <https://send.monobank.ua/jar/3zsHTXdRbt> · jar card `4874 1000 3320 3608`
+- **PayPal** — [payment details on the support page](https://alexsander720.github.io/continue/#support)
+- **USDT · TRC20** (Tron) — `TKhmtVEnuU5w73YMPT8adh7t3VZKJUUxmC`
+- **USDT · BEP20** (BNB Smart Chain) — `0xDC0c682922bF3194693774743fBB3fd20E7754c3`
+
 ## Disclaimer and license
 
 An unofficial fan project, not affiliated with or endorsed by **Sony Interactive Entertainment, Santa Monica Studio or MapGenie**. God of War Ragnarök and associated artwork and names belong to their respective rights holders. Game memory is only read; nothing is written into the game.
