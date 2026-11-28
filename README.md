@@ -190,6 +190,8 @@ python tools\check_clean.py
 
 This companion map is free and open-source. If it helped you 100% the Nine Realms without alt-tabbing and you'd like to say thanks, every donation goes directly into building more free game tools and covering the AI subscriptions used to develop them:
 
+- **Ko-fi** (PayPal / cards) — <https://ko-fi.com/alexsander720>
+- **Patreon** — <https://patreon.com/alexsander720>
 - **monobank jar** (cards from any country, Apple Pay, Google Pay) — <https://send.monobank.ua/jar/3zsHTXdRbt> · jar card `4874 1000 3320 3608`
 - **PayPal** — [payment details on the support page](https://alexsander720.github.io/continue/#support)
 - **USDT · TRC20** (Tron) — `TKhmtVEnuU5w73YMPT8adh7t3VZKJUUxmC`
