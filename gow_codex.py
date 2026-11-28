@@ -34,6 +34,8 @@ BOOK_ASSETS = {
     'row_brush': 'TX_headerpaint_small_m_4C72B1FB954E52E1',
     'wm_lore': 'TX_journal_design_5079E16CA1FCD7B8',
     'wm_bestiary': 'TX_codex_design_CB33037DEF23F5BF',
+    'knot_bullet': 'TX_iconbulletpoint_3EE7E4813DB1B4D5',
+    'crest_knot': 'TX_questbanner_line_539F76D0ADBD3EDA',
 }
 _BOOK_FLAP_MASK = 'TX_pagesolo_m_676F818AD992E735'
 _ICON_LOCK = threading.Lock()
@@ -1476,6 +1478,45 @@ def get_codex_book_asset_png(asset: str, cache_dir: Path | None = None) -> bytes
                 if bbox:
                     img = img.crop(bbox)
                 img.thumbnail((768, 160), Image.LANCZOS)
+            elif asset == 'knot_bullet':
+                # Interlocking Norse knot bullet in warm iron-gall sepia ink
+                a = np.clip((arr.astype(np.float32) / 255.0) ** 0.72 * 238.0, 0, 255).astype(np.uint8)
+                rgba = np.empty((arr.shape[0], arr.shape[1], 4), dtype=np.uint8)
+                rgba[..., 0] = 44
+                rgba[..., 1] = 31
+                rgba[..., 2] = 20
+                rgba[..., 3] = a
+                img = Image.fromarray(rgba, 'RGBA')
+                bbox = img.getbbox()
+                if bbox:
+                    w, h = img.size
+                    pad = 4
+                    img = img.crop((max(0, bbox[0] - pad), max(0, bbox[1] - pad),
+                                    min(w, bbox[2] + pad), min(h, bbox[3] + pad)))
+                img.thumbnail((64, 64), Image.LANCZOS)
+            elif asset == 'crest_knot':
+                # Bilaterally symmetric Norse diamond-knot divider built from questbanner_line
+                af = arr.astype(np.float32)
+                h_k = af.shape[0]
+                tb = np.concatenate([af[:max(1, h_k // 3)], af[max(1, (2 * h_k) // 3):]], axis=0)
+                tb_xs = np.where(tb.sum(axis=0) > 50.0)[0]
+                peak_x = int((tb_xs[0] + tb_xs[-1]) // 2) if len(tb_xs) else (af.shape[1] // 3)
+                right_half = af[:, peak_x:]
+                sym = np.concatenate([right_half[:, :0:-1], right_half], axis=1)
+                a = np.clip((sym / 255.0) ** 0.72 * 228.0, 0, 255).astype(np.uint8)
+                rgba = np.empty((sym.shape[0], sym.shape[1], 4), dtype=np.uint8)
+                rgba[..., 0] = 52
+                rgba[..., 1] = 37
+                rgba[..., 2] = 24
+                rgba[..., 3] = a
+                img = Image.fromarray(rgba, 'RGBA')
+                bbox = img.getbbox()
+                if bbox:
+                    w, h = img.size
+                    pad_y = 2
+                    img = img.crop((max(0, bbox[0] - 4), max(0, bbox[1] - pad_y),
+                                    min(w, bbox[2] + 4), min(h, bbox[3] + pad_y)))
+                img.thumbnail((320, 64), Image.LANCZOS)
             elif asset == 'cover':
                 img = Image.fromarray(arr[..., :3].astype(np.uint8), 'RGB')
                 img.thumbnail((768, 768), Image.LANCZOS)

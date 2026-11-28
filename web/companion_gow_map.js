@@ -243,7 +243,7 @@
   var map = null, tiles = null, poiLayer = null, kratosMarker = null, markerById = {};
   try { S.guideSeen = JSON.parse(sessionStorage.getItem('gowGuideSeen') || '{}') || {}; } catch (e) {}
 
-  var ASSET_REV = '20261128_pbr6';
+  var ASSET_REV = '20261128_codex2';
   var PREFS_VER = 2;
   try {
     var saved = JSON.parse(localStorage.getItem('gowFsPrefs') || '{}');
@@ -1934,6 +1934,10 @@
   function renderCodexBook(kind, tabs) {
     var c = S.codex || {};
     var railIcons = renderBookSectionRail(tabs);
+    if (!S.codex && S.codexLoading) {
+      return '<div class="gow-book-stage is-empty">' + railIcons +
+        '<div class="gow-cx-notice">' + GOW_SVG.book + '<p>' + esc(tr('s089') + tr('codex_title')) + '…</p></div></div>';
+    }
     if (!c.game_data_available) {
       return '<div class="gow-book-stage is-empty">' + railIcons +
         '<div class="gow-cx-notice">' + GOW_SVG.book + '<p>' + esc(tr('codex_no_game_data')) + '</p></div></div>';
@@ -2015,10 +2019,31 @@
         '</div>' +
       '</div>';
 
+    var unlockedInView = 0, dugInView = 0;
+    entries.forEach(function (e) {
+      if (e.unlocked) unlockedInView++;
+      if (e.dug) dugInView++;
+    });
+    var leftSubText = '';
+    if (entries.length) {
+      if (isTreasure && c.has_save) {
+        leftSubText = tr('codex_book_found_dug')
+          .replace('{found}', String(unlockedInView))
+          .replace('{total}', String(entries.length))
+          .replace('{dug}', String(dugInView));
+      } else if (c.has_save) {
+        leftSubText = tr('codex_book_count')
+          .replace('{done}', String(unlockedInView))
+          .replace('{total}', String(entries.length));
+      } else {
+        leftSubText = tr('codex_book_entries').replace('{n}', String(entries.length));
+      }
+    }
+
     var listHtml = entries.length ? entries.map(function (e) {
       var masked = isEntryMasked(e);
       var isNew = !!S.codexNewIds[e.id];
-      var active = !S.bookCatOpen && selected && selected.id === e.id;
+      var active = !!(selected && selected.id === e.id);
       var suffix = '';
       if (isNew) suffix += '<em class="gow-book-new">' + esc(tr('codex_new_badge')) + '</em>';
       if (isTreasure) {
@@ -2046,11 +2071,20 @@
       var dMask = isEntryMasked(selected);
       var inkUrl = codexBookIconUrl(selected, kind);
       if (inkUrl) {
+        var flapCaption = '';
+        if (!dMask) {
+          var flapSub = isTreasure ? tr('codex_zoom_sketch') : (selected.category || '');
+          flapCaption =
+            '<span class="gow-book-flap-caption">' +
+              '<span class="gow-book-flap-title">' + esc(selected.name) + '</span>' +
+              (flapSub ? '<span class="gow-book-flap-sub">' + esc(flapSub) + '</span>' : '') +
+            '</span>';
+        }
         flapHtml =
           '<button type="button" class="gow-book-sketch-btn' + (dMask ? ' is-masked' : '') + (isTreasure ? ' is-clue' : '') +
             '" data-cx-zoom-img="' + esc(inkUrl) + '" title="' + esc(tr('codex_zoom_sketch')) + '"' + (dMask ? ' disabled' : '') + '>' +
             '<img src="' + esc(inkUrl) + '" alt="" loading="lazy" />' +
-            (isTreasure && !dMask ? '<span class="gow-book-clue-hint">' + esc(tr('codex_zoom_sketch')) + '</span>' : '') +
+            flapCaption +
             (dMask ? '<span class="gow-book-flap-lock">' + GOW_SVG.lock + '</span>' : '') +
           '</button>';
       } else if (dMask) {
@@ -2066,35 +2100,66 @@
               GOW_SVG.eye + '<span>' + esc(tr('codex_reveal')) + '</span></button>' +
           '</div>';
       } else {
-        var metaHtml = isTreasure
-          ? '<div class="gow-book-meta"><span class="gow-book-stamp is-' + esc(selected.status) + '">' + esc(treasureStatusText(selected.status)) + '</span></div>'
-          : '';
+        var metaHtml = '';
+        if (isTreasure) {
+          metaHtml = '<div class="gow-book-entry-head"><span class="gow-book-stamp is-' + esc(selected.status) + '">' +
+            esc(treasureStatusText(selected.status)) + '</span></div>';
+        } else {
+          var metaParts = [];
+          if (selected.category) metaParts.push('<span class="gow-book-meta-cat">' + esc(selected.category) + '</span>');
+          if (selected.is_valhalla) metaParts.push('<span class="gow-book-stamp is-dlc">' + esc(tr('codex_valhalla')) + '</span>');
+          if (selected.family_kills != null) {
+            metaParts.push('<span class="gow-book-meta-kills">' + esc(tr('codex_kills_family')) + ': <b>' + selected.family_kills + '</b></span>');
+          }
+          if (!selected.unlocked && c.has_save) {
+            metaParts.push('<span class="gow-book-meta-state">' + esc(tr('codex_entry_locked')) + '</span>');
+          }
+          if (metaParts.length) {
+            metaHtml = '<div class="gow-book-entry-head">' +
+              metaParts.join('<span class="gow-book-meta-sep" aria-hidden="true">◆</span>') +
+            '</div>';
+          }
+        }
+        metaHtml += '<div class="gow-book-rule" aria-hidden="true"><span></span></div>';
 
-        var proseHtml = '<div class="gow-book-prose">' + mdLite(selected.description || '') + '</div>';
+        var rawDesc = String(selected.description || '').trim();
+        var descLines = rawDesc ? rawDesc.split(/\r?\n/).filter(function (l) { return l.trim().length > 0; }) : [];
+        var isVerse = isTreasure && descLines.length >= 3 && (rawDesc.length / descLines.length) < 64;
+        var useDropcap = !isTreasure && !isVerse && rawDesc.length >= 90 && !/^[0-9*_\-\u2022]/.test(rawDesc);
+        var proseCls = 'gow-book-prose' + (useDropcap ? ' has-dropcap' : '') + (isVerse ? ' is-verse' : '');
+        var proseHtml = '<div class="' + proseCls + '">' + mdLite(rawDesc) + '</div>';
         var extraHtml = '';
 
         if (kind === 'bestiary' && selected.tips && selected.tips.length) {
-          extraHtml += '<ul class="gow-book-bullets">' + selected.tips.map(function (t) {
-            var tipMasked = S.codexSpoiler && !t.unlocked && !S.codexRevealed[selected.id + ':' + t.id];
-            if (tipMasked) {
-              return '<li class="is-locked"><span class="gow-book-li-dot">◆</span><div class="gow-book-li-body"><em>' +
-                esc(tr('codex_tip_locked')) + '</em> <button type="button" class="gow-book-inline-link" data-cx-reveal="' +
-                esc(selected.id + ':' + t.id) + '">' + esc(tr('codex_reveal')) + '</button></div></li>';
-            }
-            return '<li><span class="gow-book-li-dot">◆</span><div class="gow-book-li-body">' + mdLite(t.text) + '</div></li>';
-          }).join('') + '</ul>';
+          extraHtml +=
+            '<section class="gow-book-section">' +
+              '<h3 class="gow-book-section-head"><span>' + esc(tr('codex_combat_tips')) + '</span></h3>' +
+              '<ul class="gow-book-bullets">' + selected.tips.map(function (t) {
+                var tipMasked = S.codexSpoiler && !t.unlocked && !S.codexRevealed[selected.id + ':' + t.id];
+                if (tipMasked) {
+                  return '<li class="is-locked"><span class="gow-book-li-dot" aria-hidden="true">◆</span><div class="gow-book-li-body"><em>' +
+                    esc(tr('codex_tip_locked')) + '</em><button type="button" class="gow-book-inline-link" data-cx-reveal="' +
+                    esc(selected.id + ':' + t.id) + '">' + esc(tr('codex_reveal')) + '</button></div></li>';
+                }
+                return '<li><span class="gow-book-li-dot" aria-hidden="true">◆</span><div class="gow-book-li-body">' + mdLite(t.text) + '</div></li>';
+              }).join('') + '</ul>' +
+            '</section>';
         }
 
         if (kind === 'lore' && selected.updates && selected.updates.length) {
-          extraHtml += '<ul class="gow-book-bullets">' + selected.updates.map(function (u) {
-            var uMask = S.codexSpoiler && !u.unlocked && !S.codexRevealed[selected.id + ':' + u.id];
-            if (uMask) {
-              return '<li class="is-locked"><span class="gow-book-li-dot">◆</span><div class="gow-book-li-body"><em>' +
-                esc(tr('codex_spoiler_hint')) + '</em> <button type="button" class="gow-book-inline-link" data-cx-reveal="' +
-                esc(selected.id + ':' + u.id) + '">' + esc(tr('codex_reveal')) + '</button></div></li>';
-            }
-            return '<li><span class="gow-book-li-dot">◆</span><div class="gow-book-li-body">' + mdLite(u.text) + '</div></li>';
-          }).join('') + '</ul>';
+          extraHtml +=
+            '<section class="gow-book-section">' +
+              '<h3 class="gow-book-section-head"><span>' + esc(tr('codex_updates')) + '</span></h3>' +
+              '<ul class="gow-book-bullets">' + selected.updates.map(function (u) {
+                var uMask = S.codexSpoiler && !u.unlocked && !S.codexRevealed[selected.id + ':' + u.id];
+                if (uMask) {
+                  return '<li class="is-locked"><span class="gow-book-li-dot" aria-hidden="true">◆</span><div class="gow-book-li-body"><em>' +
+                    esc(tr('codex_spoiler_hint')) + '</em><button type="button" class="gow-book-inline-link" data-cx-reveal="' +
+                    esc(selected.id + ':' + u.id) + '">' + esc(tr('codex_reveal')) + '</button></div></li>';
+                }
+                return '<li><span class="gow-book-li-dot" aria-hidden="true">◆</span><div class="gow-book-li-body">' + mdLite(u.text) + '</div></li>';
+              }).join('') + '</ul>' +
+            '</section>';
         }
 
         if (isTreasure) {
@@ -2113,11 +2178,7 @@
             }).join('') + '</div></section>';
         }
 
-        if (!isTreasure && selected.family_kills != null) {
-          extraHtml += '<div class="gow-book-footnote">' + esc(tr('codex_kills_family')) + ': ' + selected.family_kills + '</div>';
-        }
-
-        rightBody = metaHtml + proseHtml + extraHtml;
+        rightBody = metaHtml + proseHtml + extraHtml + '<div class="gow-book-colophon" aria-hidden="true"></div>';
       }
     }
 
@@ -2136,6 +2197,7 @@
         '<div class="gow-book-cover">' +
           '<section class="gow-book-page is-left ' + wmKind + '">' +
             '<button type="button" class="gow-book-banner is-btn" data-cx-cats-toggle="1" title="' + esc(tr('codex_categories')) + '"><span>' + esc(pageHeaderLeft) + '</span></button>' +
+            (leftSubText ? '<div class="gow-book-page-sub"><span>' + esc(leftSubText) + '</span></div>' : '') +
             '<div class="gow-book-list" id="gowCxList">' + listHtml + '</div>' +
           '</section>' +
           '<div class="gow-book-spine" aria-hidden="true">' +
@@ -2165,6 +2227,9 @@
 
   function renderCodexMasterDetail(kind) {
     var c = S.codex || {};
+    if (!S.codex && S.codexLoading) {
+      return '<div class="gow-cx-notice">' + GOW_SVG.book + '<p>' + esc(tr('s089') + tr('codex_title')) + '…</p></div>';
+    }
     if (!c.game_data_available) {
       return '<div class="gow-cx-notice">' + GOW_SVG.book + '<p>' + esc(tr('codex_no_game_data')) + '</p></div>';
     }
@@ -2275,7 +2340,9 @@
           bodySection += '<button type="button" class="gow-fs-shot gow-cx-tr-shot" data-cx-zoom-img="' + esc(selected.icon) + '">' +
             '<img src="' + esc(selected.icon) + '" alt="" loading="lazy" /></button>';
         }
-        bodySection += '<div class="gow-cx-prose">' + mdLite(selected.description || '') + '</div>';
+        var darkDesc = String(selected.description || '').trim();
+        var darkDrop = !isTreasure && darkDesc.length >= 90 && !/^[0-9*_\-\u2022]/.test(darkDesc);
+        bodySection += '<div class="gow-cx-prose' + (darkDrop ? ' has-dropcap' : '') + '">' + mdLite(darkDesc) + '</div>';
         if (isTreasure) bodySection += renderTreasureRouteBlock(selected, false);
         if (kind === 'bestiary' && selected.tips && selected.tips.length) {
           bodySection += '<section class="gow-cx-tips"><h3>' + GOW_SVG.spark + '<span>' + esc(tr('codex_combat_tips')) + '</span></h3><ul>' +
@@ -2332,6 +2399,9 @@
 
   function renderCodexSkills() {
     var c = S.codex || {};
+    if (!S.codex && S.codexLoading) {
+      return '<div class="gow-cx-notice">' + GOW_SVG.book + '<p>' + esc(tr('s089') + tr('codex_title')) + '…</p></div>';
+    }
     if (!c.game_data_available) {
       return '<div class="gow-cx-notice">' + GOW_SVG.book + '<p>' + esc(tr('codex_no_game_data')) + '</p></div>';
     }

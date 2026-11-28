@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.5.1 — 2026-11-28
+
+- **Open-Book Codex Typography & Layout Overhaul** (`gow_codex.py`, `web/companion_gow_map.css`, `web/companion_gow_map.js`, `web/i18n.js`):
+  - Replaced generic system sans-serif (`Segoe UI`) in Book View with paired classical serif typography (`--gow-book-display` / `--gow-book-serif`) in warm iron-gall sepia ink blended naturally into the parchment fibers (`mix-blend-mode: multiply`), with an illuminated drop cap on Bestiary & Lore prose and poetic stanza framing for Treasure Map riddles.
+  - Extracted two additional authentic in-game Norse UI ornament textures lazily from local game files (`TX_iconbulletpoint` → `knot_bullet.png` interlocking Norse knot bullets, and `TX_questbanner_line` → bilaterally symmetric `crest_knot.png` chapter divider & colophon tailpiece) with clean CSS fallbacks when no game files are present.
+  - Aligned left/right charcoal brushstroke banners, entry list, and detail prose strictly inside `page.png`'s clean parchment writing area with lifted bottom safe margins and smooth top/bottom scroll fade masks (eliminating text collision with the torn edges, vertical margin line, and leather spine straps across desktop and tablet viewports).
+  - Added engraved left-page progress sub-headers (`unlocked / total`), right-page category & kill-count epigraph strip, dedicated `COMBAT TIPS` / `JOURNAL UPDATES` section headers, wax-sealed dashed cards with stamped reveal buttons for locked tips, always-visible active entry highlighting on the left page, museum-plate captions on the fold-out illustration flap, and a clean loading notice (eliminating the brief false "game files not found" flash on first open).
+
 ## 0.5.0 — 2026-11-28
 
 - **Native 3D In-Game Diorama Map Engine for All 9 Realms** (`tools/gow_native_map_3d.py`, `web/map_engine.js`, `/api/realm-3d/<realm>/*`):

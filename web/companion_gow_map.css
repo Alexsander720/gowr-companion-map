@@ -10,6 +10,8 @@
   --gow-text: #f2f1e7;
   --gow-text-muted: #9aaab8;
   --gow-font: Georgia, "Times New Roman", serif;
+  --gow-book-display: "Palatino Linotype", "Book Antiqua", "Sitka Display", "Georgia", "Noto Serif", serif;
+  --gow-book-serif: "Palatino Linotype", "Book Antiqua", "Sitka Text", "Constantia", "Georgia", "Noto Serif", serif;
   --gow-line: rgba(200, 162, 88, 0.30);
   --gow-line-soft: rgba(200, 162, 88, 0.16);
   --gow-glass: linear-gradient(180deg, rgba(11, 21, 31, 0.90), rgba(7, 14, 21, 0.86));
@@ -640,9 +642,21 @@ html.gow-fs .leaflet-tile-pane { filter: saturate(0.92) brightness(0.94) contras
 .gow-cx-chip.is-dlc { color: var(--gow-ice); border-color: rgba(142, 180, 227, .42); }
 .gow-cx-chip.is-kills b { color: var(--gow-gold-hi); font-weight: 400; font-variant-numeric: tabular-nums; }
 
-.gow-cx-prose { margin-top: 20px; font-size: 16px; line-height: 1.68; color: rgba(235, 240, 245, .92); }
-.gow-cx-prose p { margin: 0 0 12px; }
-.gow-cx-prose strong { color: var(--gow-gold-hi); font-weight: 400; }
+.gow-cx-prose {
+  margin-top: 22px; max-width: 66ch;
+  font-family: var(--gow-book-serif); font-size: 16.5px; line-height: 1.74;
+  letter-spacing: .006em; color: rgba(236, 240, 245, .93);
+  text-wrap: pretty;
+}
+.gow-cx-prose p { margin: 0 0 14px; }
+.gow-cx-prose p:last-child { margin-bottom: 0; }
+.gow-cx-prose.has-dropcap > p:first-child::first-letter {
+  float: left; font-family: var(--gow-book-display);
+  font-size: 2.85em; line-height: .80; padding: 3px 6px 0 0;
+  color: var(--gow-gold-hi); font-weight: 600;
+  text-shadow: 0 2px 10px rgba(229, 195, 120, .28);
+}
+.gow-cx-prose strong { color: var(--gow-gold-hi); font-weight: 600; }
 .gow-cx-prose em { color: var(--gow-text); }
 
 .gow-cx-tips, .gow-cx-updates { margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--gow-line-soft); }
@@ -942,25 +956,25 @@ html.gow-fs .leaflet-tooltip.gow-fs-tip::before { border-top-color: rgba(200, 16
 .gow-book-float-top {
   position: absolute; top: 10px; right: 16px; z-index: 35;
   display: flex; align-items: center; gap: 7px;
-  opacity: .72; transition: opacity .15s;
+  opacity: .84; transition: opacity .15s;
 }
 .gow-book-float-top:hover, .gow-book-float-top:focus-within { opacity: 1; }
 .gow-book-tool-btn {
-  width: 26px; height: 26px; display: inline-flex !important; align-items: center; justify-content: center;
-  border-radius: 2px; border: 1px solid rgba(180, 194, 210, .28) !important;
-  background: rgba(6, 12, 18, .68) !important; color: rgba(214, 224, 236, .86) !important;
+  width: 28px; height: 28px; display: inline-flex !important; align-items: center; justify-content: center;
+  border-radius: 2px; border: 1px solid rgba(200, 162, 88, .32) !important;
+  background: rgba(6, 12, 18, .74) !important; color: rgba(228, 224, 212, .88) !important;
 }
 .gow-book-tool-btn .gow-svg-glyph { width: 13px; height: 13px; }
 .gow-book-tool-btn.is-on, .gow-book-tool-btn:hover {
-  border-color: rgba(229, 195, 120, .72) !important; color: var(--gow-gold-hi) !important;
+  border-color: rgba(229, 195, 120, .76) !important; color: var(--gow-gold-hi) !important;
 }
-.gow-cx-mode-toggle { height: 26px !important; font-size: 10.5px !important; padding: 0 9px !important; }
+.gow-cx-mode-toggle { height: 28px !important; font-size: 10.5px !important; padding: 0 10px !important; letter-spacing: .12em; }
 
 .gow-book-tools-pop {
-  display: none; position: absolute; top: 44px; right: 16px; z-index: 40;
-  width: 280px; padding: 12px; gap: 8px; flex-direction: column;
-  background: rgba(9, 16, 24, .95); border: 1px solid rgba(190, 204, 218, .32);
-  border-radius: 3px; box-shadow: 0 18px 42px rgba(0, 0, 0, .85);
+  display: none; position: absolute; top: 46px; right: 16px; z-index: 40;
+  width: 286px; padding: 12px; gap: 8px; flex-direction: column;
+  background: rgba(9, 16, 24, .96); border: 1px solid rgba(200, 162, 88, .36);
+  border-radius: 3px; box-shadow: 0 18px 42px rgba(0, 0, 0, .86);
 }
 .gow-book-tools-pop.is-open { display: flex; }
 
@@ -969,23 +983,23 @@ html.gow-fs .leaflet-tooltip.gow-fs-tip::before { border-top-color: rgba(200, 16
   flex: none; height: 42px; padding: 0 28px; z-index: 30;
   display: flex; align-items: center; justify-content: flex-end; gap: 22px;
   background: linear-gradient(180deg, rgba(2, 4, 7, 0) 0%, rgba(2, 4, 7, .88) 32%, rgba(0, 0, 0, .96) 100%);
-  border-top: 1px solid rgba(186, 200, 216, .16);
+  border-top: 1px solid rgba(200, 162, 88, .18);
 }
 .gow-book-foot-btn {
   display: inline-flex !important; align-items: center; gap: 8px;
   padding: 4px 6px !important; border: 0 !important; background: transparent !important;
-  color: rgba(236, 240, 244, .92) !important;
-  font-family: 'Segoe UI', 'Trebuchet MS', system-ui, sans-serif;
-  font-size: 12.5px; letter-spacing: .16em; text-transform: uppercase;
+  color: rgba(238, 234, 224, .92) !important;
+  font-family: var(--gow-book-display);
+  font-size: 12px; letter-spacing: .18em; text-transform: uppercase;
   transition: color .14s;
 }
 .gow-book-foot-btn:hover { color: var(--gow-gold-hi) !important; }
 .gow-book-key {
   display: inline-flex; align-items: center; justify-content: center;
-  min-width: 24px; height: 20px; padding: 0 5px; border-radius: 3px;
-  border: 1.5px solid rgba(226, 232, 238, .75);
-  background: rgba(16, 22, 28, .85); color: #f2f4f7;
-  font-size: 9.5px; font-weight: 700; letter-spacing: .04em;
+  min-width: 26px; height: 20px; padding: 0 6px; border-radius: 2px;
+  border: 1px solid rgba(229, 195, 120, .62);
+  background: rgba(14, 20, 26, .88); color: #f5efe2;
+  font-family: var(--gow-font); font-size: 9.5px; font-weight: 700; letter-spacing: .06em;
 }
 
 .gow-book-body { flex: 1; min-height: 0; display: flex; overflow: hidden; position: relative; }
@@ -993,7 +1007,9 @@ html.gow-fs .leaflet-tooltip.gow-fs-tip::before { border-top-color: rgba(200, 16
   flex: 1; min-height: 0; position: relative;
   display: grid; grid-template-columns: 74px 0px minmax(0, 1fr);
   padding: 0 18px 0 8px; overflow: hidden; align-items: stretch;
-  font-family: 'Segoe UI', 'Trebuchet MS', 'Noto Sans', system-ui, -apple-system, sans-serif;
+  font-family: var(--gow-book-serif);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
   transition: grid-template-columns .24s cubic-bezier(.22, 1, .36, 1);
 }
 .gow-book-stage.is-cat-open {
@@ -1003,61 +1019,65 @@ html.gow-fs .leaflet-tooltip.gow-fs-tip::before { border-top-color: rgba(200, 16
 
 .gow-book-icons {
   display: flex; flex-direction: column; align-items: flex-end; justify-content: center; gap: 11px;
-  padding-right: 12px; border-right: 1px solid rgba(185, 200, 216, .34);
+  padding-right: 12px; border-right: 1px solid rgba(200, 162, 88, .26);
 }
 .gow-book-icon-btn {
   width: 38px; height: 38px; display: flex !important; align-items: center; justify-content: center;
-  border: 1px solid rgba(184, 198, 212, .42) !important; border-radius: 2px;
-  background: rgba(14, 21, 30, .74) !important; color: rgba(206, 216, 226, .84) !important;
+  border: 1px solid rgba(184, 198, 212, .38) !important; border-radius: 2px;
+  background: rgba(14, 21, 30, .74) !important; color: rgba(212, 218, 224, .86) !important;
   transition: all .15s ease;
 }
 .gow-book-icon-btn .gow-svg-glyph { width: 20px; height: 20px; }
-.gow-book-icon-btn:hover { border-color: rgba(236, 240, 244, .85) !important; color: #ffffff !important; background: rgba(38, 52, 68, .75) !important; }
+.gow-book-icon-btn:hover { border-color: rgba(229, 195, 120, .82) !important; color: var(--gow-gold-hi) !important; background: rgba(38, 52, 68, .75) !important; }
 .gow-book-icon-btn.is-active {
-  background: linear-gradient(145deg, #e7e5de, #bec7d0) !important;
-  border-color: #f8f6f0 !important; color: #12161a !important;
-  box-shadow: 0 0 18px rgba(226, 232, 240, .44);
+  background: linear-gradient(145deg, #efe8d8, #c7bea8) !important;
+  border-color: #f8f2e4 !important; color: #16130f !important;
+  box-shadow: 0 0 18px rgba(229, 195, 120, .38);
 }
 
 .gow-book-rail {
   min-width: 0; min-height: 0; display: flex; flex-direction: column; justify-content: center;
   padding: 52px 14px 42px 16px; overflow: hidden;
-  background: linear-gradient(90deg, rgba(18, 32, 48, .52), rgba(8, 16, 26, .16) 85%, transparent);
+  background: linear-gradient(90deg, rgba(16, 28, 42, .56), rgba(8, 15, 24, .18) 85%, transparent);
   opacity: 0; pointer-events: none; transition: opacity .18s ease;
 }
 .gow-book-stage.is-cat-open .gow-book-rail { opacity: 1; pointer-events: auto; }
 .gow-book-rail-rule {
   position: relative; flex: none; height: 1px; margin: 4px 0 14px;
-  background: linear-gradient(90deg, transparent, rgba(202, 214, 228, .55) 20%, rgba(202, 214, 228, .55) 80%, transparent);
+  background: linear-gradient(90deg, transparent, rgba(200, 162, 88, .55) 20%, rgba(200, 162, 88, .55) 80%, transparent);
 }
 .gow-book-rail-rule::after {
   content: "❖"; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -52%);
-  font-size: 9px; color: rgba(206, 218, 232, .75); background: rgba(10, 18, 28, .9); padding: 0 6px;
+  font-size: 9px; color: rgba(229, 195, 120, .82); background: rgba(10, 18, 28, .92); padding: 0 6px;
 }
 .gow-book-rail-rule.is-bottom { margin: 14px 0 4px; }
 .gow-book-rail-title {
   flex: none; text-align: center; padding: 4px 4px 12px;
-  font-size: 16px; font-weight: 500; letter-spacing: .16em; text-transform: uppercase; color: #f0f4f8;
-  border-bottom: 1px solid rgba(196, 210, 224, .24);
+  font-family: var(--gow-book-display); font-size: 15.5px; font-weight: 600;
+  letter-spacing: .22em; text-transform: uppercase; color: #f4eee2;
+  border-bottom: 1px solid rgba(200, 162, 88, .24);
 }
 .gow-book-cats {
   flex: 0 1 auto; min-height: 0; overflow-y: auto; padding: 6px 0;
-  scrollbar-width: thin; scrollbar-color: rgba(180, 196, 212, .28) transparent;
+  scrollbar-width: thin; scrollbar-color: rgba(200, 162, 88, .28) transparent;
 }
 .gow-book-cat {
   width: 100%; display: flex !important; align-items: center; justify-content: space-between; gap: 8px;
-  padding: 12px 14px !important; text-align: left; white-space: normal !important;
-  font-size: 15.5px; color: rgba(226, 233, 240, .92) !important;
-  border-bottom: 1px solid rgba(180, 196, 212, .13) !important;
-  transition: background .14s, color .14s;
+  padding: 11px 14px !important; text-align: left; white-space: normal !important;
+  font-family: var(--gow-book-serif); font-size: 15.5px; letter-spacing: .015em;
+  color: rgba(232, 228, 218, .90) !important;
+  border-left: 2px solid transparent !important;
+  border-bottom: 1px solid rgba(200, 162, 88, .11) !important;
+  transition: background .14s, color .14s, border-color .14s;
 }
-.gow-book-cat em { font-style: normal; font-size: 11px; opacity: .5; font-variant-numeric: tabular-nums; flex: none; }
-.gow-book-cat:hover { background: rgba(205, 216, 228, .12) !important; color: #ffffff !important; }
+.gow-book-cat em { font-style: normal; font-size: 11.5px; opacity: .55; font-variant-numeric: tabular-nums; flex: none; }
+.gow-book-cat:hover { background: rgba(200, 162, 88, .12) !important; color: #ffffff !important; }
 .gow-book-cat.is-on {
-  background: linear-gradient(90deg, rgba(232, 236, 240, .95) 0%, rgba(176, 186, 198, .62) 70%, rgba(110, 126, 142, .05) 100%) !important;
-  color: #111519 !important; font-weight: 600;
+  background: linear-gradient(90deg, rgba(236, 228, 210, .94) 0%, rgba(196, 184, 158, .54) 72%, rgba(130, 118, 96, .06) 100%) !important;
+  border-left-color: var(--gow-gold-hi) !important;
+  color: #16120d !important; font-weight: 600;
 }
-.gow-book-cat.is-on em { color: rgba(235, 240, 246, .92); text-shadow: 0 1px 3px rgba(0, 0, 0, .82); opacity: .9; }
+.gow-book-cat.is-on em { color: rgba(242, 236, 224, .92); text-shadow: 0 1px 3px rgba(0, 0, 0, .86); opacity: .94; }
 
 .gow-book-search { flex: none; min-width: 0; height: 30px; }
 .gow-book-search .gow-cx-search { font-size: 12.5px; padding-left: 29px; }
@@ -1102,7 +1122,7 @@ html.gow-fs .leaflet-tooltip.gow-fs-tip::before { border-top-color: rgba(200, 16
   display: flex; flex-direction: column; overflow: hidden;
   border-radius: 2px;
   background: radial-gradient(ellipse at 50% 45%, #d3d0c7 0%, #c1beb4 68%, #aaa69c 100%);
-  color: #161411;
+  color: #241b13;
 }
 .gow-book-stage.has-game-book .gow-book-page {
   background: transparent !important;
@@ -1117,7 +1137,7 @@ html.gow-fs .leaflet-tooltip.gow-fs-tip::before { border-top-color: rgba(200, 16
 .gow-book-page::after {
   content: ""; position: absolute; inset: 0; z-index: 0; pointer-events: none;
   background-position: center 55%; background-repeat: no-repeat; background-size: 62% auto;
-  mix-blend-mode: multiply; opacity: .19;
+  mix-blend-mode: multiply; opacity: .15;
 }
 .gow-book-page.wm-bestiary::after { background-image: url('/api/codex/book/wm_bestiary.png'); }
 .gow-book-page.wm-lore::after { background-image: url('/api/codex/book/wm_lore.png'); }
@@ -1148,153 +1168,342 @@ html.gow-fs .leaflet-tooltip.gow-fs-tip::before { border-top-color: rgba(200, 16
 .gow-book-tie:nth-child(3) { top: 60.85%; }
 .gow-book-tie:nth-child(4) { top: 84.25%; }
 
+/* Charcoal Ink Brushstroke Banners — strictly framed inside page.png safe parchment zone */
 .gow-book-banner {
-  flex: none; margin: 22px 18px 12px; padding: 14px 24px; text-align: center;
-  background: linear-gradient(90deg, rgba(34, 32, 29, .78) 0%, rgba(20, 19, 17, .94) 18%, rgba(22, 20, 18, .94) 82%, rgba(34, 32, 29, .72) 100%);
+  flex: none; min-height: 54px;
+  display: flex; align-items: center; justify-content: center;
+  padding: 13px 30px 15px; text-align: center;
+  background: linear-gradient(90deg, rgba(34, 29, 24, .78) 0%, rgba(22, 19, 16, .95) 18%, rgba(24, 20, 16, .95) 82%, rgba(34, 29, 24, .72) 100%);
   clip-path: polygon(0% 10%, 4% 2%, 15% 6%, 30% 1%, 50% 5%, 70% 0%, 86% 6%, 97% 2%, 100% 14%, 99% 84%, 94% 96%, 81% 90%, 64% 98%, 45% 91%, 26% 97%, 10% 90%, 2% 95%, 0% 82%);
-  color: #f0eadc;
+  color: #f4eee2;
 }
+.gow-book-page.is-left .gow-book-banner { margin: 24px clamp(46px, 11.2%, 68px) 4px clamp(30px, 8.2%, 48px); }
+.gow-book-page.is-right .gow-book-banner { margin: 24px clamp(30px, 8.2%, 48px) 4px clamp(46px, 11.2%, 68px); }
 .gow-book-banner.is-btn {
-  display: block; width: auto; border: 0 !important; cursor: pointer;
+  display: flex; width: auto; border: 0 !important; cursor: pointer;
+  transition: filter .15s ease;
 }
+.gow-book-banner.is-btn:hover { filter: brightness(1.08); }
 .gow-book-stage.has-game-book .gow-book-banner {
   background: url('/api/codex/book/header_brush.png') center / 100% 100% no-repeat !important;
   clip-path: none;
-  margin: 18px 10px 10px;
-  padding: 16px 24px 18px;
+  padding: 15px 34px 17px;
 }
 .gow-book-banner span, .gow-book-banner h2 {
-  margin: 0; font-size: 17px; font-weight: 400; letter-spacing: .14em; text-transform: uppercase;
-  line-height: 1.25; color: #f3eee4;
+  display: block; margin: 0;
+  font-family: var(--gow-book-display);
+  font-size: clamp(13.5px, 1.12vw, 17.5px); font-weight: 600;
+  letter-spacing: .17em; text-transform: uppercase;
+  line-height: 1.20; color: #f6f0e4;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, .74);
+  white-space: normal; text-wrap: balance;
 }
 
+/* Left Page Progress Sub-Header */
+.gow-book-page-sub {
+  flex: none;
+  margin: 2px clamp(52px, 12.2%, 74px) 2px clamp(34px, 8.8%, 52px);
+  padding: 4px 0 8px;
+  text-align: center;
+  border-bottom: 1px solid rgba(72, 54, 36, .18);
+  mix-blend-mode: multiply;
+}
+.gow-book-page-sub span {
+  font-family: var(--gow-book-display);
+  font-size: 10.5px; font-weight: 600; letter-spacing: .20em; text-transform: uppercase;
+  color: rgba(68, 52, 36, .76);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Left Page Entry List with Safe Margins & Top/Bottom Fade Mask (lifted clear of torn bottom border) */
 .gow-book-list {
-  flex: 1; min-height: 0; overflow-y: auto; padding: 10px clamp(42px, 10%, 64px) 26px 22px;
-  scrollbar-width: thin; scrollbar-color: rgba(46, 38, 28, .32) transparent;
+  flex: 1; min-height: 0; overflow-y: auto;
+  margin-bottom: clamp(24px, 3.8vh, 36px);
+  padding: 8px clamp(50px, 12.2%, 74px) 28px clamp(28px, 7.8%, 46px);
+  scrollbar-width: thin; scrollbar-color: rgba(62, 46, 30, .28) transparent;
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 10px, #000 calc(100% - 28px), transparent 100%);
+  mask-image: linear-gradient(180deg, transparent 0%, #000 10px, #000 calc(100% - 28px), transparent 100%);
 }
 .gow-book-entry {
-  width: 100%; display: flex !important; align-items: center; gap: 14px;
-  padding: 12px 18px 12px 16px !important; margin-bottom: 6px; text-align: left; white-space: normal !important;
-  color: #171512 !important; border: 0 !important; border-radius: 2px;
-  transition: background .12s, color .12s;
+  width: 100%; display: flex !important; align-items: center; gap: 12px;
+  padding: 10px 26px 10px 14px !important; margin-bottom: 2px; text-align: left; white-space: normal !important;
+  color: #241b13 !important;
+  border: 0 !important; border-bottom: 1px solid rgba(72, 54, 36, .10) !important; border-radius: 2px;
+  transition: background .12s, color .12s, opacity .12s;
 }
-.gow-book-entry:hover { background: rgba(30, 26, 21, .08) !important; }
-.gow-book-entry.is-locked:not(.is-active) { opacity: .58; }
+.gow-book-entry:hover { background: rgba(46, 34, 22, .08) !important; }
+.gow-book-entry.is-locked:not(.is-active) {
+  color: #5c4d3d !important; opacity: .88;
+}
+.gow-book-entry.is-locked:not(.is-active) .gow-book-entry-name { font-style: italic; }
 .gow-book-entry.is-active {
-  background: linear-gradient(90deg, rgba(16, 15, 14, .96) 0%, rgba(22, 20, 18, .92) 72%, rgba(28, 25, 22, .42) 90%, transparent 100%) !important;
-  color: #f6f2ea !important;
+  background: linear-gradient(90deg, rgba(22, 18, 15, .96) 0%, rgba(28, 23, 18, .92) 72%, rgba(36, 30, 24, .38) 92%, transparent 100%) !important;
+  color: #f6f0e4 !important; border-bottom-color: transparent !important;
   clip-path: polygon(0% 4%, 100% 0%, 96% 24%, 99% 52%, 94% 82%, 97% 100%, 0% 96%);
 }
 .gow-book-stage.has-game-book .gow-book-entry.is-active {
   background: url('/api/codex/book/row_brush.png') left center / 100% 100% no-repeat !important;
   clip-path: none;
-  padding: 15px 22px 16px 16px !important;
+  padding: 13px 36px 14px 14px !important;
+  margin: 2px 0 4px;
 }
-.gow-book-bullet { flex: none; font-size: 9px; line-height: 1; opacity: .9; }
-.gow-book-entry.is-active .gow-book-bullet { font-size: 14px; color: #f2ede2; opacity: 1; }
-.gow-book-entry-name { flex: 1; min-width: 0; font-size: 16.5px; font-weight: 400; line-height: 1.3; }
-.gow-book-entry-end { flex: none; display: inline-flex; align-items: center; gap: 5px; }
+.gow-book-bullet {
+  flex: none; width: 13px; height: 13px;
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 9px; line-height: 1; color: #4c3622; opacity: .88;
+}
+.gow-book-entry.is-locked:not(.is-active) .gow-book-bullet { opacity: .52; }
+.gow-book-entry.is-active .gow-book-bullet { font-size: 13px; color: #f4ece0; opacity: 1; }
+.gow-book-stage.has-game-book .gow-book-bullet {
+  font-size: 0; color: transparent;
+  background: url('/api/codex/book/knot_bullet.png') center / contain no-repeat;
+  opacity: .76;
+}
+.gow-book-stage.has-game-book .gow-book-entry.is-locked:not(.is-active) .gow-book-bullet { opacity: .42; }
+.gow-book-stage.has-game-book .gow-book-entry.is-active .gow-book-bullet {
+  width: 15px; height: 15px; opacity: .96;
+  filter: invert(92%) sepia(18%) saturate(380%) brightness(108%);
+}
+.gow-book-entry-name {
+  flex: 1; min-width: 0;
+  font-family: var(--gow-book-serif); font-size: 16px; font-weight: 400;
+  line-height: 1.32; letter-spacing: .01em;
+}
+.gow-book-entry.is-active .gow-book-entry-name {
+  font-weight: 600; text-shadow: 0 1px 2px rgba(0, 0, 0, .58);
+}
+.gow-book-entry-end { flex: none; display: inline-flex; align-items: center; gap: 6px; margin-right: 4px; }
 .gow-book-new {
-  font-style: normal; font-size: 9px; letter-spacing: .12em; padding: 1px 5px; border-radius: 2px;
-  background: #8a281d; color: #f9f2e4;
+  font-family: var(--gow-book-display); font-style: normal; font-size: 9px; font-weight: 600;
+  letter-spacing: .14em; padding: 1px 5px; border-radius: 2px;
+  background: #802318; color: #faf3e6;
 }
-.gow-book-st { width: 13px; height: 13px; display: inline-flex; color: #54493b; }
-.gow-book-st.is-dug { color: #365c2e; }
-.gow-book-st.is-active-tr { color: #9a6518; }
-.gow-book-entry.is-active .gow-book-st { color: #e8dfc8; }
+.gow-book-st { width: 13px; height: 13px; display: inline-flex; color: #675542; opacity: .82; }
+.gow-book-st.is-dug { color: #2f5928; opacity: 1; }
+.gow-book-st.is-active-tr { color: #9a6214; opacity: 1; }
+.gow-book-entry.is-active .gow-book-st { color: #efe5cf; opacity: .95; }
 
+/* Right Page Editorial Scroll Area — Symmetric Parchment Margins + Safe Bottom Lift */
 .gow-book-page-scroll {
-  flex: 1; min-height: 0; overflow-y: auto; padding: 12px 34px 28px clamp(52px, 11.5%, 72px);
+  flex: 1; min-height: 0; overflow-y: auto;
+  margin-bottom: clamp(24px, 3.8vh, 36px);
+  padding: 6px clamp(46px, 11.5%, 66px) 30px clamp(52px, 12.8%, 76px);
   scrollbar-width: none;
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 10px, #000 calc(100% - 28px), transparent 100%);
+  mask-image: linear-gradient(180deg, transparent 0%, #000 10px, #000 calc(100% - 28px), transparent 100%);
 }
 .gow-book-page-scroll::-webkit-scrollbar { width: 0; height: 0; }
 .gow-book-page-ornament {
-  position: absolute; right: 16px; top: 96px; bottom: 32px; width: 14px; pointer-events: none;
+  position: absolute; right: 17px; top: 102px; bottom: 48px; width: 12px; pointer-events: none;
   display: flex; flex-direction: column; align-items: center; justify-content: space-between;
-  color: rgba(42, 36, 30, .58); font-size: 10px; z-index: 2;
+  color: rgba(54, 41, 28, .42); font-size: 9px; z-index: 2;
 }
 .gow-book-page-ornament i {
-  flex: 1; width: 1px; margin: 4px 0;
-  background: linear-gradient(180deg, rgba(42, 36, 30, .48), rgba(42, 36, 30, .18) 50%, rgba(42, 36, 30, .48));
+  flex: 1; width: 1px; margin: 5px 0;
+  background: linear-gradient(180deg, rgba(54, 41, 28, .38), rgba(54, 41, 28, .12) 50%, rgba(54, 41, 28, .38));
 }
 
-.gow-book-meta { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
-.gow-book-stamp {
-  display: inline-flex; align-items: center; gap: 5px; padding: 2px 8px;
-  border: 1px solid rgba(46, 38, 28, .32); border-radius: 2px;
-  background: rgba(46, 38, 28, .08); color: #3a3126;
-  font-size: 11px; letter-spacing: .07em; text-transform: uppercase;
+/* Engraved Entry Subtitle & Symmetric In-Game Norse Divider */
+.gow-book-entry-head {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 7px 10px;
+  margin: 2px 0 6px;
+  font-family: var(--gow-book-display); font-size: 11px; font-weight: 600;
+  letter-spacing: .19em; text-transform: uppercase; color: #543e29;
+  mix-blend-mode: multiply;
 }
-.gow-book-stamp.is-active { background: rgba(164, 108, 24, .18); border-color: rgba(140, 88, 16, .48); color: #683e07; font-weight: 600; }
-.gow-book-stamp.is-dug { background: rgba(44, 98, 42, .16); border-color: rgba(44, 98, 42, .42); color: #224a20; font-weight: 600; }
-.gow-book-stamp.is-dlc { background: rgba(34, 68, 106, .14); border-color: rgba(34, 68, 106, .35); color: #1d3c5e; }
-.gow-book-prose { font-size: 16.5px; line-height: 1.48; color: #151310; }
+.gow-book-meta-sep { font-size: 7px; opacity: .55; color: #6e4526; }
+.gow-book-meta-kills b { color: #362212; font-variant-numeric: tabular-nums; }
+.gow-book-meta-state { color: #7a573a; font-style: italic; letter-spacing: .12em; }
+
+.gow-book-rule {
+  position: relative; display: flex; align-items: center; justify-content: center;
+  height: 16px; margin: 0 0 14px; mix-blend-mode: multiply;
+}
+.gow-book-rule::before, .gow-book-rule::after {
+  content: ""; flex: 1; height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(72, 52, 34, .42));
+}
+.gow-book-rule::after {
+  background: linear-gradient(90deg, rgba(72, 52, 34, .42), transparent);
+}
+.gow-book-rule span {
+  flex: none; width: 18px; height: 10px; margin: 0 10px; position: relative;
+}
+.gow-book-rule span::after {
+  content: "❖"; position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+  font-size: 10px; color: rgba(68, 48, 30, .72);
+}
+.gow-book-stage.has-game-book .gow-book-rule {
+  height: 28px; margin: 0 0 12px; gap: 4px;
+}
+.gow-book-stage.has-game-book .gow-book-rule::before,
+.gow-book-stage.has-game-book .gow-book-rule::after {
+  display: block; opacity: .55;
+}
+.gow-book-stage.has-game-book .gow-book-rule span {
+  width: 96px; height: 28px; margin: 0;
+  background: url('/api/codex/book/crest_knot.png') center / contain no-repeat;
+  opacity: .84;
+}
+.gow-book-stage.has-game-book .gow-book-rule span::after { display: none; }
+
+.gow-book-stamp {
+  display: inline-flex; align-items: center; gap: 5px; padding: 3px 10px;
+  border: 1px solid rgba(58, 44, 30, .38); border-radius: 2px;
+  background: rgba(58, 44, 30, .08); color: #3c2f22;
+  font-family: var(--gow-book-display); font-size: 10.5px; font-weight: 600;
+  letter-spacing: .14em; text-transform: uppercase;
+}
+.gow-book-stamp.is-active { background: rgba(154, 96, 18, .15); border-color: rgba(132, 78, 12, .52); color: #643906; }
+.gow-book-stamp.is-dug { background: rgba(40, 92, 38, .14); border-color: rgba(40, 92, 38, .46); color: #20481e; }
+.gow-book-stamp.is-dlc { background: rgba(34, 68, 106, .12); border-color: rgba(34, 68, 106, .38); color: #1d3c5e; }
+
+/* Journal Body Prose — Warm Iron-Gall Sepia Ink with Illuminated Drop Cap */
+.gow-book-prose {
+  font-family: var(--gow-book-serif);
+  font-size: clamp(15px, 1.04vw, 16.5px); line-height: 1.58;
+  letter-spacing: .006em; color: #251c13;
+  text-align: left; text-wrap: pretty; hyphens: none; overflow-wrap: break-word;
+  mix-blend-mode: multiply;
+}
 .gow-book-prose p { margin: 0 0 12px; }
-.gow-book-prose strong { color: #0c0a08; font-weight: 700; }
+.gow-book-prose p:last-child { margin-bottom: 0; }
+.gow-book-prose.has-dropcap > p:first-child::first-letter {
+  float: left; font-family: var(--gow-book-display);
+  font-size: 2.85em; line-height: .78; padding: 3px 5px 0 0; margin-right: 1px;
+  color: #462116; font-weight: 700;
+}
+.gow-book-prose.is-verse {
+  margin: 4px 4px 8px; padding: 10px 16px;
+  border-left: 2px solid rgba(92, 62, 34, .42);
+  background: rgba(68, 48, 28, .04);
+  font-style: italic; font-size: clamp(15.2px, 1.08vw, 17px); line-height: 1.66;
+  color: #2c2015;
+}
+.gow-book-prose strong { color: #181009; font-weight: 700; }
+.gow-book-prose em { font-style: italic; color: #3d2c1d; }
+
+/* Etched Section Headers + Combat Tips & Journal Updates */
+.gow-book-section { margin-top: 16px; }
+.gow-book-section-head {
+  display: flex; align-items: center; gap: 11px; margin: 0 0 10px;
+  font-family: var(--gow-book-display); font-size: 11px; font-weight: 700;
+  letter-spacing: .22em; text-transform: uppercase; color: #543720;
+  mix-blend-mode: multiply;
+}
+.gow-book-section-head::before, .gow-book-section-head::after {
+  content: ""; flex: 1; height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(78, 54, 34, .42));
+}
+.gow-book-section-head::after {
+  background: linear-gradient(90deg, rgba(78, 54, 34, .42), transparent);
+}
+.gow-book-section-head span { flex: none; }
 
 .gow-book-bullets {
-  list-style: none; margin: 18px 0 0; padding: 14px 0 0;
-  border-top: 1px solid rgba(44, 36, 26, .18); display: grid; gap: 14px;
+  list-style: none; margin: 0; padding: 0;
+  display: grid; gap: 10px;
+  mix-blend-mode: multiply;
 }
-.gow-book-bullets li { display: grid; grid-template-columns: 14px 1fr; gap: 9px; font-size: 15.5px; line-height: 1.46; color: #171410; }
-.gow-book-li-dot { font-size: 9px; line-height: 2; color: #181511; }
-.gow-book-li-body p { margin: 0; }
-.gow-book-bullets li.is-locked { color: #5b5144; font-style: italic; }
+.gow-book-bullets li {
+  display: grid; grid-template-columns: 16px 1fr; gap: 10px; align-items: start;
+  font-family: var(--gow-book-serif); font-size: clamp(14.2px, .98vw, 15.5px);
+  line-height: 1.50; color: #241b13; text-wrap: pretty;
+}
+.gow-book-li-dot {
+  width: 14px; height: 14px; margin-top: 5px;
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 9px; line-height: 1; color: #6a281b;
+}
+.gow-book-stage.has-game-book .gow-book-li-dot {
+  font-size: 0; color: transparent;
+  background: url('/api/codex/book/knot_bullet.png') center / contain no-repeat;
+  opacity: .84;
+}
+.gow-book-li-body p { margin: 0 0 6px; }
+.gow-book-li-body p:last-child { margin-bottom: 0; }
+.gow-book-bullets li.is-locked {
+  padding: 10px 13px; border-radius: 2px;
+  border: 1px dashed rgba(82, 60, 38, .32);
+  background: rgba(68, 50, 32, .055);
+  color: #5b4937; font-style: italic;
+}
+.gow-book-bullets li.is-locked .gow-book-li-dot { opacity: .45; }
+.gow-book-bullets li.is-locked .gow-book-li-body {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 12px;
+}
 .gow-book-inline-link {
-  color: #6f420f !important; text-decoration: underline; font-style: normal; font-size: 13px; margin-left: 6px;
+  display: inline-flex !important; align-items: center; padding: 3px 10px !important;
+  border: 1px solid rgba(102, 66, 28, .48) !important; border-radius: 2px;
+  background: rgba(74, 48, 22, .08) !important; color: #543210 !important;
+  font-family: var(--gow-book-display); font-style: normal; font-size: 10px; font-weight: 600;
+  letter-spacing: .14em; text-transform: uppercase; text-decoration: none;
+  transition: background .14s, border-color .14s, color .14s;
 }
-.gow-book-footnote {
-  margin-top: 18px; padding-top: 10px; border-top: 1px solid rgba(44, 36, 26, .14);
-  font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: rgba(46, 38, 28, .62);
+.gow-book-inline-link:hover {
+  background: rgba(54, 34, 14, .18) !important; border-color: rgba(86, 52, 16, .78) !important; color: #2b1806 !important;
 }
+
+.gow-book-colophon {
+  width: 112px; height: 18px; margin: 22px auto 4px; opacity: .34; mix-blend-mode: multiply;
+  background: linear-gradient(90deg, transparent, rgba(64, 46, 28, .45) 50%, transparent) center / 100% 1px no-repeat;
+}
+.gow-book-stage.has-game-book .gow-book-colophon {
+  width: 132px; height: 28px; opacity: .54;
+  background: url('/api/codex/book/crest_knot.png') center / contain no-repeat;
+}
+
 .gow-book-spoiler {
-  margin-top: 22px; padding: 26px 18px; text-align: center;
-  border: 1px dashed rgba(46, 38, 28, .38); border-radius: 3px; background: rgba(46, 38, 28, .06);
-  display: flex; flex-direction: column; align-items: center; gap: 12px; color: #3d3328;
+  margin-top: 22px; padding: 28px 20px; text-align: center;
+  border: 1px dashed rgba(68, 50, 32, .42); border-radius: 3px; background: rgba(68, 50, 32, .06);
+  display: flex; flex-direction: column; align-items: center; gap: 14px; color: #3d3023;
+  mix-blend-mode: multiply;
 }
-.gow-book-spoiler > .gow-svg-glyph { width: 28px; height: 28px; color: #4c3e2e; }
-.gow-book-spoiler p { margin: 0; font-style: italic; font-size: 15px; }
+.gow-book-spoiler > .gow-svg-glyph { width: 28px; height: 28px; color: #543e29; }
+.gow-book-spoiler p { margin: 0; font-family: var(--gow-book-serif); font-style: italic; font-size: 15.5px; line-height: 1.5; }
 .gow-book-reveal-btn {
-  display: inline-flex !important; align-items: center; gap: 7px; height: 34px; padding: 0 14px !important;
-  background: #231e18 !important; color: #f2ead8 !important; border: 1px solid #6f5630 !important; border-radius: 2px;
-  font-size: 11.5px; letter-spacing: .12em; text-transform: uppercase;
+  display: inline-flex !important; align-items: center; gap: 8px; height: 34px; padding: 0 16px !important;
+  background: #241d16 !important; color: #f4ece0 !important; border: 1px solid #7c5e34 !important; border-radius: 2px;
+  font-family: var(--gow-book-display); font-size: 11px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase;
 }
 .gow-book-reveal-btn .gow-svg-glyph { width: 14px; height: 14px; color: #e5c378; }
-.gow-book-reveal-btn:hover { background: #312920 !important; }
-.gow-book-empty { padding: 28px 16px; text-align: center; font-style: italic; color: #5a4f42; font-size: 14.5px; }
+.gow-book-reveal-btn:hover { background: #33281d !important; }
+.gow-book-empty { padding: 32px 16px; text-align: center; font-family: var(--gow-book-serif); font-style: italic; color: #5a4c3d; font-size: 15px; }
 
 .gow-book-tr-routes, .gow-book-map-links {
-  margin-top: 16px; padding-top: 14px; border-top: 1px solid rgba(44, 36, 26, .2);
-  display: flex; flex-direction: column; gap: 8px;
+  margin-top: 18px; padding-top: 14px; border-top: 1px solid rgba(68, 50, 32, .22);
+  display: flex; flex-direction: column; gap: 9px;
 }
 .gow-book-links-head {
-  display: flex; align-items: center; gap: 6px; font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: #514331;
+  display: flex; align-items: center; gap: 6px;
+  font-family: var(--gow-book-display); font-size: 10.5px; font-weight: 700;
+  letter-spacing: .20em; text-transform: uppercase; color: #543c26;
 }
-.gow-book-links-head .gow-svg-glyph { width: 14px; height: 14px; color: #7a5520; }
+.gow-book-links-head .gow-svg-glyph { width: 14px; height: 14px; color: #7a521c; }
 .gow-book-link-chips { display: flex; flex-wrap: wrap; gap: 7px; }
 .gow-book-route-btn {
-  display: inline-flex !important; align-items: center; gap: 9px; padding: 8px 12px !important;
-  background: linear-gradient(180deg, #2b241c, #1d1812) !important;
-  color: #f4ecd9 !important; border: 1px solid #755b31 !important; border-radius: 2px;
-  font-size: 12.5px; text-align: left; white-space: normal !important;
+  display: inline-flex !important; align-items: center; gap: 10px; padding: 9px 14px !important;
+  background: linear-gradient(180deg, #2d241b, #1d1711) !important;
+  color: #f4ecd9 !important; border: 1px solid #7d5f33 !important; border-radius: 2px;
+  font-family: var(--gow-book-serif); font-size: 13px; text-align: left; white-space: normal !important;
   box-shadow: 0 3px 10px rgba(0, 0, 0, .26); transition: transform .12s, border-color .12s, background .12s;
 }
 .gow-book-route-btn.is-primary {
-  background: linear-gradient(180deg, #3c2e1c, #241b10) !important;
-  border-color: #b48a43 !important;
+  background: linear-gradient(180deg, #3f301d, #251b10) !important;
+  border-color: #bd9047 !important;
 }
 .gow-book-route-btn:hover { border-color: #e5c378 !important; transform: translateY(-1px); }
-.gow-book-route-btn.is-done { opacity: .74; }
+.gow-book-route-btn.is-done { opacity: .76; }
 .gow-book-route-btn .gow-svg-glyph { width: 16px; height: 16px; color: #e5c378; flex: none; }
 .gow-book-route-copy { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
-.gow-book-route-copy b { font-weight: 600; font-size: 12.5px; letter-spacing: .04em; color: #f6eedc; }
-.gow-book-route-copy small { font-size: 11.5px; color: #cbbd9f; font-style: italic; }
+.gow-book-route-copy b { font-family: var(--gow-book-display); font-weight: 600; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: #f6eedc; }
+.gow-book-route-copy small { font-family: var(--gow-book-serif); font-size: 12.5px; color: #d0c0a0; font-style: italic; }
 
-/* Right Fold-Out Torn Parchment Sketch Flap — Full In-Game Proportions */
+/* Right Fold-Out Torn Parchment Sketch Flap — Museum Plate Framing */
 .gow-book-flap {
   position: relative; z-index: 1;
   align-self: center; height: 83%;
-  margin: 0 0 0 -28px; padding: 24px 26px 26px 38px;
+  margin: 0 0 0 -28px; padding: 26px 26px 24px 40px;
   display: flex; align-items: center; justify-content: center; overflow: hidden;
   background: radial-gradient(ellipse at 45% 48%, #d2cec4 0%, #bfbab0 72%, #a6a197 100%);
   filter: drop-shadow(12px 18px 28px rgba(0, 0, 0, .86));
@@ -1308,20 +1517,32 @@ html.gow-fs .leaflet-tooltip.gow-fs-tip::before { border-top-color: rgba(200, 16
 .gow-book-sketch-btn {
   position: relative; width: 100%; height: 100%; min-height: 220px;
   display: flex !important; flex-direction: column; align-items: center; justify-content: center; gap: 12px;
-  cursor: zoom-in !important; padding: 4px !important;
+  cursor: zoom-in !important; padding: 6px 4px !important;
 }
 .gow-book-sketch-btn:disabled { cursor: default !important; }
 .gow-book-sketch-btn img {
-  width: 98%; height: 94%; max-width: 100%; max-height: 100%; object-fit: contain; display: block;
+  width: 96%; flex: 1 1 auto; min-height: 0; max-width: 100%; max-height: 82%; object-fit: contain; display: block;
   mix-blend-mode: multiply; opacity: .94; transition: transform .22s ease;
 }
 .gow-book-sketch-btn.is-clue img {
-  width: 96%; height: auto; max-height: 76%;
+  flex: 0 1 auto; width: 96%; height: auto; max-height: 70%;
   mix-blend-mode: normal; border: 2px solid rgba(58, 45, 29, .58); border-radius: 2px;
   box-shadow: 0 8px 22px rgba(0, 0, 0, .40);
 }
-.gow-book-clue-hint {
-  font-size: 12px; font-style: italic; color: rgba(54, 44, 32, .82); text-align: center; white-space: normal;
+.gow-book-flap-caption {
+  flex: none; width: 84%; padding-top: 9px;
+  border-top: 1px solid rgba(68, 50, 32, .26);
+  display: flex; flex-direction: column; align-items: center; gap: 3px;
+  text-align: center; white-space: normal; mix-blend-mode: multiply;
+}
+.gow-book-flap-title {
+  font-family: var(--gow-book-display); font-size: 12px; font-weight: 600;
+  letter-spacing: .20em; text-transform: uppercase; color: #362719;
+  line-height: 1.25;
+}
+.gow-book-flap-sub {
+  font-family: var(--gow-book-serif); font-size: 12.5px; font-style: italic;
+  color: rgba(66, 50, 34, .80); line-height: 1.3;
 }
 .gow-book-sketch-btn:not(:disabled):hover img { transform: scale(1.04); }
 .gow-book-sketch-btn.is-masked img { filter: brightness(0) blur(5px); opacity: .20; }
@@ -1332,11 +1553,15 @@ html.gow-fs .leaflet-tooltip.gow-fs-tip::before { border-top-color: rgba(200, 16
 @media (max-width: 1360px) {
   .gow-book-stage { grid-template-columns: 56px 0px minmax(0, 1fr); padding: 0 10px 0 4px; }
   .gow-book-stage.is-cat-open { grid-template-columns: 56px 196px minmax(0, 1fr); }
-  .gow-book-spread { grid-template-columns: minmax(0, 1fr) clamp(260px, 28vw, 370px); }
-  .gow-book-stage.is-cat-open .gow-book-spread { grid-template-columns: minmax(0, 1fr) clamp(140px, 16vw, 220px); }
+  .gow-book-spread { grid-template-columns: minmax(0, 1fr) clamp(250px, 27vw, 360px); }
+  .gow-book-stage.is-cat-open .gow-book-spread { grid-template-columns: minmax(0, 1fr) clamp(150px, 16vw, 220px); }
   .gow-book-rail { padding: 42px 10px 34px 12px; }
   .gow-book-cat { font-size: 14px; padding: 9px 10px !important; }
-  .gow-book-flap { padding: 18px 18px 20px 28px; }
+  .gow-book-flap { padding: 18px 18px 18px 28px; }
+  .gow-book-page.is-left .gow-book-banner { margin: 22px clamp(38px, 11%, 56px) 4px clamp(24px, 7.8%, 40px); }
+  .gow-book-page.is-right .gow-book-banner { margin: 22px clamp(24px, 7.8%, 40px) 4px clamp(38px, 11%, 56px); }
+  .gow-book-list { margin-bottom: clamp(18px, 3.2vh, 28px); padding: 8px clamp(40px, 11.5%, 60px) 24px clamp(24px, 7.5%, 38px); }
+  .gow-book-page-scroll { margin-bottom: clamp(18px, 3.2vh, 28px); padding: 4px clamp(38px, 10.5%, 54px) 26px clamp(42px, 11.8%, 62px); }
 }
 @media (max-width: 960px) {
   .gow-book-float-top { top: 8px; right: 10px; opacity: 1; }

@@ -17,6 +17,11 @@ PRIVATE_WORDS = [bytes.fromhex(s).decode('utf-8') for s in (
 )]
 APPROVED_SUPPORT_HANDLE = bytes.fromhex('616c657873616e646572373230').decode('utf-8')
 APPROVED_SUPPORT_URL = 'https://' + APPROVED_SUPPORT_HANDLE + '.github.io/continue/#support'
+APPROVED_SUPPORT_URLS = (
+    APPROVED_SUPPORT_URL,
+    'https://ko-fi.com/' + APPROVED_SUPPORT_HANDLE,
+    'https://patreon.com/' + APPROVED_SUPPORT_HANDLE,
+)
 APPROVED_SUPPORT_FILES = {'README.md', 'README.ru.md', '.github/FUNDING.yml'}
 APPROVED_DOC_SCREENSHOTS = {
     'docs/screenshot.png',
@@ -89,7 +94,10 @@ def inspect_file(name, data):
     except (ValueError, zlib.error, struct.error):
         issues.append('invalid PNG metadata')
         text = ''
-    scan_text = text.replace(APPROVED_SUPPORT_URL, '') if name in APPROVED_SUPPORT_FILES else text
+    scan_text = text
+    if name in APPROVED_SUPPORT_FILES:
+        for sup_url in APPROVED_SUPPORT_URLS:
+            scan_text = scan_text.replace(sup_url, '')
     if name == '.github/FUNDING.yml':
         scan_text = scan_text.replace('patreon: ' + APPROVED_SUPPORT_HANDLE, '').replace('ko_fi: ' + APPROVED_SUPPORT_HANDLE, '')
     for label, pattern in PATTERNS.items():

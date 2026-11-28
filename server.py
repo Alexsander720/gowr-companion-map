@@ -23,7 +23,7 @@ import gow_pins
 import gow_favors
 import gow_codex
 
-VERSION = '0.4.0'
+VERSION = '0.5.1'
 REALMS = ('midgard', 'vanaheim', 'svartalfheim', 'alfheim', 'jotunheim', 'asgard',
           'helheim', 'niflheim', 'muspelheim', 'sindris-house')
 
