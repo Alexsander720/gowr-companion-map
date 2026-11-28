@@ -15,8 +15,15 @@ PRIVATE_WORDS = [bytes.fromhex(s).decode('utf-8') for s in (
     '62616e3133', '61706f67756c6179', '416c657873616e646572', '40676d61696c',
     '416c6578', 'd09ed180d0bad0b5d181d182d180', '6f7263686573747261',
 )]
-APPROVED_SUPPORT_URL = 'https://' + bytes.fromhex('616c657873616e646572373230').decode('utf-8') + '.github.io/continue/#support'
+APPROVED_SUPPORT_HANDLE = bytes.fromhex('616c657873616e646572373230').decode('utf-8')
+APPROVED_SUPPORT_URL = 'https://' + APPROVED_SUPPORT_HANDLE + '.github.io/continue/#support'
 APPROVED_SUPPORT_FILES = {'README.md', 'README.ru.md', '.github/FUNDING.yml'}
+APPROVED_DOC_SCREENSHOTS = {
+    'docs/screenshot.png',
+    'docs/screenshot_realms.png',
+    'docs/screenshot_routing.png',
+    'docs/screenshot_codex.png',
+}
 PATTERNS = {
     'absolute Windows path': re.compile(r'(?<![A-Za-z0-9])[A-Za-z]:[\\/]'),
     'private identifier': re.compile('|'.join(re.escape(s) for s in PRIVATE_WORDS), re.I),
@@ -74,7 +81,7 @@ def inspect_file(name, data):
         p.name in PROHIBITED_NAMES or p.name.startswith('GOWRSAVE') or
         p.suffix.lower() in {'.wad','.texpack','.dcb','.sav','.save','.dds','.npy'} or
         (p.stem in REALMS and p.suffix == '.json') or
-        (p.suffix.lower() in {'.png','.jpg','.jpeg','.webp'} and name != 'docs/screenshot.png')):
+        (p.suffix.lower() in {'.png','.jpg','.jpeg','.webp'} and name not in APPROVED_DOC_SCREENSHOTS)):
         issues.append('prohibited bundled data')
     # The approved application screenshot is still checked for textual metadata.
     try:
@@ -83,6 +90,8 @@ def inspect_file(name, data):
         issues.append('invalid PNG metadata')
         text = ''
     scan_text = text.replace(APPROVED_SUPPORT_URL, '') if name in APPROVED_SUPPORT_FILES else text
+    if name == '.github/FUNDING.yml':
+        scan_text = scan_text.replace('patreon: ' + APPROVED_SUPPORT_HANDLE, '').replace('ko_fi: ' + APPROVED_SUPPORT_HANDLE, '')
     for label, pattern in PATTERNS.items():
         if pattern.search(scan_text):
             issues.append(label)

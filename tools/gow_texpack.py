@@ -11,6 +11,7 @@ Nothing is written to the game directory; only numpy + Pillow are needed.
 """
 from __future__ import annotations
 
+from functools import lru_cache
 import io
 import json
 import struct
@@ -61,25 +62,49 @@ def _read_blocks(f, first, table_start, count):
     return blocks
 
 
-def find_textures(hashes, texpack_dir=None):
-    texpack_dir = Path(texpack_dir) if texpack_dir else wad_dir()
-    """hash -> {'texpack': path, 'blocks': [...]} for the first texpack holding it."""
-    wanted, found = set(hashes), {}
-    packs = sorted(texpack_dir.glob('*.texpack'), key=lambda p: (p.name != 'root.texpack', p.name))
+@lru_cache(maxsize=2)
+def _texpack_toc_index(dir_str: str, stamp: tuple) -> dict[int, tuple[str, int, int, int]]:
+    """Build an in-memory hash -> (pack_path, first_block, block_table, block_count) index."""
+    index: dict[int, tuple[str, int, int, int]] = {}
+    packs = sorted(Path(dir_str).glob('*.texpack'), key=lambda p: (p.name != 'root.texpack', p.name))
     for pack in packs:
-        if not wanted:
-            break
+        pack_str = str(pack)
         with pack.open('rb') as f:
             f.seek(0x20)
             _, block_count, block_table, tex_count = struct.unpack('<IIII', f.read(16))
             f.seek(0x38)
             table = f.read(tex_count * 24)
             for h, _user, first in struct.iter_unpack('<QQQ', table):
-                if h in wanted:
-                    blocks = _read_blocks(f, first, block_table, block_count)
-                    if blocks:
-                        found[h] = dict(texpack=pack, blocks=blocks)
-                        wanted.discard(h)
+                if h not in index:
+                    index[h] = (pack_str, first, block_table, block_count)
+    return index
+
+
+def find_textures(hashes, texpack_dir=None):
+    texpack_dir = Path(texpack_dir) if texpack_dir else wad_dir()
+    """hash -> {'texpack': path, 'blocks': [...]} for the first texpack holding it."""
+    wanted = set(hashes)
+    if not wanted or not texpack_dir.is_dir():
+        return {}
+    packs = sorted(texpack_dir.glob('*.texpack'), key=lambda p: (p.name != 'root.texpack', p.name))
+    if not packs:
+        return {}
+    stamp = tuple((p.name, p.stat().st_size, p.stat().st_mtime_ns) for p in packs)
+    index = _texpack_toc_index(str(texpack_dir), stamp)
+    by_pack: dict[str, list[tuple[int, int, int, int]]] = {}
+    for h in wanted:
+        rec = index.get(h)
+        if rec:
+            pack_str, first, block_table, block_count = rec
+            by_pack.setdefault(pack_str, []).append((h, first, block_table, block_count))
+    found = {}
+    for pack_str, items in by_pack.items():
+        pack = Path(pack_str)
+        with pack.open('rb') as f:
+            for h, first, block_table, block_count in items:
+                blocks = _read_blocks(f, first, block_table, block_count)
+                if blocks:
+                    found[h] = dict(texpack=pack, blocks=blocks)
     return found
 
 
@@ -232,7 +257,13 @@ def decode(gnf):
         dt = {10: '<f2', 11: '<u2', 13: '<i2'}[dxgi]
         return info, np.frombuffer(linear, dt).reshape(h, w, 4)
     if dxgi in (95, 96):
-        import imagecodecs
+        try:
+            import imagecodecs
+        except ImportError:
+            decoder_dir = Path(__file__).resolve().parents[1] / 'cache' / 'decoder'
+            if decoder_dir.is_dir() and str(decoder_dir) not in sys.path:
+                sys.path.insert(0, str(decoder_dir))
+            import imagecodecs
         return info, imagecodecs.bcn_decode(linear, 6 if dxgi == 95 else -6,
                                             shape=(h, w, 3)).astype(np.float32)
     from PIL import Image

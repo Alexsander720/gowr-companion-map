@@ -1,7 +1,24 @@
-.leaflet-container { position:relative; overflow:hidden; touch-action:none; cursor:grab; }
-.leaflet-container:active { cursor:grabbing; }
-.leaflet-tile-pane, .leaflet-marker-pane { position:absolute; inset:0; pointer-events:none; }
+.leaflet-container { position:relative; overflow:hidden; touch-action:none; cursor:grab; user-select:none; -webkit-user-select:none; }
+.leaflet-container.dragging, .leaflet-container:active { cursor:grabbing; }
+.gow-gl-canvas { position:absolute; inset:0; width:100%; height:100%; display:block; z-index:0; }
+.leaflet-tile-pane { position:absolute; inset:0; pointer-events:none; display:none; z-index:0; }
+.gow-map-stage.gl-fallback .gow-gl-canvas { display:none; }
+.gow-map-stage.gl-fallback .leaflet-tile-pane { display:block; }
+.gow-label-pane { position:absolute; inset:0; pointer-events:none; z-index:2; overflow:hidden; }
+.gow-region-label {
+  position:absolute; pointer-events:none; white-space:nowrap;
+  font-family:'Segoe UI','Trebuchet MS','Cinzel',system-ui,sans-serif;
+  font-size:13px; font-weight:600; letter-spacing:.14em; text-transform:uppercase;
+  color:rgba(247, 250, 254, .92);
+  text-shadow:0 1px 2px rgba(0,0,0,.98), 0 0 8px rgba(0,0,0,.90), 1px 0 2px rgba(0,0,0,.85), -1px 0 2px rgba(0,0,0,.85);
+  opacity:.90;
+}
+.gow-region-label.is-major {
+  font-size:16px; font-weight:700; letter-spacing:.16em; color:#f9fcff; opacity:.96;
+}
+.leaflet-marker-pane { position:absolute; inset:0; pointer-events:none; z-index:3; }
 .leaflet-tile { position:absolute; user-select:none; pointer-events:none; }
 .leaflet-marker-icon { position:absolute; pointer-events:auto; cursor:pointer; }
 .leaflet-marker-icon[aria-hidden="true"] { pointer-events:none; }
-.leaflet-tooltip { position:absolute; pointer-events:none; z-index:5000; white-space:nowrap; transform:translate(-50%,-110%); }
+.leaflet-tooltip { position:absolute; pointer-events:none; z-index:5000; white-space:nowrap; transform:translate(-50%,-110%); transition:opacity .1s ease; }
+.leaflet-tooltip[hidden] { display:none !important; }

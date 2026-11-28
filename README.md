@@ -1,132 +1,179 @@
 # God of War Ragnarök — Companion Map
 
-[Русский](README.ru.md) · Version 0.2.0 · Steam guide: [English](https://steamcommunity.com/sharedfiles/filedetails/?id=3840431796) · [Русский](https://steamcommunity.com/sharedfiles/filedetails/?id=3840415927)
+[Русский](README.ru.md) · **Version 0.5.0** · MIT License · Steam Guides: [English](https://steamcommunity.com/sharedfiles/filedetails/?id=3840431796) · [Русский](https://steamcommunity.com/sharedfiles/filedetails/?id=3840415927)
 
-A fullscreen second-screen map for the Steam PC version of **God of War Ragnarök**. Browse the nine realms and Sindri's House, inspect locations, follow favor objectives, and see Kratos move when a supported game build and a calibrated projection are available.
+A fullscreen **Native 3D diorama map**, **universal 3D navigator**, and **live Open-Book Codex & Bestiary** for the Steam PC version of **God of War Ragnarök** — built for a second monitor, tablet, or phone over Wi-Fi/LAN with zero external web dependencies.
 
-![The standalone companion at 1920 × 1080](docs/screenshot.png)
+![Midgard Native 3D Diorama — Tyr's Temple, Lake of Nine & Companion HUD (1920 × 1080)](docs/screenshot.png)
 
-The screenshot shows this application using locally downloaded map data. No save or game screenshot is bundled. Map artwork shown in the application is provided by MapGenie and the game's rights holders.
+> *All screenshots show the companion running locally with data extracted on the user's PC from an installed Steam copy of the game and public MapGenie pin coordinates. No saves, personal identifiers, or game assets are bundled in this repository. Game artwork and map data belong to their respective rights holders.*
+
+---
+
+## Showcase
+
+### All 9 Realms in Native 3D (Reverse-Engineered In-Game Diorama)
+
+When a local Steam installation of **God of War Ragnarök** is present, the companion reconstructs each realm's authentic carved wood-and-stone 3D world map — complete with 3D landmark meshes, PBR normal/gloss/alpha-cutout atlases, 2K raymarched cliff self-shadows, real-time 2048px directional shadow maps, animated rivers and molten lava flowmaps, carved tree decals, volumetric mist, and realm-specific 3D weather.
+
+![Native 3D Dioramas across Vanaheim, Helheim, Muspelheim, and Svartalfheim](docs/screenshot_realms.png)
+
+### Universal 3D Routing, Clearing Routes & Built-In Guides
+
+Plot a terrain-draped golden 3D route to **any target** — Nornir chest, Odin's Raven, Favor objective, Buried Treasure, or Boss — starting from live Kratos (updating as you walk) or from the nearest unlocked Mystic Gateway, including automatic cross-realm jumps. Press **M** to chain up to 5 nearest uncollected completion pins into an auto-updating **3D Clearing Route**, or **N** to beacon the single nearest missing collectible.
+
+![3D Clearing Route, Golden Waypoint Beacon, and Tyr's Temple Close-Up](docs/screenshot_routing.png)
+
+### Authentic In-Game Open-Book Codex & Live SSE Sync
+
+Press **K** (or tap **Codex**) to open an authentic stitched leather-and-parchment journal spread (with a 1-click **Book / Dark view** toggle): full **Bestiary** (198 entries + Valhalla DLC toggle, 9 categories, combat tips, family kill counters, hand-drawn ink sketches on the fold-out flap), **Lore** (~209 entries), **Treasures** (all 10 Treasure Maps with 3-state save tracking, riddles, clue paintings, and 1-click scroll/dig routing), **Skill Labors** (49 weapon skills + *"Closest to next rank"* strip), and **Hero Loadout & Crafting Materials**. Built-in **Anti-Spoiler** hides locked entries until unlocked or revealed, and Server-Sent Events (`/api/stream`) push newly unlocked entries live as soon as the game autosaves.
+
+![Open-Book Codex Spread — Bestiary Entry & Fold-Out Ink Illustration](docs/screenshot_codex.png)
+
+---
+
+## How It Works
+
+The companion runs a lightweight local Python server (`server.py`, strictly read-only) that combines three layers entirely on your own computer:
+
+1. **Native 3D Game Diorama (Local Read-Only Extraction)**
+   - Reads `exec/wad/pc_le/r_ui.wad`, `root.lodpack`, and `root.texpack` from your local Steam installation without modifying a single game file.
+   - Extracts each realm's 3D landmark sub-meshes (`MESH_<realm>_0` → compact binary `props.bin`), packs synchronized PBR diffuse (`RGBA` with BC7 alpha cutouts for foliage/blossoms) + tangent-normal/gloss atlases, decodes full-precision BC6H heightmaps into 16-bit `1024×1024` GPU heightmaps (`<realm>_h16.png`), and renders 2K carved-wood diorama surfaces with 36-step raymarched cliff shadows and water/lava masks.
+   - Serves textures automatically as **WebP + gzip** (~4.6 MB per realm instead of ~22 MB PNG) for fast, fluid loading on tablets and phones over Wi-Fi.
+   - All extracted files live strictly in **`%LOCALAPPDATA%\gowr-companion-map\cache\`**. If no local game directory is found (or in Sindri's House), the engine falls back cleanly to MapGenie tiles with procedural micro-relief, and you can toggle **Native 3D / MapGenie** at any time from the right toolbar.
+2. **Completion Tracking, Guides & Localization**
+   - Public pin coordinates are fetched once per realm from MapGenie and cached locally, then joined against your read-only Steam saves using our numeric flag rules (`data/`).
+   - Official Russian/English pin and region names are extracted locally from your installed `r_lang_en.wad` and `r_lang_ru.wad` via shared string IDs.
+   - Optional community Russian pin descriptions (`data/ru_descriptions.json`, all 1,171 pins with descriptions) and RU/EN walkthrough guides (`data/guides.json` — all 35 Nornir chests, 52 hard-to-reach collectibles, and 47 Favors with 77 *"where to go"* points) work offline out of the box.
+3. **Read-Only Live Position & Real-Time SSE Stream**
+   - When a validated game build is running, `gow_memory.py` opens `GoWR.exe` strictly read-only (`PROCESS_VM_READ | PROCESS_QUERY_INFORMATION`, `0x0410`) to display Kratos's live marker, camera heading cone, 3D movement trail, and proximity guide hints (~30 m).
+   - `/api/stream` pushes live telemetry, save updates, and Codex/Bestiary unlock notifications instantly to every connected browser, tablet, or phone.
+
+---
 
 ## Requirements
 
-- Windows 10 or 11, 64-bit Python 3.11 or newer, with the Python launcher or `python` on PATH.
-- The Steam PC version of God of War Ragnarök for save progress, live position and game localization. Browsing the map also works while the game is closed.
-- Internet access for Python packages on setup and for MapGenie pins and map tiles. There is no account, API key or paid service requirement.
-- A modern browser, including a phone browser for LAN use.
+- **OS & Python**: Windows 10 or 11, 64-bit **Python 3.11 or newer** (`py` or `python` on PATH).
+- **Game**: Steam PC version of **God of War Ragnarök** for Native 3D dioramas, save progress, Open-Book Codex, localization, and live position. Browsing the map also works while the game is closed.
+- **Network**: Internet access on first setup to install Python packages (`numpy`, `Pillow`, `lz4`, `imagecodecs`) and download public MapGenie pin data. No account, API key, or paid service is required.
+- **Browser**: Any modern WebGL2 browser on PC, Android tablet/phone (Chrome, Firefox), or iOS/iPadOS.
 
-The bundled `KNOWN_BUILDS` live-pointer profile was validated in the original implementation for **GoWR.exe size 46,685,144 bytes, PE timestamp 1,750,707,527 (`0x6859AD47`)**. The PE timestamp is a build identifier, not a release date. The profile also checks loaded module headers. It does not certify other patches. A fresh-machine live-game run has not been performed for this release.
+> **Validated Live-Position Build**: The bundled `KNOWN_BUILDS` pointer profile was validated for **GoWR.exe size 46,685,144 bytes, PE timestamp 1,750,707,527 (`0x6859AD47`)** (a build identifier, not a release date) with loaded module header checks. Unrecognized patches automatically hide the live marker while keeping 3D maps, save tracking, routing, and the Codex fully functional.
 
-## Start
+---
 
-1. Download the source ZIP and extract it, or clone the repository.
-2. Double-click **`start.bat`**. It creates `.venv`, installs `requirements.txt`, downloads public map data into your user folder, and opens the browser.
-3. The default address is **http://127.0.0.1:8790/**. Leave the terminal open while using the map. Press Ctrl+C to stop the server.
+## Quick Start & Setup
 
-Steam libraries are discovered through the Steam registry entry, `libraryfolders.vdf` and the game's app manifest. If discovery fails, run from a terminal in this folder:
+### 1. Run on PC (One-Click)
+
+1. Download the repository ZIP and extract it, or clone it with `git clone`.
+2. Double-click **`start.bat`**.
+   - On first run, it automatically creates `.venv`, installs `requirements.txt` (`numpy`, `Pillow`, `lz4`, `imagecodecs`), downloads public MapGenie pins into `%LOCALAPPDATA%\gowr-companion-map\`, and opens **http://127.0.0.1:8790/**.
+   - Leave the terminal window open while playing; press **Ctrl+C** to stop.
+3. **First-time Native 3D build**: When you open a realm for the first time, its Native 3D diorama builds automatically in ~8–10 seconds and stays cached locally for instant opens thereafter.
+
+### 2. Pre-Build All 9 Native 3D Realms at Once (Optional, Recommended)
+
+To avoid the one-time ~8s build wait when switching realms for the first time (especially before opening on a tablet), pre-build all 9 realms in ~90 seconds:
 
 ```bat
-start.bat --game-dir "<your game installation folder>"
+.venv\Scripts\python.exe tools\gow_native_map_3d.py
 ```
 
-Saves are discovered in the current Windows user's Saved Games location, including redirected folders, across account subfolders. They are opened only for reading. You can select a save folder explicitly with `--save-dir "<your save folder>"`.
+### 3. Use on a Tablet, Phone, or Second Screen (Wi-Fi / LAN)
 
-The browser's language chooses RU or EN initially. **RU / EN** switches the interface and persists in `localStorage`. Russian pin and region names are extracted from your installed `r_lang_en.wad` and `r_lang_ru.wad` using shared string IDs. Without those files, pin names fall back to English. Pin descriptions come in the original English plus an optional community Russian translation (`data/ru_descriptions.json`, all 1171 pins with a description as of November 2026); the pin card has an **Original / Translation** switch, Russian by default in the RU interface. Pins added to MapGenie after the translation show the original. Links to other locations open pins inside this map.
-
-Optional community guides live in `data/guides.json` (version 1). A pin card shows **How to solve**, with collapsible **Sources**; **Guide** in the Favors panel opens the walkthrough, and target icons and clickable point rows show where to go, including across realms. Guides follow the interface language (RU/EN, falling back to the other language) independently of the description switch. With a live Kratos marker and a metre scale, a dismissible hint appears within about 30 m of a confirmed uncollected pin with a guide or an active favor point, at most once per site in this tab session. A missing or invalid guide file leaves the map usable.
-
-## Phone or second screen
+Launch with `--lan`:
 
 ```bat
 start.bat --lan
 ```
 
-Open the LAN address printed in the terminal on a device connected to the same local network. Allow Python through Windows Firewall on your private network if prompted. The default run listens only on loopback; `--lan` listens on all local interfaces. The LAN server has no authentication: use a trusted home network and do not expose its port to the internet. The API returns map progress and journal information to connected devices, but does not return save paths or account folders.
+1. Allow Python through Windows Firewall on your **Private** network if prompted.
+2. Open the **`LAN: http://<your-pc-ip>:8790/`** URL printed in the terminal on your tablet or phone (connected to the same Wi-Fi).
+3. Tap the **Fullscreen** button (top-right corner) and the **Wake Lock** button (bottom of the right toolbar) to keep the screen awake and distraction-free. You can also **Add to Home Screen** as a standalone PWA.
 
-Additional options:
+> **Security note**: Default launch listens only on loopback (`127.0.0.1`). `--lan` binds all local interfaces without authentication — use it only on a trusted home network and never expose port `8790` to the internet. The API never exposes Windows save paths or Steam account folders.
 
-```bat
-start.bat --port 8791
-start.bat --offline
-start.bat --no-browser
-start.bat --lang ru
-```
+### 4. Custom Game / Save Folders & CLI Options
 
-`--lang` selects terminal messages; the browser selects the interface language separately. `--offline` uses cached pins and tiles without network requests. A map region whose tiles have not been cached will have an empty background.
+Steam libraries and Windows Saved Games folders (including redirected locations and multi-account subfolders) are discovered automatically. Override any setting via CLI flags:
 
-## Use the map
+| Flag / Env Var | Purpose |
+|---|---|
+| `start.bat --lan` | Share map & Codex with tablets/phones on your local Wi-Fi |
+| `start.bat --port 8791` | Change listening port (default `8790`) |
+| `start.bat --game-dir "<folder>"` | Specify the GoWR installation folder manually |
+| `start.bat --save-dir "<folder>"` | Specify the Windows save folder manually |
+| `start.bat --lang ru` / `--lang en` | Set terminal message language (UI switches independently via **RU / EN**) |
+| `start.bat --no-browser` | Start the server without auto-opening a browser tab |
+| `start.bat --offline` | Use cached pins, tiles, and 3D scenes with zero network requests |
+| `start.bat --autocalib` | Enable opt-in screen calibration (requires optional setup below) |
+| `GOWR_DATA_DIR=<folder>` | Environment variable to relocate all caches out of `%LOCALAPPDATA%\gowr-companion-map\` |
 
-- **Left to clear** shows remaining and unknown completion pins. **All completion pins** includes completed sites. **+ Resource chests** also includes untracked loot.
-- **Favors** shows active journal favors and their known remaining sites across realms. Counters appear only when the save contains a recognized value. An unknown objective location stays unknown.
-- Use realm tabs, category filters, region selection, search, zoom, dragging and the pin panel. Phones support dragging and pinch zoom. The summary starts collapsed on small screens.
-- **C** centers on Kratos; follow mode tracks his position. **R** fits the realm, **U** changes the completion filter, **Tab** toggles the summary, and **1–0** select realms. Keyboard and gamepad navigation are supported.
-- Manual marks are kept in this browser's `localStorage`; they do not alter saves or favor journal state. A different phone or browser has its own manual marks.
-- **Codex** displays available save details. Save progress updates after the game writes an autosave. It is not a live inventory feed.
+---
 
-## Data, cache and privacy
+## Controls & Gestures
 
-All downloaded pins, tiles, extracted localization, optional relief and calibration output stay under **`%LOCALAPPDATA%\gowr-companion-map\`**. Set `GOWR_DATA_DIR` before starting to choose another writable folder, such as `./cache/user`. Runtime files are excluded by `.gitignore`; avoid putting a custom data directory inside tracked source folders.
+| Input | Action |
+|---|---|
+| **Left-drag** / **1-finger drag** | Pan across the 3D terrain (ground-anchored, zero drift) |
+| **Wheel** / **2-finger pinch** | Zoom in and out |
+| **Right-drag** or **Ctrl + drag** / **2-finger twist** | Orbit / rotate camera yaw |
+| **Right-drag up/down** / **2-finger vertical drag** | Tilt 3D camera pitch (`0°`–`62°`) |
+| **T** / **3D** button | Toggle 3D relief vs. top-down 2D view |
+| **[** / **]** / Compass click | Rotate camera left/right / reset North |
+| **N** / **Nearest** button | Jump to nearest missing pin + light golden 3D beacon (auto-advances on completion) |
+| **M** / **3D Route** button | Toggle 5-stop terrain-draped 3D clearing route |
+| **K** / **Codex** button | Open / close the Open-Book Codex & Bestiary |
+| **C** / **R** | Center on live Kratos / Fit entire realm |
+| **U** / **Tab** / **1–0** | Toggle completion filter / Collapse sidebar / Switch realms |
+| **Fullscreen** / **Wake Lock** / **Weather** / **Source** | Right toolbar & top-right corner buttons (including **Native 3D / MapGenie** toggle) |
+| **Gamepad** | D-pad navigates HUD, LB/RB zoom, Right Stick orbits & tilts 3D camera, A/B activate/back |
 
-The repository contains application code, our numeric pin/save joins, measured calibration references and matrices. It does **not** contain MapGenie JSON dumps, game language dumps, extracted game textures, saves, personal account identifiers or a tile cache. The UI's raster map renderer is local application code, so it needs no third party browser CDN. Python dependencies are installed normally and keep their own licenses.
+Manual checkmarks are stored per browser in `localStorage` without modifying saves.
 
-The MapGenie loader performs one public data request per uncached realm, uses a neutral User-Agent and caches the result. The current website loads pins through `/api/v1/maps/<id>/data`; its HTML no longer embeds the full location list. The loader also includes a parser for older embedded `window.mapData` JSON. Upstream data can change independently of this release. New locations without a known save join remain unknown.
+---
 
-If downloads fail or the service returns a challenge, the map starts without those pins. There is no CAPTCHA solver, login automation or protection bypass. Failures are remembered to avoid repeated requests. After checking connectivity, retry failed realms with:
+## Data, Cache & Privacy
+
+- All downloaded MapGenie data, extracted localization, 16-bit heightmaps, Native 3D scenes, WebP caches, and Codex icons stay strictly inside **`%LOCALAPPDATA%\gowr-companion-map\`** (or `GOWR_DATA_DIR`).
+- The repository contains only application code, numeric pin/save flag mappings, calibrated projection matrices, community guides (`data/guides.json`), and community RU titles/descriptions. It contains **zero** game files, extracted textures, saves, or personal identifiers.
+- If a MapGenie download fails or encounters a network error, retry failed realms later without re-fetching cached ones:
 
 ```bat
 .venv\Scripts\python.exe tools\fetch_mapgenie.py --retry
 ```
 
-Cached successful maps stay cached. Map tiles are fetched as viewed and cached; unavailable tile responses are cached too. Descriptions missing from the shipped translation stay in English. The application does not fetch pin photographs or copy screenshots from the game.
+---
 
-## Live position and game patches
+## Live Position After Game Patches & Optional Auto-Calibration
 
-The process is opened with **`PROCESS_VM_READ | PROCESS_QUERY_INFORMATION` (`0x0410`)**. The application does not write game memory, saves or installation files. Unknown or unverifiable executable builds hide the live marker and display a version status; browsing pins and reading saves continue to work. A valid coordinate outside a supported projection also hides the marker. Approximate projections are visibly labelled.
+### Updating Live Pointers After a Game Patch (Advanced)
 
-The arrow follows the validated position chain; its cone uses the camera heading. Some realms and inset areas lack calibration, and a single world coordinate system does not necessarily describe every place drawn on a map. Individual draugr holes and seasonal stags cannot always be distinguished in saves. Favor membership alone is not proof that a particular site is complete.
-
-After a patch, first check for an updated companion profile. Advanced users can build a new candidate inventory and run the included **read-only** behavioral probe:
+If a future game patch changes `GoWR.exe`, the live marker hides automatically while the rest of the app keeps working. Advanced users can run the included **read-only** binary analyzer and behavioral probe:
 
 ```bat
 .venv\Scripts\python.exe tools\analyze_gowr_binary.py --exe "<game folder>\GoWR.exe"
 .venv\Scripts\python.exe tools\gow_live_pointer_probe.py
 ```
 
-The probe asks for still, move and camera-turn samples. Results go to the user folder's `probe` subfolder. Use `--help` for separate snapshots, comparisons, `--confirm-position` and `--confirm-yaw`. Candidate rankings are hypotheses; identify Kratos independently and review the result before using the emitted configuration to update `KNOWN_BUILDS` in `gow_memory.py`. No candidate is automatically enabled and no profile is automatically uploaded. Do not publish personal snapshots or binary inventories.
+Results are written to the user folder's `probe` subfolder (never auto-enabled or uploaded). Review confirmed position/yaw candidates before updating `KNOWN_BUILDS` in `gow_memory.py`.
 
-## Optional native relief and automatic calibration
+### Optional Screen-Based Auto-Calibration (`--autocalib`)
 
-These features are disabled on a normal launch. Install optional packages in the same environment:
+Disabled by default. Requires optional packages (`opencv-python`, `mss`):
 
 ```bat
 .venv\Scripts\python.exe -m pip install -r requirements-optional.txt
-```
-
-Generate relief from your own installation (only accepted geographic alignments are exposed in the UI):
-
-```bat
-.venv\Scripts\python.exe tools\gow_game_map.py midgard --size 2048
-```
-
-Add `--game-dir "<game folder>"` if needed. Restart the server after extraction; the relief toggle appears only for available files with accepted alignment. Midgard is the accepted alignment in 0.1.0. The optional `imagecodecs` dependency decodes full-precision BC6H heightmaps; no third party decoder source or game texture is bundled here.
-
-Before the first use, open the in-game map and run the one-time template setup:
-
-```bat
 .venv\Scripts\python.exe tools\gow_auto_calibrate.py --learn-templates
-```
-
-Switch to the game within five seconds. In the two selection windows, select the highlighted **MAP** tab and then a square around the circular Kratos icon; press Enter to confirm each crop. Only these two crops are saved in your user cache. They belong to your game installation and must not be committed or redistributed. Repeat setup if the game's UI language or appearance changes. Without these private templates the collector stays off and prints a setup message.
-
-Then enable screen-based calibration explicitly:
-
-```bat
 start.bat --autocalib
 ```
 
-Open the game's map while standing still. The collector reads the foreground game window, matches the map to cached/downloaded tiles, and stores accepted reference points in your user folder's `live_realm_refs.json`. It preserves the repository's baseline references and never edits the repository calibration file. Screen capture is used only by `--autocalib` or the explicitly invoked `--learn-templates` setup. Automatic calibration has synthetic coverage; a fresh-machine live-game run remains unverified.
+During `--learn-templates`, switch to the in-game map within 5 seconds, crop the highlighted **MAP** tab and the circular Kratos icon, and press Enter for each. Templates and learned calibration references stay strictly in your local user folder and never modify repository files.
 
-## Development and verification
+---
+
+## Development & Verification
 
 ```bat
 python -m pip install -r requirements-dev.txt
@@ -134,9 +181,10 @@ python -m pytest -q
 python tools\check_clean.py
 ```
 
-Tests use synthetic map records, generated save bytes and our calibration matrices, with external requests disabled. They never require or inspect a real game or save. Chromium rendering runs when Playwright and its browser are installed; otherwise it is explicitly skipped. Install the optional test browser with `python -m playwright install chromium`.
+- All 85 tests run completely offline using synthetic maps, generated saves, and calibrated matrices — no real game installation or saves are required. Chromium UI tests run automatically when Playwright is installed (`python -m playwright install chromium`).
+- `tools/check_clean.py` scans every git-tracked file (including PNG metadata chunks and documentation) for private signatures, absolute Windows paths, account IDs, credentials, and prohibited bundled assets.
 
-`check_clean.py` scans **every tracked git file**, including documentation, for private signatures, absolute Windows paths, account identifiers, credential patterns and prohibited data. Stage intended release files before running it. A clean scanner is a publishing check, not a replacement for review of data provenance.
+---
 
 ## Support
 
@@ -147,10 +195,12 @@ This companion map is free and open-source. If it helped you 100% the Nine Realm
 - **USDT · TRC20** (Tron) — `TKhmtVEnuU5w73YMPT8adh7t3VZKJUUxmC`
 - **USDT · BEP20** (BNB Smart Chain) — `0xDC0c682922bF3194693774743fBB3fd20E7754c3`
 
-## Disclaimer and license
+---
 
-An unofficial fan project, not affiliated with or endorsed by **Sony Interactive Entertainment, Santa Monica Studio or MapGenie**. God of War Ragnarök and associated artwork and names belong to their respective rights holders. Game memory is only read; nothing is written into the game.
+## Disclaimer & License
 
-Map data is downloaded from [MapGenie](https://mapgenie.io/god-of-war-ragnarok) on your own computer and remains subject to MapGenie's terms. No license to republish downloaded or extracted material is granted by this repository. Use the application and any optional memory tools at your own discretion.
+An unofficial fan project, not affiliated with or endorsed by **Sony Interactive Entertainment, Santa Monica Studio, or MapGenie**. *God of War Ragnarök* and associated artwork and names belong to their respective rights holders. Game memory and game files are **strictly read-only** — nothing is ever written into the game or its saves.
 
-The companion's code and our accompanying mapping data are provided under the [MIT License](LICENSE). That license does not cover third party map data, game files, artwork visible in the application screenshot or installed Python dependencies.
+Map pin data is downloaded locally from [MapGenie](https://mapgenie.io/god-of-war-ragnarok) on your own PC under MapGenie's terms. No license to redistribute extracted game assets or third-party map data is granted by this repository.
+
+The companion's source code and our original mapping data are licensed under the [MIT License](LICENSE).

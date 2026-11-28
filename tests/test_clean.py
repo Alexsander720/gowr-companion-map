@@ -22,6 +22,10 @@ def test_scanner_detects_private_material():
 def test_geometry_and_approved_screenshot_are_allowed():
     assert inspect_file('data/own.json',b'{"matrix":[[0.12345678901234567,1,2]]}') == []
     assert inspect_file('docs/screenshot.png',b'PNG application screenshot') == []
+    assert inspect_file('docs/screenshot_realms.png',b'PNG application screenshot') == []
+    assert inspect_file('docs/screenshot_routing.png',b'PNG application screenshot') == []
+    assert inspect_file('docs/screenshot_codex.png',b'PNG application screenshot') == []
+    assert 'prohibited bundled data' in inspect_file('docs/unapproved.png',b'PNG')
 
 
 def test_png_metadata_is_scanned_but_compressed_pixels_are_not_text():

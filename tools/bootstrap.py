@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def prepare(offline=False, runner=subprocess.run):
-    present = all(importlib.util.find_spec(name) is not None for name in ('numpy', 'PIL', 'lz4'))
+    present = all(importlib.util.find_spec(name) is not None for name in ('numpy', 'PIL', 'lz4', 'imagecodecs'))
     if offline:
         if not present:
             print('Offline startup needs installed core packages. Run start.bat online once.')

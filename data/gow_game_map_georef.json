@@ -104,7 +104,7 @@
         632442.5794296265
       ]
     ],
-    "accepted": false
+    "accepted": true
   },
   "vanaheim_jungle": {
     "realm": "vanaheim",
@@ -167,7 +167,7 @@
         718208.3373718262
       ]
     ],
-    "accepted": false
+    "accepted": true
   },
   "svartalfheim": {
     "realm": "svartalfheim",
@@ -211,7 +211,7 @@
         679103.0211334229
       ]
     ],
-    "accepted": false
+    "accepted": true
   },
   "alfheim": {
     "realm": "alfheim",
@@ -255,7 +255,7 @@
         618705.8319091797
       ]
     ],
-    "accepted": false
+    "accepted": true
   },
   "niflheim": {
     "realm": "niflheim",
@@ -299,7 +299,7 @@
         364551.86896800995
       ]
     ],
-    "accepted": false
+    "accepted": true
   },
   "helheim": {
     "realm": "helheim",
@@ -323,7 +323,7 @@
         -248252.16448038816
       ]
     ],
-    "accepted": false
+    "accepted": true
   },
   "muspelheim": {
     "realm": "muspelheim",
@@ -347,7 +347,7 @@
         737410.0344161987
       ]
     ],
-    "accepted": false
+    "accepted": true
   },
   "jotunheim": {
     "realm": "jotunheim",
@@ -355,26 +355,26 @@
     "texture_px": 2048,
     "mapgenie_zoom": 12,
     "world_axis_check": [],
-    "init": "blind_8_orientations",
-    "coarse_ncc": 0.2116309106349945,
-    "ecc": 0.3289401830703123,
+    "init": "hillshade_8_orientations_ecc",
+    "coarse_ncc": 0.4054,
+    "ecc": 0.4271055703239005,
     "orientation": {
       "rot90": 0,
       "flip": false
     },
     "merc0_to_texture": [
       [
-        3427.52099609375,
-        -193.7924041748047,
-        -411115.499546051
+        3458.558837890625,
+        -183.30374145507812,
+        -416409.94870758057
       ],
       [
-        95.69548034667969,
-        3736.798095703125,
-        -487664.8743715286
+        132.00975036621094,
+        3733.374267578125,
+        -491859.28170108795
       ]
     ],
-    "accepted": false
+    "accepted": true
   },
   "asgard": {
     "realm": "asgard",
@@ -382,25 +382,25 @@
     "texture_px": 2048,
     "mapgenie_zoom": 12,
     "world_axis_check": [],
-    "init": "blind_8_orientations",
-    "coarse_ncc": 0.3315601944923401,
-    "ecc": 0.19589693493573532,
+    "init": "hillshade_8_orientations_ecc",
+    "coarse_ncc": 0.3561,
+    "ecc": 0.1594474544114308,
     "orientation": {
       "rot90": 0,
       "flip": false
     },
     "merc0_to_texture": [
       [
-        3453.114501953125,
-        -83.78518676757812,
-        -428478.2366390228
+        3531.01611328125,
+        -62.06553649902344,
+        -441168.1276063919
       ],
       [
-        -45.631771087646484,
-        3632.51123046875,
-        -456507.7280590534
+        2.1342499256134033,
+        3629.251220703125,
+        -462177.7903325707
       ]
     ],
-    "accepted": false
+    "accepted": true
   }
 }

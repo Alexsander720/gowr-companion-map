@@ -90,3 +90,56 @@ def test_english_save_fallback_and_difficulty():
     assert d['save']['difficulty'] == 'Balance'
     d=server.App(save_reader=lambda:{'ok':False},telemetry_reader=lambda **kw:{'available':False}).payload(lang='en')
     assert d['save']['place'] is None
+
+
+def test_realm_height_endpoints_and_pwa_manifest(running_server, monkeypatch, tmp_path):
+    import gow_game_tiles
+    from tools.gow_game_map import encode_h16_png
+    import numpy as np
+
+    maps_dir = tmp_path / 'maps'
+    maps_dir.mkdir()
+    monkeypatch.setattr(gow_game_tiles, 'MAPS_DIR', maps_dir)
+
+    con = http.client.HTTPConnection('127.0.0.1', running_server.server_port, timeout=5)
+    con.request('GET', '/api/realm-height/midgard')
+    r = con.getresponse(); r.read()
+    assert r.status == 204
+    assert r.getheader('Cache-Control') == 'no-store'
+
+    status, raw = get(running_server, '/api/realm-height/midgard/meta.json')
+    meta = json.loads(raw)
+    assert status == 200 and meta['realm'] == 'midgard' and meta['has_heightmap'] is False
+    assert {'lat_min', 'lat_max', 'lng_min', 'lng_max'} <= meta['bounds'].keys()
+    assert 'key_light' in meta['palette']
+
+    (maps_dir / 'midgard_h16.png').write_bytes(encode_h16_png(np.linspace(0, 1, 64 * 64, dtype=np.float32).reshape(64, 64)))
+    con.request('GET', '/api/realm-height/midgard')
+    r = con.getresponse(); body = r.read()
+    assert r.status == 200
+    assert r.getheader('Content-Type') == 'image/png'
+    assert 'max-age=86400' in (r.getheader('Cache-Control') or '')
+    assert body.startswith(b'\x89PNG')
+    con.close()
+
+    status, raw = get(running_server, '/api/realm-height/midgard/meta.json')
+    assert status == 200 and json.loads(raw)['has_heightmap'] is True
+    assert get(running_server, '/api/realm-height/../secret')[0] == 404
+    assert get(running_server, '/api/realm-height/unknown/meta.json')[0] == 404
+
+    status, raw = get(running_server, '/manifest.webmanifest')
+    manifest = json.loads(raw)
+    assert status == 200 and manifest['display'] == 'standalone' and manifest['orientation'] == 'landscape'
+    assert {ic['src'] for ic in manifest['icons']} >= {'/icon.svg', '/icon-192.png', '/icon-512.png'}
+    status, raw = get(running_server, '/icon.svg')
+    assert status == 200 and b'<svg' in raw
+    for icon_path in ('/icon-192.png', '/icon-512.png'):
+        st, raw_png = get(running_server, icon_path)
+        assert st == 200 and raw_png.startswith(b'\x89PNG')
+    import gzip
+    con = http.client.HTTPConnection('127.0.0.1', running_server.server_port, timeout=5)
+    con.request('GET', '/api/map?lang=en&realm=midgard', headers={'Accept-Encoding': 'gzip'})
+    gr = con.getresponse(); gbody = gr.read()
+    assert gr.status == 200 and gr.getheader('Content-Encoding') == 'gzip'
+    assert json.loads(gzip.decompress(gbody))['ok'] is True
+    con.close()
