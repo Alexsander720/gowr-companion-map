@@ -190,6 +190,8 @@ python tools\check_clean.py
 
 Карта-компаньон бесплатна и открыта. Если она помогла закрыть Девять миров на 100% без лишних пауз — можно поддержать автора: каждый донат идёт в разработку новых бесплатных утилит для игр и оплату ИИ-подписок, с которыми они создаются:
 
+- **Ko-fi** (PayPal / карты) — <https://ko-fi.com/alexsander720>
+- **Patreon** — <https://patreon.com/alexsander720>
 - **Банка monobank** (карты любых стран, Apple Pay, Google Pay) — <https://send.monobank.ua/jar/3zsHTXdRbt> · карта банки `4874 1000 3320 3608`
 - **PayPal** — [реквизиты на странице поддержки](https://alexsander720.github.io/continue/#support)
 - **USDT · TRC20** (Tron) — `TKhmtVEnuU5w73YMPT8adh7t3VZKJUUxmC`
